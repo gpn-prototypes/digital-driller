@@ -1,0 +1,59 @@
+body {
+  margin: 60px 0 0; /* высота шапки */
+}
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  position: relative;
+}
+.content_view_centered {
+  max-width: 920px;
+  margin: auto;
+}
+.content__main {
+  width: 700px;
+  margin: auto;
+}
+
+.input_width_avaliable {
+  width: 100%;
+}
+.input_width_date {
+  width: calc(9ch + var(--input-space) * 2 + var(--control-border-width) * 2);
+}
+.input_width_coordinates {
+  /* 67° 50′ 24.529 N */
+  width: calc(13ch + var(--input-space) * 2 + var(--control-border-width) * 2);
+}
+.input_view_clear {
+  border: 0;
+  padding: var(--space-s);
+}
+.input_view_clear:focus {
+  /*box-shadow: 0 0 0 var(--control-border-width) var(--color-control-bg-border-focus);*/
+  outline: none;
+}
+
+
+.table {
+  position: relative;
+  left: 50%;
+  text-align: left;
+  border-collapse: collapse;
+  transform: translateX(-50%);
+}
+.table_editable th {
+  padding: var(--space-xs) var(--space-s);
+}
+.table td:not(:last-child), .table th:not(:last-child) {
+  border-right: 1px solid var(--color-bg-border);
+}
+.table tr {
+  border-bottom: 1px solid var(--color-bg-border);
+}
+.table tr:first-child {
+  border-top: 1px solid var(--color-bg-border);
+}

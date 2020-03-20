@@ -1,0 +1,20 @@
+.programm-list {
+  width: calc(100% + var(--space-m) * 2);
+  margin-left: calc(-1 * var(--space-m));
+  margin-right: calc(-1 * var(--space-m));
+  text-align: left;
+  border-collapse: collapse;
+}
+.programm-list th {
+  padding: 0 var(--space-m) var(--space-m);
+}
+.programm-list td {
+  padding: var(--space-m);
+}
+.programm-list tr:hover td {
+  cursor: pointer;
+  background-color: var(--color-bg-stripe);
+}
+.programm-list tr td {
+  transition: background-color 0.2s ease;
+}
