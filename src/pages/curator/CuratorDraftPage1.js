@@ -1,7 +1,7 @@
 import React from 'react';
-import { Text, Input, Button, IconForward } from '@gpn-design/uikit';
-import TheHeader from '../components/TheHeader/TheHeader';
-import TheFooter from '../components/TheFooter/TheFooter';
+import { Text, Input, Button, IconForward, Select } from '@gpn-design/uikit';
+import TheHeader from '../../components/TheHeader/TheHeader';
+import TheFooter from '../../components/TheFooter/TheFooter';
 
 const fieldsList = [
   { value: 'value-0', label: 'Дорожно-транспортное происшествие' },
@@ -21,10 +21,10 @@ const fieldsList = [
   { value: 'value-14', label: 'Дочернее общество 7' },
 ];
 
-function DraftPage1() {
+function CuratorDraftPage1() {
   return (
     <React.Fragment>
-      <TheHeader />
+      <TheHeader role='curator' />
       <div className='content decorator decorator_space-v_3xl'>
         <div className='content__main'>
           <Text tag='h1' size='3xl' weight='bold' view='primary' className='decorator decorator_indent-b_s decorator_indent-t_none'>Создание программы</Text>
@@ -120,9 +120,9 @@ function DraftPage1() {
               <Text size='s' view='ghost' lineHeight='s' className='decorator decorator_indent-l_s'>Дедлайны для заполнения разделов программы высчитаются автоматически</Text>
             </div>
             <div className='decorator decorator_distribute_right decorator_indent-t_3xl'>
-              <Button wpSize='m' view='ghost' href='./'>Удалить</Button>
+              <Button wpSize='m' view='ghost' isLink={true} href='/curator/list'>Удалить</Button>
               <div className='decorator decorator_indent-l_m'>
-                <Button isLink={true} wpSize='m' view='primary' withIcon='right' href='/draft-step-2'>Дальше <IconForward size='m' className='button__icon'/></Button>
+                <Button isLink={true} wpSize='m' view='primary' withIcon='right' href='/curator/draft-step-2'>Дальше <IconForward size='m' className='button__icon'/></Button>
               </div>
             </div>
           </form>
@@ -133,4 +133,4 @@ function DraftPage1() {
   );
 }
 
-export default DraftPage1;
+export default CuratorDraftPage1;

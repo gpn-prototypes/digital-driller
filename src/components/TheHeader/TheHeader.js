@@ -5,7 +5,22 @@ import { Header, Logo, SearchBar, Menu, Login, IconButton, IconRing, IconBento }
 import './TheHeader.css';
 
 function TheHeader(props) {
-  const { page } = props;
+  const { page, role } = props;
+  let user = {};
+
+  if (role == 'curator') {
+    user = {
+      name: 'Тихон Кувшинов',
+      role: 'Куратор программы',
+      avatar: 'https://www.fotoprizer.ru/img_inf/st_139.jpg'
+    }
+  } else if (role == 'geologist') {
+    user = {
+      name: 'Анастасия Алёшина',
+      role: 'Геолог',
+      avatar: 'https://i.pinimg.com/originals/c2/be/d9/c2bed994a78321780b1d8d82d48b929d.jpg'
+    }
+  }
 
   const menuItems = [
     {
@@ -47,19 +62,13 @@ function TheHeader(props) {
     },
     {
       indent: 's',
-      children: (<IconButton><IconBento size={'m'} view={'secondary'} /></IconButton>)
-    },
-    {
-      indent: 's',
       children: (
         <Login
           isLogged
-          personName={'Тихон Кувшинов'}
-          personInfo={'Куратор программы'}
+          personName={user.name}
+          personInfo={user.role}
           personStatus={'active'}
-          linkToPhoto={
-            'https://pbs.twimg.com/profile_images/1150453787603156992/DoiKLDMY_400x400.png'
-          }
+          linkToPhoto={user.avatar}
         />
       ),
     },

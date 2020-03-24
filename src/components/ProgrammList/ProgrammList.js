@@ -6,12 +6,12 @@ import { Text, IconArrowRight, Badge } from '@gpn-design/uikit';
 import './ProgrammList.css';
 
 function ProgrammList(props) {
-  const {programmList} = props;
+  const {programmList, role} = props;
   const history = useHistory();
 
   const list = programmList.map(item => {
     const openProgramm = () => {
-      history.push(`/programm/${item.id}`)
+      history.push(`/${role}/programm/${item.id}`)
     };
 
     let status = <Badge wpSize='m' view='filled' status='system'>{item.stage}</Badge>;
@@ -21,7 +21,6 @@ function ProgrammList(props) {
       status = <Badge wpSize='m' view='filled' status='success'>{item.stage} {item.deadline}</Badge>;
 
     return <tr className='pt-table__row' onClick={openProgramm}>
-      <Text size='s' weight='bold' view='primary' tag='td'>{item.id}</Text>
       <Text size='s' view='primary' tag='td'>{item.field}</Text>
       <td>
         <div className='decorator decorator_distribute_left decorator_vertical-align_center'>
@@ -38,7 +37,6 @@ function ProgrammList(props) {
   return (
     <table className='programm-list pt-table pt-table_stripe_even'>
       <tr>
-        <Text tag='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>ID</Text>
         <Text tag='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Месторождение</Text>
         <Text tag='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Куст и скважина</Text>
         <Text tag='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Этап процесса</Text>

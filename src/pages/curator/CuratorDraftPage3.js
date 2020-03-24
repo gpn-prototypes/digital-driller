@@ -1,12 +1,12 @@
 import React from 'react';
 import { Text, Input, Button, IconBackward, Badge, IconAttach, Textarea } from '@gpn-design/uikit';
-import TheHeader from '../components/TheHeader/TheHeader';
-import TheFooter from '../components/TheFooter/TheFooter';
+import TheHeader from '../../components/TheHeader/TheHeader';
+import TheFooter from '../../components/TheFooter/TheFooter';
 
-function DraftPage3() {
+function CuratorDraftPage3() {
   return (
     <React.Fragment>
-      <TheHeader />
+      <TheHeader role='curator' />
       <div className='content decorator decorator_space-v_3xl'>
         <div className='content__main'>
           <Text tag='h1' size='3xl' weight='bold' view='primary' className='decorator decorator_indent-b_s decorator_indent-t_none'>Создание программы</Text>
@@ -81,11 +81,11 @@ function DraftPage3() {
 
 
           <div className='decorator decorator_distribute_between decorator_indent-t_3xl'>
-            <Button isLink={true} wpSize='m' view='ghost' withIcon='left' href='/draft-step-2'><IconBackward size='m' className='button__icon'/>Назад</Button>
+            <Button isLink={true} wpSize='m' view='ghost' withIcon='left' href='/curator/draft-step-2'><IconBackward size='m' className='button__icon'/>Назад</Button>
             <div className='decorator decorator_distribute_between'>
-              <Button wpSize='m' view='ghost' href='/'>Удалить</Button>
+              <Button wpSize='m' view='ghost' isLink={true} href='/curator/list'>Удалить</Button>
               <div className='decorator decorator_indent-l_m'>
-                <Button isLink={true} wpSize='m' view='primary' withIcon='right' href='/'>Создать программу</Button>
+                <Button isLink={true} wpSize='m' view='primary' withIcon='right' href='/curator/list'>Создать программу</Button>
               </div>
             </div>
           </div>
@@ -96,4 +96,4 @@ function DraftPage3() {
   );
 }
 
-export default DraftPage3;
+export default CuratorDraftPage3;
