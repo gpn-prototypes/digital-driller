@@ -1,0 +1,8 @@
+.team-member {
+  padding: var(--space-m) var(--space-l);
+  background-color: var(--color-bg-secondary);
+  border-radius: 4px;
+}
+.team-member:not(:last-child) {
+  margin-bottom: var(--space-l);
+}

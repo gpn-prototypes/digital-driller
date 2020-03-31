@@ -4,6 +4,10 @@ body {
 ul, ol, li {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: initial;
 }
 
 .content {
@@ -14,9 +18,40 @@ ul, ol, li {
   max-width: 920px;
   margin: auto;
 }
+.content_view_split {
+  display: grid;
+  grid-template-columns: 364px calc(100% - 364px);
+}
 .content__main {
+  max-width: 100%;
   width: 700px;
   margin: auto;
+}
+.content__main_size_full {
+  width: calc(100% - var(--space-2xl) * 2);
+  overflow-x: scroll;
+}
+.content__main li {
+  margin-bottom: var(--space-m);
+}
+.content__main ul, ol {
+  margin-bottom: var(--space-2xl);
+}
+.content__main img {
+  max-width: 100%;
+}
+.content__sidebar {
+  box-sizing: border-box;
+  height: calc(100vh - 60px);
+  padding: var(--space-2xl);
+  overflow-y: scroll;
+  background-color: var(--color-bg-secondary);
+}
+.content__article {
+  box-sizing: border-box;
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .input_width_avaliable {
@@ -40,13 +75,17 @@ ul, ol, li {
 
 
 .table {
-  position: relative;
-  left: 50%;
+  min-width: 100%;
   text-align: left;
   border-collapse: collapse;
-  transform: translateX(-50%);
 }
-.table_editable th {
+.table_size_full {
+  
+}
+.table th {
+  padding: var(--space-xs) var(--space-s);
+}
+.table:not(.table_editable) td {
   padding: var(--space-xs) var(--space-s);
 }
 .table td:not(:last-child), .table th:not(:last-child) {

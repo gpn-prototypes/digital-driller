@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import { Text, IconArrowRight, Badge } from '@gpn-design/uikit';
 
@@ -15,9 +14,9 @@ function ProgrammList(props) {
     };
 
     let status = <Badge wpSize='m' view='filled' status='system'>{item.stage}</Badge>;
-    if (item.stage == 'Подготовка' || item.stage == 'Согласование' || item.stage == 'Бурение')
+    if (item.stage === 'Подготовка' || item.stage === 'Согласование' || item.stage === 'Бурение')
       status = <Badge wpSize='m' view='filled' status='normal'>{item.stage} до {item.deadline}</Badge>;
-    else if (item.stage == 'Завершено')
+    else if (item.stage === 'Завершено')
       status = <Badge wpSize='m' view='filled' status='success'>{item.stage} {item.deadline}</Badge>;
 
     return <tr className='pt-table__row' onClick={openProgramm}>
@@ -46,9 +45,5 @@ function ProgrammList(props) {
     </table>
   );
 }
-
-ProgrammList.propTypes = {
-  programmList: PropTypes.array.isRequired
-};
 
 export default ProgrammList;

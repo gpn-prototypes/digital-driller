@@ -37,10 +37,11 @@ const filterItems = {
 
 function GeologistProgrammsPage(props) {
 	const { programmList } = props;
+	let { isNew } = useParams();
 	
 	let geologistProgramms = [];
 	programmList.forEach(item => {
-		if (item.curator == 'Тихон Кувшинов' || item.curator == 'Яснов Никита')
+		if (item.curator === 'Тихон Кувшинов' || item.curator === 'Яснов Никита')
 		geologistProgramms.push(item)
 	});
 

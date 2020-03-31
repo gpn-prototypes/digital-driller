@@ -1,25 +1,7 @@
 import React from 'react';
-import { Text, Input, Button, IconForward, Select } from '@gpn-design/uikit';
+import { Text, Input, Button, IconForward } from '@gpn-design/uikit';
 import TheHeader from '../../components/TheHeader/TheHeader';
 import TheFooter from '../../components/TheFooter/TheFooter';
-
-const fieldsList = [
-  { value: 'value-0', label: 'Дорожно-транспортное происшествие' },
-  { value: 'value-1', label: 'Поражение электрическим током' },
-  { value: 'value-2', label: 'Работы на высоте' },
-  { value: 'value-3', label: 'Пожар' },
-  { value: 'value-4', label: 'Разлив нефтепродуктов' },
-  { value: 'value-5', label: 'Газо-нефте-водо-проявление' },
-  { value: 'value-6', label: 'Авария на платформе' },
-  { value: 'value-7', label: 'Воздействие сероводорода' },
-  { value: 'value-8', label: 'Дочернее общество 1' },
-  { value: 'value-9', label: 'Дочернее общество 2' },
-  { value: 'value-10', label: 'Дочернее общество 3' },
-  { value: 'value-11', label: 'Дочернее общество 4' },
-  { value: 'value-12', label: 'Дочернее общество 5' },
-  { value: 'value-13', label: 'Дочернее общество 6' },
-  { value: 'value-14', label: 'Дочернее общество 7' },
-];
 
 function CuratorDraftPage1() {
   return (

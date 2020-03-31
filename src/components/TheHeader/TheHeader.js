@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Header, Logo, SearchBar, Menu, Login, IconButton, IconRing, IconBento } from '@gpn-design/uikit';
+import { Header, Logo, SearchBar, Menu, Login, IconButton, IconRing } from '@gpn-design/uikit';
 
 import './TheHeader.css';
 
@@ -8,13 +7,13 @@ function TheHeader(props) {
   const { page, role } = props;
   let user = {};
 
-  if (role == 'curator') {
+  if (role === 'curator') {
     user = {
       name: 'Тихон Кувшинов',
       role: 'Куратор программы',
       avatar: 'https://www.fotoprizer.ru/img_inf/st_139.jpg'
     }
-  } else if (role == 'geologist') {
+  } else if (role === 'geologist') {
     user = {
       name: 'Анастасия Алёшина',
       role: 'Геолог',
@@ -26,17 +25,17 @@ function TheHeader(props) {
     {
       name: 'Программы',
       link: '/',
-      active: page == 'Программы' ? true : false
+      active: page === 'Программы' ? true : false
     },
     {
       name: 'База знаний',
       link: '/base',
-      active: page == 'База знаний' ? true : false
+      active: page === 'База знаний' ? true : false
     },
     {
       name: 'Отчетность',
       link: '/docs',
-      active: page == 'Отчетность' ? true : false
+      active: page === 'Отчетность' ? true : false
     },
   ];
   
@@ -79,9 +78,5 @@ function TheHeader(props) {
     <Header leftSide={leftSide} rightSide={rightSide}></Header>
   );
 }
-
-TheHeader.propTypes = {
-  page: PropTypes.string
-};
 
 export default TheHeader;

@@ -1,0 +1,20 @@
+.toc__item {
+  display: block;
+  text-decoration: none;
+  transition: filter 0.2s ease;
+}
+
+.toc__item:hover {
+  filter: contrast(25);
+}
+.toc__name_mine::after {
+  content: 'Мой раздел';
+  display: inline-block;
+  width: auto;
+  padding: 0 var(--space-xs);
+  margin-top: var(--space-2xs);
+  border-radius: 4px;
+  font-size: var(--size-text-2xs);
+  text-transform: uppercase;
+  background-color: var(--color-bg-ghost);
+}
