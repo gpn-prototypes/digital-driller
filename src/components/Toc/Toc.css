@@ -1,12 +1,25 @@
 .toc__item {
   display: block;
+  margin-bottom: var(--space-l);
   text-decoration: none;
-  transition: filter 0.2s ease;
+  font-size: var(--size-text-s);
+  line-height: var(--line-height-text-s);
+  transition: opacity 0.2s ease;
+}
+  .toc__item:hover {
+    opacity: 0.75;
+  }
+
+.toc__item_status_success {
+  color: var(--color-typo-success)
+}
+.toc__item_status_warning {
+  color: var(--color-typo-warning)
+}
+.toc__item_status_progress {
+  color: var(--color-typo-secondary)
 }
 
-.toc__item:hover {
-  filter: contrast(25);
-}
 .toc__name_mine::after {
   content: 'Мой раздел';
   display: inline-block;

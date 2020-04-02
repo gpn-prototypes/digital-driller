@@ -27,7 +27,7 @@ function App() {
 			</Route>
 
 			{/* для куратора */}
-			<Route exact path="/curator/list">
+			<Route exact path="/curator/list:isNew">
 				<CuratorProgrammsPage programmList={programmList} />
 			</Route>
 			<Route exact path="/curator/programm/:id">

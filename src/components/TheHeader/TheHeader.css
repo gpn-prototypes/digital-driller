@@ -4,4 +4,101 @@
   width: 100vw;
   background-color: var(--color-bg-default);
   z-index: 2;
+
+  --header-height: 60px;
+  display: flex;
+  width: 100%;
+  height: var(--header-height);
+  box-sizing: border-box;
+  padding: 0 var(--space-xl);
+  border-bottom: 1px solid var(--color-bg-border);
 }
+.header__left-side, .header__right-side {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+}
+.header__right-side {
+  justify-content: flex-end;
+}
+.header__right-side .header__module {
+  margin-left: var(--module-indent);
+}
+.header__left-side .header__module {
+  margin-right: var(--module-indent);
+}
+
+.header__module_indent_s {
+  --module-indent: var(--space-xs);
+}
+.header__module_indent_m {
+  --module-indent: var(--space-l);
+}
+.header__module_indent_l {
+  --module-indent: var(--space-2xl);
+}
+.header__left-side .header__module {
+  margin-right: var(--module-indent);
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--color-typo-primary);
+}
+
+.search-bar {
+  position: relative;
+  width: 25vw;
+  max-width: 260px;
+}
+  .search-bar__label {
+    position: absolute;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .search-bar__input {
+    width: 100%;
+  }
+  .search-bar__button {
+    position: absolute !important;
+    right: var(--space-2xs);
+    top: var(--space-2xs);
+  }
+
+.menu__list {
+  display: flex;
+  list-style-type: none;
+}
+  .menu__item {
+    margin-right: var(--space-m);
+  }
+  .menu__link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-typo-primary);
+    line-height: var(--header-height);
+    transition: color 0.2s;
+  }
+    .menu__link_active::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 100%;
+      height: 4px;
+      max-width: 40px;
+      background-color: var(--color-typo-link);
+      border-radius: 4px 4px 0 0;
+      transform: translateX(-50%);
+    }
+    .menu__link_active {
+      color: var(--color-typo-link);
+      pointer-events: none;
+    }

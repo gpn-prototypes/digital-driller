@@ -1,0 +1,25 @@
+.progress-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  animation: progressIcon 2s linear infinite;
+}
+  .progress-icon::before, .progress-icon::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+  }
+  .progress-icon::before {
+    top: 3px;
+    left: 3px;
+  }
+  .progress-icon::after {
+    bottom: 3px;
+    right: 3px;
+  }
+@keyframes progressIcon {
+  to { transform: rotate(360deg); }
+}

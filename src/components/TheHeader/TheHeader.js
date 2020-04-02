@@ -1,82 +1,92 @@
 import React from 'react';
-import { Header, Logo, SearchBar, Menu, Login, IconButton, IconRing } from '@gpn-design/uikit';
+import { TextField, Button, IconSearch, IconRing, User, Text } from '@gpn-design/uikit';
+import SavingStatus from '../../components/SavingStatus/SavingStatus';
 
 import './TheHeader.css';
 
+import { team } from '../../mocks/team';
+
 function TheHeader(props) {
-  const { page, role } = props;
-  let user = {};
+  const { page, role, isMinified, programmName } = props;
+  const user = team.filter(member => member.role === role)[0];
 
-  if (role === 'curator') {
-    user = {
-      name: 'Тихон Кувшинов',
-      role: 'Куратор программы',
-      avatar: 'https://www.fotoprizer.ru/img_inf/st_139.jpg'
-    }
-  } else if (role === 'geologist') {
-    user = {
-      name: 'Анастасия Алёшина',
-      role: 'Геолог',
-      avatar: 'https://i.pinimg.com/originals/c2/be/d9/c2bed994a78321780b1d8d82d48b929d.jpg'
-    }
-  }
+  if (isMinified)
+    return (
+      <header className='header'>
+        <div className='header__left-side'>
+          <div className='header__module header__module_indent_l decorator decorator_distribute_left decorator_vertical-align_center'>
+            <a className='logo' href='/'>
+              <p className='text text_size_l text_weight_bold'>Программа бурения</p>
+            </a>
+            <Text size='s' view='ghost' display='inline-block' className='decorator decorator_indent-h_s'>/</Text>
+            <Text size='s' view='primary' display='inline'>{programmName}</Text>
+          </div>
+        </div>
+        
+        <div className='header__right-side'>
+          <div className='header__module header__module_indent_m'>
+            <SavingStatus />
+          </div>
 
-  const menuItems = [
-    {
-      name: 'Программы',
-      link: '/',
-      active: page === 'Программы' ? true : false
-    },
-    {
-      name: 'База знаний',
-      link: '/base',
-      active: page === 'База знаний' ? true : false
-    },
-    {
-      name: 'Отчетность',
-      link: '/docs',
-      active: page === 'Отчетность' ? true : false
-    },
-  ];
-  
-  const leftSide = [
-    {
-      indent: 'l',
-      children: (<Logo><p className='text text_size_l text_weight_bold'>Программа бурения</p></Logo>)
-    },
-    {
-      indent: 'l',
-      children: <SearchBar placeholder={'Поиск'} label={'Поиск'} />
-    },
-    {
-      indent: 'l',
-      children: <Menu items={menuItems} />
-    },
-  ];
-  
-  const rightSide = [
-    {
-      indent: 's',
-      children: (<IconButton><IconRing size={'m'} view={'secondary'} /></IconButton>)
-    },
-    {
-      indent: 's',
-      children: (
-        <Login
-          isLogged
-          personName={user.name}
-          personInfo={user.role}
-          personStatus={'active'}
-          linkToPhoto={user.avatar}
-        />
-      ),
-    },
-  ];
+          <div className='header__module header__module_indent_m'>
+            <Button size='m' view='primary' as='a' href={role === 'Куратор' ? '/geologist/list:true' : '/curator/list:true'} label='Сохранить черновик' />
+          </div>
 
-
-  return (
-    <Header leftSide={leftSide} rightSide={rightSide}></Header>
-  );
+          <div className='header__module header__module_indent_s'>
+            <Button size='m' view='clear' form='round' iconOnly={true} iconLeft={IconRing} />
+          </div>
+          
+          <div className='header__module header__module_indent_s'>
+            <User view='clear' size='m' status='available' avatarUrl={user.avatar} name={user.name} info={user.role} />
+          </div>
+        </div>
+      </header>
+    );
+  else
+    return (
+      <header className='header'>
+        <div className='header__left-side'>
+          <div className='header__module header__module_indent_l'>
+            <a className='logo' href='/'>
+              <p className='text text_size_l text_weight_bold'>Программа бурения</p>
+            </a>
+          </div>
+          
+          <div className='header__module header__module_indent_l'>
+            <form className='search-bar'>
+              <TextField width='full' size='m' type='text' placeholder='Я ищу' className='search-bar__input' name='main-search' />
+              <Button size='s' view='clear' iconOnly={true} iconLeft={IconSearch} className='search-bar__button' />
+            </form>
+          </div>
+          
+          <div className='header__module header__module_indent_l'>
+            <nav className='menu'>
+              <ul className='menu__list'>
+                <li className='menu__item'>
+                  <a className={page === 'Программы' ? 'menu__link menu__link_active' : 'menu__link'} href={role=== 'Куратор' ? '/curator/list:false' : '/geologist/list:false'}>Программы</a>
+                </li>
+                <li className='menu__item'>
+                  <a className={page === 'База знаний' ? 'menu__link menu__link_active' : 'menu__link'} href='#'>База знаний</a>
+                </li>
+                <li className='menu__item'>
+                  <a className={page === 'Отчетность' ? 'menu__link menu__link_active' : 'menu__link'} href='#'>Отчетность</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+        <div className='header__right-side'>
+          <div className='header__module header__module_indent_s'>
+            <Button size='m' view='clear' form='round' iconOnly={true} iconLeft={IconRing} />
+          </div>
+          
+          <div className='header__module header__module_indent_s'>
+            <User view='clear' size='m' status='available' avatarUrl={user.avatar} name={user.name} info={user.role} />
+          </div>
+        </div>
+      </header>
+    );
 }
 
 export default TheHeader;

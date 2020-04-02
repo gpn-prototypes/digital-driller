@@ -1,6 +1,14 @@
-body {
-  margin: 60px 0 0; /* высота шапки */
+html, body {
+  margin: 0 !important;
+  height: 100%;
 }
+
+#root {
+  height: 100%;
+  background-color: var(--color-bg-default);
+}
+
+
 ul, ol, li {
   margin: 0;
   padding: 0;
@@ -8,6 +16,30 @@ ul, ol, li {
 }
 h1, h2, h3, h4, h5, h6, p {
   margin: initial;
+}
+
+.content-page {
+  padding: 60px 0 0; /* высота шапки */
+}
+
+.login-page {
+  height: 100%;
+  background-color: var(--color-bg-secondary);
+}
+.login-form {
+  position: relative;
+  top: 170px;
+  width: 360px;
+  box-sizing: border-box;
+  padding: var(--space-3xl) var(--space-2xl);
+  margin: auto;
+  background: var(--color-bg-default);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.07),
+              0px 4px 4px rgba(0, 0, 0, 0.07),
+              0px 8px 8px rgba(0, 0, 0, 0.07),
+              0px 12px 16px rgba(0, 0, 0, 0.07),
+              0px 16px 32px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
 }
 
 .content {
@@ -29,7 +61,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .content__main_size_full {
   width: calc(100% - var(--space-2xl) * 2);
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 .content__main li {
   margin-bottom: var(--space-m);
@@ -54,28 +86,35 @@ h1, h2, h3, h4, h5, h6, p {
   scroll-behavior: smooth;
 }
 
-.input_width_avaliable {
-  width: 100%;
+.text-field__side_type_string {
+  white-space: nowrap;
 }
-.input_width_date {
-  width: calc(9ch + var(--input-space) * 2 + var(--control-border-width) * 2);
+.input_width_date input {
+  width: 78px;
 }
-.input_width_coordinates {
-  /* 67° 50′ 24.529 N */
-  width: calc(13ch + var(--input-space) * 2 + var(--control-border-width) * 2);
+.input_width_coordinates input {
+  width: 104px;
+}
+.input_width_degree input {
+  width: 60px;
+}
+.input_width_number input {
+  width: 60px;
 }
 .input_view_clear {
   border: 0;
-  padding: var(--space-s);
+  padding: 0;
+  background-color: transparent;
 }
 .input_view_clear:focus {
-  /*box-shadow: 0 0 0 var(--control-border-width) var(--color-control-bg-border-focus);*/
   outline: none;
 }
 
 
 .table {
-  min-width: 100%;
+  min-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
   border-collapse: collapse;
 }
@@ -88,6 +127,9 @@ h1, h2, h3, h4, h5, h6, p {
 .table:not(.table_editable) td {
   padding: var(--space-xs) var(--space-s);
 }
+.table_editable .text-field {
+  border: 0;
+}
 .table td:not(:last-child), .table th:not(:last-child) {
   border-right: 1px solid var(--color-bg-border);
 }
@@ -99,16 +141,54 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
-.login-form {
-  width: 360px;
-  box-sizing: border-box;
-  padding: var(--space-3xl) var(--space-2xl);
-  margin: auto;
-  background: var(--color-bg-default);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.07),
-              0px 4px 4px rgba(0, 0, 0, 0.07),
-              0px 8px 8px rgba(0, 0, 0, 0.07),
-              0px 12px 16px rgba(0, 0, 0, 0.07),
-              0px 16px 32px rgba(0, 0, 0, 0.07);
-  border-radius: 8px;
+.block {
+  position: relative;
+  padding-left: var(--space-4xl);
+  padding-right: var(--space-4xl);
+  margin-left: calc(-1 * var(--space-4xl));
+  margin-right: calc(-1 * var(--space-4xl));
 }
+  .block:hover .block__right-button, .block:hover .block__left-button {
+    opacity: 1;
+  }
+  .block__right-button, .block__left-button {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  .block__right-button {
+    right: 0;
+  }
+  .block__left-button {
+    left: 0;
+  }
+
+.choice-group__button:not(.choice-group__button_checked) {
+  background-color: transparent;
+}
+
+.block_show-popup .block__popup {
+  display: block;
+}
+.block__popup {
+  position: absolute;
+  width: 260px;
+  padding: var(--space-s) 0;
+  left: 38px;
+  top: -14px;
+
+  background: var(--color-bg-default);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  z-index: 1;
+  display: none;
+}
+  .block__popup-item {
+    padding: var(--space-xs) var(--space-s);
+    transition: background-color 0.25s ease;
+  }
+    .block__popup-item:hover {
+      background-color: var(--color-bg-stripe);
+      cursor: pointer;
+    }

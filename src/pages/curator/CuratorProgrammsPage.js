@@ -38,28 +38,26 @@ const filterItems = {
 function CuratorProgrammsPage(props) {
 	const { programmList } = props;
 	let { isNew } = useParams();
+	console.log(isNew);
 
 	return (
-		<React.Fragment>
-			<TheHeader page={`Программы`} role='curator' />
+		<div className='content-page'>
+			<TheHeader page={`Программы`} role='Куратор' />
 			<div className='content content_view_centered decorator decorator_space-v_3xl'>
 				<Text tag='h1' size='3xl' weight='bold' view='primary' className='decorator decorator_indent-b_2xl decorator_indent-t_none'>Программы</Text>
 				<div className='decorator decorator_distribute_between decorator_vertical-align_center decorator_indent-b_2xl'>
 					<div className='decorator decorator_distribute_left decorator_vertical-align_center'>
-						<ChoiceGroup isMultiple={false} items={filterItems.types} wpSize='s' value={1} />
+						<ChoiceGroup isMultiple={false} items={filterItems.types} size='s' value={1} />
 						<div className='decorator decorator_indent-l_l'>
-							<Button isLink={true} wpSize='s' view='ghost' href='/curator/draft-step-1' withIcon='left'>
-								<IconAdd size={'s'} className={'button__icon'} />
-								Новая программа
-							</Button>
+							<Button as='a' size='m' view='ghost' href='/curator/draft-step-1' iconLeft={IconAdd} label='Новая программа' />
 						</div>
 					</div>
-					<ChoiceGroup isMultiple={false} items={filterItems.view} wpSize='s' value={1} />
+					<ChoiceGroup isMultiple={false} items={filterItems.view} size='s' value={1} />
 				</div>
 				<ProgrammList programmList={programmList} role='curator'></ProgrammList>
 			</div>
 			<TheFooter />
-		</React.Fragment>
+		</div>
 	);
 }
 

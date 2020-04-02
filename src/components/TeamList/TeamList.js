@@ -8,17 +8,19 @@ function TeamList(props) {
 
   const list = team.map(item => {
     let badge;
-    let isDone = true;
+    let isDone = 0;
     
     tocList.forEach(section => {
       if(section.status !== 'done' && section.member === item.name)
-        isDone = false;
+        isDone--;
+      else if(section.status === 'done' && section.member === item.name)
+        isDone++;
     });
     
-    if (isDone)
-      badge = <Badge wpSize='m' view='filled' status='success'>Готово</Badge>;
+    if (isDone > 0)
+      badge = <Badge size='m' view='filled' status='success' label='Готово' />;
     else
-      badge = <Badge wpSize='m' view='filled' status='system'>{'Подготовить до ' + item.deadline}</Badge>;
+      badge = <Badge size='m' view='filled' status='system' label={'Подготовить до ' + item.deadline} />;
 
     return (
       <div className='team-member' key={item.name}>
