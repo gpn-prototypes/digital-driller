@@ -13,45 +13,48 @@ import programmList from '../../mocks/programmList';
 import IMGTemplate from '../../images/Профиль_ствола_скважины.jpg';
 
 {
+  const setEditableButton = (button) => {
+    let block = button.parentNode;
+    let section = block.parentNode;
+    let popup = block.querySelector('.block__popup');
+    let addTextBlock = popup.querySelector('.block__popup-item_textblock');
+    let addAlertBlock = popup.querySelector('.block__popup-item_alertblock');
+    let addTableBlock = popup.querySelector('.block__popup-item_tableblock');
+    let addImportBlock = popup.querySelector('.block__popup-item_importblock');
+    let addImageBlock = popup.querySelector('.block__popup-item_imageblock');
+    
+    button.addEventListener('click', () => {
+      block.classList.add('block_show-popup');
+    });
+
+    addTextBlock.addEventListener('click', () => {
+      let template = document.querySelector('.templateTextBlock').cloneNode(true);
+      template.classList.remove('templateTextBlock');
+      setEditableButton(template.querySelector('.block__left-button'));
+      
+      section.after(template);
+      block.classList.remove('block_show-popup');
+    });
+    addAlertBlock.addEventListener('click', () => {
+      let template = document.querySelector('.templateAlertBlock').cloneNode(true);
+      template.classList.remove('templateAlertBlock');
+      setEditableButton(template.querySelector('.block__left-button'));
+      
+      section.after(template);
+      block.classList.remove('block_show-popup');
+    });
+    addImageBlock.addEventListener('click', () => {
+      let template = document.querySelector('.templateImageBlock').cloneNode(true);
+      template.classList.remove('templateImageBlock');
+      setEditableButton(template.querySelector('.block__left-button'));
+      
+      section.after(template);
+      block.classList.remove('block_show-popup');
+    });
+  };
   const editableArticle = () => {
     document.querySelectorAll('.block__left-button').forEach(button => {
-      let block = button.parentNode;
-      let section = block.parentNode;
-      let popup = block.querySelector('.block__popup');
-      let addTextBlock = popup.querySelector('.block__popup-item_textblock');
-      let addAlertBlock = popup.querySelector('.block__popup-item_alertblock');
-      let addTableBlock = popup.querySelector('.block__popup-item_tableblock');
-      let addImportBlock = popup.querySelector('.block__popup-item_importblock');
-      let addImageBlock = popup.querySelector('.block__popup-item_imageblock');
-      
-      button.addEventListener('click', () => {
-        block.classList.add('block_show-popup');
-      });
-
-      addTextBlock.addEventListener('click', () => {
-        let template = document.querySelector('.templateTextBlock').cloneNode(true);
-        template.classList.remove('templateTextBlock');
-        
-        section.after(template);
-        editableArticle();
-        block.classList.remove('block_show-popup');
-      });
-      addAlertBlock.addEventListener('click', () => {
-        let template = document.querySelector('.templateAlertBlock').cloneNode(true);
-        template.classList.remove('templateAlertBlock');
-        
-        section.after(template);
-        editableArticle();
-        block.classList.remove('block_show-popup');
-      });
-      addImageBlock.addEventListener('click', () => {
-        let template = document.querySelector('.templateImageBlock').cloneNode(true);
-        template.classList.remove('templateImageBlock');
-        
-        section.after(template);
-        editableArticle();
-        block.classList.remove('block_show-popup');
-      });
+      setEditableButton(button);
     });
   }
   setTimeout(() => {
