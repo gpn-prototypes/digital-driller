@@ -1,5 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { Informer, Text } from '@gpn-design/uikit';
+import ContentBlock from './components/ContentBlock/ContentBlock';
+import Field from './components/Field/Field';
 
 import LoginPage from './pages/LoginPage';
 
@@ -19,8 +22,11 @@ import programmList from './mocks/programmList.js';
 import "@gpn-design/uikit/dist/style.css";
 import './App.css';
 
+import IMGTemplate from './images/Профиль_ствола_скважины.jpg';
+
 function App() {
   return (
+		<React.Fragment>
 		<Switch>
 			<Route exact path="/">
 				<LoginPage/>
@@ -51,6 +57,24 @@ function App() {
 				<GeologistProgrammPage programmList={programmList}/>
 			</Route>
 		</Switch>
+
+		<template>
+			<ContentBlock isEditable={true} className='templateTextBlock'>
+				<Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+			</ContentBlock>
+
+			<ContentBlock isEditable={true} className='templateAlertBlock'>
+				<Informer status='system' view='filled'>
+					<Text size='m' view='primary' weight='bold'>Примечание</Text>
+					<Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+				</Informer>
+			</ContentBlock>
+			
+			<ContentBlock isEditable={true} className='templateImageBlock'>
+				<img src={IMGTemplate} alt=' ' />
+			</ContentBlock>
+		</template>
+		</React.Fragment>
 	);
 }
 

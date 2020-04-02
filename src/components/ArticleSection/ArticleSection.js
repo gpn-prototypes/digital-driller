@@ -25,8 +25,8 @@ function ArticleSection(props) {
       <div className='content__main'>
         <Text id={header} tag='h2' size='2xl' view='primary' lineHeight='s' className='decorator decorator_indent-b_s'>{header}</Text>
 
-        <div className='decorator decorator_distribute_between'>
-          <div className='decorator decorator_distribute_left decorator_indent-b_l'>
+        <div className='decorator decorator_distribute_between decorator_vertical-align_center decorator_indent-b_l'>
+          <div className='decorator decorator_distribute_left'>
             {badge}
             <Text size='m' view={isMine ? 'brand' : 'ghost'} className='decorator decorator_indent-l_m'>@{member}</Text>
           </div>

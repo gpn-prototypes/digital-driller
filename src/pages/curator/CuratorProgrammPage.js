@@ -6,61 +6,10 @@ import Toc from '../../components/Toc/Toc';
 import TeamList from '../../components/TeamList/TeamList';
 import ArticleSection from '../../components/ArticleSection/ArticleSection';
 import Field from '../../components/Field/Field';
+import ContentBlock from '../../components/ContentBlock/ContentBlock';
 
 import { tocList, team } from '../../mocks/oldProgramm';
 import programmList from '../../mocks/programmList';
-
-import IMGTemplate from '../../images/Профиль_ствола_скважины.jpg';
-
-{
-  const setEditableButton = (button) => {
-    let block = button.parentNode;
-    let section = block.parentNode;
-    let popup = block.querySelector('.block__popup');
-    let addTextBlock = popup.querySelector('.block__popup-item_textblock');
-    let addAlertBlock = popup.querySelector('.block__popup-item_alertblock');
-    let addTableBlock = popup.querySelector('.block__popup-item_tableblock');
-    let addImportBlock = popup.querySelector('.block__popup-item_importblock');
-    let addImageBlock = popup.querySelector('.block__popup-item_imageblock');
-    
-    button.addEventListener('click', () => {
-      block.classList.add('block_show-popup');
-    });
-
-    addTextBlock.addEventListener('click', () => {
-      let template = document.querySelector('.templateTextBlock').cloneNode(true);
-      template.classList.remove('templateTextBlock');
-      setEditableButton(template.querySelector('.block__left-button'));
-      
-      section.after(template);
-      block.classList.remove('block_show-popup');
-    });
-    addAlertBlock.addEventListener('click', () => {
-      let template = document.querySelector('.templateAlertBlock').cloneNode(true);
-      template.classList.remove('templateAlertBlock');
-      setEditableButton(template.querySelector('.block__left-button'));
-      
-      section.after(template);
-      block.classList.remove('block_show-popup');
-    });
-    addImageBlock.addEventListener('click', () => {
-      let template = document.querySelector('.templateImageBlock').cloneNode(true);
-      template.classList.remove('templateImageBlock');
-      setEditableButton(template.querySelector('.block__left-button'));
-      
-      section.after(template);
-      block.classList.remove('block_show-popup');
-    });
-  };
-  const editableArticle = () => {
-    document.querySelectorAll('.block__left-button').forEach(button => {
-      setEditableButton(button);
-    });
-  }
-  setTimeout(() => {
-    editableArticle();
-  }, 300);
-}
 
 function GeologistProgrammPage() {
   let { id } = useParams();
@@ -85,236 +34,40 @@ function GeologistProgrammPage() {
           </div>
           
           <ArticleSection header='Цель' tocList={tocList} team={team}>
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
+            <ContentBlock isEditable={true}>
+              <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+            </ContentBlock>
 
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
+            <ContentBlock isEditable={true}>
+              <Informer status='system' view='filled'>
+                <Text size='m' view='primary' weight='bold'>Примечание</Text>
+                <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Программа бурения составлена в соответствии с проектной документацией на строительство горизонтальных скважин на Новопортовском НГКМ. Данная программа предназначена в качестве руководства, которое необходимо соблюдать в процессе проведения работ, если фактические геолого-технические условия соответствуют проектным. В случае если геолого-технические условия в процессе проведения работ не будут соответствовать проектным, то Подрядчик обязан прекратить дальнейшее проведение работ, принять все меры по недопущению усугубления ситуации и согласовать проведение дальнейших работ с представителем Заказчика.' />
+              </Informer>
+            </ContentBlock>
 
-                <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' className='input_view_clear decorator decorator_indent-b_l' />
-              </div>
-            </div>
-
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd}/></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
-                
-                <Informer status='system' view='filled' className='decorator decorator_indent-b_l'>
-                  <Text size='m' view='primary' weight='bold'>Примечание</Text>
-                  <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Программа бурения составлена в соответствии с проектной документацией на строительство горизонтальных скважин на Новопортовском НГКМ. Данная программа предназначена в качестве руководства, которое необходимо соблюдать в процессе проведения работ, если фактические геолого-технические условия соответствуют проектным. В случае если геолого-технические условия в процессе проведения работ не будут соответствовать проектным, то Подрядчик обязан прекратить дальнейшее проведение работ, принять все меры по недопущению усугубления ситуации и согласовать проведение дальнейших работ с представителем Заказчика.' className='input_view_clear' />
-                </Informer>
-              </div>
-            </div>
-
-            <div className='content__main decorator decorator_indent-b_s decorator_indent-t_2xl'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
-
-                <Field width='full' size='l' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Распределение обязанностей и ответственность сторон' className='input_view_clear' />
-              </div>
-            </div>
+            <ContentBlock isEditable={true}>
+              <Field width='full' size='l' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Распределение обязанностей и ответственность сторон' />
+            </ContentBlock>
             
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
-                
-                <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Распределение обязанностей и ответственность сторон при выполнении любых операций определяется в соответствии с приложениями к договорам на оказание услуг «Распределение обязанностей в процессе строительства скважин между Заказчиком, Буровым и Нефтесервисными подрядчиками, участвующими в строительстве скважин» или данной программой бурения.' className='input_view_clear decorator decorator_indent-b_l' />
-              </div>
-            </div>
+            <ContentBlock isEditable={true}>
+              <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Распределение обязанностей и ответственность сторон при выполнении любых операций определяется в соответствии с приложениями к договорам на оказание услуг «Распределение обязанностей в процессе строительства скважин между Заказчиком, Буровым и Нефтесервисными подрядчиками, участвующими в строительстве скважин» или данной программой бурения.' />
+            </ContentBlock>
             
-            <div className='content__main decorator decorator_indent-b_s decorator_indent-t_2xl'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
-                
-                <Field width='full' size='l' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Требования в области ОТ, ПБ и ООС' className='input_view_clear' />
-              </div>
-            </div>
+            <ContentBlock isEditable={true}>
+              <Field width='full' size='l' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Требования в области ОТ, ПБ и ООС' />
+            </ContentBlock>
             
-            <div className='content__main decorator decorator_indent-b_l'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
-                
-                <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Основной целью требований в области ОТ, ПБ и ООС является отсутствие в процессе проведения всего комплекса работ любых инцидентов, связанных с травмированием и потерей трудоспособности персонала, а также причинением ущерба окружающей среде. Все выполняемые работы обязаны соответствовать отраслевым нормативным документам, действующим на территории Российской Федерации, а также стандартам и нормативно — методическим документам ПАО «Газпром нефть».' className='input_view_clear' />
-              </div>
-            </div>
+            <ContentBlock isEditable={true}>
+              <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Основной целью требований в области ОТ, ПБ и ООС является отсутствие в процессе проведения всего комплекса работ любых инцидентов, связанных с травмированием и потерей трудоспособности персонала, а также причинением ущерба окружающей среде. Все выполняемые работы обязаны соответствовать отраслевым нормативным документам, действующим на территории Российской Федерации, а также стандартам и нормативно — методическим документам ПАО «Газпром нефть».' />
+            </ContentBlock>
           </ArticleSection>
           
           <ArticleSection header='Общая информация о буровом оборудовании и бурильном инструменте' tocList={tocList} team={team}>
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
-
-                <Text tag='h3' weight='regular' size='xl' view='primary' className='decorator decorator_indent-b_s'>Буровое оборудование</Text>
-              </div>
-            </div>
-            <div className='content__main'>
-              <table className='table table_editable decorator decorator_indent-b_2xl'>
+            <ContentBlock isEditable={true}>
+              <Text tag='h3' weight='regular' size='xl' view='primary'>Буровое оборудование</Text>
+            </ContentBlock>
+            <ContentBlock isEditable={true}>
+              <table className='table table_editable'>
                 <tbody>
                   <tr>
                     <td>
@@ -350,41 +103,13 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
             
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
-
-                <Text tag='h3' weight='regular' size='xl' view='primary' className='decorator decorator_indent-b_s'>Противовыбросовое оборудование</Text>
-              </div>
-            </div>
-            <div className='content__main'>
-              <table className='table table_editable decorator decorator_indent-b_2xl'>
+            <ContentBlock isEditable={true}>
+              <Text tag='h3' weight='regular' size='xl' view='primary'>Противовыбросовое оборудование</Text>
+            </ContentBlock>
+            <ContentBlock isEditable={true}>
+              <table className='table table_editable'>
                 <tbody>
                   <tr>
                     <td>
@@ -411,41 +136,13 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
             
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
-
-                <Text tag='h3' weight='regular' size='xl' view='primary' className='decorator decorator_indent-b_s'>Система очистки бурового раствора</Text>
-              </div>
-            </div>
-            <div className='content__main'>
-              <table className='table table_editable decorator decorator_indent-b_2xl'>
+            <ContentBlock isEditable={true}>
+              <Text tag='h3' weight='regular' size='xl' view='primary'>Система очистки бурового раствора</Text>
+            </ContentBlock>
+            <ContentBlock isEditable={true}>
+              <table className='table table_editable'>
                 <tbody>
                   <tr>
                     <td>
@@ -481,40 +178,12 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
             
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
-
-                <Text tag='h3' weight='regular' size='xl' view='primary' className='decorator decorator_indent-b_s'>Бурильный инструмент</Text>
-              </div>
-            </div>
-            <div className='content__main content__main_size_full'> 
+            <ContentBlock isEditable={true}>
+              <Text tag='h3' weight='regular' size='xl' view='primary'>Бурильный инструмент</Text>
+            </ContentBlock>
+            <ContentBlock isEditable={true} width='full'>
               <table className='table table_editable table_size_l'>
                 <thead>
                   <tr>
@@ -644,12 +313,12 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
           </ArticleSection>
 
           <ArticleSection header='Общая информация о скважине' tocList={tocList} team={team}>
-            <div className='content__main'>
-              <table className='table decorator decorator_indent-b_2xl'>
+            <ContentBlock>
+              <table className='table'>
                 <tbody>
                   <tr>
                     <td><Text size='m' view='primary' lineHeight='s'>Месторождение</Text></td>
@@ -750,11 +419,11 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
           </ArticleSection>
 
           <ArticleSection header='Конструкция скважины' tocList={tocList} team={team}>
-            <div className='content__main content__main_size_full'>
+            <ContentBlock size='full'>
               <table className='table table_editable' style={{ width: '1200px' }}>
                 <thead>
                   <tr>
@@ -960,12 +629,12 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
           </ArticleSection>
 
           <ArticleSection header='Испытание обсадных колонн и цементного камня на герметичность' tocList={tocList} team={team}>
-            <div className='content__main'>
-              <table className='table table_editable decorator decorator_indent-b_2xl'>
+            <ContentBlock isEditable={true}>
+              <table className='table table_editable'>
                 <thead>
                   <tr>
                     <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs'>Название колонны</Text>
@@ -1053,7 +722,7 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
           </ArticleSection>
 
           <ArticleSection header='Литолого-стратиграфическая характеристика разреза скважины' tocList={tocList} team={team}></ArticleSection>
@@ -1069,107 +738,6 @@ function GeologistProgrammPage() {
           <ArticleSection header='Требования к каротажным данным по отправке' tocList={tocList} team={team}></ArticleSection>
         </div>
       </div>
-
-      <template>
-        <div className='content__main templateTextBlock'>
-          <div className='block'>
-            <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-            <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-
-            <div className='block__popup'>
-              <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Текстовый блок</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Примечание</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Таблица</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Изображения</Text>
-              </div>
-            </div>
-
-            <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' className='input_view_clear decorator decorator_indent-b_l' />
-          </div>
-        </div>
-
-        <div className='content__main templateAlertBlock'>
-          <div className='block'>
-            <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd}/></div>
-            <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-            
-            <div className='block__popup'>
-              <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Текстовый блок</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Примечание</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Таблица</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Изображения</Text>
-              </div>
-            </div>
-            
-            <Informer status='system' view='filled' className='decorator decorator_indent-b_l'>
-              <Text size='m' view='primary' weight='bold'>Примечание</Text>
-              <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' className='input_view_clear' />
-            </Informer>
-          </div>
-        </div>
-
-        <div className='content__main templateImageBlock'>
-          <div className='block'>
-            <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-            <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-
-            <div className='block__popup'>
-              <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Текстовый блок</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Примечание</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Таблица</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Изображения</Text>
-              </div>
-            </div>
-            
-            <img src={IMGTemplate} alt=' ' className='decorator decorator_indent-b_l' />
-          </div>
-        </div>
-      </template>
     </div>
   );
 }

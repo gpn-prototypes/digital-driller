@@ -6,6 +6,7 @@ import TheHeader from '../../components/TheHeader/TheHeader';
 import Toc from '../../components/Toc/Toc';
 import TeamList from '../../components/TeamList/TeamList';
 import ArticleSection from '../../components/ArticleSection/ArticleSection';
+import ContentBlock from '../../components/ContentBlock/ContentBlock';
 
 import { tocList, team } from '../../mocks/newProgramm';
 import programmList from '../../mocks/programmList';
@@ -37,68 +38,40 @@ function GeologistProgrammPage() {
           </div>
           
           <ArticleSection header='Цель' tocList={tocList} team={team}>
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment}/></div>
-                
-                <Text size='m' view='primary' className='decorator decorator_indent-b_l'>Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.</Text>
-              </div>
-            </div>
+            <ContentBlock>
+              <Text size='m' view='primary'>Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.</Text>
+            </ContentBlock>
 
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <Informer status='system' view='filled' className='decorator decorator_indent-b_l'>
-                  <Text size='m' view='primary' weight='bold'>Примечание</Text>
-                  <Text size='m' view='primary'>Программа бурения составлена в соответствии с проектной документацией на строительство горизонтальных скважин на Новопортовском НГКМ. Данная программа предназначена в качестве руководства, которое необходимо соблюдать в процессе проведения работ, если фактические геолого-технические условия соответствуют проектным. В случае если геолого-технические условия в процессе проведения работ не будут соответствовать проектным, то Подрядчик обязан прекратить дальнейшее проведение работ, принять все меры по недопущению усугубления ситуации и согласовать проведение дальнейших работ с представителем Заказчика.</Text>
-                </Informer>
-              </div>
-            </div>
+            <ContentBlock>
+              <Informer status='system' view='filled'>
+                <Text size='m' view='primary' weight='bold'>Примечание</Text>
+                <Text size='m' view='primary'>Программа бурения составлена в соответствии с проектной документацией на строительство горизонтальных скважин на Новопортовском НГКМ. Данная программа предназначена в качестве руководства, которое необходимо соблюдать в процессе проведения работ, если фактические геолого-технические условия соответствуют проектным. В случае если геолого-технические условия в процессе проведения работ не будут соответствовать проектным, то Подрядчик обязан прекратить дальнейшее проведение работ, принять все меры по недопущению усугубления ситуации и согласовать проведение дальнейших работ с представителем Заказчика.</Text>
+              </Informer>
+            </ContentBlock>
 
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-
-                <Text tag='h3' weight='regular' size='xl' view='primary' className='decorator decorator_indent-b_s decorator_indent-t_2xl'>Распределение обязанностей и ответственность сторон</Text>
-              </div>
-            </div>
+            <ContentBlock>
+              <Text tag='h3' weight='regular' size='xl' view='primary'>Распределение обязанностей и ответственность сторон</Text>
+            </ContentBlock>
             
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <Text size='m' view='primary' className='decorator decorator_indent-b_l'>Распределение обязанностей и ответственность сторон при выполнении любых операций определяется в соответствии с приложениями к договорам на оказание услуг «Распределение обязанностей в процессе строительства скважин между Заказчиком, Буровым и Нефтесервисными подрядчиками, участвующими в строительстве скважин» или данной программой бурения.</Text>
-              </div>
-            </div>
+            <ContentBlock>
+              <Text size='m' view='primary'>Распределение обязанностей и ответственность сторон при выполнении любых операций определяется в соответствии с приложениями к договорам на оказание услуг «Распределение обязанностей в процессе строительства скважин между Заказчиком, Буровым и Нефтесервисными подрядчиками, участвующими в строительстве скважин» или данной программой бурения.</Text>
+            </ContentBlock>
             
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <Text tag='h3' weight='regular' size='xl' view='primary' className='decorator decorator_indent-b_s decorator_indent-t_2xl'>Требования в области ОТ, ПБ и ООС</Text>
-              </div>
-            </div>
+            <ContentBlock>
+              <Text tag='h3' weight='regular' size='xl' view='primary'>Требования в области ОТ, ПБ и ООС</Text>
+            </ContentBlock>
             
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <Text size='m' view='primary' className='decorator decorator_indent-b_l'>Основной целью требований в области ОТ, ПБ и ООС является отсутствие в процессе проведения всего комплекса работ любых инцидентов, связанных с травмированием и потерей трудоспособности персонала, а также причинением ущерба окружающей среде. Все выполняемые работы обязаны соответствовать отраслевым нормативным документам, действующим на территории Российской Федерации, а также стандартам и нормативно — методическим документам ПАО «Газпром нефть».</Text>
-              </div>
-            </div>
+            <ContentBlock>
+              <Text size='m' view='primary'>Основной целью требований в области ОТ, ПБ и ООС является отсутствие в процессе проведения всего комплекса работ любых инцидентов, связанных с травмированием и потерей трудоспособности персонала, а также причинением ущерба окружающей среде. Все выполняемые работы обязаны соответствовать отраслевым нормативным документам, действующим на территории Российской Федерации, а также стандартам и нормативно — методическим документам ПАО «Газпром нефть».</Text>
+            </ContentBlock>
           </ArticleSection>
           
           <ArticleSection header='Общая информация о буровом оборудовании и бурильном инструменте' tocList={tocList} team={team}>
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <Text tag='h3' weight='regular' size='xl' view='primary' className='decorator decorator_indent-b_s'>Буровое оборудование</Text>
-              </div>
-            </div>
-            <div className='content__main'>
-              <table className='table decorator decorator_indent-b_2xl'>
+            <ContentBlock>
+              <Text tag='h3' weight='regular' size='xl' view='primary'>Буровое оборудование</Text>
+            </ContentBlock>
+            <ContentBlock>
+              <table className='table'>
                 <tbody>
                   <tr>
                     <td><Text size='m' view='primary' lineHeight='s'>Буровая установка</Text></td>
@@ -114,17 +87,13 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
             
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <Text tag='h3' weight='regular' size='xl' view='primary' className='decorator decorator_indent-b_s'>Противовыбросовое оборудование</Text>
-              </div>
-            </div>
-            <div className='content__main'>
-              <table className='table decorator decorator_indent-b_2xl'>
+            <ContentBlock>
+              <Text tag='h3' weight='regular' size='xl' view='primary'>Противовыбросовое оборудование</Text>
+            </ContentBlock>
+            <ContentBlock>
+              <table className='table'>
                 <tbody>
                   <tr>
                     <td><Text size='m' view='primary' lineHeight='s'>Плашечные превенторы</Text></td>
@@ -136,17 +105,13 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
             
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <Text tag='h3' weight='regular' size='xl' view='primary' className='decorator decorator_indent-b_s'>Система очистки бурового раствора</Text>
-              </div>
-            </div>
-            <div className='content__main'>
-              <table className='table decorator decorator_indent-b_2xl'>
+            <ContentBlock>
+              <Text tag='h3' weight='regular' size='xl' view='primary'>Система очистки бурового раствора</Text>
+            </ContentBlock>
+            <ContentBlock>
+              <table className='table'>
                 <tbody>
                   <tr>
                     <td><Text size='m' view='primary' lineHeight='s'>Вибросита</Text></td>
@@ -162,17 +127,13 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
             
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <Text tag='h3' weight='regular' size='xl' view='primary' className='decorator decorator_indent-b_s'>Бурильный инструмент</Text>
-              </div>
-            </div>
-            <div className='content__main content__main_size_full'> 
-              <table className='table table_size_l decorator decorator_indent-b_2xl'>
+            <ContentBlock>
+              <Text tag='h3' weight='regular' size='xl' view='primary'>Бурильный инструмент</Text>
+            </ContentBlock>
+            <ContentBlock size='full'>
+              <table className='table table_size_l'>
                 <thead>
                   <tr>
                     <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs'>Наименование</Text>
@@ -228,12 +189,12 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
           </ArticleSection>
 
           <ArticleSection header='Общая информация о скважине' tocList={tocList} team={team}>
-            <div className='content__main'>
-              <table className='table decorator decorator_indent-b_2xl'>
+            <ContentBlock>
+              <table className='table'>
                 <tbody>
                   <tr>
                     <td><Text size='m' view='primary' lineHeight='s'>Месторождение</Text></td>
@@ -334,12 +295,12 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
           </ArticleSection>
 
           <ArticleSection header='Конструкция скважины' tocList={tocList} team={team}>
-            <div className='content__main content__main_size_full'>
-              <table className='table decorator decorator_indent-b_2xl'>
+            <ContentBlock size='full'>
+              <table className='table'>
                 <thead>
                   <tr>
                     <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs'>Наименование колонн</Text>
@@ -403,12 +364,12 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
           </ArticleSection>
 
           <ArticleSection header='Испытание обсадных колонн и цементного камня на герметичность' tocList={tocList} team={team}>
-            <div className='content__main'>
-              <table className='table decorator decorator_indent-b_2xl'>
+            <ContentBlock>
+              <table className='table'>
                 <thead>
                   <tr>
                     <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs'>Название колонны</Text>
@@ -449,11 +410,11 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
           </ArticleSection>
 
           <ArticleSection header='Литолого-стратиграфическая характеристика разреза скважины' tocList={tocList} team={team}>
-            <div className='content__main content__main_size_full'>
+            <ContentBlock isEditable={true}>
               <table className='table table_editable'>
                 <thead>
                   <tr>
@@ -654,11 +615,11 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
           </ArticleSection>
 
           <ArticleSection header='Профиль ствола скважины' tocList={tocList} team={team}>
-            <div className='content__main content__main_size_full'>
+            <ContentBlock isEditable={true} size='full'>
               <table className='table table_editable' style={{ width: '1680px' }}>
                 <thead>
                   <tr>
@@ -910,118 +871,30 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
             
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
-                
-                <Informer status='system' view='filled' className='decorator decorator_indent-v_l'>
-                  <Text size='m' view='primary' weight='bold'>Примечание</Text>                  
-                  <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Максимально допустимая пространственная интенсивность в интервале набора параметров кривизны определяется от плановой + 0,50/10м. Максимально допустимая пространственная интенсивность в интервале стабилизации не более 10/10м. Максимально допустимая пространственная интенсивность в зоне ГНО не более 0.30/10м.' className='input_view_clear' />
-                </Informer>
-              </div>
-            </div>
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
-
-                <img src={IMGProfileOfTheWellbore} alt=' ' />
-              </div>
-            </div>
+            <ContentBlock isEditable={true}>
+              <Informer status='system' view='filled'>
+                <Text size='m' view='primary' weight='bold'>Примечание</Text>                  
+                <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Максимально допустимая пространственная интенсивность в интервале набора параметров кривизны определяется от плановой + 0,50/10м. Максимально допустимая пространственная интенсивность в интервале стабилизации не более 10/10м. Максимально допустимая пространственная интенсивность в зоне ГНО не более 0.30/10м.' />
+              </Informer>
+            </ContentBlock>
+            <ContentBlock isEditable={true}>
+              <img src={IMGProfileOfTheWellbore} alt=' ' />
+            </ContentBlock>
           </ArticleSection>
 
           <ArticleSection header='Отчет о рисках пересечения стволов скважин' tocList={tocList} team={team}>
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <img src={IMGRiskReportTheIntersectionOfTheWellbore} alt=' '/>
-              </div>
-            </div>
+            <ContentBlock>
+              <img src={IMGRiskReportTheIntersectionOfTheWellbore} alt=' '/>
+            </ContentBlock>
           </ArticleSection>
 
           <ArticleSection header='Программа геофизических исследований и каротажа в процессе бурения' tocList={tocList} team={team}>
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
-                
-                <Text tag='h3' weight='regular' size='xl' view='primary' className='decorator decorator_indent-b_s'>Буровое оборудование</Text>
-              </div>
-            </div>
-            <div className='content__main content__main_size_full'>
+            <ContentBlock isEditable={true}>
+              <Text tag='h3' weight='regular' size='xl' view='primary'>Буровое оборудование</Text>
+            </ContentBlock>
+            <ContentBlock isEditable={true} size='full'>
               <table className='table table_editable'>
                 <thead>
                   <tr>
@@ -1111,117 +984,65 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
             
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-
-                <div className='block__popup'>
-                  <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Текстовый блок</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Примечание</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Таблица</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                  </div>
-                  <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                    <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                    <Text size='s' view='primary'>Изображения</Text>
-                  </div>
-                </div>
-                
-                <Informer status='system' view='filled' className='decorator decorator_indent-b_l decorator_indent-t_2xl'>
-                  <Text size='m' view='primary' weight='bold'>Примечание</Text>
-                  <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Перед началом бурения скважины согласовать с геологической службой Заказчика порядок предоставления каротажных данных и список рассылки. Интервал перезаписи каротажных данных после смены КНБК согласовать с геологической службой Заказчика.' className='input_view_clear' />
-                </Informer>
-              </div>
-            </div>
+            <ContentBlock isEditable={true}>
+              <Informer status='system' view='filled'>
+                <Text size='m' view='primary' weight='bold'>Примечание</Text>
+                <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Перед началом бурения скважины согласовать с геологической службой Заказчика порядок предоставления каротажных данных и список рассылки. Интервал перезаписи каротажных данных после смены КНБК согласовать с геологической службой Заказчика.' />
+              </Informer>
+            </ContentBlock>
           </ArticleSection>
 
           <ArticleSection header='Порядок снятия замера при бурении' tocList={tocList} team={team}>
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <Text size='m' view='primary' className='decorator decorator_indent-b_l'>Частота взятия замеров на участке стабилизации каждые 24м, снятие замеров после наращивания*. В интервалах набора параметров кривизны (по мере необходимости) и в случае сближения с ранее пробуренными скважинами каждые 12м, снятие замеров до наращивания**.</Text>
-              </div>
-            </div>
+            <ContentBlock>
+              <Text size='m' view='primary'>Частота взятия замеров на участке стабилизации каждые 24м, снятие замеров после наращивания*. В интервалах набора параметров кривизны (по мере необходимости) и в случае сближения с ранее пробуренными скважинами каждые 12м, снятие замеров до наращивания**.</Text>
+            </ContentBlock>
             
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <Text size='m' view='primary' className='decorator decorator_indent-b_l'>При бурении секции под хвостовик (152,4мм) снятие замеров производить согласно протоколу ПТ-4/038 от 07.10.16г., снятие замера после наращивания.</Text>
-              </div>
-            </div>
+            <ContentBlock>
+              <Text size='m' view='primary'>При бурении секции под хвостовик (152,4мм) снятие замеров производить согласно протоколу ПТ-4/038 от 07.10.16г., снятие замера после наращивания.</Text>
+            </ContentBlock>
           </ArticleSection>
 
           <ArticleSection header='Требования к каротажным данным по отправке' tocList={tocList} team={team}>
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <Text size='m' view='primary' className='decorator decorator_indent-b_l'>В транспортном стволе периодичность:</Text>
-              </div>
-            </div>
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-              
-                <ul>
-                  <li><Text size='m' view='primary'>— выше 150 м до Т2 по вертикали — замеры высылаются дважды в сутки на 06:00 и 17:00.</Text></li>
-                  <li><Text size='m' view='primary'>— за 150 м до Т2 по вертикали — каждую пробуренную «свечу».</Text></li>
-                  <li><Text size='m' view='primary'>— за 80 м до Т2 по вертикали — каждую пробуренную «трубку» (по согласованию с ЦУБ).</Text></li>
-                </ul>
-              </div>
-            </div>
+            <ContentBlock>
+              <Text size='m' view='primary'>В транспортном стволе периодичность:</Text>
+            </ContentBlock>
+            <ContentBlock>
+              <ul>
+                <li><Text size='m' view='primary'>— выше 150 м до Т2 по вертикали — замеры высылаются дважды в сутки на 06:00 и 17:00.</Text></li>
+                <li><Text size='m' view='primary'>— за 150 м до Т2 по вертикали — каждую пробуренную «свечу».</Text></li>
+                <li><Text size='m' view='primary'>— за 80 м до Т2 по вертикали — каждую пробуренную «трубку» (по согласованию с ЦУБ).</Text></li>
+              </ul>
+            </ContentBlock>
 
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <Text size='m' view='primary' className='decorator decorator_indent-b_l'>В горизонтальном стволе периодичность:</Text>
-              </div>
-            </div>
-            <div className='content__main'>
-              <div className='block'>
-                <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-                
-                <ul>
-                  <li><Text size='m' view='primary'>— Интервал перезаписи в эксплуатационной колонне, перед разбуриванием оснастки, согласовывается с геологической службой заказчика.</Text></li>
-                  <li><Text size='m' view='primary'>— Разбурив оснастку + 12м (трубка) отправить замер в (экселе), далее пробурив еще 12м отправить полный замер (эксель + PDF+ las), далее замеры с полным пакетом каротажных данных каждую трубку.</Text></li>
-                  <li><Text size='m' view='primary'>*- После добуривания свечи, перед отрывом от забоя производить промывку до полной выработки осевой нагрузки на долото, нормализации давления и крутящего момента на ВСП но не менее двух минут.</Text></li>
-                  <li><Text size='m' view='primary'>— произвести проработку пробуренного интервала с расхаживанием на длину свечи (при движении вверх 30 об/мин не допуская затяжки до 5т, не допускать увеличения и скачков крутящего момента; движение вниз c вращением 50 об/мин);</Text></li>
-                  <li><Text size='m' view='primary'>— остановить вращение, произвести расхаживание на длину свечи, установить долото на расстояние 1-2 м от забоя;</Text></li>
-                  <li><Text size='m' view='primary'>— выключить насосы, произвести наращивание;</Text></li>
-                  <li><Text size='m' view='primary'>— восстановить циркуляцию, дождаться выхода замера в течение 3 минут после запуска насосов (время выхода замера);</Text></li>
-                  <li><Text size='m' view='primary'>— не оставлять движение инструмента более 3 минут, ответственный за отслеживание времени инженер ННБ, после подачи команды на движение бурильщик буровой компании обязан принять меры по исполнению команды, время на принятие команды и исполнение не более 5 секунд. Контроль за исполнением супервайзер ООО «Газпромнефть-Ямал». Отв. Инженер ННБ, Буровой мастер</Text></li>
-                  <li><Text size='m' view='primary'>— в любом случае (если инженер по ННБ не дал команду), согласно мероприятий по предупреждению аварий, бурильщик должен принять соответствующие меры и не оставлять инструмент без движения более 3 минут. Отв. Буровой мастер</Text></li>
-                  <li><Text size='m' view='primary'>— продолжить бурение.</Text></li>
-                  <li><Text size='m' view='primary'>** После добуривания свечи, перед отрывом от забоя производить промывку до полной выработки осевой нагрузки на долото, нормализации давления и крутящего момента на ВСП но не менее двух минут;</Text></li>
-                  <li><Text size='m' view='primary'>— произвести проработку пробуренного интервала с расхаживанием на длину свечи при движении вверх 30 об/мин не допуская затяжки до 5т, не допускать увеличения и скачков крутящего момента; движение вниз c вращением 50 об/мин);</Text></li>
-                  <li><Text size='m' view='primary'>— остановить вращение, произвести расхаживание на длину свечи, установить долото на расстояние 1-2 м от забоя;</Text></li>
-                  <li><Text size='m' view='primary'>— выключить насосы, на одну минуту для снятия замера оставить инструмент без движения;</Text></li>
-                  <li><Text size='m' view='primary'>— восстановить циркуляцию, включить вращение ВСП, дождаться выхода замера (ориентировочно 4 — 5 минут);</Text></li>
-                  <li><Text size='m' view='primary'>— произвести наращивание (максимально сократить время оставления инструмента без движения);</Text></li>
-                  <li><Text size='m' view='primary'>— продолжить бурение.</Text></li>
-                </ul>
-              </div>
-            </div>
+            <ContentBlock>
+              <Text size='m' view='primary'>В горизонтальном стволе периодичность:</Text>
+            </ContentBlock>
+            <ContentBlock>
+              <ul>
+                <li><Text size='m' view='primary'>— Интервал перезаписи в эксплуатационной колонне, перед разбуриванием оснастки, согласовывается с геологической службой заказчика.</Text></li>
+                <li><Text size='m' view='primary'>— Разбурив оснастку + 12м (трубка) отправить замер в (экселе), далее пробурив еще 12м отправить полный замер (эксель + PDF+ las), далее замеры с полным пакетом каротажных данных каждую трубку.</Text></li>
+                <li><Text size='m' view='primary'>*- После добуривания свечи, перед отрывом от забоя производить промывку до полной выработки осевой нагрузки на долото, нормализации давления и крутящего момента на ВСП но не менее двух минут.</Text></li>
+                <li><Text size='m' view='primary'>— произвести проработку пробуренного интервала с расхаживанием на длину свечи (при движении вверх 30 об/мин не допуская затяжки до 5т, не допускать увеличения и скачков крутящего момента; движение вниз c вращением 50 об/мин);</Text></li>
+                <li><Text size='m' view='primary'>— остановить вращение, произвести расхаживание на длину свечи, установить долото на расстояние 1-2 м от забоя;</Text></li>
+                <li><Text size='m' view='primary'>— выключить насосы, произвести наращивание;</Text></li>
+                <li><Text size='m' view='primary'>— восстановить циркуляцию, дождаться выхода замера в течение 3 минут после запуска насосов (время выхода замера);</Text></li>
+                <li><Text size='m' view='primary'>— не оставлять движение инструмента более 3 минут, ответственный за отслеживание времени инженер ННБ, после подачи команды на движение бурильщик буровой компании обязан принять меры по исполнению команды, время на принятие команды и исполнение не более 5 секунд. Контроль за исполнением супервайзер ООО «Газпромнефть-Ямал». Отв. Инженер ННБ, Буровой мастер</Text></li>
+                <li><Text size='m' view='primary'>— в любом случае (если инженер по ННБ не дал команду), согласно мероприятий по предупреждению аварий, бурильщик должен принять соответствующие меры и не оставлять инструмент без движения более 3 минут. Отв. Буровой мастер</Text></li>
+                <li><Text size='m' view='primary'>— продолжить бурение.</Text></li>
+                <li><Text size='m' view='primary'>** После добуривания свечи, перед отрывом от забоя производить промывку до полной выработки осевой нагрузки на долото, нормализации давления и крутящего момента на ВСП но не менее двух минут;</Text></li>
+                <li><Text size='m' view='primary'>— произвести проработку пробуренного интервала с расхаживанием на длину свечи при движении вверх 30 об/мин не допуская затяжки до 5т, не допускать увеличения и скачков крутящего момента; движение вниз c вращением 50 об/мин);</Text></li>
+                <li><Text size='m' view='primary'>— остановить вращение, произвести расхаживание на длину свечи, установить долото на расстояние 1-2 м от забоя;</Text></li>
+                <li><Text size='m' view='primary'>— выключить насосы, на одну минуту для снятия замера оставить инструмент без движения;</Text></li>
+                <li><Text size='m' view='primary'>— восстановить циркуляцию, включить вращение ВСП, дождаться выхода замера (ориентировочно 4 — 5 минут);</Text></li>
+                <li><Text size='m' view='primary'>— произвести наращивание (максимально сократить время оставления инструмента без движения);</Text></li>
+                <li><Text size='m' view='primary'>— продолжить бурение.</Text></li>
+              </ul>
+            </ContentBlock>
 
-            <div className='content__main content__main_size_full'>
-              <table className='table decorator decorator_indent-b_2xl'>
+            <ContentBlock size='full'>
+              <table className='table'>
                 <thead>
                   <tr>
                     <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='2xs' transform='uppercase' spacing='xs'>№</Text>
@@ -1322,111 +1143,10 @@ function GeologistProgrammPage() {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </ContentBlock>
           </ArticleSection>
         </div>
       </div>
-
-      <template>
-        <div className='content__main templateTextBlock'>
-          <div className='block'>
-            <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-            <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-
-            <div className='block__popup'>
-              <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Текстовый блок</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Примечание</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Таблица</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Изображения</Text>
-              </div>
-            </div>
-
-            <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' className='input_view_clear decorator decorator_indent-b_l' />
-          </div>
-        </div>
-
-        <div className='content__main templateAlertBlock'>
-          <div className='block'>
-            <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd}/></div>
-            <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-            
-            <div className='block__popup'>
-              <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Текстовый блок</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Примечание</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Таблица</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Изображения</Text>
-              </div>
-            </div>
-            
-            <Informer status='system' view='filled' className='decorator decorator_indent-b_l'>
-              <Text size='m' view='primary' weight='bold'>Примечание</Text>
-              <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' className='input_view_clear' />
-            </Informer>
-          </div>
-        </div>
-
-        <div className='content__main templateImageBlock'>
-          <div className='block'>
-            <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>
-            <div className='block__right-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} /></div>
-
-            <div className='block__popup'>
-              <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Текстовый блок</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Примечание</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Таблица</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-              </div>
-              <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                <Text size='s' view='primary'>Изображения</Text>
-              </div>
-            </div>
-            
-            <img src={IMGTemplate} alt=' ' className='decorator decorator_indent-b_l' />
-          </div>
-        </div>
-      </template>
     </div>
   );
 }

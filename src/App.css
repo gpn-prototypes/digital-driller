@@ -57,7 +57,8 @@ h1, h2, h3, h4, h5, h6, p {
 .content__main {
   max-width: 100%;
   width: 700px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 .content__main_size_full {
   width: calc(100% - var(--space-2xl) * 2);
@@ -140,55 +141,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-top: 1px solid var(--color-bg-border);
 }
 
-
-.block {
-  position: relative;
-  padding-left: var(--space-4xl);
-  padding-right: var(--space-4xl);
-  margin-left: calc(-1 * var(--space-4xl));
-  margin-right: calc(-1 * var(--space-4xl));
-}
-  .block:hover .block__right-button, .block:hover .block__left-button {
-    opacity: 1;
-  }
-  .block__right-button, .block__left-button {
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    transition: opacity 0.25s ease;
-  }
-  .block__right-button {
-    right: 0;
-  }
-  .block__left-button {
-    left: 0;
-  }
-
 .choice-group__button:not(.choice-group__button_checked) {
   background-color: transparent;
 }
 
-.block_show-popup .block__popup {
-  display: block;
-}
-.block__popup {
-  position: absolute;
-  width: 260px;
-  padding: var(--space-s) 0;
-  left: 38px;
-  top: -14px;
-
-  background: var(--color-bg-default);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
-  border-radius: 8px;
-  z-index: 1;
-  display: none;
-}
-  .block__popup-item {
-    padding: var(--space-xs) var(--space-s);
-    transition: background-color 0.25s ease;
-  }
-    .block__popup-item:hover {
-      background-color: var(--color-bg-stripe);
-      cursor: pointer;
-    }
