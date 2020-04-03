@@ -64,20 +64,27 @@ h1, h2, h3, h4, h5, h6, p {
   width: calc(100% - var(--space-2xl) * 2);
   overflow-x: auto;
 }
-.content__main li {
-  margin-bottom: var(--space-m);
-}
-.content__main ul, ol {
+.content__article ul, ol {
   margin-bottom: var(--space-2xl);
 }
-.content__main img {
+  .content__article li {
+    position: relative;
+    padding-left: var(--space-xl);
+  }
+    .content__article li:after {
+      content: '—';
+      position: absolute;
+      top: 0.1em;
+      left: 0;
+    }
+.content__article img {
   max-width: 100%;
 }
 .content__sidebar {
   box-sizing: border-box;
   height: calc(100vh - 60px);
   padding: var(--space-2xl);
-  overflow-y: scroll;
+  overflow-y: auto;
   background-color: var(--color-bg-secondary);
 }
 .content__article {

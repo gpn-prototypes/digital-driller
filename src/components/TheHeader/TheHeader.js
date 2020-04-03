@@ -29,7 +29,7 @@ function TheHeader(props) {
           </div>
 
           <div className='header__module header__module_indent_m'>
-            <Button size='m' view='primary' as='a' href={role === 'Куратор' ? '/geologist/list:true' : '/curator/list:true'} label='Сохранить черновик' />
+            <Button size='s' view='primary' as='a' href={role === 'Куратор' ? '/geologist/list:true' : '/curator/list:true'} label='Сохранить черновик' />
           </div>
 
           <div className='header__module header__module_indent_s'>

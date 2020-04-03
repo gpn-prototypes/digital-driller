@@ -34,39 +34,39 @@ function GeologistProgrammPage() {
           </div>
           
           <ArticleSection header='Цель' tocList={tocList} team={team}>
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='text'>
               <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
             </ContentBlock>
 
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='informer'>
               <Informer status='system' view='filled'>
                 <Text size='m' view='primary' weight='bold'>Примечание</Text>
                 <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Программа бурения составлена в соответствии с проектной документацией на строительство горизонтальных скважин на Новопортовском НГКМ. Данная программа предназначена в качестве руководства, которое необходимо соблюдать в процессе проведения работ, если фактические геолого-технические условия соответствуют проектным. В случае если геолого-технические условия в процессе проведения работ не будут соответствовать проектным, то Подрядчик обязан прекратить дальнейшее проведение работ, принять все меры по недопущению усугубления ситуации и согласовать проведение дальнейших работ с представителем Заказчика.' />
               </Informer>
             </ContentBlock>
 
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='h3'>
               <Field width='full' size='l' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Распределение обязанностей и ответственность сторон' />
             </ContentBlock>
             
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='text'>
               <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Распределение обязанностей и ответственность сторон при выполнении любых операций определяется в соответствии с приложениями к договорам на оказание услуг «Распределение обязанностей в процессе строительства скважин между Заказчиком, Буровым и Нефтесервисными подрядчиками, участвующими в строительстве скважин» или данной программой бурения.' />
             </ContentBlock>
             
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='h3'>
               <Field width='full' size='l' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Требования в области ОТ, ПБ и ООС' />
             </ContentBlock>
             
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='text'>
               <Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Основной целью требований в области ОТ, ПБ и ООС является отсутствие в процессе проведения всего комплекса работ любых инцидентов, связанных с травмированием и потерей трудоспособности персонала, а также причинением ущерба окружающей среде. Все выполняемые работы обязаны соответствовать отраслевым нормативным документам, действующим на территории Российской Федерации, а также стандартам и нормативно — методическим документам ПАО «Газпром нефть».' />
             </ContentBlock>
           </ArticleSection>
           
           <ArticleSection header='Общая информация о буровом оборудовании и бурильном инструменте' tocList={tocList} team={team}>
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='h3'>
               <Text tag='h3' weight='regular' size='xl' view='primary'>Буровое оборудование</Text>
             </ContentBlock>
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='table'>
               <table className='table table_editable'>
                 <tbody>
                   <tr>
@@ -105,10 +105,10 @@ function GeologistProgrammPage() {
               </table>
             </ContentBlock>
             
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='h3'>
               <Text tag='h3' weight='regular' size='xl' view='primary'>Противовыбросовое оборудование</Text>
             </ContentBlock>
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='table'>
               <table className='table table_editable'>
                 <tbody>
                   <tr>
@@ -138,10 +138,10 @@ function GeologistProgrammPage() {
               </table>
             </ContentBlock>
             
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='h3'>
               <Text tag='h3' weight='regular' size='xl' view='primary'>Система очистки бурового раствора</Text>
             </ContentBlock>
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='table'>
               <table className='table table_editable'>
                 <tbody>
                   <tr>
@@ -180,10 +180,10 @@ function GeologistProgrammPage() {
               </table>
             </ContentBlock>
             
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='text'>
               <Text tag='h3' weight='regular' size='xl' view='primary'>Бурильный инструмент</Text>
             </ContentBlock>
-            <ContentBlock isEditable={true} width='full'>
+            <ContentBlock isEditable={true} width='full' type='table'>
               <table className='table table_editable table_size_l'>
                 <thead>
                   <tr>
@@ -317,7 +317,7 @@ function GeologistProgrammPage() {
           </ArticleSection>
 
           <ArticleSection header='Общая информация о скважине' tocList={tocList} team={team}>
-            <ContentBlock>
+            <ContentBlock type='table'>
               <table className='table'>
                 <tbody>
                   <tr>
@@ -423,7 +423,7 @@ function GeologistProgrammPage() {
           </ArticleSection>
 
           <ArticleSection header='Конструкция скважины' tocList={tocList} team={team}>
-            <ContentBlock size='full'>
+            <ContentBlock size='full' type='table'>
               <table className='table table_editable' style={{ width: '1200px' }}>
                 <thead>
                   <tr>
@@ -633,7 +633,7 @@ function GeologistProgrammPage() {
           </ArticleSection>
 
           <ArticleSection header='Испытание обсадных колонн и цементного камня на герметичность' tocList={tocList} team={team}>
-            <ContentBlock isEditable={true}>
+            <ContentBlock isEditable={true} type='table'>
               <table className='table table_editable'>
                 <thead>
                   <tr>

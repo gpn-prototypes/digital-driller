@@ -51,8 +51,24 @@ setTimeout(() => {
 }, 500);
 
 function ContentBlock(props) {
-  const { isEditable, size, className, children } = props;
-  let sizeClassName = size === 'full' ? ' content__main_size_full ' : '';
+  const { isEditable, size, type, className = '', children } = props;
+  let sizeClassName = size === 'full' ? 'content__main_size_full' : '';
+  let indentsClassName = '';
+
+  if(type === 'h3')
+    indentsClassName = 'decorator_indent-b_s decorator_indent-t_2xl';
+  else if(type === 'text')
+    indentsClassName = 'decorator_indent-b_l';
+  else if(type === 'table')
+    indentsClassName = 'decorator_indent-b_3xl';
+  else if(type === 'image')
+    indentsClassName = 'decorator_indent-v_3xl';
+  else if(type === 'listname')
+    indentsClassName = 'decorator_indent-b_m';
+  else if(type === 'listitem')
+    indentsClassName = 'decorator_indent-b_m';
+  else if(type === 'informer')
+    indentsClassName = 'decorator_indent-b_l';
   
   let addNewBlockButton = <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>;
   let popup = <div className='block__popup'>
@@ -79,7 +95,7 @@ function ContentBlock(props) {
               </div>;
 
   return (
-    <div className={'content__main block block_editable decorator decorator_indent-b_l ' + sizeClassName + className}>
+    <div className={'content__main block block_editable decorator' + ' ' + indentsClassName + ' ' + sizeClassName + ' ' + className}>
       {isEditable ? addNewBlockButton : ''}
       <div className='block__right-button'>
         <Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} />

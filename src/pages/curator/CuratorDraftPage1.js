@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text, Button, IconForward, TextField, IconCalendar } from '@gpn-design/uikit';
+import { Text, Button, IconForward, IconCalendar } from '@gpn-design/uikit';
+import Field from '../../components/Field/Field';
 import TheHeader from '../../components/TheHeader/TheHeader';
 import TheFooter from '../../components/TheFooter/TheFooter';
 
@@ -16,111 +17,111 @@ function CuratorDraftPage1() {
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Месторождение</Text>
-              <TextField width='full' size='m' type='text' placeholder='Выберите месторождение' value='Оренбургское' />
+              <Field width='full' size='m' type='text' placeholder='Выберите месторождение' dValue='Оренбургское' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Кустовая площадь</Text>
-              <TextField width='full' size='m' type='text' placeholder='Выберите кустовую площадь' value='14' />
+              <Field width='full' size='m' type='text' placeholder='Выберите кустовую площадь' dValue='14' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Куст</Text>
-              <TextField width='full' size='m' type='text' placeholder='Выберите куст' value='10' />
+              <Field width='full' size='m' type='text' placeholder='Выберите куст' dValue='10' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Номер скважины</Text>
-              <TextField width='full' size='m' type='text'  placeholder='Выберите скважину' value='5238' />
+              <Field width='full' size='m' type='text'  placeholder='Выберите скважину' dValue='5238' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Назначение скважины</Text>
-              <TextField width='full' size='m' type='text' placeholder='Выберите назначение скважины' value='Эксплуотационная' />
+              <Field width='full' size='m' type='text' placeholder='Выберите назначение скважины' dValue='Эксплуотационная' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Тип скважины</Text>
-              <TextField width='full' size='m' type='text' placeholder='Выберите тип скважины' value='ГС 1000' />
+              <Field width='full' size='m' type='text' placeholder='Выберите тип скважины' dValue='ГС 1000' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Индекс сложности скважины</Text>
-              <TextField size='m' type='text' placeholder='0' value='6.582' rightSide='DDI' className='input_width_number' />
+              <Field size='m' type='number' placeholder='0' dValue='6.582' rightSide='DDI' className='input_width_number' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Передвижка БУ на</Text>
-              <TextField size='m' type='text' placeholder='0' value='9' rightSide='м' className='input_width_number' />
+              <Field size='m' type='number' placeholder='0' dValue='9' rightSide='м' className='input_width_number' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Нулевая отметка</Text>
-              <TextField width='full' size='m' type='text' placeholder='Опишите нулевую отметку' value='Столб ротора' />
+              <Field width='full' size='m' type='text' placeholder='Опишите нулевую отметку' dValue='Столб ротора' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Плановая альтитуда стола ротора</Text>
               <div className='pt-form__control'>
-                <TextField width='full' size='m' type='text' placeholder='0' value='49.64' leftSide='От уровня моря' rightSide='м' className='decorator decorator_indent-b_xs' />
-                <TextField width='full' size='m' type='text' placeholder='0' value='39.63' leftSide='От уровня земли' rightSide='м' />
+                <Field width='full' size='m' type='text' placeholder='0' dValue='49.64' leftSide='От уровня моря' rightSide='м' className='decorator decorator_indent-b_xs' />
+                <Field width='full' size='m' type='text' placeholder='0' dValue='39.63' leftSide='От уровня земли' rightSide='м' />
               </div>
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Географические координаты устья скважины</Text>
-              <TextField size='m' form='default-clear' type='text' placeholder='00° 00′ 00' value='67° 50′ 24.529' rightSide='N' className='input_width_coordinates' />
-              <TextField size='m' form='brick-clear' type='text' placeholder='00° 00′ 00' value='72° 34′ 22.819' rightSide='E' className='input_width_coordinates' />
-              <TextField width='full' size='m' form='brick-default' type='text' placeholder='0' value='49.64' leftSide='Z:' rightSide='м' />
+              <Field size='m' form='default-clear' type='text' placeholder='00° 00′ 00' dValue='67° 50′ 24.529' rightSide='N' className='input_width_coordinates' />
+              <Field size='m' form='brick-clear' type='text' placeholder='00° 00′ 00' dValue='72° 34′ 22.819' rightSide='E' className='input_width_coordinates' />
+              <Field width='full' size='m' form='brick-default' type='text' placeholder='0' dValue='49.64' leftSide='Z:' rightSide='м' />
             </div>
 
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Географические координаты точки Т2</Text>
-              <TextField size='m' form='default-clear' type='text' placeholder='00° 00′ 00' value='67° 49′ 28.618' rightSide='N' className='input_width_coordinates' />
-              <TextField size='m' form='brick-clear' type='text' placeholder='00° 00′ 00' value='72° 32′ 38.960' rightSide='E' className='input_width_coordinates' />
-              <TextField width='full' size='m' form='brick-default' type='text' placeholder='0' value='1892.64' leftSide='Z:' rightSide='м' />
+              <Field size='m' form='default-clear' type='text' placeholder='00° 00′ 00' dValue='67° 49′ 28.618' rightSide='N' className='input_width_coordinates' />
+              <Field size='m' form='brick-clear' type='text' placeholder='00° 00′ 00' dValue='72° 32′ 38.960' rightSide='E' className='input_width_coordinates' />
+              <Field width='full' size='m' form='brick-default' type='text' placeholder='0' dValue='1892.64' leftSide='Z:' rightSide='м' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Географические координаты точки Т3</Text>
-              <TextField size='m' form='default-clear' type='text' placeholder='00° 00′ 00' value='67° 48′ 50.438' rightSide='N' className='input_width_coordinates' />
-              <TextField size='m' form='brick-clear' type='text' placeholder='00° 00′ 00' value='72° 32′ 11.282' rightSide='E' className='input_width_coordinates' />
-              <TextField width='full' size='m' form='brick-default' type='text' placeholder='0' value='1892.64' leftSide='Z:' rightSide='м' />
+              <Field size='m' form='default-clear' type='text' placeholder='00° 00′ 00' dValue='67° 48′ 50.438' rightSide='N' className='input_width_coordinates' />
+              <Field size='m' form='brick-clear' type='text' placeholder='00° 00′ 00' dValue='72° 32′ 11.282' rightSide='E' className='input_width_coordinates' />
+              <Field width='full' size='m' form='brick-default' type='text' placeholder='0' dValue='1892.64' leftSide='Z:' rightSide='м' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Проектный пласт</Text>
-              <TextField width='full' size='m' type='text' placeholder='Выберите проектный пласт' value='НП 5' />
+              <Field width='full' size='m' type='text' placeholder='Выберите проектный пласт' dValue='НП 5' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Пластовое давление</Text>
-              <TextField size='m' type='text' placeholder='0' value='183' rightSide='МПа' className='input_width_number' />
+              <Field size='m' type='number' placeholder='0' dValue='183' rightSide='МПа' className='input_width_number' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Пластовая температура</Text>
-              <TextField size='m' type='text' placeholder='0' value='57,4' rightSide='°С' className='input_width_degree' />
+              <Field size='m' type='number' placeholder='0' dValue='57.4' rightSide='°С' className='input_width_degree' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Магнитное склонение</Text>
-              <TextField size='m' type='text' placeholder='0' value='24.70' rightSide='°' className='input_width_degree' />
+              <Field size='m' type='number' placeholder='0' dValue='24.70' rightSide='°' className='input_width_degree' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Схождение меридианов</Text>
-              <TextField size='m' type='text' placeholder='0' value='-2.25' rightSide='°' className='input_width_degree' />
+              <Field size='m' type='number' placeholder='0' dValue='-2.25' rightSide='°' className='input_width_degree' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Магнитная поправка</Text>
-              <TextField size='m' type='text' placeholder='0' value='26.95' rightSide='°' className='input_width_degree' />
+              <Field size='m' type='number' placeholder='0' dValue='26.95' rightSide='°' className='input_width_degree' />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Начало бурения</Text>
-              <TextField size='m' type='text' placeholder='16.06.2020' value='22.09.2020' className='input_width_date' rightSide={IconCalendar} />
+              <Field size='m' type='text' placeholder='16.06.2020' dValue='22.09.2020' className='input_width_date' rightSide={IconCalendar} />
               <Text size='s' view='ghost' lineHeight='s' className='decorator decorator_indent-l_s'>Дедлайны для заполнения разделов программы высчитаются автоматически</Text>
             </div>
 

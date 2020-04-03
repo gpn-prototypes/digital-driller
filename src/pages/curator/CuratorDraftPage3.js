@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text, Button, IconBackward, Badge, IconAttach, TextField } from '@gpn-design/uikit';
+import { Text, Button, IconBackward, Badge, IconAttach } from '@gpn-design/uikit';
+import Field from '../../components/Field/Field';
 import TheHeader from '../../components/TheHeader/TheHeader';
 import TheFooter from '../../components/TheFooter/TheFooter';
 
@@ -17,8 +18,8 @@ function CuratorDraftPage3() {
             <Badge status='system' size='m' view='filled' label='подготовить до 10.08.2020'></Badge>
           </div>
           <div className='decorator decorator_distribute_left'>
-            <TextField width='full' size='m' form='default-clear' type='text' value='ПАО «Газпром нефть»' disabled />
-            <TextField width='full' size='m' form='brick-default' type='text' value='Анастасия Алёшина' />
+            <Field width='full' size='m' form='default-clear' type='text' dValue='ПАО «Газпром нефть»' disabled />
+            <Field width='full' size='m' form='brick-default' type='text' dValue='Анастасия Алёшина' />
           </div>
 
           <div className='decorator decorator_indent-t_3xl decorator_indent-b_m decorator_distribute_between'>
@@ -26,8 +27,8 @@ function CuratorDraftPage3() {
             <Badge status='system' size='m' view='filled' label='подготовить до 10.08.2020'></Badge>
           </div>
           <div className='decorator decorator_distribute_left'>
-            <TextField width='full' size='m' form='default-clear' type='text' value='ООО «БКЕ»' />
-            <TextField width='full' size='m' form='brick-default' type='text' value='Дмитрий Ореховский' />
+            <Field width='full' size='m' form='default-clear' type='text' dValue='ООО «БКЕ»' />
+            <Field width='full' size='m' form='brick-default' type='text' dValue='Дмитрий Ореховский' />
           </div>
 
           <div className='decorator decorator_indent-t_3xl decorator_indent-b_m decorator_distribute_between'>
@@ -35,8 +36,8 @@ function CuratorDraftPage3() {
             <Badge status='system' size='m' view='filled' label='подготовить до 10.08.2020'></Badge>
           </div>
           <div className='decorator decorator_distribute_left'>
-            <TextField width='full' size='m' form='default-clear' type='text' value='ООО «БКЕ»' />
-            <TextField width='full' size='m' form='brick-default' type='text' value='Оксана Романова' />
+            <Field width='full' size='m' form='default-clear' type='text' dValue='ООО «БКЕ»' />
+            <Field width='full' size='m' form='brick-default' type='text' dValue='Оксана Романова' />
           </div>
 
           <div className='decorator decorator_indent-t_3xl decorator_indent-b_m decorator_distribute_between'>
@@ -44,8 +45,8 @@ function CuratorDraftPage3() {
             <Badge status='system' size='m' view='filled' label='подготовить до 10.08.2020'></Badge>
           </div>
           <div className='decorator decorator_distribute_left'>
-            <TextField width='full' size='m' form='default-clear' type='text' value='ООО «БКЕ»' />
-            <TextField width='full' size='m' form='brick-default' type='text' value='Никита Соболев' />
+            <Field width='full' size='m' form='default-clear' type='text' dValue='ООО «БКЕ»' />
+            <Field width='full' size='m' form='brick-default' type='text' dValue='Никита Соболев' />
           </div>
 
           <div className='decorator decorator_indent-t_3xl decorator_indent-b_m decorator_distribute_between'>
@@ -53,8 +54,8 @@ function CuratorDraftPage3() {
             <Badge status='system' size='m' view='filled' label='подготовить до 10.08.2020'></Badge>
           </div>
           <div className='decorator decorator_distribute_left'>
-            <TextField width='full' size='m' form='default-clear' type='text' value='ООО «БКЕ»' />
-            <TextField width='full' size='m' form='brick-default' type='text' value='Тимофей Гайчук' />
+            <Field width='full' size='m' form='default-clear' type='text' dValue='ООО «БКЕ»' />
+            <Field width='full' size='m' form='brick-default' type='text' dValue='Тимофей Гайчук' />
           </div>
 
           <div className='decorator decorator_indent-t_3xl decorator_indent-b_m decorator_distribute_between'>
@@ -62,21 +63,21 @@ function CuratorDraftPage3() {
             <Badge status='system' size='m' view='filled' label='подготовить до 10.08.2020'></Badge>
           </div>
           <div className='decorator decorator_distribute_left decorator_indent-b_s'>
-            <TextField width='full' size='m' form='default-clear' type='text' value='ООО «БКЕ»' />
-            <TextField width='full' size='m' form='brick-clear' type='text' value='Фёдор Савенко' />
-            <TextField width='full' size='m' form='brick-default' type='text' value='Секция 0 - 152 мм' />
+            <Field width='full' size='m' form='default-clear' type='text' dValue='ООО «БКЕ»' />
+            <Field width='full' size='m' form='brick-clear' type='text' dValue='Фёдор Савенко' />
+            <Field width='full' size='m' form='brick-default' type='text' dValue='Секция 0 - 152 мм' />
           </div>
           <div className='decorator decorator_distribute_left'>
-            <TextField width='full' size='m' form='default-clear' type='text' value='ООО «БКЕ»' />
-            <TextField width='full' size='m' form='brick-clear' type='text' value='Глеб Алейнов' />
-            <TextField width='full' size='m' form='brick-default' type='text' value='Секция 0 - 152 мм' />
+            <Field width='full' size='m' form='default-clear' type='text' dValue='ООО «БКЕ»' />
+            <Field width='full' size='m' form='brick-clear' type='text' dValue='Глеб Алейнов' />
+            <Field width='full' size='m' form='brick-default' type='text' dValue='Секция 0 - 152 мм' />
           </div>
           
           <Text size='xl' view='primary' weight='regular' className='decorator decorator_indent-t_3xl decorator_indent-b_m'>Дополнительные файлы</Text>
           <Button size='s' view='ghost' iconLeft={IconAttach} label='Загрузить файл' />
           
           <Text size='xl' view='primary' weight='regular' className='decorator decorator_indent-t_3xl decorator_indent-b_m'>Комментарий</Text>
-          <TextField width='full' size='m' type='textarea' maxRows='5' value='Чтобы человек захотел это прочитать, у него должна быть очень веская причина. Может быть, его заставили. Может быть, где-то здесь в тексте решение его насущной проблемы.' />
+          <Field width='full' size='m' type='textarea' maxRows='5' dValue='Чтобы человек захотел это прочитать, у него должна быть очень веская причина. Может быть, его заставили. Может быть, где-то здесь в тексте решение его насущной проблемы.' />
 
 
 
