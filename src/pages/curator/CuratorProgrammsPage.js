@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import { Text, Button, ChoiceGroup, IconAdd } from '@gpn-design/uikit';
 import TheHeader from '../../components/TheHeader/TheHeader';
 import ProgrammList from '../../components/ProgrammList/ProgrammList';
 import TheFooter from '../../components/TheFooter/TheFooter';
+import Snackbar from '../../components/Snackbar/Snackbar';
 
 const filterItems = {
 	types: [
@@ -37,8 +38,7 @@ const filterItems = {
 
 function CuratorProgrammsPage(props) {
 	const { programmList } = props;
-	// let { isNew } = useParams();
-	// console.log(isNew);
+	let { isNew } = useParams();
 
 	return (
 		<div className='content-page'>
@@ -57,6 +57,8 @@ function CuratorProgrammsPage(props) {
 				<ProgrammList programmList={programmList} role='curator'></ProgrammList>
 			</div>
 			<TheFooter />
+
+			<Snackbar message='Программа создана. Уведомления ответственным уже отправлены' id='newProgrammSnackbar' className={isNew === ':true' ? 'snackbar_visible' : ''} />
 		</div>
 	);
 }

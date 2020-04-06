@@ -7,11 +7,11 @@ import Toc from '../../components/Toc/Toc';
 import TeamList from '../../components/TeamList/TeamList';
 import ArticleSection from '../../components/ArticleSection/ArticleSection';
 import ContentBlock from '../../components/ContentBlock/ContentBlock';
+import Snackbar from '../../components/Snackbar/Snackbar';
 
 import programmList from '../../mocks/programmList';
 
 import IMGProfileOfTheWellbore from '../../images/Профиль_ствола_скважины.jpg';
-import IMGRiskReportTheIntersectionOfTheWellbore from '../../images/Отчет_о_рисках_пересечения_стволов_скважин.jpg';
 
 function GeologistProgrammPage() {
   let { id } = useParams();
@@ -1267,6 +1267,9 @@ function GeologistProgrammPage() {
             <ArticleSection header='Спуск обсадной колонны секции 152,4 мм' role='curator' section='Секция 152,4 мм'></ArticleSection>
         </div>
       </div>
+
+      <Snackbar message='Раздел опубликован' id='savedSectionSnackbar' />
+      <Snackbar message='Программа сохранена' id='savedProgrammSnackbar' />
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useParams } from 'react-router-dom';
 
 import { Text, ChoiceGroup } from '@gpn-design/uikit';
 import TheHeader from '../../components/TheHeader/TheHeader';
@@ -36,7 +35,6 @@ const filterItems = {
 
 function GeologistProgrammsPage(props) {
 	const { programmList } = props;
-	// let { isNew } = useParams();
 	
 	let geologistProgramms = [];
 	programmList.forEach(item => {

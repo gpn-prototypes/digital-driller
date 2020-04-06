@@ -7,6 +7,7 @@ import Toc from '../../components/Toc/Toc';
 import TeamList from '../../components/TeamList/TeamList';
 import ArticleSection from '../../components/ArticleSection/ArticleSection';
 import ContentBlock from '../../components/ContentBlock/ContentBlock';
+import Snackbar from '../../components/Snackbar/Snackbar';
 
 import programmList from '../../mocks/programmList';
 
@@ -1969,6 +1970,9 @@ function GeologistProgrammPage() {
             <ArticleSection header='Спуск обсадной колонны секции 152,4 мм' role='geologist' section='Секция 152,4 мм'></ArticleSection>
         </div>
       </div>
+
+      <Snackbar message='Раздел опубликован' id='savedSectionSnackbar' />
+      <Snackbar message='Программа сохранена' id='savedProgrammSnackbar' />
     </div>
   );
 }

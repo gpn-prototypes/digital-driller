@@ -1,6 +1,7 @@
 .header {
   position: fixed;
   top: 0;
+  min-width: 1180px;
   width: 100vw;
   background-color: var(--color-bg-default);
   z-index: 2;

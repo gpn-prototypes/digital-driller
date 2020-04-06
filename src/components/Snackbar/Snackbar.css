@@ -1,0 +1,30 @@
+.snackbar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  right: 50%;
+  display: none;
+  width: 350px;
+  padding: var(--space-m);
+  z-index: 2;
+  background: var(--color-bg-success);
+  border-radius: 8px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.07), 0px 2px 2px rgba(0, 0, 0, 0.07), 0px 4px 4px rgba(0, 0, 0, 0.07), 0px 6px 8px rgba(0, 0, 0, 0.07), 0px 8px 16px rgba(0, 0, 0, 0.07);
+  font-size: var(--size-text-m);
+  color: var(--color-typo-primary);
+}
+.snackbar_visible {
+  display: block;
+  animation: snackbarInAnimation 5s ease-out, snackbarOutAnimation 0.15s 5s ease-in;
+  animation-fill-mode: backwards, forwards;
+}
+
+@keyframes snackbarInAnimation {
+  0% { transform: translateX(-50%) translateY(150%); }
+  5% { transform: translateX(-50%) translateY(0); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+@keyframes snackbarOutAnimation {
+  from { transform: translateX(-50%) translateY(0); }
+  to { transform: translateX(-50%) translateY(150%); }
+}

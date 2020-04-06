@@ -10,7 +10,7 @@ function TeamList(props) {
 
   const list = team.map(item => {
     let badge;
-    let isDone = 0;
+    let isDone = 0, isMe = false;
     
     tocList.forEach(section => {
       if(section.status !== 'done' && section.member === item.role)
@@ -19,10 +19,10 @@ function TeamList(props) {
         isDone++;
     });
     
-    if (isDone > 0)
-      badge = { status: 'success', label: 'готово' };
-    else
-      badge = { status: 'system', label: `Подготовить до ${item.deadline}` };
+    if (isDone > 0) badge = { status: 'success', label: 'готово' };
+    else            badge = { status: 'system', label: `Подготовить до ${item.deadline}` };
+    
+    if (item.role === role) isMe = true;
 
     return (
       <div className='team-member' key={item.name}>
@@ -30,7 +30,10 @@ function TeamList(props) {
           <Text size='m' view='primary' weight='bold'>{item.position}</Text>
           <Badge size='m' view='filled' status={badge.status} label={badge.label} />
         </div>
-        <Text size='m' view='primary'>{item.company} | @{item.name}</Text>
+        <Text size='m' view='primary'>
+          {item.company} | 
+          <Text size='m' view={isMe ? 'brand' : 'primary'} weight={isMe ? 'bold' : 'regular'} display='inline-block'>@{item.name}</Text>
+        </Text>
       </div>);
   });
 

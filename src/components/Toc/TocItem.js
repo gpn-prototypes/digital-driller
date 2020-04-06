@@ -3,7 +3,7 @@ import React from 'react';
 import { IconCheck, IconAlert } from '@gpn-design/uikit';
 
 function TocItem(props) {
-  const { status, content, isMine, sectionName } = props;
+  const { status, content, isMine, role, sectionName } = props;
   let itemInfo = {
     name: '',
     link: '',
@@ -18,13 +18,13 @@ function TocItem(props) {
   else itemInfo.name = content;
 
 
-  if (status === 'done') {
+  if (status === 'done' && role === 'geologist') {
     itemInfo.icon = <IconCheck size='s' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />;
     itemInfo.linkClassName = 'toc__item_status_success pt-icon-plus';
-  } else if (status === 'warning') {
+  } else if (status === 'warning' && role === 'geologist') {
     itemInfo.icon = <IconAlert size='s' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />;
     itemInfo.linkClassName = 'toc__item_status_warning pt-icon-plus';
-  } else if (status === 'in progress') {
+  } else {
     itemInfo.icon = '';
     itemInfo.linkClassName = 'toc__item_status_progress decorator decorator_indent-l_xl';
   }

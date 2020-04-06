@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Text, Badge, Button } from '@gpn-design/uikit';
 
 import { tocList, team } from '../../mocks/newProgramm';
@@ -7,8 +7,25 @@ import './ArticleSection.css';
 
 function ArticleSection(props) {
   const { header, section, role, children } = props;
+  const [isSectionPublished, setSectionStatus] = useState(false);
   let badge, sectionID, saveButton = '';
   let sectionInfo;
+
+  const showShackbar = () => {
+    let snackbar = document.querySelector('.snackbar#savedSectionSnackbar');
+    snackbar.classList.add('snackbar_visible');
+
+    setTimeout(() => {
+      snackbar.classList.remove('snackbar_visible');
+    }, 6000);
+
+    setSectionStatus(changeSectionStatus)
+  };
+
+  const changeSectionStatus = () => {
+		if (isSectionPublished === true) return false;
+		                            else return true;
+	}
 
   if(section) {
     let bigSection = tocList.filter(item => item.name === section)[0].list;
@@ -28,8 +45,8 @@ function ArticleSection(props) {
   else
     badge = { status: 'system', label: `до ${user.deadline}` };
 
-  if(sectionInfo.member === user.name)
-    saveButton = <Button size='s' view='primary' as='a' href='#' label='Опубликовать' />;
+  if(sectionInfo.member === role)
+    saveButton = <Button size='s' view='primary' as='a' href='#' label='Опубликовать' onClick={showShackbar} />;
 
   return (
     <div className='article-section'>
@@ -38,11 +55,11 @@ function ArticleSection(props) {
 
         <div className='decorator decorator_distribute_between decorator_vertical-align_center decorator_indent-b_l'>
           <div className='decorator decorator_distribute_left'>
-            <Badge size='m' view='filled' status={badge.status} label={badge.label} />
-            <Text size='m' view={sectionInfo.member === user.name ? 'brand' : 'ghost'} className='decorator decorator_indent-l_m'>@{user.name}</Text>
+            <Badge size='m' view='filled' status={isSectionPublished ? 'success' : badge.status} label={isSectionPublished ? 'готово' : badge.label} />
+            <Text size='m' view={sectionInfo.member === role ? 'brand' : 'ghost'} weight={sectionInfo.member === role ? 'bold' : 'regular'} className='decorator decorator_indent-l_m'>@{user.name}</Text>
           </div>
 
-          {saveButton}
+          {!isSectionPublished ? saveButton : ''}
         </div>
       </div>
 

@@ -9,13 +9,22 @@ import { team } from '../../mocks/team';
 function TheHeader(props) {
   const { page, role, isMinified, programmName } = props;
   const user = team.filter(member => member.role === role)[0];
+  
+  const showShackbar = () => {
+    let snackbar = document.querySelector('.snackbar#savedProgrammSnackbar');
+    snackbar.classList.add('snackbar_visible');
+
+    setTimeout(() => {
+      snackbar.classList.remove('snackbar_visible');
+    }, 6000);
+  };
 
   if (isMinified)
     return (
       <header className='header'>
         <div className='header__left-side'>
           <div className='header__module header__module_indent_l decorator decorator_distribute_left decorator_vertical-align_center'>
-            <a className='logo' href='/'>
+            <a className='logo' href={role === 'Куратор' ? '/curator/list:false' : '/geologist/list'}>
               <p className='text text_size_l text_weight_bold'>Программа бурения</p>
             </a>
             <Text size='s' view='ghost' display='inline-block' className='decorator decorator_indent-h_s'>/</Text>
@@ -29,7 +38,7 @@ function TheHeader(props) {
           </div>
 
           <div className='header__module header__module_indent_m'>
-            <Button size='s' view='primary' as='a' href={role === 'Куратор' ? '/geologist/list:true' : '/curator/list:true'} label='Сохранить черновик' />
+            <Button size='s' view='primary' label='Сохранить черновик' onClick={showShackbar} />
           </div>
 
           <div className='header__module header__module_indent_s'>
@@ -37,7 +46,7 @@ function TheHeader(props) {
           </div>
           
           <div className='header__module header__module_indent_s'>
-            <User view='clear' size='m' status='available' avatarUrl={user.avatar} name={user.name} info={user.role} />
+            <User as='a' href='/' view='clear' size='m' status='available' avatarUrl={user.avatar} name={user.name} info={user.role} />
           </div>
         </div>
       </header>
@@ -47,7 +56,7 @@ function TheHeader(props) {
       <header className='header'>
         <div className='header__left-side'>
           <div className='header__module header__module_indent_l'>
-            <a className='logo' href='/'>
+            <a className='logo' href={role === 'Куратор' ? '/curator/list:false' : '/geologist/list'}>
               <p className='text text_size_l text_weight_bold'>Программа бурения</p>
             </a>
           </div>
@@ -82,7 +91,7 @@ function TheHeader(props) {
           </div>
           
           <div className='header__module header__module_indent_s'>
-            <User view='clear' size='m' status='available' avatarUrl={user.avatar} name={user.name} info={user.role} />
+            <User as='a' href='/' view='clear' size='m' status='available' avatarUrl={user.avatar} name={user.name} info={user.role} />
           </div>
         </div>
       </header>

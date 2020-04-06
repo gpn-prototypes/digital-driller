@@ -59,18 +59,18 @@ function App() {
 		</Switch>
 
 		<template>
-			<ContentBlock isEditable={true} className='templateTextBlock'>
-				<Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+			<ContentBlock isEditable={true} type='text' className='templateTextBlock'>
+				<Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
 			</ContentBlock>
 
-			<ContentBlock isEditable={true} className='templateAlertBlock'>
+			<ContentBlock isEditable={true} type='informer' className='templateAlertBlock'>
 				<Informer status='system' view='filled'>
 					<Text size='m' view='primary' weight='bold'>Примечание</Text>
-					<Field width='full' size='m' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+					<Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
 				</Informer>
 			</ContentBlock>
 			
-			<ContentBlock isEditable={true} className='templateImageBlock'>
+			<ContentBlock isEditable={true} type='image' className='templateImageBlock'>
 				<img src={IMGTemplate} alt=' ' />
 			</ContentBlock>
 		</template>

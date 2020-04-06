@@ -11,7 +11,7 @@ function Toc(props) {
     if(item.sectionname)
       return <TocSection section={item} role={role} key={item.name} />;
     else
-      return <TocItem status={item.status} content={item.name} isMine={item.member === role} sectionName='' key={item.name} />;
+      return <TocItem status={item.status} content={item.name} isMine={item.member === role} role={role} sectionName='' key={item.name} />;
   });
 
   return (
