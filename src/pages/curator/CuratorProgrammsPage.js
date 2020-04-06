@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
 import { Text, Button, ChoiceGroup, IconAdd } from '@gpn-design/uikit';
 import TheHeader from '../../components/TheHeader/TheHeader';
@@ -37,8 +37,8 @@ const filterItems = {
 
 function CuratorProgrammsPage(props) {
 	const { programmList } = props;
-	let { isNew } = useParams();
-	console.log(isNew);
+	// let { isNew } = useParams();
+	// console.log(isNew);
 
 	return (
 		<div className='content-page'>

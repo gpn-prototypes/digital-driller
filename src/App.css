@@ -94,9 +94,6 @@ h1, h2, h3, h4, h5, h6, p {
   scroll-behavior: smooth;
 }
 
-.text-field__side_type_string {
-  white-space: nowrap;
-}
 .input_width_date input {
   width: 78px;
 }
@@ -109,14 +106,6 @@ h1, h2, h3, h4, h5, h6, p {
 .input_width_number input {
   width: 60px;
 }
-.input_view_clear {
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-}
-.input_view_clear:focus {
-  outline: none;
-}
 
 
 .table {
@@ -126,17 +115,11 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: left;
   border-collapse: collapse;
 }
-.table_size_full {
-  
-}
 .table th {
   padding: var(--space-xs) var(--space-s);
 }
-.table:not(.table_editable) td {
+.table td {
   padding: var(--space-xs) var(--space-s);
-}
-.table_editable .text-field {
-  border: 0;
 }
 .table td:not(:last-child), .table th:not(:last-child) {
   border-right: 1px solid var(--color-bg-border);

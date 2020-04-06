@@ -66,10 +66,10 @@ function TheHeader(props) {
                   <a className={page === 'Программы' ? 'menu__link menu__link_active' : 'menu__link'} href={role=== 'Куратор' ? '/curator/list:false' : '/geologist/list:false'}>Программы</a>
                 </li>
                 <li className='menu__item'>
-                  <a className={page === 'База знаний' ? 'menu__link menu__link_active' : 'menu__link'} href='#'>База знаний</a>
+                  <a className={page === 'База знаний' ? 'menu__link menu__link_active' : 'menu__link'}>База знаний</a>
                 </li>
                 <li className='menu__item'>
-                  <a className={page === 'Отчетность' ? 'menu__link menu__link_active' : 'menu__link'} href='#'>Отчетность</a>
+                  <a className={page === 'Отчетность' ? 'menu__link menu__link_active' : 'menu__link'}>Отчетность</a>
                 </li>
               </ul>
             </nav>

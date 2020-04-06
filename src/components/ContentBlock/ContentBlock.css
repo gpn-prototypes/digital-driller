@@ -20,14 +20,6 @@
   .block__left-button {
     left: 0;
   }
-  .block_editable .text-field {
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-  }
-  .block_editable .table .text-field {
-    padding: 0 var(--input-space);
-  }
 
 .block_show-popup .block__popup {
   display: block;

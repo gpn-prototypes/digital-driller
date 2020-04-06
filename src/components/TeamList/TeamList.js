@@ -1,32 +1,34 @@
 import React from 'react';
 import { Text, Badge } from '@gpn-design/uikit';
 
+import { tocList, team } from '../../mocks/newProgramm';
+
 import './TeamList.css';
 
 function TeamList(props) {
-  const { tocList, team } = props;
+  const { role } = props;
 
   const list = team.map(item => {
     let badge;
     let isDone = 0;
     
     tocList.forEach(section => {
-      if(section.status !== 'done' && section.member === item.name)
+      if(section.status !== 'done' && section.member === item.role)
         isDone--;
-      else if(section.status === 'done' && section.member === item.name)
+      else if(section.status === 'done' && section.member === item.role && role === 'geologist')
         isDone++;
     });
     
     if (isDone > 0)
-      badge = <Badge size='m' view='filled' status='success' label='Готово' />;
+      badge = { status: 'success', label: 'готово' };
     else
-      badge = <Badge size='m' view='filled' status='system' label={'Подготовить до ' + item.deadline} />;
+      badge = { status: 'system', label: `Подготовить до ${item.deadline}` };
 
     return (
       <div className='team-member' key={item.name}>
         <div className='decorator decorator_distribute_between decorator_indent-b_xs'>
           <Text size='m' view='primary' weight='bold'>{item.position}</Text>
-          {badge}
+          <Badge size='m' view='filled' status={badge.status} label={badge.label} />
         </div>
         <Text size='m' view='primary'>{item.company} | @{item.name}</Text>
       </div>);

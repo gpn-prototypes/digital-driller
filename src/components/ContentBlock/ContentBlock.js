@@ -60,7 +60,7 @@ function ContentBlock(props) {
   else if(type === 'text')
     indentsClassName = 'decorator_indent-b_l';
   else if(type === 'table')
-    indentsClassName = 'decorator_indent-b_3xl';
+    indentsClassName = 'decorator_indent-b_3xl decorator_space-h_3xl';
   else if(type === 'image')
     indentsClassName = 'decorator_indent-v_3xl';
   else if(type === 'listname')
@@ -95,7 +95,7 @@ function ContentBlock(props) {
               </div>;
 
   return (
-    <div className={'content__main block block_editable decorator' + ' ' + indentsClassName + ' ' + sizeClassName + ' ' + className}>
+    <div className={`content__main block block_editable decorator ${indentsClassName} ${sizeClassName} ${className}`}>
       {isEditable ? addNewBlockButton : ''}
       <div className='block__right-button'>
         <Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} />

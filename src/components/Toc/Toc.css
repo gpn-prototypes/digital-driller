@@ -19,6 +19,13 @@
 .toc__item_status_progress {
   color: var(--color-typo-secondary)
 }
+.toc__section-name {
+  padding-top: var(--space-3xs);
+  text-decoration: none;
+  font-size: var(--size-text-s);
+  line-height: var(--line-height-text-s);
+  color: var(--color-typo-secondary);
+}
 
 .toc__name_mine::after {
   content: 'Мой раздел';
@@ -31,3 +38,24 @@
   text-transform: uppercase;
   background-color: var(--color-bg-ghost);
 }
+
+.accordion {
+  position: relative;
+  padding-left: var(--space-xl);
+}
+  .accordion__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-s);
+    background-color: var(--color-bg-secondary);
+  }
+  .accordion__list {}
+  .accordion_closed .accordion__list {
+    display: none;
+  }
+  .accordion .accordion__button .button__icon {
+    transition: transform 0.3s ease;
+  }
+  .accordion_closed .accordion__button .button__icon {
+    transform: rotate(180deg);
+  }

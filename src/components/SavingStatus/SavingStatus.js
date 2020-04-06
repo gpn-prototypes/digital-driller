@@ -9,7 +9,7 @@ function SavingStatus() {
   useEffect(() => {
     let timer;
 
-    if(counter == 1) timer = setInterval(() => setCounter(counter - 1), 2000);
+    if(counter === 1) timer = setInterval(() => setCounter(counter - 1), 2000);
     else timer = setInterval(() => setCounter(counter + 1), 5000);
     
     return () => clearInterval(timer);
@@ -21,7 +21,7 @@ function SavingStatus() {
       <div style={{ display: counter ? 'none' : 'flex' }} className='decorator decorator_vertical-align_center'>
         <IconCheck size='s' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_2xs' />
       </div>
-      {counter == 1 ? 'Сохраняем' : 'Черновик сохранен'}
+      {counter === 1 ? 'Сохраняем' : 'Черновик сохранен'}
     </Text>
   );
 }

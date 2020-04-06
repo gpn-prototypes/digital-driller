@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 // import { useParams } from 'react-router-dom';
 
 import { Text, ChoiceGroup } from '@gpn-design/uikit';
@@ -60,9 +59,5 @@ function GeologistProgrammsPage(props) {
 		</div>
 	);
 }
-
-ProgrammList.propTypes = {
-  programmList: PropTypes.array.isRequired
-};
 
 export default GeologistProgrammsPage;
