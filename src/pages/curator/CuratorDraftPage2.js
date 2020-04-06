@@ -31,164 +31,164 @@ function CuratorDraftPage2() {
             <tbody>
               <tr>
                 <td rowspan='2'>
-                  <Field width='full' size='m' type='text' placeholder='' dValue='Комбинированный кондуктор' />
+                  <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='Комбинированный кондуктор' />
                 </td>
                 <td>
-                  <Field width='full' size='m' type='text' placeholder='' dValue='ОТТМ 530/324*9,5 «Д»' />
+                  <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='ОТТМ 530/324*9,5 «Д»' />
                 </td>
                 <td>
                   <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='0' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='50' leftSide='до' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='0' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='50' leftSide='до' />
                   </div>
                 </td>
                 <td>
                   <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='0' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='50' leftSide='до' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='0' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='50' leftSide='до' />
                   </div>
                 </td>
                 <td>
                   <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='0' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='50' leftSide='до' />
-                  </div>
-                </td>
-              </tr>
-              
-              <tr>
-                <td>
-                  <Field width='full' size='m' type='text' placeholder='' dValue='ОТТГ-324*9,5 мм «Д»' />
-                </td>
-                <td>
-                  <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='50' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='457' leftSide='до' />
-                  </div>
-                </td>
-                <td>
-                  <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='50' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='457' leftSide='до' />
-                  </div>
-                </td>
-                <td>
-                  <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='50' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='460' leftSide='до' />
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td rowspan='2'>
-                  <Field width='full' size='m' type='text' placeholder='' dValue='Техническая колонна' />
-                </td>
-                <td rowspan='2'>
-                  <Field width='full' size='m' type='text' placeholder='' dValue='ОТТГ -244,5*8,9 мм «Д»' />
-                </td>
-                <td rowspan='2'>
-                  <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='0' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='1377' leftSide='до' />
-                  </div>
-                </td>
-                <td rowspan='2'>
-                  <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='0' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='1098' leftSide='до' />
-                  </div>
-                </td>
-                <td>
-                  <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='0' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='410' leftSide='до' />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='410' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='1380' leftSide='до' />
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td rowspan='2'>
-                  <Field width='full' size='m' type='text' placeholder='' dValue='Эксплуатационная колонна' />
-                </td>
-                <td>
-                  <Field width='full' size='m' type='text' placeholder='' dValue='ОТТГ-178*10,4 «Е»' />
-                </td>
-                <td>
-                  <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='0' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='280' leftSide='до' />
-                  </div>
-                </td>
-                <td>
-                  <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='0' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='280' leftSide='до' />
-                  </div>
-                </td>
-                <td>
-                  <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='880' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='2526' leftSide='до' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='0' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='50' leftSide='до' />
                   </div>
                 </td>
               </tr>
               
               <tr>
                 <td>
-                  <Field width='full' size='m' type='text' placeholder='' dValue='ОТТГ-178*9,2 «Д»' />
+                  <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='ОТТГ-324*9,5 мм «Д»' />
                 </td>
                 <td>
                   <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='280' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='3113' leftSide='до' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='50' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='457' leftSide='до' />
                   </div>
                 </td>
                 <td>
                   <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='280' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='1893' leftSide='до' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='50' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='457' leftSide='до' />
                   </div>
                 </td>
                 <td>
                   <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='2526' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='3116' leftSide='до' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='50' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='460' leftSide='до' />
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td rowspan='2'>
+                  <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='Техническая колонна' />
+                </td>
+                <td rowspan='2'>
+                  <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='ОТТГ -244,5*8,9 мм «Д»' />
+                </td>
+                <td rowspan='2'>
+                  <div className='decorator decorator_distribute_left'>
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='0' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='1377' leftSide='до' />
+                  </div>
+                </td>
+                <td rowspan='2'>
+                  <div className='decorator decorator_distribute_left'>
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='0' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='1098' leftSide='до' />
+                  </div>
+                </td>
+                <td>
+                  <div className='decorator decorator_distribute_left'>
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='0' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='410' leftSide='до' />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className='decorator decorator_distribute_left'>
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='410' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='1380' leftSide='до' />
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td rowspan='2'>
+                  <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='Эксплуатационная колонна' />
+                </td>
+                <td>
+                  <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='ОТТГ-178*10,4 «Е»' />
+                </td>
+                <td>
+                  <div className='decorator decorator_distribute_left'>
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='0' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='280' leftSide='до' />
+                  </div>
+                </td>
+                <td>
+                  <div className='decorator decorator_distribute_left'>
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='0' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='280' leftSide='до' />
+                  </div>
+                </td>
+                <td>
+                  <div className='decorator decorator_distribute_left'>
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='880' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='2526' leftSide='до' />
+                  </div>
+                </td>
+              </tr>
+              
+              <tr>
+                <td>
+                  <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='ОТТГ-178*9,2 «Д»' />
+                </td>
+                <td>
+                  <div className='decorator decorator_distribute_left'>
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='280' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='3113' leftSide='до' />
+                  </div>
+                </td>
+                <td>
+                  <div className='decorator decorator_distribute_left'>
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='280' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='1893' leftSide='до' />
+                  </div>
+                </td>
+                <td>
+                  <div className='decorator decorator_distribute_left'>
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='2526' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='3116' leftSide='до' />
                   </div>
                 </td>
               </tr>
 
               <tr>
                 <td>
-                  <Field width='full' size='m' type='text' maxRows='1' placeholder='' dValue='Хвостовик' />
+                  <Field width='full' size='m' view='clear' type='text' maxRows='1' placeholder='' dValue='Хвостовик' />
                 </td>
                 <td>
-                  <Field width='full' size='m' type='text' placeholder='' dValue='ОТТМ-114,3х7,4 / ФС-П114 ОТТМ' />
+                  <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='ОТТМ-114,3х7,4 / ФС-П114 ОТТМ' />
                 </td>
                 <td>
                   <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='3038' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='4340' leftSide='до' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='3038' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='4340' leftSide='до' />
                   </div>
                 </td>
                 <td>
                   <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='1888' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='1893' leftSide='до' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='1888' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='1893' leftSide='до' />
                   </div>
                 </td>
                 <td>
                   <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='' leftSide='от' />
-                    <Field width='full' size='m' type='number' placeholder='0' dValue='' leftSide='до' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='' leftSide='от' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' dValue='' leftSide='до' />
                   </div>
                 </td>
               </tr>

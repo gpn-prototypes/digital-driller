@@ -70,7 +70,7 @@ function ContentBlock(props) {
   else if(type === 'informer')
     indentsClassName = 'decorator_indent-b_l';
   
-  let addNewBlockButton = <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconLeft={IconAdd} /></div>;
+  let addNewBlockButton = <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconSize='s' iconLeft={IconAdd} /></div>;
   let popup = <div className='block__popup'>
                 <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
                   <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
@@ -98,7 +98,7 @@ function ContentBlock(props) {
     <div className={`content__main block block_editable decorator ${indentsClassName} ${sizeClassName} ${className}`}>
       {isEditable ? addNewBlockButton : ''}
       <div className='block__right-button'>
-        <Button view='ghost' size='s' iconOnly={true} iconLeft={IconComment} />
+        <Button view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconComment} />
       </div>
 
       {isEditable ? popup : ''}
