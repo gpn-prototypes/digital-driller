@@ -1,111 +1,50 @@
 import React from 'react';
-import { Button, Text, IconAdd, IconComment, IconAlert, IconTable, IconLink, IconPhoto, IconAlignLeft } from '@gpn-design/uikit';
+import { Button, IconAdd, IconComment, IconAlert } from '@gpn-design/uikit';
+import AdvicePopup from '../AdvicePopup/AdvicePopup';
+import NewBlockPopup from '../NewBlockPopup/NewBlockPopup';
+import H3 from './Type/H3';
+import Text from './Type/Text';
+import Table from './Type/Table';
+import Tablename from './Type/Tablename';
+import Image from './Type/Image';
+import Listname from './Type/Listname';
+import Listitem from './Type/Listitem';
+import Informer from './Type/Informer';
 
 import './ContentBlock.css';
 
-const setEditableButton = (button) => {
-  let block = button.parentNode;
-  let popup = block.querySelector('.block__popup');
-  let addTextBlock = popup.querySelector('.block__popup-item_textblock');
-  let addAlertBlock = popup.querySelector('.block__popup-item_alertblock');
-  let addTableBlock = popup.querySelector('.block__popup-item_tableblock');
-  let addImportBlock = popup.querySelector('.block__popup-item_importblock');
-  let addImageBlock = popup.querySelector('.block__popup-item_imageblock');
-  
-  button.addEventListener('click', () => {
-    block.classList.add('block_show-popup');
-  });
-
-  addTextBlock.addEventListener('click', () => {
-    let template = document.querySelector('.templateTextBlock').cloneNode(true);
-    template.classList.remove('templateTextBlock');
-    setEditableButton(template.querySelector('.block__left-button'));
-    
-    block.after(template);
-    block.classList.remove('block_show-popup');
-  });
-  addAlertBlock.addEventListener('click', () => {
-    let template = document.querySelector('.templateAlertBlock').cloneNode(true);
-    template.classList.remove('templateAlertBlock');
-    setEditableButton(template.querySelector('.block__left-button'));
-    
-    block.after(template);
-    block.classList.remove('block_show-popup');
-  });
-  addImageBlock.addEventListener('click', () => {
-    let template = document.querySelector('.templateImageBlock').cloneNode(true);
-    template.classList.remove('templateImageBlock');
-    setEditableButton(template.querySelector('.block__left-button'));
-    
-    block.after(template);
-    block.classList.remove('block_show-popup');
-  });
-};
-const editableArticle = () => {
-  document.querySelectorAll('.block__left-button').forEach(button => {
-    setEditableButton(button);
-  });
-}
-setTimeout(() => {
-    editableArticle();
-}, 500);
-
 function ContentBlock(props) {
-  const { isEditable, size, type, className = '', children } = props;
-  let sizeClassName = size === 'full' ? 'content__main_size_full' : '';
-  let indentsClassName = '';
+  const { isEditable, size, type, className = '', adviceID, children } = props;
+  let sizeClassName = size === 'full' ? `content__main_size_full ${className}` : className;
+  let leftButton, leftPopup, advicePopup, adviceButton;
+  let rightButton = <Button view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconComment} className='block__commentbutton' />;
+
+  if(isEditable) {
+    leftButton = <Button view='ghost' size='s' iconOnly={true} iconSize='s' iconLeft={IconAdd} className='block__addnewblockbutton' />;
+    leftPopup = <NewBlockPopup />;
+  }
+  if(adviceID) {
+    advicePopup = <AdvicePopup id={adviceID} isEditable={isEditable} />;
+    adviceButton = <Button view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconAlert} className='block__avicebutton' />;
+  }
 
   if(type === 'h3')
-    indentsClassName = 'decorator_indent-b_s decorator_indent-t_2xl';
+    return (<H3 leftButton={leftButton} rightButton={rightButton} leftPopup={leftPopup} className={sizeClassName} children={children} />)
   else if(type === 'text')
-    indentsClassName = 'decorator_indent-b_l';
+    return (<Text leftButton={leftButton} rightButton={rightButton} leftPopup={leftPopup} advicePopup={advicePopup} adviceButton={adviceButton} className={sizeClassName} children={children} />)
   else if(type === 'table')
-    indentsClassName = 'decorator_indent-b_3xl decorator_space-h_3xl';
+    return (<Table className={sizeClassName} children={children} />)
+  else if(type === 'tablename')
+    return (<Tablename className={sizeClassName} children={children} />)
   else if(type === 'image')
-    indentsClassName = 'decorator_indent-v_3xl';
+    return (<Image leftButton={leftButton} rightButton={rightButton} leftPopup={leftPopup} className={sizeClassName} children={children} />)
   else if(type === 'listname')
-    indentsClassName = 'decorator_indent-b_m';
+    return (<Listname leftButton={leftButton} rightButton={rightButton} leftPopup={leftPopup} className={sizeClassName} children={children} />)
   else if(type === 'listitem')
-    indentsClassName = 'decorator_indent-b_m';
+    return (<Listitem leftButton={leftButton} rightButton={rightButton} leftPopup={leftPopup} className={sizeClassName} children={children} />)
   else if(type === 'informer')
-    indentsClassName = 'decorator_indent-b_l';
-  
-  let addNewBlockButton = <div className='block__left-button'><Button view='ghost' size='s' iconOnly={true} iconSize='s' iconLeft={IconAdd} /></div>;
-  let popup = <div className='block__popup'>
-                <div className='block__popup-item block__popup-item_textblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                  <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                  <Text size='s' view='primary'>Текстовый блок</Text>
-                </div>
-                <div className='block__popup-item block__popup-item_alertblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                  <IconAlert size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                  <Text size='s' view='primary'>Примечание</Text>
-                </div>
-                <div className='block__popup-item block__popup-item_tableblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                  <IconTable size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                  <Text size='s' view='primary'>Таблица</Text>
-                </div>
-                <div className='block__popup-item block__popup-item_importblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                  <IconLink size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                  <Text size='s' view='primary'>Графики, модели и диаграммы</Text>
-                </div>
-                <div className='block__popup-item block__popup-item_imageblock pt-icon-plus pt-icon-plus_vertical-align_center'>
-                  <IconPhoto size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
-                  <Text size='s' view='primary'>Изображения</Text>
-                </div>
-              </div>;
-
-  return (
-    <div className={`content__main block block_editable decorator ${indentsClassName} ${sizeClassName} ${className}`}>
-      {isEditable ? addNewBlockButton : ''}
-      <div className='block__right-button'>
-        <Button view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconComment} />
-      </div>
-
-      {isEditable ? popup : ''}
-      
-      {children}
-    </div>
-  );
+    return (<Informer leftButton={leftButton} rightButton={rightButton} leftPopup={leftPopup} className={sizeClassName} children={children} />)
+  else return ('');
 }
 
 export default ContentBlock;

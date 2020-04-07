@@ -1,0 +1,21 @@
+.newblockpopup {
+  position: absolute;
+  padding: var(--space-s) 0;
+  left: 38px;
+  top: -14px;
+  width: 260px;
+
+  background: var(--color-bg-default);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  z-index: 1;
+  display: none;
+}
+  .newblockpopup-item {
+    padding: var(--space-xs) var(--space-s);
+    transition: background-color 0.25s ease;
+  }
+    .newblockpopup-item:hover {
+      background-color: var(--color-bg-stripe);
+      cursor: pointer;
+    }

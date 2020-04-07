@@ -121,6 +121,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: var(--space-xs) var(--space-s);
 }
 .table td {
+  box-sizing: border-box;
   padding: var(--space-xs) var(--space-s);
 }
 .table td:not(:last-child), .table th:not(:last-child) {
@@ -137,3 +138,16 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: transparent;
 }
 
+
+
+/*
+.tablewrap tr {
+  display: flex;
+  border-bottom: 0;
+}
+.tablewrap td, .tablewrap th {
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+*/

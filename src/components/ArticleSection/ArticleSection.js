@@ -40,8 +40,8 @@ function ArticleSection(props) {
   
   if (sectionInfo.status === 'done' && role === 'geologist')
     badge = { status: 'success', label: 'готово' }; 
-  else if (sectionInfo.status === 'alert' && role === 'geologist')
-    badge = { status: 'warning', label: `до ${user.deadline}` };
+  else if (sectionInfo.status === 'warning' && role === 'geologist')
+    badge = { status: 'warning', label: `есть замечания` };
   else
     badge = { status: 'system', label: `до ${user.deadline}` };
 

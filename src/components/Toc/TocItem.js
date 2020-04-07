@@ -28,7 +28,7 @@ function TocItem(props) {
     itemInfo.icon = '';
     itemInfo.linkClassName = 'toc__item_status_progress decorator decorator_indent-l_xl';
   }
-
+  
   return (
     <a href={itemInfo.link} className={`toc__item ${itemInfo.linkClassName}`}>
       {itemInfo.icon}

@@ -6,7 +6,7 @@ export const tocList = [
   },
   {
     name: 'Общая информация о буровом оборудовании и бурильном инструменте',
-    status: 'done',
+    status: 'warning',
     member: 'driller'
   },
   {
@@ -41,7 +41,7 @@ export const tocList = [
   },
   {
     name: 'Программа геофизических исследований и каротажа в процессе бурения',
-    status: 'in progress',
+    status: 'warning',
     member: 'geologist',
   },
   {
@@ -110,7 +110,7 @@ export const tocList = [
       },
       {
         name: 'КНБК для бурения секции 393,7 мм',
-        status: 'done',
+        status: 'warning',
         member: 'driller',
         section: 'Секция 660 мм / 393,7 мм',
       },

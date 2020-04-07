@@ -5,14 +5,24 @@
   margin-left: calc(-1 * var(--space-4xl));
   margin-right: calc(-1 * var(--space-4xl));
 }
-  .block:hover .block__right-button, .block:hover .block__left-button {
+  .block .block__avicebutton svg {
+    fill: var(--color-typo-warning);
+  }
+  .block .block__commentbutton, .block .block__addnewblockbutton, .block .block__avicebutton {
+    margin-bottom: var(--space-xs);
+  }
+  .block .block__commentbutton, .block .block__addnewblockbutton {
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  .block:hover .block__commentbutton, .block:hover .block__addnewblockbutton {
     opacity: 1;
   }
   .block__right-button, .block__left-button {
     position: absolute;
     top: 0;
-    opacity: 0;
-    transition: opacity 0.25s ease;
+    display: flex;
+    flex-direction: column;
   }
   .block__right-button {
     right: 0;
@@ -21,27 +31,14 @@
     left: 0;
   }
 
-.block_show-popup .block__popup {
+.block_show-popup .newblockpopup {
   display: block;
 }
-  .block__popup {
-    position: absolute;
-    width: 260px;
-    padding: var(--space-s) 0;
-    left: 38px;
-    top: -14px;
 
-    background: var(--color-bg-default);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
-    border-radius: 8px;
-    z-index: 1;
-    display: none;
-  }
-    .block__popup-item {
-      padding: var(--space-xs) var(--space-s);
-      transition: background-color 0.25s ease;
-    }
-      .block__popup-item:hover {
-        background-color: var(--color-bg-stripe);
-        cursor: pointer;
-      }
+
+.block__inline .block__avicebutton {
+  position: absolute;
+  right: var(--space-s);
+  top: 50%;
+  transform: translateY(-50%);
+}

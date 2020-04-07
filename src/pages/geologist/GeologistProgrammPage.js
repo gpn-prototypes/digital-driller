@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { Text, Informer, Button } from '@gpn-design/uikit';
+import { Text, Informer, Button, IconAlert } from '@gpn-design/uikit';
 import Field from '../../components/Field/Field';
 import TheHeader from '../../components/TheHeader/TheHeader';
 import Toc from '../../components/Toc/Toc';
@@ -8,6 +8,7 @@ import TeamList from '../../components/TeamList/TeamList';
 import ArticleSection from '../../components/ArticleSection/ArticleSection';
 import ContentBlock from '../../components/ContentBlock/ContentBlock';
 import Snackbar from '../../components/Snackbar/Snackbar';
+import AdvicePopup from '../../components/AdvicePopup/AdvicePopup';
 
 import programmList from '../../mocks/programmList';
 
@@ -131,6 +132,9 @@ function GeologistProgrammPage() {
             <ContentBlock type='h3'>
               <Text tag='h3' weight='regular' size='xl' view='primary'>Бурильный инструмент</Text>
             </ContentBlock>
+            <div className='content__main' style={{position: 'relative', top: '90px'}}>
+              <AdvicePopup id={1} isEditable={true} />
+            </div>
             <ContentBlock size='full' type='table'>
               <table className='table table_size_l'>
                 <thead>
@@ -147,6 +151,10 @@ function GeologistProgrammPage() {
                 </thead>
                 <tbody>
                   <tr>
+                    <td className='block block__inline'>
+                      <Text size='m' view='primary' lineHeight='s'>УБТ-229</Text>
+                      <Button popup='#advicepopup1' view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconAlert} className='block__avicebutton' />
+                    </td>
                     <td><Text size='m' view='primary' lineHeight='s'>УБТ-229</Text></td>
                     <td><Text size='m' view='primary' lineHeight='s'>19 м</Text></td>
                     <td><Text size='m' view='primary' lineHeight='s'>273 кг</Text></td>
@@ -893,12 +901,15 @@ function GeologistProgrammPage() {
             <ContentBlock isEditable={true} type='h3'>
               <Text tag='h3' weight='regular' size='xl' view='primary'>Буровое оборудование</Text>
             </ContentBlock>
+            <div className='content__main' style={{position: 'relative', top: '455px'}}>
+              <AdvicePopup id={2} isEditable={true} />
+            </div>
             <ContentBlock isEditable={true} size='full' type='table'>
               <table className='table table_editable'>
                 <thead>
                   <tr>
                     <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs' style={{ width: '250px' }}>Наименование</Text>
-                    <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs' style={{ width: '' }}></Text>
+                    <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs' style={{ width: '250px' }}></Text>
                     <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs' style={{ width: '300px' }}>Масштаб</Text>
                     <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs' style={{ width: '200px' }}>Интервал</Text>
                   </tr>
@@ -959,8 +970,9 @@ function GeologistProgrammPage() {
                   </tr>
                   
                   <tr>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='5' dValue='Комплекс "Halliburton": ГК; ИК; ГГК-П; ННК; кавернометрия; инклинометрия в реальном времени и в записи' />
+                    <td className='block block__inline' style={{ paddingRight: '44px' }}>
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='Комплекс "Halliburton": ГК; ИК; ГГК-П; ННК; кавернометрия; инклинометрия в реальном времени и в записи' />
+                      <Button popup='#advicepopup2' view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconAlert} className='block__avicebutton' />
                     </td>
                     <td>
                       <Field width='full' size='m' view='clear' type='textarea' maxRows='5' dValue='Горизонтальный ствол' />
@@ -1498,6 +1510,9 @@ function GeologistProgrammPage() {
             </ArticleSection>
 
             <ArticleSection header='КНБК для бурения секции 393,7 мм' role='geologist' section='Секция 660 мм / 393,7 мм'>
+              <div className='content__main' style={{position: 'relative', top: '90px'}}>
+                <AdvicePopup id={3} isEditable={true} />
+              </div>
               <ContentBlock type='table' size='full'>
                 <table className='table'>
                   <thead>
@@ -1514,7 +1529,10 @@ function GeologistProgrammPage() {
                   </thead>
                   <tbody>
                     <tr>
-                      <td><Text size='m' view='primary' lineHeight='s'>Долото типа PDC</Text></td>
+                      <td className='block block__inline'>
+                        <Text size='m' view='primary' lineHeight='s'>Долото типа PDC</Text>
+                        <Button popup='#advicepopup3' view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconAlert} className='block__avicebutton' />
+                      </td>
                       <td><Text size='m' view='primary' lineHeight='s'>Долотный сервис</Text></td>
                       <td><Text size='m' view='primary' lineHeight='s'>0.51 м</Text></td>
                       <td><Text size='m' view='primary' lineHeight='s'>393.7 мм</Text></td>

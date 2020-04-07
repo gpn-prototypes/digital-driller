@@ -7,7 +7,7 @@ function TocSection(props) {
   const [isAccordionOpen, setAccordionState] = useState(false);
   let list = section.list.map(item => {
     let isMine = item.member === role;
-    return <TocItem status={item.status} content={item.name} isMine={isMine} sectionName={section.name} key={item.name} />;
+    return <TocItem status={item.status} content={item.name} isMine={isMine} sectionName={section.name} role={role} key={item.name} />;
   });
 
   const openAccordion = () => {
