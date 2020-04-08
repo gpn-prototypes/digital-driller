@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { TextField } from '@gpn-design/uikit';
 
 function Field(props) {
-  const { width, size, type, placeholder, view, rightSide, leftSide, maxRows, form, dValue, className } = props;
+  const { width, size, type, placeholder, view, rightSide, leftSide, maxRows, form, dValue, className, ...rest } = props;
   const [value = dValue, setValue] = useState(undefined);
 
   return (
@@ -19,6 +19,7 @@ function Field(props) {
       className={className}
       maxRows={maxRows}
       form={form}
+      {...rest}
     />
   );
 }

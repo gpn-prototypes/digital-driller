@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Text, Informer, Button, IconAlert } from '@gpn-design/uikit';
 import Field from '../../components/Field/Field';
+import SelectWrap from '../../components/SelectWrap/SelectWrap';
 import TheHeader from '../../components/TheHeader/TheHeader';
 import Toc from '../../components/Toc/Toc';
 import TeamList from '../../components/TeamList/TeamList';
@@ -133,7 +134,7 @@ function GeologistProgrammPage() {
               <Text tag='h3' weight='regular' size='xl' view='primary'>Бурильный инструмент</Text>
             </ContentBlock>
             <div className='content__main' style={{position: 'relative', top: '90px'}}>
-              <AdvicePopup id={1} isEditable={true} />
+              <AdvicePopup id={1} />
             </div>
             <ContentBlock size='full' type='table'>
               <table className='table table_size_l'>
@@ -436,18 +437,14 @@ function GeologistProgrammPage() {
                 
                 <tbody>
                   <tr>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='ПК₁' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['ПК₁', 'ХМ₁', 'ХМ₃', 'ТП₀', 'Сеяхинские глины (кровля)', 'БЯ₂₃ (подошва сеяхинских глин)', 'НП₂₋₃', 'НП₄', 'НП₅']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='-476.3' rightSide='м' />
                     </td>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='20' dValue='чередование сероцветных песчаников, алевролитов и глин' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='чередование сероцветных песчаников, алевролитов и глин' />
                     </td>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='Вода' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['Вода', 'Газ', 'Нефть', '—']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='42.1' rightSide='атм' />
                     </td>
@@ -457,18 +454,14 @@ function GeologistProgrammPage() {
                   </tr>
                   
                   <tr>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='ХМ₁' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['ХМ₁', 'ПК₁', 'ХМ₃', 'ТП₀', 'Сеяхинские глины (кровля)', 'БЯ₂₃ (подошва сеяхинских глин)', 'НП₂₋₃', 'НП₄', 'НП₅']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='-913.8' rightSide='м' />
                     </td>
                     <td rowSpan='2'>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='20' dValue='чередование глин, алевролитов, песчаников' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='чередование глин, алевролитов, песчаников' />
                     </td>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='Вода' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['Вода', 'Газ', 'Нефть', '—']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='84.2' rightSide='атм' />
                     </td>
@@ -478,16 +471,12 @@ function GeologistProgrammPage() {
                   </tr>
                   
                   <tr>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='ХМ₃' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['ХМ₃', 'ХМ₁', 'ПК₁', 'ТП₀', 'Сеяхинские глины (кровля)', 'БЯ₂₃ (подошва сеяхинских глин)', 'НП₂₋₃', 'НП₄', 'НП₅']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='-968.9' rightSide='м' />
                     </td>
 
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='Вода' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['Вода', 'Газ', 'Нефть', '—']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='85' rightSide='атм' />
                     </td>
@@ -497,18 +486,14 @@ function GeologistProgrammPage() {
                   </tr>
                   
                   <tr>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='ТП₀' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['ТП₀', 'ХМ₃', 'ХМ₁', 'ПК₁', 'Сеяхинские глины (кровля)', 'БЯ₂₃ (подошва сеяхинских глин)', 'НП₂₋₃', 'НП₄', 'НП₅']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='-988.6' rightSide='м' />
                     </td>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='20' dValue='чередование песчаника, песчаника карбонатного, алевролита и аргиллита' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='чередование песчаника, песчаника карбонатного, алевролита и аргиллита' />
                     </td>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='Вода' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['Вода', 'Газ', 'Нефть', '—']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='94.2' rightSide='атм' />
                     </td>
@@ -518,18 +503,14 @@ function GeologistProgrammPage() {
                   </tr>
                   
                   <tr>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='Сеяхинские глины (кровля)' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['Сеяхинские глины (кровля)', 'ТП₀', 'ХМ₃', 'ХМ₁', 'ПК₁', 'БЯ₂₃ (подошва сеяхинских глин)', 'НП₂₋₃', 'НП₄', 'НП₅']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='-1659.6' rightSide='м' />
                     </td>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='20' dValue='Пластинчатый аргиллит и алевролит' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='Пластинчатый аргиллит и алевролит' />
                     </td>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['—', 'Вода', 'Газ', 'Нефть']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' rightSide='атм' />
                     </td>
@@ -539,18 +520,14 @@ function GeologistProgrammPage() {
                   </tr>
                   
                   <tr>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='БЯ₂₃ (подошва сеяхинских глин)' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['БЯ₂₃ (подошва сеяхинских глин)', 'Сеяхинские глины (кровля)', 'ТП₀', 'ХМ₃', 'ХМ₁', 'ПК₁', 'НП₂₋₃', 'НП₄', 'НП₅']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='-1707.5' rightSide='м' />
                     </td>
                     <td rowSpan='4'>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='20' dValue='Чередование песчаника, песчаника карбонатного, алевролита и аргиллита' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='Чередование песчаника, песчаника карбонатного, алевролита и аргиллита' />
                     </td>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='Газ' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['Газ', 'Вода', 'Нефть', '—']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='178' rightSide='атм' />
                     </td>
@@ -560,15 +537,11 @@ function GeologistProgrammPage() {
                   </tr>
                   
                   <tr>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='НП₂₋₃' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['НП₂₋₃', 'БЯ₂₃ (подошва сеяхинских глин)', 'Сеяхинские глины (кровля)', 'ТП₀', 'ХМ₃', 'ХМ₁', 'ПК₁', 'НП₄', 'НП₅']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='-1756.1' rightSide='м' />
                     </td>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='газ' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['Газ', 'Вода', 'Нефть', '—']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='181.0' rightSide='атм' />
                     </td>
@@ -578,15 +551,11 @@ function GeologistProgrammPage() {
                   </tr>
                   
                   <tr>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='НП₄' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['НП₄', 'НП₂₋₃', 'БЯ₂₃ (подошва сеяхинских глин)', 'Сеяхинские глины (кровля)', 'ТП₀', 'ХМ₃', 'ХМ₁', 'ПК₁', 'НП₅']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='-1785.8' rightSide='м' />
                     </td>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='газ' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['Газ', 'Вода', 'Нефть', '—']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='182.0' rightSide='атм' />
                     </td>
@@ -596,15 +565,11 @@ function GeologistProgrammPage() {
                   </tr>
                   
                   <tr>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='НП₅' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['НП₅', 'НП₄', 'НП₂₋₃', 'БЯ₂₃ (подошва сеяхинских глин)', 'Сеяхинские глины (кровля)', 'ТП₀', 'ХМ₃', 'ХМ₁', 'ПК₁']} /></td>
                     <td>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='-1831.7' rightSide='м' />
                     </td>
-                    <td>
-                      <Field width='full' size='m' view='clear' type='text' placeholder='' dValue='Нефть+вода' />
-                    </td>
+                    <td><SelectWrap size='m' view='clear' items={['Нефть', 'Вода', 'Газ', '—']} /></td>
                     <td>
                       <Text size='m' view='primary' lineHeight='s'></Text>
                       <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='183.0' rightSide='атм' />
@@ -886,6 +851,7 @@ function GeologistProgrammPage() {
                 <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Максимально допустимая пространственная интенсивность в интервале набора параметров кривизны определяется от плановой + 0,50/10м. Максимально допустимая пространственная интенсивность в интервале стабилизации не более 10/10м. Максимально допустимая пространственная интенсивность в зоне ГНО не более 0.30/10м.' />
               </Informer>
             </ContentBlock>
+            
             <ContentBlock isEditable={true} type='image'>
               <img src={IMGProfileOfTheWellbore} alt=' ' />
             </ContentBlock>
@@ -917,13 +883,13 @@ function GeologistProgrammPage() {
                 <tbody>
                   <tr>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='5' dValue='Комплекс «Halliburton": инклинометрия' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='Комплекс «Halliburton": инклинометрия' />
                     </td>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='5' dValue='В интервале кондуктора' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='В интервале кондуктора' />
                     </td>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='5' dValue='Инклинометр: 1 замер на 50м' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='Инклинометр: 1 замер на 50м' />
                     </td>
                     <td>
                       <div className='decorator decorator_distribute_left'>
@@ -935,13 +901,13 @@ function GeologistProgrammPage() {
                   
                   <tr>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='5' dValue='Комплекс "Halliburton": инклинометрия' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='Комплекс "Halliburton": инклинометрия' />
                     </td>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='5' dValue='В интервале тех. колонны' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='В интервале тех. колонны' />
                     </td>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='5' dValue='- в инт. стабилизации: 1 замер на 1 "свечу"; - в инт. кривизны: 1 замер на 1 "трубу".' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='- в инт. стабилизации: 1 замер на 1 "свечу"; - в инт. кривизны: 1 замер на 1 "трубу".' />
                     </td>
                     <td>
                       <div className='decorator decorator_distribute_left'>
@@ -953,13 +919,13 @@ function GeologistProgrammPage() {
                   
                   <tr>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='5' dValue='Комплекс "Halliburton": ГК; ИК; инклинометрия в реальном времени и в записи' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='Комплекс "Halliburton": ГК; ИК; инклинометрия в реальном времени и в записи' />
                     </td>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='5' dValue='В интервале транспортного ствола' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='В интервале транспортного ствола' />
                     </td>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='5' dValue='ГИС: 1-2 точки на метр; Инклинометр: - в инт стабилизации: 1 замер на 1 "свечу"; - в инт кривизны: 1 замер на 1 "трубу".' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='ГИС: 1-2 точки на метр; Инклинометр: - в инт стабилизации: 1 замер на 1 "свечу"; - в инт кривизны: 1 замер на 1 "трубу".' />
                     </td>
                     <td>
                       <div className='decorator decorator_distribute_left'>
@@ -975,10 +941,10 @@ function GeologistProgrammPage() {
                       <Button popup='#advicepopup2' view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconAlert} className='block__avicebutton' />
                     </td>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='5' dValue='Горизонтальный ствол' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='Горизонтальный ствол' />
                     </td>
                     <td>
-                      <Field width='full' size='m' view='clear' type='textarea' maxRows='5' dValue='ГИС: 3 точки на метр; Инклинометр: 1 замер на 1 "трубу";' />
+                      <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='ГИС: 3 точки на метр; Инклинометр: 1 замер на 1 "трубу";' />
                     </td>
                     <td>
                       <div className='decorator decorator_distribute_left'>
@@ -1511,7 +1477,7 @@ function GeologistProgrammPage() {
 
             <ArticleSection header='КНБК для бурения секции 393,7 мм' role='geologist' section='Секция 660 мм / 393,7 мм'>
               <div className='content__main' style={{position: 'relative', top: '90px'}}>
-                <AdvicePopup id={3} isEditable={true} />
+                <AdvicePopup id={3} />
               </div>
               <ContentBlock type='table' size='full'>
                 <table className='table'>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Text, Informer, Button } from '@gpn-design/uikit';
 import Field from '../../components/Field/Field';
+import SelectWrap from '../../components/SelectWrap/SelectWrap';
 import TheHeader from '../../components/TheHeader/TheHeader';
 import Toc from '../../components/Toc/Toc';
 import TeamList from '../../components/TeamList/TeamList';
@@ -281,7 +282,9 @@ function GeologistProgrammPage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td rowSpan='2'><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Комбинированный кондуктор' /></td>
+                    <td rowSpan='2'>
+                      <SelectWrap size='m' view='clear' items={['Комбинированный кондуктор', 'Техническая колонна', 'Эксплуатационная колонна', 'Хвостовик']} />
+                    </td>
                     <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='ОТТМ 530/324*9,5 «Д»' /></td>
                     <td>
                       <div className='decorator decorator_distribute_left'>
@@ -347,34 +350,34 @@ function GeologistProgrammPage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td><Text size='m' view='primary' lineHeight='s'>Кондуктор</Text></td>
-                    <td><Text size='m' view='primary' lineHeight='s'>1180 кг/м³</Text></td>
-                    <td><Text size='m' view='primary' lineHeight='s'>11,5 МПа</Text></td>
+                    <td><SelectWrap size='m' view='clear' items={['Кондуктор', 'Цементное кольцо кондуктора', 'Техническая колонна', 'Цементное кольцо технической колонны', 'Эксплуатационная колонна', 'Цементное кольцо эксплуатационной колонны']} /></td>
+                    <td><Field width='full' size='m' view='clear' type='text' dValue='1180 кг' rightSide='кг/м³' /></td>
+                    <td><Field width='full' size='m' view='clear' type='text' dValue='11,5' rightSide='5 МПа' /></td>
                   </tr>
                   <tr>
-                    <td><Text size='m' view='primary' lineHeight='s'>Цементное кольцо кондуктора</Text></td>
-                    <td><Text size='m' view='primary' lineHeight='s'>1180 кг/м³</Text></td>
-                    <td><Text size='m' view='primary' lineHeight='s'>4,0 МПа</Text></td>
+                    <td><SelectWrap size='m' view='clear' items={['Цементное кольцо кондуктора', 'Кондуктор', 'Техническая колонна', 'Цементное кольцо технической колонны', 'Эксплуатационная колонна', 'Цементное кольцо эксплуатационной колонны']} /></td>
+                    <td><Field width='full' size='m' view='clear' type='text' dValue='1180' rightSide='кг/м³' /></td>
+                    <td><Field width='full' size='m' view='clear' type='text' dValue='4,0' rightSide='5 МПа' /></td>
                   </tr> 
                   <tr>
-                    <td><Text size='m' view='primary' lineHeight='s'>Техническая колонна</Text></td>
-                    <td><Text size='m' view='primary' lineHeight='s'>1180 кг/м³</Text></td>
-                    <td><Text size='m' view='primary' lineHeight='s'>19 МПа</Text></td>
+                    <td><SelectWrap size='m' view='clear' items={['Техническая колонна', 'Кондуктор', 'Цементное кольцо кондуктора', 'Цементное кольцо технической колонны', 'Эксплуатационная колонна', 'Цементное кольцо эксплуатационной колонны']} /></td>
+                    <td><Field width='full' size='m' view='clear' type='text' dValue='1180' rightSide='кг/м³' /></td>
+                    <td><Field width='full' size='m' view='clear' type='text' dValue='19' rightSide='5 МПа' /></td>
                   </tr>
                   <tr>
-                    <td><Text size='m' view='primary' lineHeight='s'>Цементное кольцо технической колонны</Text></td>
-                    <td><Text size='m' view='primary' lineHeight='s'>1180 кг/м³</Text></td>
-                    <td><Text size='m' view='primary' lineHeight='s'>6,0 МПа</Text></td>
+                    <td><SelectWrap size='m' view='clear' items={['Цементное кольцо технической колонны', 'Кондуктор', 'Цементное кольцо кондуктора', 'Техническая колонна', 'Эксплуатационная колонна', 'Цементное кольцо эксплуатационной колонны']} /></td>
+                    <td><Field width='full' size='m' view='clear' type='text' dValue='1180' rightSide='кг/м³' /></td>
+                    <td><Field width='full' size='m' view='clear' type='text' dValue='6,0' rightSide='5 МПа' /></td>
                   </tr>
                   <tr>
-                    <td><Text size='m' view='primary' lineHeight='s'>Эксплуатационная колонна</Text></td>
-                    <td><Text size='m' view='primary' lineHeight='s'>1180 кг/м³</Text></td>
-                    <td><Text size='m' view='primary' lineHeight='s'>19 МПа</Text></td>
+                    <td><SelectWrap size='m' view='clear' items={['Эксплуатационная колонна', 'Кондуктор', 'Цементное кольцо кондуктора', 'Техническая колонна', 'Цементное кольцо технической колонны', 'Цементное кольцо эксплуатационной колонны']} /></td>
+                    <td><Field width='full' size='m' view='clear' type='text' dValue='1180' rightSide='кг/м³' /></td>
+                    <td><Field width='full' size='m' view='clear' type='text' dValue='19' rightSide='5 МПа' /></td>
                   </tr>
                   <tr>
-                    <td><Text size='m' view='primary' lineHeight='s'>Цементное кольцо эксплуатационной колонны</Text></td>
-                    <td><Text size='m' view='primary' lineHeight='s'>1080 кг/м³</Text></td>
-                    <td><Text size='m' view='primary' lineHeight='s'>Не опрессовывается</Text></td>
+                    <td><SelectWrap size='m' view='clear' items={['Цементное кольцо эксплуатационной колонны', 'Кондуктор', 'Цементное кольцо кондуктора', 'Техническая колонна', 'Цементное кольцо технической колонны', 'Эксплуатационная колонна']} /></td>
+                    <td><Field width='full' size='m' view='clear' type='text' dValue='1080' rightSide='кг/м³' /></td>
+                    <td><Field width='full' size='m' view='clear' type='text' dValue='' rightSide='5 МПа' /></td>
                   </tr>
                   <tr>
                     <td colSpan='3'><Button size='s' view='clear' width='full' label='Новая строка' /></td>
@@ -585,8 +588,8 @@ function GeologistProgrammPage() {
                       <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Интервал цементирования цементным раствором' /></td>
                       <td>
                         <div className='decorator decorator_distribute_left'>
-                          <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='460' leftSilde='от' rightSide='м' />
-                          <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='280' leftSilde='до' rightSide='м' />
+                          <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='460' leftSide='от' rightSide='м' />
+                          <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='280' leftSide='до' rightSide='м' />
                         </div>
                       </td>
                     </tr>
@@ -595,8 +598,8 @@ function GeologistProgrammPage() {
                       <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Интервал цементирования гельцементным раствором' /></td>
                       <td>
                         <div className='decorator decorator_distribute_left'>
-                          <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='280' leftSilde='от' rightSide='м' />
-                          <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='0' leftSilde='до' rightSide='м' />
+                          <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='280' leftSide='от' rightSide='м' />
+                          <Field width='full' size='m' view='clear' type='text' placeholder='0' dValue='0' leftSide='до' rightSide='м' />
                         </div>
                       </td>
                     </tr>
@@ -614,10 +617,6 @@ function GeologistProgrammPage() {
                     <tr>
                       <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Градиент давления гидроразрыва' /></td>
                       <td><Field width='full' size='s' view='clear' type='text' placeholder='0' dValue='0,0206' rightSide='МПа/м' /></td>
-                    </tr>
-
-                    <tr>
-                      <td colSpan='2'><Button size='s' view='clear' width='full' label='Новая строка' /></td>
                     </tr>
                   </tbody>
                 </table>
@@ -1048,19 +1047,19 @@ function GeologistProgrammPage() {
 
             <ArticleSection header='Технологические риски' role='curator' section='Секция 295,3 мм'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
             <ArticleSection header='Общие сведения' role='curator' section='Секция 295,3 мм'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
             <ArticleSection header='Подготовительные работы перед началом бурения секции 295,3 мм' role='curator' section='Секция 295,3 мм'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
@@ -1080,25 +1079,25 @@ function GeologistProgrammPage() {
 
             <ArticleSection header='Бурение секции 295,3 мм' role='curator' section='Секция 295,3 мм'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
             <ArticleSection header='Спуск обсадной колонны секции 295,3 мм' role='curator' section='Секция 295,3 мм'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
             <ArticleSection header='Порядок расстановки центраторов' role='curator' section='Секция 295,3 мм'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
             <ArticleSection header='Профиль центрации обсадной колонны' role='curator' section='Секция 295,3 мм'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
@@ -1136,7 +1135,7 @@ function GeologistProgrammPage() {
 
             <ArticleSection header='Технологические риски' role='curator' section='Секция 220,7 мм (транспортный ствол скважины)'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
@@ -1166,25 +1165,25 @@ function GeologistProgrammPage() {
 
             <ArticleSection header='Бурение секции 220,7 мм' role='curator' section='Секция 220,7 мм (транспортный ствол скважины)'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
             <ArticleSection header='Спуск обсадной колонны секции 220,7 мм' role='curator' section='Секция 220,7 мм (транспортный ствол скважины)'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
             <ArticleSection header='Порядок расстановки центраторов' role='curator' section='Секция 220,7 мм (транспортный ствол скважины)'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
             <ArticleSection header='Профиль центрации обсадной колонны' role='curator' section='Секция 220,7 мм (транспортный ствол скважины)'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
@@ -1222,19 +1221,19 @@ function GeologistProgrammPage() {
 
             <ArticleSection header='Технологические риски' role='curator' section='Секция 152,4 мм'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
             <ArticleSection header='Общие сведения' role='curator' section='Секция 152,4 мм'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 
             <ArticleSection header='Подготовительные работы перед началом бурения секции 152,4 мм' role='curator' section='Секция 152,4 мм'>
               <ContentBlock isEditable={true} type='text'>
-                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+                <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
               </ContentBlock>
             </ArticleSection>
 

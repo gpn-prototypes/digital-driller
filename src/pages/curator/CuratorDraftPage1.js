@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text, Button, IconForward, IconCalendar } from '@gpn-design/uikit';
+import { Text, Button, IconForward, IconCalendar, Select } from '@gpn-design/uikit';
 import Field from '../../components/Field/Field';
+import SelectWrap from '../../components/SelectWrap/SelectWrap';
 import TheHeader from '../../components/TheHeader/TheHeader';
 import TheFooter from '../../components/TheFooter/TheFooter';
 
@@ -17,42 +18,46 @@ function CuratorDraftPage1() {
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Месторождение</Text>
-              <Field width='full' size='m' type='text' placeholder='Выберите месторождение' dValue='Оренбургское' />
+              <SelectWrap size='m' items={['Оренбургское', 'Царичанское', 'Арчинское', 'Ореховское', 'Пальяновская', 'Приобское', 'Валынтойское', 'В-Пякутинское', 'Вынгапуровское', 'З-Чатылькинская', 'В-Мессояхское', 'Тазовское']} />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Кустовая площадь</Text>
-              <Field width='full' size='m' type='text' placeholder='Выберите кустовую площадь' dValue='14' />
+              <SelectWrap size='m' items={['14', '3', '6', '7', '10']} />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Куст</Text>
-              <Field width='full' size='m' type='text' placeholder='Выберите куст' dValue='10' />
+              <SelectWrap size='m' items={['10', '3', '6', '7', '12']} />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Номер скважины</Text>
-              <Field width='full' size='m' type='text'  placeholder='Выберите скважину' dValue='5238' />
+              <SelectWrap size='m' items={['5238', '3149', '5219', '4912', '3892']} />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Назначение скважины</Text>
-              <Field width='full' size='m' type='text' placeholder='Выберите назначение скважины' dValue='Эксплуотационная' />
+              <SelectWrap size='m' items={['Эксплуотационная', 'Исследовательская']} />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Тип скважины</Text>
-              <Field width='full' size='m' type='text' placeholder='Выберите тип скважины' dValue='ГС 1000' />
+              <SelectWrap size='m' items={['ГС 1000', 'ГС 1290']} />
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Индекс сложности скважины</Text>
-              <Field size='m' type='number' placeholder='0' dValue='6.582' rightSide='DDI' className='input_width_number' />
+              <div style={{ width: '130px' }}>
+                <Field size='m' type='number' placeholder='0' dValue='6.582' rightSide='DDI' width='full' />
+              </div>
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Передвижка БУ на</Text>
-              <Field size='m' type='number' placeholder='0' dValue='9' rightSide='м' className='input_width_number' />
+              <div style={{ width: '130px' }}>
+                <Field size='m' type='number' placeholder='0' dValue='9' rightSide='м' width='full' />
+              </div>
             </div>
             
             <div className='pt-form__item'>
@@ -96,32 +101,44 @@ function CuratorDraftPage1() {
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Пластовое давление</Text>
-              <Field size='m' type='number' placeholder='0' dValue='183' rightSide='МПа' className='input_width_number' />
+              <div style={{ width: '130px' }}>
+                <Field size='m' type='number' placeholder='0' dValue='183' rightSide='МПа' width='full' />
+              </div>
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Пластовая температура</Text>
-              <Field size='m' type='number' placeholder='0' dValue='57.4' rightSide='°С' className='input_width_degree' />
+              <div style={{ width: '130px' }}>
+                <Field size='m' type='number' placeholder='0' dValue='57.4' rightSide='°С' width='full' />
+              </div>
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Магнитное склонение</Text>
-              <Field size='m' type='number' placeholder='0' dValue='24.70' rightSide='°' className='input_width_degree' />
+              <div style={{ width: '130px' }}>
+                <Field size='m' type='number' placeholder='0' dValue='24.70' rightSide='°' width='full' />
+              </div>
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Схождение меридианов</Text>
-              <Field size='m' type='number' placeholder='0' dValue='-2.25' rightSide='°' className='input_width_degree' />
+              <div style={{ width: '130px' }}>
+                <Field size='m' type='number' placeholder='0' dValue='-2.25' rightSide='°' width='full' />
+              </div>
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Магнитная поправка</Text>
-              <Field size='m' type='number' placeholder='0' dValue='26.95' rightSide='°' className='input_width_degree' />
+              <div style={{ width: '130px' }}>
+                <Field size='m' type='number' placeholder='0' dValue='26.95' rightSide='°' width='full' />
+              </div>
             </div>
             
             <div className='pt-form__item'>
               <Text tag='label' size='m' view='secondary' display='block' className='pt-form__label decorator decorator_space-t_xs'>Начало бурения</Text>
-              <Field size='m' type='text' placeholder='16.06.2020' dValue='22.09.2020' className='input_width_date' rightSide={IconCalendar} />
+              <div style={{ width: '130px', flexShrink: '0' }}>
+                <Field size='m' type='text' placeholder='16.06.2020' dValue='22.09.2020' rightSide={IconCalendar} width='full' />
+              </div>
               <Text size='s' view='ghost' lineHeight='s' className='decorator decorator_indent-l_s'>Дедлайны для заполнения разделов программы высчитаются автоматически</Text>
             </div>
 

@@ -194,7 +194,7 @@ function CuratorDraftPage2() {
               </tr>
               
               <tr>
-                <td colspan='5'><Button view='clear' size='m' withIcon='left' form='brick' width='full'><IconAdd size='s' className='button__icon' />Новая строка</Button></td>
+                <td colspan='5'><Button view='clear' size='m' withIcon='left' width='full' label='Новая строка' /></td>
               </tr>
             </tbody>
           </table>
