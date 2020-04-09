@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Text, Informer, IconAdd, IconComment, IconAlert, IconAlignLeft, IconTable, IconLink, IconPhoto } from '@gpn-design/uikit';
 import Field from '../Field/Field';
+import CommentPopup from '../CommentPopup/CommentPopup';
 import AdvicePopup from '../AdvicePopup/AdvicePopup';
 import ContentBlockH3 from './Type/H3';
 import ContentBlockText from './Type/Text';
@@ -15,10 +16,13 @@ import './ContentBlock.css';
 import IMGTemplate from '../../images/Профиль_ствола_скважины.jpg';
 
 function ContentBlock(props) {
-  const { isEditable, size, type, className = '', adviceID, children } = props;
+  const { isEditable, size, type, className = '', adviceID, comments = 0, children } = props;
+  const [isCommentVisible, setCommentVisibility] = useState(false);
+  const [isNewBlockPopupVisible, setNewBlockPopupVisibility] = useState(false);
   const [newBlocksList, setNewBlockList] = useState([]);
-  let block;
+  let block, rightButton, rightPopup;
   
+  // работа внутри попапа добавления ного блока
   const placeNewBlock = (type) => {
     const newBlock = [{ type: type, value: '' }, ...newBlocksList];
     setNewBlockList(newBlock);
@@ -49,15 +53,27 @@ function ContentBlock(props) {
     
   }
   
-  const [isNewBlockPopupVisible, setNewBlockPopupVisibility] = useState(false);
+  // скрывание попапа нового блока 
   const changeNewBlockPopupStatus = () => {
     if (isNewBlockPopupVisible === true) return false;
                                     else return true;
   };
+  
+  // скрывание комментариев
+  const changeCommentStatus = () => {
+    if (isCommentVisible === true) return false;
+                                   else return true;
+  };
 
   let sizeClassName = size === 'full' ? `content__main_size_full ${className}` : className;
   let leftButton, leftPopup, advicePopup, adviceButton;
-  let rightButton = <Button view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconComment} className='block__commentbutton' />;
+  if (comments > 0) {
+    rightButton = <Button view='ghost' size='s' iconSize='s' label={comments} className='block__commentbutton block__commentbutton_visible' onClick={() => {setCommentVisibility(changeCommentStatus)}} />;
+    rightPopup = <CommentPopup isEditable={isEditable} isVisible={isCommentVisible} count={comments} />;
+  } else {
+    rightButton = <Button view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconComment} className='block__commentbutton' onClick={() => {setCommentVisibility(changeCommentStatus)}} />;
+    rightPopup = <CommentPopup isEditable={isEditable} isVisible={isCommentVisible} count={comments}  />;
+  }
 
   if(isEditable) {
     leftButton = <Button view='ghost' size='s' iconOnly={true} iconSize='s' iconLeft={IconAdd} className='block__addnewblockbutton' onClick={() => {setNewBlockPopupVisibility(changeNewBlockPopupStatus)}} />;
@@ -90,14 +106,14 @@ function ContentBlock(props) {
     adviceButton = <Button view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconAlert} className='block__avicebutton' />;
   }
 
-  if(type === 'h3')             block = <ContentBlockH3 leftButton={leftButton} rightButton={rightButton} leftPopup={leftPopup} className={sizeClassName} children={children} />;
-  else if(type === 'text')      block = <ContentBlockText leftButton={leftButton} rightButton={rightButton} leftPopup={leftPopup} advicePopup={advicePopup} adviceButton={adviceButton} className={sizeClassName} children={children} />;
+  if(type === 'h3')             block = <ContentBlockH3 leftButton={leftButton} rightButton={rightButton} rightPopup={rightPopup} leftPopup={leftPopup} className={sizeClassName} children={children} />;
+  else if(type === 'text')      block = <ContentBlockText leftButton={leftButton} rightButton={rightButton} rightPopup={rightPopup} leftPopup={leftPopup} advicePopup={advicePopup} adviceButton={adviceButton} className={sizeClassName} children={children} />;
   else if(type === 'table')     block = <ContentBlockTable className={sizeClassName} children={children} />;
   else if(type === 'tablename') block = <ContentBlockTablename className={sizeClassName} children={children} />;
-  else if(type === 'image')     block = <ContentBlockImage leftButton={leftButton} rightButton={rightButton} leftPopup={leftPopup} className={sizeClassName} children={children} />;
-  else if(type === 'listname')  block = <ContentBlockListname leftButton={leftButton} rightButton={rightButton} leftPopup={leftPopup} className={sizeClassName} children={children} />;
-  else if(type === 'listitem')  block = <ContentBlockListitem leftButton={leftButton} rightButton={rightButton} leftPopup={leftPopup} className={sizeClassName} children={children} />;
-  else if(type === 'informer')  block = <ContentBlockInformer leftButton={leftButton} rightButton={rightButton} leftPopup={leftPopup} className={sizeClassName} children={children} />;
+  else if(type === 'image')     block = <ContentBlockImage leftButton={leftButton} rightButton={rightButton} rightPopup={rightPopup} leftPopup={leftPopup} className={sizeClassName} children={children} />;
+  else if(type === 'listname')  block = <ContentBlockListname leftButton={leftButton} rightButton={rightButton} rightPopup={rightPopup} leftPopup={leftPopup} className={sizeClassName} children={children} />;
+  else if(type === 'listitem')  block = <ContentBlockListitem leftButton={leftButton} rightButton={rightButton} rightPopup={rightPopup} leftPopup={leftPopup} className={sizeClassName} children={children} />;
+  else if(type === 'informer')  block = <ContentBlockInformer leftButton={leftButton} rightButton={rightButton} rightPopup={rightPopup} leftPopup={leftPopup} className={sizeClassName} children={children} />;
 
   return (
     <React.Fragment>

@@ -1,6 +1,6 @@
 .advicepopup {
   position: absolute;
-  padding: var(--space-m) var(--space-l);
+  padding: var(--space-m) var(--space-l) var(--space-s);
   left: 50%;
   top: calc(100% + var(--space-s));
   width: 500px;

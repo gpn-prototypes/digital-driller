@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Text(props) {
-  const { leftButton, rightButton, leftPopup, advicePopup, adviceButton, className = '', children } = props;
+  const { leftButton, rightButton, leftPopup, rightPopup, advicePopup, adviceButton, className = '', children } = props;
 
   return (
     <div className={`content__main block block_editable decorator decorator_indent-b_l ${className}`}>
@@ -9,6 +9,7 @@ function Text(props) {
       <div className='block__right-button'>{adviceButton}{rightButton}</div>
       {leftPopup}
       {advicePopup}
+      {rightPopup}
 
       {children}
     </div>

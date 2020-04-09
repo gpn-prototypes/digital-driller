@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Text, Informer, Button, IconAlert } from '@gpn-design/uikit';
 import Field from '../../components/Field/Field';
+import AdviceButton from '../../components/AdviceButton/AdviceButton';
 import SelectWrap from '../../components/SelectWrap/SelectWrap';
 import TheHeader from '../../components/TheHeader/TheHeader';
 import Toc from '../../components/Toc/Toc';
@@ -39,7 +40,7 @@ function GeologistProgrammPage() {
           </div>
           
           <ArticleSection header='Цель' role='geologist'>
-            <ContentBlock type='text'>
+            <ContentBlock type='text' comments={1}>
               <Text size='m' view='primary'>Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.</Text>
             </ContentBlock>
 
@@ -154,7 +155,7 @@ function GeologistProgrammPage() {
                   <tr>
                     <td className='block block__inline'>
                       <Text size='m' view='primary' lineHeight='s'>УБТ-229</Text>
-                      <Button popup='#advicepopup1' view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconAlert} className='block__avicebutton' />
+                      <AdviceButton adviceID={1} />
                     </td>
                     <td><Text size='m' view='primary' lineHeight='s'>УБТ-229</Text></td>
                     <td><Text size='m' view='primary' lineHeight='s'>19 м</Text></td>
@@ -938,7 +939,7 @@ function GeologistProgrammPage() {
                   <tr>
                     <td className='block block__inline' style={{ paddingRight: '44px' }}>
                       <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='Комплекс "Halliburton": ГК; ИК; ГГК-П; ННК; кавернометрия; инклинометрия в реальном времени и в записи' />
-                      <Button popup='#advicepopup2' view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconAlert} className='block__avicebutton' />
+                      <AdviceButton adviceID={2} />
                     </td>
                     <td>
                       <Field width='full' size='m' view='clear' type='textarea' maxRows='100' dValue='Горизонтальный ствол' />
@@ -1497,7 +1498,7 @@ function GeologistProgrammPage() {
                     <tr>
                       <td className='block block__inline'>
                         <Text size='m' view='primary' lineHeight='s'>Долото типа PDC</Text>
-                        <Button popup='#advicepopup3' view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconAlert} className='block__avicebutton' />
+                        <AdviceButton adviceID={3} />
                       </td>
                       <td><Text size='m' view='primary' lineHeight='s'>Долотный сервис</Text></td>
                       <td><Text size='m' view='primary' lineHeight='s'>0.51 м</Text></td>

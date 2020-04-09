@@ -18,6 +18,9 @@
   .block:hover .block__commentbutton, .block:hover .block__addnewblockbutton {
     opacity: 1;
   }
+  .block__commentbutton_visible {
+    opacity: 1!important;
+  }
   .block__right-button, .block__left-button {
     position: absolute;
     top: 0;
