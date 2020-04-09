@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.236ba136.chunk.css",
-    "main.js": "/static/js/main.4e6ed30f.chunk.js",
-    "main.js.map": "/static/js/main.4e6ed30f.chunk.js.map",
+    "main.js": "/static/js/main.e5e7f224.chunk.js",
+    "main.js.map": "/static/js/main.e5e7f224.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.99cad5d2.js",
     "runtime-main.js.map": "/static/js/runtime-main.99cad5d2.js.map",
     "static/js/2.d2958f8a.chunk.js": "/static/js/2.d2958f8a.chunk.js",
     "static/js/2.d2958f8a.chunk.js.map": "/static/js/2.d2958f8a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a136d3b7b4f9771570a63fecb34c68fa.js": "/precache-manifest.a136d3b7b4f9771570a63fecb34c68fa.js",
+    "precache-manifest.5ea8e28583cd1b7785a97cd8487437c9.js": "/precache-manifest.5ea8e28583cd1b7785a97cd8487437c9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.236ba136.chunk.css.map": "/static/css/main.236ba136.chunk.css.map",
     "static/js/2.d2958f8a.chunk.js.LICENSE.txt": "/static/js/2.d2958f8a.chunk.js.LICENSE.txt",
-    "static/js/main.4e6ed30f.chunk.js.LICENSE.txt": "/static/js/main.4e6ed30f.chunk.js.LICENSE.txt",
+    "static/js/main.e5e7f224.chunk.js.LICENSE.txt": "/static/js/main.e5e7f224.chunk.js.LICENSE.txt",
     "static/media/Отчет_о_рисках_пересечения_стволов_скважин.jpg": "/static/media/Отчет_о_рисках_пересечения_стволов_скважин.c76e4b22.jpg",
     "static/media/Профиль_ствола_скважины.jpg": "/static/media/Профиль_ствола_скважины.d24d5c1d.jpg"
   },
@@ -20,6 +20,6 @@
     "static/js/runtime-main.99cad5d2.js",
     "static/js/2.d2958f8a.chunk.js",
     "static/css/main.236ba136.chunk.css",
-    "static/js/main.4e6ed30f.chunk.js"
+    "static/js/main.e5e7f224.chunk.js"
   ]
 }
