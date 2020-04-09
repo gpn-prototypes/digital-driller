@@ -58,20 +58,38 @@ function ContentBlock(props) {
     if (isNewBlockPopupVisible === true) return false;
                                     else return true;
   };
-  
-  // скрывание комментариев
-  const changeCommentStatus = () => {
-    if (isCommentVisible === true) return false;
-                                   else return true;
+
+ // скрывание комментариев
+  const showCommentPopup = () => {
+    const handleDocumentClick = (e) => {
+      
+      if(!isCommentVisible) {
+        let popup = document.querySelector(`.commentpopup_visible`);
+        if(!popup.contains(e.target)) {
+          closePopup();
+        }
+      }
+    }
+    const closePopup = () => {
+      setCommentVisibility(false);
+      document.removeEventListener('click', handleDocumentClick, false);
+    }
+    
+    if(isCommentVisible) {
+      closePopup();
+    } else {
+      setCommentVisibility(true);
+      document.addEventListener('click', handleDocumentClick);
+    }
   };
 
   let sizeClassName = size === 'full' ? `content__main_size_full ${className}` : className;
   let leftButton, leftPopup, advicePopup, adviceButton;
   if (comments > 0) {
-    rightButton = <Button view='ghost' size='s' iconSize='s' label={comments} className='block__commentbutton block__commentbutton_visible' onClick={() => {setCommentVisibility(changeCommentStatus)}} />;
+    rightButton = <Button view='ghost' size='s' iconSize='s' label={comments} className='block__commentbutton block__commentbutton_visible' onClick={showCommentPopup} />;
     rightPopup = <CommentPopup isEditable={isEditable} isVisible={isCommentVisible} count={comments} />;
   } else {
-    rightButton = <Button view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconComment} className='block__commentbutton' onClick={() => {setCommentVisibility(changeCommentStatus)}} />;
+    rightButton = <Button view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconComment} className='block__commentbutton' onClick={showCommentPopup} />;
     rightPopup = <CommentPopup isEditable={isEditable} isVisible={isCommentVisible} count={comments}  />;
   }
 

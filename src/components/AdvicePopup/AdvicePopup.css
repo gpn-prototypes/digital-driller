@@ -1,6 +1,5 @@
 .advicepopup {
   position: absolute;
-  padding: var(--space-m) var(--space-l) var(--space-s);
   left: 50%;
   top: calc(100% + var(--space-s));
   width: 500px;
@@ -22,4 +21,21 @@
 
 .advicepopup_visible {
   display: block;
+}
+.advicepopup__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-m) var(--space-l);
+}
+.advicepopup__content {
+  padding: 0 var(--space-l);
+}
+.advicepopup__footer {
+  padding: var(--space-xs) var(--space-l);
+  margin-top: var(--space-l);
+  background-color: var(--color-bg-ghost);
+}
+.advicepopup__comment {
+  padding: var(--space-xs) 0;
 }

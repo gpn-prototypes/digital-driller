@@ -143,9 +143,9 @@ function CuratorDraftPage1() {
             </div>
 
             <div className='decorator decorator_distribute_right decorator_indent-t_3xl'>
-              <Button size='m' view='ghost' as='a' href='/curator/list:false' label='Удалить' />
+              <Button size='m' view='ghost' as='a' href='/digital-driller/curator/list:false' label='Удалить' />
               <div className='decorator decorator_indent-l_m'>
-                <Button as='a' size='m' view='primary' iconRight={IconForward} label='Дальше' href='/curator/draft-step-2' />
+                <Button as='a' size='m' view='primary' iconRight={IconForward} label='Дальше' href='/digital-driller/curator/draft-step-2' />
               </div>
             </div>
           </form>

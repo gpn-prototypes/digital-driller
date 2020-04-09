@@ -20,10 +20,10 @@ function LoginPage() {
             <Field width='full' size='m' type='password' placeholder='' />
           </div>
           <div className='pt-form__item'>
-            <Button size='m' view='primary' width='full' label='Войти, как куратор' as='a' href='/curator/list:false' className='text text_align_center' />
+            <Button size='m' view='primary' width='full' label='Войти, как куратор' as='a' href='/digital-driller/curator/list:false' className='text text_align_center' />
           </div>
           <div className='pt-form__item'>
-            <Button size='m' view='primary' width='full' label='Войти, как геолог' as='a' href='/geologist/list' className='text text_align_center' />
+            <Button size='m' view='primary' width='full' label='Войти, как геолог' as='a' href='/digital-driller/geologist/list' className='text text_align_center' />
           </div>
         </div>
       </div>

@@ -83,11 +83,11 @@ function CuratorDraftPage3() {
 
 
           <div className='decorator decorator_distribute_between decorator_indent-t_3xl'>
-            <Button as='a' size='m' view='ghost' iconLeft={IconBackward} href='/curator/draft-step-2' label='Назад' />
+            <Button as='a' size='m' view='ghost' iconLeft={IconBackward} href='/digital-driller/curator/draft-step-2' label='Назад' />
             <div className='decorator decorator_distribute_between'>
-              <Button size='m' view='ghost' as='a' href='/curator/list:false' label='Удалить' />
+              <Button size='m' view='ghost' as='a' href='/digital-driller/curator/list:false' label='Удалить' />
               <div className='decorator decorator_indent-l_m'>
-                <Button as='a' size='m' view='primary' href='/curator/list:true' label='Создать программу' />
+                <Button as='a' size='m' view='primary' href='/digital-driller/curator/list:true' label='Создать программу' />
               </div>
             </div>
           </div>

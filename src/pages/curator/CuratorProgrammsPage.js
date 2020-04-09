@@ -49,7 +49,7 @@ function CuratorProgrammsPage(props) {
 					<div className='decorator decorator_distribute_left decorator_vertical-align_center'>
 						<ChoiceGroup isMultiple={false} items={filterItems.types} size='s' value={1} />
 						<div className='decorator decorator_indent-l_l'>
-							<Button as='a' size='m' view='ghost' href='/curator/draft-step-1' iconLeft={IconAdd} label='Новая программа' />
+							<Button as='a' size='m' view='ghost' href='/digital-driller/curator/draft-step-1' iconLeft={IconAdd} label='Новая программа' />
 						</div>
 					</div>
 					<ChoiceGroup isMultiple={false} items={filterItems.view} size='s' value={1} />

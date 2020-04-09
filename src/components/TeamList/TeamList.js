@@ -32,7 +32,7 @@ function TeamList(props) {
         </div>
         <Text size='m' view='primary'>
           {item.company} | 
-          <Text size='m' view={isMe ? 'brand' : 'primary'} weight={isMe ? 'bold' : 'regular'} display='inline-block'>@{item.name}</Text>
+          <Text as='a' href={`/${role}/profile`} size='m' view='link' weight={isMe ? 'bold' : 'regular'} display='inline-block'>@{item.name}</Text>
         </Text>
       </div>);
   });

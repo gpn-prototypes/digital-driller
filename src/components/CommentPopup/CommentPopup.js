@@ -24,18 +24,20 @@ function CommentPopup(props) {
 
   return (
     <div className={`commentpopup ${isVisible ? 'commentpopup_visible' : ''}`}>
-      <div className='commentpopup__header'>
-        <div className='decorator decorator_distribute_left decorator_vertical-align_center'>
-          <Text size='2xs' view='secondary' transform='uppercase' className='decorator decorator_indent-r_xs'>{id} из {adviceList.length} обсуждений</Text>
-          <Button as='a' href={`#commentpopup${id-1}`} size='xs' view='clear' onlyIcon={true} iconLeft={IconTop} disabled={id === 1 ? true : false} className='commentpopup__prev' />
-          <Button as='a' href={`#commentpopup${id+1}`} size='xs' view='clear' onlyIcon={true} iconLeft={IconDown} disabled={id === adviceList.length ? true : false} className='commentpopup__next' />
-        </div>
-        {isEditable ? <Button size='xs' view='ghost' label='Применен' className='commentpopup__done' /> : ''}
-      </div>
+      {count < 0 ? 
+        <div className='commentpopup__header'>
+          <div className='decorator decorator_distribute_left decorator_vertical-align_center'>
+            <Text size='2xs' view='secondary' transform='uppercase' className='decorator decorator_indent-r_xs'>{id} из {adviceList.length} обсуждений</Text>
+            <Button as='a' href={`#commentpopup${id-1}`} size='xs' view='clear' onlyIcon={true} iconLeft={IconTop} disabled={id === 1 ? true : false} className='commentpopup__prev' />
+            <Button as='a' href={`#commentpopup${id+1}`} size='xs' view='clear' onlyIcon={true} iconLeft={IconDown} disabled={id === adviceList.length ? true : false} className='commentpopup__next' />
+          </div>
+          {isEditable ? <Button size='xs' view='ghost' label='Применен' className='commentpopup__done' /> : ''}
+        </div> : ''}
       
-      <div className={count > 0 ? 'decorator decorator_space-t_xs' : ''}>
-        {commentList}
-      </div>
+      {count > 0 ?
+        <div className='decorator decorator_space-t_xs'>
+          {commentList}
+        </div> : ''}
       
       <div className='commentpopup__item'>
         <Field size='s' view='clear' width='full' placeholder='Ваш комментарий' />

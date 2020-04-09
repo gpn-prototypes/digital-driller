@@ -56,7 +56,7 @@ function ArticleSection(props) {
         <div className='decorator decorator_distribute_between decorator_vertical-align_center decorator_indent-b_l'>
           <div className='decorator decorator_distribute_left'>
             <Badge size='m' view='filled' status={isSectionPublished ? 'success' : badge.status} label={isSectionPublished ? 'готово' : badge.label} />
-            <Text size='m' view={sectionInfo.member === role ? 'brand' : 'ghost'} weight={sectionInfo.member === role ? 'bold' : 'regular'} className='decorator decorator_indent-l_m'>@{user.name}</Text>
+            <Text as='a' href={`/${role}/profile`} size='m' view={sectionInfo.member === role ? 'brand' : 'ghost'} weight={sectionInfo.member === role ? 'bold' : 'regular'} className='decorator decorator_indent-l_m'>@{user.name}</Text>
           </div>
 
           {!isSectionPublished ? saveButton : ''}

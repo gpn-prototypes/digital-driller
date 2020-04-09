@@ -9,6 +9,12 @@ html, body {
   background-color: var(--color-bg-default);
 }
 
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-typo-link-hover);
+}
 
 ul, ol, li {
   margin: 0;
@@ -17,6 +23,9 @@ ul, ol, li {
 }
 h1, h2, h3, h4, h5, h6, p {
   margin: initial;
+}
+input {
+  color: currentColor;
 }
 
 .content-page {
@@ -45,6 +54,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .content {
   position: relative;
+  min-height: calc(100vh - 60px);
 }
 .content_view_centered {
   min-height: calc(100vh - 200px);

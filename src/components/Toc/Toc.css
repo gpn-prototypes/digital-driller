@@ -10,13 +10,13 @@
     opacity: 0.75;
   }
 
-.toc__item_status_success {
+.toc__item_status_success, .toc__item_status_success:hover {
   color: var(--color-typo-success)
 }
-.toc__item_status_warning {
+.toc__item_status_warning, .toc__item_status_warning:hover {
   color: var(--color-typo-warning)
 }
-.toc__item_status_progress {
+.toc__item_status_progress, .toc__item_status_progress:hover {
   color: var(--color-typo-secondary)
 }
 .toc__section-name {
