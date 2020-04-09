@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { Text, Button, IconBackward, Badge, IconAttach } from '@gpn-design/uikit';
 import Field from '../../components/Field/Field';
 import SelectWrap from '../../components/SelectWrap/SelectWrap';
@@ -6,6 +7,8 @@ import TheHeader from '../../components/TheHeader/TheHeader';
 import TheFooter from '../../components/TheFooter/TheFooter';
 
 function CuratorDraftPage3() {
+  const history = useHistory();
+
   return (
     <div className='content-page'>
       <TheHeader role='Куратор' />
@@ -83,11 +86,14 @@ function CuratorDraftPage3() {
 
 
           <div className='decorator decorator_distribute_between decorator_indent-t_3xl'>
-            <Button as='a' size='m' view='ghost' iconLeft={IconBackward} href='/digital-driller/curator/draft-step-2' label='Назад' />
+            <Button size='m' view='ghost' iconLeft={IconBackward} label='Назад'
+              onClick={() => { history.push(`/digital-driller/curator/draft-step-2`) }} />
             <div className='decorator decorator_distribute_between'>
-              <Button size='m' view='ghost' as='a' href='/digital-driller/curator/list:false' label='Удалить' />
+              <Button size='m' view='ghost' label='Удалить'
+                onClick={() => { history.push(`/digital-driller/curator/list:false`) }} />
               <div className='decorator decorator_indent-l_m'>
-                <Button as='a' size='m' view='primary' href='/digital-driller/curator/list:true' label='Создать программу' />
+                <Button size='m' view='primary' label='Создать программу'
+                  onClick={() => { history.push(`/digital-driller/curator/list:true`) }} />
               </div>
             </div>
           </div>

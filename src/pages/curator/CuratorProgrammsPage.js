@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 
 import { Text, Button, ChoiceGroup, IconAdd } from '@gpn-design/uikit';
 import TheHeader from '../../components/TheHeader/TheHeader';
@@ -38,6 +38,7 @@ const filterItems = {
 
 function CuratorProgrammsPage(props) {
 	const { programmList } = props;
+	const history = useHistory();
 	let { isNew } = useParams();
 
 	return (
@@ -49,7 +50,8 @@ function CuratorProgrammsPage(props) {
 					<div className='decorator decorator_distribute_left decorator_vertical-align_center'>
 						<ChoiceGroup isMultiple={false} items={filterItems.types} size='s' value={1} />
 						<div className='decorator decorator_indent-l_l'>
-							<Button as='a' size='m' view='ghost' href='/digital-driller/curator/draft-step-1' iconLeft={IconAdd} label='Новая программа' />
+							<Button size='m' view='ghost' iconLeft={IconAdd} label='Новая программа'
+								onClick={() => { history.push(`/digital-driller/curator/draft-step-1`) }} />
 						</div>
 					</div>
 					<ChoiceGroup isMultiple={false} items={filterItems.view} size='s' value={1} />

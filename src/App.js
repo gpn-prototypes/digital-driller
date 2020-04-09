@@ -18,14 +18,14 @@ import GeologistProfilePage from './pages/geologist/GeologistProfilePage';
 
 import programmList from './mocks/programmList.js';
 
-// import "./style.css";
+import "@gpn-design/uikit/dist/style.css";
 import './App.css';
 
 function App() {
   return (
 		<React.Fragment>
 		<Switch>
-			<Route exact path="/">
+			<Route exact path="/digital-driller/">
 				<LoginPage/>
 			</Route>
 

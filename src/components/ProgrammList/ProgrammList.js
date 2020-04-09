@@ -9,17 +9,13 @@ function ProgrammList(props) {
   const history = useHistory();
 
   const list = programmList.map(item => {
-    const openProgramm = () => {
-      history.push(`/${role}/programm/${item.id}`)
-    };
-
     let status = <Badge size='m' view='filled' status='system'>{item.stage}</Badge>;
     if (item.stage === 'Подготовка' || item.stage === 'Согласование' || item.stage === 'Бурение')
       status = <Badge size='m' view='filled' status='normal' label={item.stage + ' до ' + item.deadline} />;
     else if (item.stage === 'Завершено')
       status = <Badge size='m' view='filled' status='success' label={item.stage + ' ' + item.deadline} />;
 
-    return <tr className='pt-table__row' onClick={openProgramm}>
+    return <tr className='pt-table__row' onClick={() => { history.push(`/digital-driller/${role}/programm/${item.id}`) }}>
       <Text size='s' view='primary' as='td'>{item.field}</Text>
       <td>
         <div className='decorator decorator_distribute_left decorator_vertical-align_center'>

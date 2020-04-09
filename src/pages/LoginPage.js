@@ -1,8 +1,11 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { Text, Button } from '@gpn-design/uikit';
 import Field from '../components/Field/Field';
 
 function LoginPage() {
+  const history = useHistory();
+
   return (
     <div className='login-page'>
       <div className='login-form'>
@@ -20,10 +23,12 @@ function LoginPage() {
             <Field width='full' size='m' type='password' placeholder='' />
           </div>
           <div className='pt-form__item'>
-            <Button size='m' view='primary' width='full' label='Войти, как куратор' as='a' href='/digital-driller/curator/list:false' className='text text_align_center' />
+            <Button size='m' view='primary' width='full' label='Войти, как куратор' className='text text_align_center'
+              onClick={() => { history.push(`/digital-driller/curator/list:false`) }} />
           </div>
           <div className='pt-form__item'>
-            <Button size='m' view='primary' width='full' label='Войти, как геолог' as='a' href='/digital-driller/geologist/list' className='text text_align_center' />
+            <Button size='m' view='primary' width='full' label='Войти, как геолог' className='text text_align_center'
+              onClick={() => { history.push(`/digital-driller/geologist/list`) }} />
           </div>
         </div>
       </div>

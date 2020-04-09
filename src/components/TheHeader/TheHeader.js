@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { TextField, Button, IconSearch, IconRing, User, Text } from '@gpn-design/uikit';
 import SavingStatus from '../../components/SavingStatus/SavingStatus';
 
@@ -8,6 +9,7 @@ import { team } from '../../mocks/team';
 
 function TheHeader(props) {
   const { page, role, isMinified, programmName } = props;
+  const history = useHistory();
   const user = team.filter(member => member.role === role)[0];
   
   const showShackbar = () => {
@@ -24,7 +26,7 @@ function TheHeader(props) {
       <header className='header'>
         <div className='header__left-side'>
           <div className='header__module header__module_indent_l decorator decorator_distribute_left decorator_vertical-align_center'>
-            <a className='logo' href={role === 'Куратор' ? '/digital-driller/curator/list:false' : '/digital-driller/geologist/list'}>
+            <a className='logo' onClick={() => { history.push(role === 'Куратор' ? '/digital-driller/curator/list:false' : '/digital-driller/geologist/list') }}>
               <p className='text text_size_l text_weight_bold'>Программа бурения</p>
             </a>
             <Text size='s' view='ghost' display='inline-block' className='decorator decorator_indent-h_s'>/</Text>
@@ -46,7 +48,8 @@ function TheHeader(props) {
           </div>
           
           <div className='header__module header__module_indent_s'>
-            <User as='a' href='/digital-driller/' view='clear' size='m' status='available' avatarUrl={user.avatar} name={user.name} info={user.role} />
+            <User view='clear' size='m' status='available' avatarUrl={user.avatar} name={user.name} info={user.role}
+              onClick={() => { history.push(`/digital-driller/`) }} />
           </div>
         </div>
       </header>
@@ -56,7 +59,8 @@ function TheHeader(props) {
       <header className='header'>
         <div className='header__left-side'>
           <div className='header__module header__module_indent_l'>
-            <a className='logo' href={role === 'Куратор' ? '/digital-driller/curator/list:false' : '/digital-driller/geologist/list'}>
+            <a className='logo'
+              onClick={() => { history.push(role === 'Куратор' ? '/digital-driller/curator/list:false' : '/digital-driller/geologist/list') }}>
               <p className='text text_size_l text_weight_bold'>Программа бурения</p>
             </a>
           </div>
@@ -91,7 +95,8 @@ function TheHeader(props) {
           </div>
           
           <div className='header__module header__module_indent_s'>
-            <User as='a' href='/digital-driller/' view='clear' size='m' status='available' avatarUrl={user.avatar} name={user.name} info={user.role} />
+            <User view='clear' size='m' status='available' avatarUrl={user.avatar} name={user.name} info={user.role}
+              onClick={() => { history.push(`/digital-driller/`) }} />
           </div>
         </div>
       </header>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { Text, Badge } from '@gpn-design/uikit';
 
 import { tocList, team } from '../../mocks/newProgramm';
@@ -7,6 +8,7 @@ import './TeamList.css';
 
 function TeamList(props) {
   const { role } = props;
+  const history = useHistory();
 
   const list = team.map(item => {
     let badge;
@@ -32,7 +34,8 @@ function TeamList(props) {
         </div>
         <Text size='m' view='primary'>
           {item.company} | 
-          <Text as='a' href={`/${role}/profile`} size='m' view='link' weight={isMe ? 'bold' : 'regular'} display='inline-block'>@{item.name}</Text>
+          <Text size='m' view='link' weight={isMe ? 'bold' : 'regular'} display='inline-block'
+            onClick={() => { history.push(`/${role}/profile`) }}>@{item.name}</Text>
         </Text>
       </div>);
   });

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Text, Badge, Button } from '@gpn-design/uikit';
 
 import { tocList, team } from '../../mocks/newProgramm';
@@ -7,6 +8,7 @@ import './ArticleSection.css';
 
 function ArticleSection(props) {
   const { header, section, role, children } = props;
+  const history = useHistory();
   const [isSectionPublished, setSectionStatus] = useState(false);
   let badge, sectionID, saveButton = '';
   let sectionInfo;
@@ -46,7 +48,7 @@ function ArticleSection(props) {
     badge = { status: 'system', label: `до ${user.deadline}` };
 
   if(sectionInfo.member === role)
-    saveButton = <Button size='s' view='primary' as='a' href='#' label='Опубликовать' onClick={showShackbar} />;
+    saveButton = <Button size='s' view='primary' label='Опубликовать' onClick={showShackbar} />;
 
   return (
     <div className='article-section'>
@@ -56,7 +58,8 @@ function ArticleSection(props) {
         <div className='decorator decorator_distribute_between decorator_vertical-align_center decorator_indent-b_l'>
           <div className='decorator decorator_distribute_left'>
             <Badge size='m' view='filled' status={isSectionPublished ? 'success' : badge.status} label={isSectionPublished ? 'готово' : badge.label} />
-            <Text as='a' href={`/${role}/profile`} size='m' view={sectionInfo.member === role ? 'brand' : 'ghost'} weight={sectionInfo.member === role ? 'bold' : 'regular'} className='decorator decorator_indent-l_m'>@{user.name}</Text>
+            <Text size='m' view={sectionInfo.member === role ? 'brand' : 'ghost'} weight={sectionInfo.member === role ? 'bold' : 'regular'} className='decorator decorator_indent-l_m'
+              onClick={() => { history.push(`/${role}/profile`) }}>@{user.name}</Text>
           </div>
 
           {!isSectionPublished ? saveButton : ''}
