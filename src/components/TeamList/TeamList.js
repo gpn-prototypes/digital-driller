@@ -35,7 +35,7 @@ function TeamList(props) {
         <Text size='m' view='primary'>
           {item.company} | 
           <Text size='m' view='link' weight={isMe ? 'bold' : 'regular'} display='inline-block'
-            onClick={() => { history.push(`/${role}/profile`) }}>@{item.name}</Text>
+            onClick={() => { history.push(`/digital-driller/${role}/profile`) }}>@{item.name}</Text>
         </Text>
       </div>);
   });

@@ -59,7 +59,7 @@ function ArticleSection(props) {
           <div className='decorator decorator_distribute_left'>
             <Badge size='m' view='filled' status={isSectionPublished ? 'success' : badge.status} label={isSectionPublished ? 'готово' : badge.label} />
             <Text size='m' view={sectionInfo.member === role ? 'brand' : 'ghost'} weight={sectionInfo.member === role ? 'bold' : 'regular'} className='decorator decorator_indent-l_m'
-              onClick={() => { history.push(`/${role}/profile`) }}>@{user.name}</Text>
+              onClick={() => { history.push(`/digital-driller/${role}/profile`) }}>@{user.name}</Text>
           </div>
 
           {!isSectionPublished ? saveButton : ''}
