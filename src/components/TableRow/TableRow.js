@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Text, IconAdd, IconComment, IconAlert, IconTable, IconLink, IconPhoto, IconAlignLeft } from '@gpn-design/uikit';
+import { Button } from '@gpn-design/uikit/Button';
+import { IconComment } from '@gpn-design/uikit/IconComment';
 
 import './TableRow.css';
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Button, IconSelect } from '@gpn-design/uikit';
+import { Button } from '@gpn-design/uikit/Button';
+import { IconSelect } from '@gpn-design/uikit/IconSelect';
 import TocItem from './TocItem';
 
 function TocSection(props) {

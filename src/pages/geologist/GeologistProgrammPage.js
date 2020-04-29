@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { Text, Informer, Button, IconAlert } from '@gpn-design/uikit';
+import { Text } from '@gpn-design/uikit/Text';
+import { Informer } from '@gpn-design/uikit/Informer';
+import { Button } from '@gpn-design/uikit/Button';
 import Field from '../../components/Field/Field';
 import AdviceButton from '../../components/AdviceButton/AdviceButton';
 import SelectWrap from '../../components/SelectWrap/SelectWrap';
@@ -21,7 +23,7 @@ function GeologistProgrammPage() {
   let { id } = useParams();
   let programmInfo = programmList.filter(item => item.id === id)[0];
   return (
-    <div className='content-page'>
+    <React.Fragment>
       <TheHeader isMinified={true} programmName={programmInfo.field + ' > ' + programmInfo.bush + ' > ' + programmInfo.well} role='Геолог' />
       <div className='content content_view_split'>
         <div className='content__sidebar'>
@@ -1958,7 +1960,7 @@ function GeologistProgrammPage() {
 
       <Snackbar message='Раздел опубликован' id='savedSectionSnackbar' />
       <Snackbar message='Программа сохранена' id='savedProgrammSnackbar' />
-    </div>
+    </React.Fragment>
   );
 }
 

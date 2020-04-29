@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { Text, Badge, Button } from '@gpn-design/uikit';
+import { Text } from '@gpn-design/uikit/Text';
+import { Badge } from '@gpn-design/uikit/Badge';
+import { Button } from '@gpn-design/uikit/Button';
 
 import { tocList, team } from '../../mocks/newProgramm';
 

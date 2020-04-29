@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Text, IconCheck } from '@gpn-design/uikit';
+import { Text } from '@gpn-design/uikit/Text';
+import { IconCheck } from '@gpn-design/uikit/IconCheck';
 
 import './SavingStatus.css';
 

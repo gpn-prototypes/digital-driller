@@ -1,5 +1,10 @@
 import React from 'react';
-import { Text, Button, IconTop, IconDown, Badge } from '@gpn-design/uikit';
+import { Text } from '@gpn-design/uikit/Text';
+import { Button } from '@gpn-design/uikit/Button';
+import { IconTop } from '@gpn-design/uikit/IconTop';
+import { IconDown } from '@gpn-design/uikit/IconDown';
+import { Badge } from '@gpn-design/uikit/Badge';
+
 
 import { adviceList } from '../../mocks/adviceList';
 import './AdvicePopup.css';

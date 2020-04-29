@@ -1,135 +1,302 @@
 const programmList = [
   {
-    id: '5893',
-    // field: 'Царичанское',
-    field: 'Оренбургское',
-    bush: '4 куст',
-    well: '103/5 скважина',
-    stage: 'Подготовка',
+    id: 5893,
+    type: 'Оценочная',
+    bush: '3 куст',
+    well: '38/6 скважина',
+    stage: 'Заполнение',
     deadline: '20 мая 2020',
-    progress: '20% заполнено',
-    curator: 'Тихон Кувшинов'
+    curator: 'Тихон Кувшинов',
+    geologist: 'Анастасия Алёшин',
+    status: ['done', 'done', false, false, false, false, false]
   },
   {
-    id: '5892',
-    // field: 'Арчинское',
-    field: 'Оренбургское',
+    id: 5894,
+    type: 'Нагнетательная',
+    bush: '8 куст',
+    well: '103/5 скважина',
+    stage: 'Заполнение',
+    deadline: '20 мая 2020',
+    curator: 'Тихон Кувшинов',
+    status: ['done', 'done', 'done', 'warning', false, false, false]
+  },
+  {
+    id: 5895,
+    type: 'Оценочная',
+    bush: '5 куст',
+    well: '198/4 скважина',
+    stage: 'Заполнение',
+    deadline: '20 мая 2020',
+    curator: 'Тихон Кувшинов',
+    geologist: 'Анастасия Алёшин',
+    status: ['done', 'done', 'warning', 'warning', 'warning', false, false]
+  },
+  {
+    id: 5896,
+    type: 'Разведочная',
+    bush: '8 куст',
+    well: '59/1 скважина',
+    stage: 'Заполнение',
+    deadline: '20 мая 2020',
+    curator: 'Тихон Кувшинов',
+    status: ['done', 'done', false, false, false, false, false]
+  },
+  {
+    id: 5897,
+    type: 'Опережающая добывающая',
+    bush: '7 куст',
+    well: '103/6 скважина',
+    stage: 'Заполнение',
+    deadline: '20 мая 2020',
+    curator: 'Яснов Никита',
+    geologist: 'Анастасия Алёшина',
+    status: ['done', 'done', false, false, false, false, false]
+  },
+  {
+    id: 5898,
+    type: 'Разведочная',
+    bush: '3 куст',
+    well: '49/2 скважина',
+    stage: 'Заполнение',
+    deadline: '20 мая 2020',
+    curator: 'Гуськов Владимир',
+    status: ['done', 'done', false, false, false, false, false]
+  },
+  {
+    id: 5899,
+    type: 'Разведочная',
+    bush: '1 куст',
+    well: '28/3 скважина',
+    stage: 'Заполнение',
+    deadline: '20 мая 2020',
+    curator: 'Стеблева Анастасия',
+    status: ['done', 'done', false, false, false, false, false]
+  },
+  {
+    id: 5900,
+    type: 'Структурно-поисковая',
     bush: '6 куст',
+    well: '48/2 скважина',
+    stage: 'Заполнение',
+    deadline: '20 мая 2020',
+    curator: 'Клименко Ольга',
+    geologist: 'Анастасия Алёшина',
+    status: ['done', 'done', false, false, false, false, false]
+  },
+  {
+    id: 5901,
+    type: 'Оценочная',
+    bush: '10 куст',
+    well: '18/3 скважина',
+    stage: 'Согласование',
+    deadline: '20 мая 2020',
+    curator: 'Тихон Кувшинов',
+    status: [false, false, false, false, false, false, false, false, false, false, false]
+  },
+  {
+    id: 5902,
+    type: 'Структурно-поисковая',
+    bush: '9 куст',
+    well: '182/5 скважина',
+    stage: 'Согласование',
+    deadline: '20 мая 2020',
+    curator: 'Тихон Кувшинов',
+    geologist: 'Анастасия Алёшина',
+    status: [false, false, false, false, false, false, false, false, false, false, false]
+  },
+  {
+    id: 5903,
+    type: 'Эксплуатационная',
+    bush: '7 куст',
+    well: '38/16 скважина',
+    stage: 'Согласование',
+    deadline: '20 мая 2020',
+    curator: 'Тихон Кувшинов',
+    status: ['done', 'done', false, false, false, false, false, false, false, false, false]
+  },
+  {
+    id: 5904,
+    type: 'Оценочная',
+    bush: '10 куст',
+    well: '59/2 скважина',
+    stage: 'Согласование',
+    deadline: '20 мая 2020',
+    curator: 'Кудашов Эдуард',
+    status: [false, false, false, false, false, false, false, false, false, false, false]
+  },
+  {
+    id: 5905,
+    type: 'Опережающая добывающая',
+    bush: '4 куст',
+    well: '37/2 скважина',
+    stage: 'Согласование',
+    deadline: '20 мая 2020',
+    curator: 'Фомина Римма',
+    geologist: 'Анастасия Алёшина',
+    status: ['done', 'done', 'done', 'done', 'done', false, false, false, false, false, false]
+  },
+  {
+    id: 5906,
+    type: 'Разведочная',
+    bush: '7 куст',
+    well: '94/13 скважина',
+    stage: 'Согласование',
+    deadline: '20 мая 2020',
+    curator: 'Бондарчук Ян',
+    status: ['done', 'done', 'done', 'done', 'done', 'done', false, false, false, false, false]
+  },
+  {
+    id: 5907,
+    type: 'Разведочная',
+    bush: '5 куст',
     well: '38/6 скважина',
     stage: 'Согласование',
     deadline: '20 мая 2020',
-    progress: '40% согласовано',
-    curator: 'Яснов Никита'
+    curator: 'Гуськов Владимир',
+    geologist: 'Анастасия Алёшина',
+    status: ['done', 'done', 'done', 'done', 'done', 'done', false, false, false, false, false]
   },
   {
-    id: '5891',
-    // field: 'Ореховское',
-    field: 'Оренбургское',
+    id: 5908,
+    type: 'Разведочная',
+    bush: '9 куст',
+    well: '103/5 скважина',
+    stage: 'Согласование',
+    deadline: '20 мая 2020',
+    curator: 'Клименко Ольга',
+    status: ['done', 'done', 'done', 'done', 'done', 'done', false, false, false, false, false]
+  },
+  {
+    id: 5909,
+    type: 'Оценочная',
     bush: '10 куст',
     well: '198/4 скважина',
     stage: 'Согласование',
     deadline: '20 мая 2020',
-    progress: '50% согласовано',
-    curator: 'Гуськов Владимир'
+    curator: 'Стеблева Анастасия',
+    status: ['done', 'done', 'done', 'done', 'done', false, false, false, false, false, false]
   },
   {
-    id: '5890',
-    // field: 'Пальяновская',
-    field: 'Оренбургское',
-    bush: '2 куст',
+    id: 5910,
+    type: 'Разведочная',
+    bush: '9 куст',
     well: '59/1 скважина',
-    stage: 'Бурение',
+    stage: 'Сформирована',
     deadline: '20 мая 2020',
-    progress: '20% готово',
-    curator: 'Стеблева Анастасия'
+    curator: 'Тихон Кувшинов',
+    status: ['done', 'done', 'done', 'done', 'done', 'done', 'done', 'done', 'done', 'done', 'done']
   },
   {
-    id: '5889',
-    // field: 'Приобское',
-    field: 'Оренбургское',
-    bush: '1 куст',
+    id: 5911,
+    type: 'Структурно-поисковая',
+    bush: '2 куст',
     well: '103/6 скважина',
-    stage: 'Бурение',
+    stage: 'Сформирована',
     deadline: '20 мая 2020',
-    progress: '40% готово',
+    curator: 'Фомина Римма',
+    status: ['done', 'done', 'done', 'done', 'done', 'done', 'done', 'done', 'done', 'done', 'done']
+  },
+  {
+    id: 5912,
+    type: 'Эксплуатационная',
+    bush: '4 куст',
+    well: '49/2 скважина',
+    stage: 'Завершено',
+    deadline: '20 мая 2020',
+    curator: 'Тихон Кувшинов'
+  },
+  {
+    id: 5913,
+    type: 'Утилизационная',
+    bush: '6 куст',
+    well: '28/3 скважина',
+    stage: 'Завершено',
+    deadline: '20 мая 2020',
+    curator: 'Тихон Кувшинов'
+  },
+  {
+    id: 5914,
+    type: 'Эксплуатационная',
+    bush: '8 куст',
+    well: '48/2 скважина',
+    stage: 'Завершено',
+    deadline: '20 мая 2020',
+    curator: 'Тихон Кувшинов',
+    geologist: 'Анастасия Алёшина'
+  },
+  {
+    id: 5915,
+    type: 'Опережающая добывающая',
+    bush: '2 куст',
+    well: '38/6 скважина',
+    stage: 'Завершено',
+    deadline: '20 мая 2020',
+    curator: 'Тихон Кувшинов'
+  },
+  {
+    id: 5916,
+    type: 'Оценочная',
+    bush: '2 куст',
+    well: '103/5 скважина',
+    stage: 'Завершено',
+    deadline: '20 мая 2020',
+    curator: 'Тихон Кувшинов'
+  },
+  {
+    id: 5917,
+    type: 'Утилизационная',
+    bush: '6 куст',
+    well: '198/4 скважина',
+    stage: 'Завершено',
+    deadline: '20 мая 2020',
+    curator: 'Тихон Кувшинов'
+  },
+  {
+    id: 5918,
+    type: 'Эксплуатационная',
+    bush: '1 куст',
+    well: '38/6 скважина',
+    stage: 'Завершено',
+    deadline: '20 мая 2020',
+    curator: 'Гуськов Владимир',
+    geologist: 'Анастасия Алёшина'
+  },
+  {
+    id: 5919,
+    type: 'Оценочная',
+    bush: '4 куст',
+    well: '103/5 скважина',
+    stage: 'Завершено',
+    deadline: '20 мая 2020',
     curator: 'Клименко Ольга'
   },
   {
-    id: '5883',
-    // field: 'Валынтойское',
-    field: 'Оренбургское',
-    bush: '3 куст',
-    well: '49/2 скважина',
-    stage: 'Завершено',
-    deadline: '20.05.20',
-    progress: '',
-    curator: 'Кудашов Эдуард'
-  },
-  {
-    id: '5882',
-    // field: 'В-Пякутинское',
-    field: 'Оренбургское',
-    bush: '11 куст',
-    well: '28/3 скважина',
-    stage: 'Завершено',
-    deadline: '20.05.20',
-    progress: '',
-    curator: 'Фомина Римма'
-  },
-  {
-    id: '5888',
-    // field: 'Вынгапуровское',
-    field: 'Оренбургское',
-    bush: '12 куст',
-    well: '100/3 скважина',
-    stage: 'Завершено',
-    deadline: '12.01.20',
-    progress: '',
-    curator: 'Бондарчук Ян'
-  },
-  {
-    id: '5887',
-    // field: 'З-Чатылькинская',
-    field: 'Оренбургское',
-    bush: '4 куст',
-    well: '60/3 скважина',
-    stage: 'Завершено',
-    deadline: '18.12.19',
-    progress: '',
-    curator: 'Тихон Кувшинов'
-  },
-  {
-    id: '5886',
-    // field: 'В-Мессояхское',
-    field: 'Оренбургское',
-    bush: '11 куст',
-    well: '150/2 скважина',
-    stage: 'Завершено',
-    deadline: '3.10.19',
-    progress: '',
-    curator: 'Фомина Римма'
-  },
-  {
-    id: '5885',
-    // field: 'Тазовское',
-    field: 'Оренбургское',
-    bush: '3 куст',
-    well: '2473 скважина',
-    stage: 'Завершено',
-    deadline: '30.10.19',
-    progress: '',
-    curator: 'Кудашов Эдуард'
-  },
-  {
-    id: '5884',
-    // field: 'Новопортовское',
-    field: 'Оренбургское',
+    id: 5920,
+    type: 'Эксплуатационная',
     bush: '5 куст',
-    well: '3682 скважина',
+    well: '198/4 скважина',
     stage: 'Завершено',
-    deadline: '18.09.19',
-    progress: '',
-    curator: 'Тихон Кувшинов'
+    deadline: '20 мая 2020',
+    curator: 'Кудашов Эдуард'
+  },
+  {
+    id: 5921,
+    type: 'Оценочная',
+    bush: '1 куст',
+    well: '59/1 скважина',
+    stage: 'Завершено',
+    deadline: '20 мая 2020',
+    curator: 'Гуськов Владимир'
+  },
+  {
+    id: 5922,
+    type: 'Структурно-поисковая',
+    bush: '3 куст',
+    well: '103/6 скважина',
+    stage: 'Завершено',
+    deadline: '20 мая 2020',
+    curator: 'Бондарчук Ян',
+    geologist: 'Анастасия Алёшина'
   },
 ];
 

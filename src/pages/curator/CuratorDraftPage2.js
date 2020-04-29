@@ -1,6 +1,10 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Text, Button, IconForward, IconAdd, IconBackward } from '@gpn-design/uikit';
+import { Text } from '@gpn-design/uikit/Text';
+import { Button } from '@gpn-design/uikit/Button';
+import { IconForward } from '@gpn-design/uikit/IconForward';
+import { IconAdd } from '@gpn-design/uikit/IconAdd';
+import { IconBackward } from '@gpn-design/uikit/IconBackward';
 import Field from '../../components/Field/Field';
 import TheHeader from '../../components/TheHeader/TheHeader';
 import TheFooter from '../../components/TheFooter/TheFooter';
@@ -9,7 +13,7 @@ function CuratorDraftPage2() {
   const history = useHistory();
 
   return (
-    <div className='content-page'>
+    <React.Fragment>
       <TheHeader role='Куратор' />
       <div className='content decorator decorator_space-v_3xl'>
         <div className='content__main'>
@@ -231,7 +235,7 @@ function CuratorDraftPage2() {
         </div>
       </div>
       <TheFooter />
-    </div>
+    </React.Fragment>
   );
 }
 

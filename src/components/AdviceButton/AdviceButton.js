@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, IconAlert } from '@gpn-design/uikit';
+import { Button } from '@gpn-design/uikit/Button';
+import { IconAlert } from '@gpn-design/uikit/IconAlert';
 
 function AdviceButton(props) {
   const { adviceID } = props;

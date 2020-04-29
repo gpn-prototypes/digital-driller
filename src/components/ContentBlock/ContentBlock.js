@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
-import { Button, Text, Informer, IconAdd, IconComment, IconAlert, IconAlignLeft, IconTable, IconLink, IconPhoto } from '@gpn-design/uikit';
+import { Button } from '@gpn-design/uikit/Button';
+import { Text } from '@gpn-design/uikit/Text';
+import { Informer } from '@gpn-design/uikit/Informer';
+import { IconAdd } from '@gpn-design/uikit/IconAdd';
+import { IconComment } from '@gpn-design/uikit/IconComment';
+import { IconAlert } from '@gpn-design/uikit/IconAlert';
+import { IconAlignLeft } from '@gpn-design/uikit/IconAlignLeft';
+import { IconTable } from '@gpn-design/uikit/IconTable';
+import { IconLink } from '@gpn-design/uikit/IconLink';
+import { IconPhoto } from '@gpn-design/uikit/IconPhoto';
+
 import Field from '../Field/Field';
 import CommentPopup from '../CommentPopup/CommentPopup';
 import AdvicePopup from '../AdvicePopup/AdvicePopup';

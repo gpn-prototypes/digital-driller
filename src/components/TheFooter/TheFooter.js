@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from '@gpn-design/uikit';
+import { Text } from '@gpn-design/uikit/Text';
 
 import './TheFooter.css';
 

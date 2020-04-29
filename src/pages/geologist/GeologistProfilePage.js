@@ -1,11 +1,11 @@
 import React from 'react';
-import { Text } from '@gpn-design/uikit';
+import { Text } from '@gpn-design/uikit/Text';
 import TheHeader from '../../components/TheHeader/TheHeader';
 import TheFooter from '../../components/TheFooter/TheFooter';
 
 function GeologistProfilePage() {
   return (
-    <div className='content-page'>
+    <React.Fragment>
       <TheHeader role='Куратор' />
       <div className='content decorator decorator_space-v_3xl'>
         <div className='content__main decorator decorator_indent-v_4xl'>
@@ -13,7 +13,7 @@ function GeologistProfilePage() {
         </div>
       </div>
       <TheFooter />
-    </div>
+    </React.Fragment>
   );
 }
 

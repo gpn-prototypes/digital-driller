@@ -1,0 +1,35 @@
+.ProgrammCard {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xs) var(--space-m) var(--space-m);
+
+  background: var(--color-bg-default);
+  box-shadow: 0px 30px 50px rgba(0, 32, 51, 0.06), 0px 4px 24px rgba(0, 32, 51, 0.04), 0px 16px 16px rgba(0, 32, 51, 0.04), 0px 8px 8px rgba(0, 32, 51, 0.04), 0px 6px 4px rgba(0, 32, 51, 0.03), 0px 2px 2px rgba(0, 32, 51, 0.02);
+  border-radius: 4px;
+}
+.ProgrammCard__header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: var(--space-s);
+}
+.ProgrammCard__progress {
+  display: flex;
+  height: 4px;
+  padding-bottom: var(--space-s);
+}
+  .ProgrammCard__part {
+    height: 100%;
+    flex-basis: 100%;
+    border-radius: 99em;
+    background-color: var(--color-bg-ghost);
+  }
+  .ProgrammCard__part:not(:last-child) { margin-right: var(--space-3xs); }
+  .ProgrammCard__part_done {
+    background-color: var(--color-bg-success);
+  }
+  .ProgrammCard__part_warning {
+    background-color: var(--color-bg-warning);
+  }
+.ProgrammCard__content {
+  flex-basis: 100%;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-
-import { IconCheck, IconAlert } from '@gpn-design/uikit';
+import { IconCheck } from '@gpn-design/uikit/IconCheck';
+import { IconAlert } from '@gpn-design/uikit/IconAlert';
 
 function TocItem(props) {
   const { status, content, isMine, role, sectionName } = props;

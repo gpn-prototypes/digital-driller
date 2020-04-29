@@ -1,6 +1,9 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Text, Button, IconForward, IconCalendar } from '@gpn-design/uikit';
+import { Text } from '@gpn-design/uikit/Text';
+import { Button } from '@gpn-design/uikit/Button';
+import { IconForward } from '@gpn-design/uikit/IconForward';
+import { IconCalendar } from '@gpn-design/uikit/IconCalendar';
 import Field from '../../components/Field/Field';
 import SelectWrap from '../../components/SelectWrap/SelectWrap';
 import TheHeader from '../../components/TheHeader/TheHeader';
@@ -10,7 +13,7 @@ function CuratorDraftPage1() {
   const history = useHistory();
 
   return (
-    <div className='content-page'>
+    <React.Fragment>
       <TheHeader role='Куратор' />
       <div className='content decorator decorator_space-v_3xl'>
         <div className='content__main'>
@@ -157,7 +160,7 @@ function CuratorDraftPage1() {
         </div>
       </div>
       <TheFooter />
-    </div>
+    </React.Fragment>
   );
 }
 

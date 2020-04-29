@@ -1,5 +1,8 @@
 import React from 'react';
-import { Text, Button, IconTop, IconDown, Avatar } from '@gpn-design/uikit';
+import { Text } from '@gpn-design/uikit/Text';
+import { Button } from '@gpn-design/uikit/Button';
+import { IconTop } from '@gpn-design/uikit/IconTop';
+import { IconDown } from '@gpn-design/uikit/IconDown';
 
 import { adviceList } from '../../mocks/adviceList';
 import './CommentPopup.css';
