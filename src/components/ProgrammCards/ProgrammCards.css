@@ -2,11 +2,16 @@
   display: flex;
   flex-direction: column;
   padding: var(--space-xs) var(--space-m) var(--space-m);
-
+  
   background: var(--color-bg-default);
-  box-shadow: 0px 30px 50px rgba(0, 32, 51, 0.06), 0px 4px 24px rgba(0, 32, 51, 0.04), 0px 16px 16px rgba(0, 32, 51, 0.04), 0px 8px 8px rgba(0, 32, 51, 0.04), 0px 6px 4px rgba(0, 32, 51, 0.03), 0px 2px 2px rgba(0, 32, 51, 0.02);
+  box-shadow: 0px 0px 20px rgba(0, 32, 51, 0.03), 0px 4px 16px -4px rgba(0, 32, 51, 0.02), 0px 8px 8px -4px rgba(0, 32, 51, 0.02), 0px 8px 8px -4px rgba(0, 32, 51, 0.02), 0px 4px 2px rgba(0, 32, 51, 0.03), 0px 4px 2px rgba(0, 32, 51, 0.02);
   border-radius: 4px;
+  transition: box-shadow 0.3s ease-out;
 }
+  .ProgrammCard:hover {
+    box-shadow: 0px 30px 50px rgba(0, 32, 51, 0.06), 0px 4px 24px rgba(0, 32, 51, 0.04), 0px 16px 16px rgba(0, 32, 51, 0.04), 0px 8px 8px rgba(0, 32, 51, 0.04), 0px 6px 4px rgba(0, 32, 51, 0.03), 0px 2px 2px rgba(0, 32, 51, 0.02);
+    cursor: pointer;
+  }
 .ProgrammCard__header {
   display: flex;
   justify-content: space-between;

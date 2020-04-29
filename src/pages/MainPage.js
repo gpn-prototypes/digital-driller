@@ -86,7 +86,7 @@ function MainPage(props) {
 						{ role === 'Куратор' ?
 							<div className='decorator decorator_indent-l_l'>
 								<Button size='s' view='ghost' iconLeft={IconAdd} label='Новая программа'
-									onClick={() => { history.push(`/digital-driller/curator/draft-step-1`) }} />
+									onClick={() => { history.push(`/digital-driller/draft-step-1`) }} />
 							</div> : ''
 						}
 					</div>

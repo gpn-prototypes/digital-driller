@@ -1,0 +1,24 @@
+.Steps {
+  display: flex;
+}
+.Steps__item {
+  position: relative;
+  flex-basis: 100%;
+  padding-bottom: var(--space-s);
+}
+.Steps__item:not(:last-child) {
+  margin-right: var(--space-2xs);
+}
+.Steps__item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-bg-ghost);
+  border-radius: 4px;
+}
+.Steps__item_state_active::after, .Steps__item_state_done::after {
+  background-color: var(--color-bg-success);
+}

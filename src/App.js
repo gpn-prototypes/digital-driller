@@ -13,17 +13,15 @@ import '@gpn-design/uikit/__internal__/src/utils/whitepaper/whitepaper.css';
 
 import LoginPage from './pages/LoginPage';
 import MainPage from './pages/MainPage';
+import DraftPage1 from './pages/DraftPage1';
+import DraftPage2 from './pages/DraftPage2';
+import DraftPage3 from './pages/DraftPage3';
 
 // страницы куратора
-// import CuratorProgrammsPage from './pages/curator/CuratorProgrammsPage';
 // import CuratorProgrammPage from './pages/curator/CuratorProgrammPage';
-// import CuratorDraftPage1 from './pages/curator/CuratorDraftPage1';
-// import CuratorDraftPage2 from './pages/curator/CuratorDraftPage2';
-// import CuratorDraftPage3 from './pages/curator/CuratorDraftPage3';
 // import CuratorProfilePage from './pages/curator/CuratorProfilePage';
 
 // страницы геолога
-// import GeologistProgrammsPage from './pages/geologist/GeologistProgrammsPage';
 // import GeologistProgrammPage from './pages/geologist/GeologistProgrammPage';
 // import GeologistProfilePage from './pages/geologist/GeologistProfilePage';
 
@@ -51,19 +49,18 @@ function App() {
 						<MainPage/>
 					</Route>
 
-					{/* для куратора */}
-					{/* <Route exact path="/digital-driller/curator/list:isNew">
-						<CuratorProgrammsPage programmList={programmList} />
-					</Route> */}
 					{/* <Route exact path="/digital-driller/curator/programm/:id">
 						<CuratorProgrammPage programmList={programmList} />
 					</Route> */}
-					{/* <Route exact path="/digital-driller/curator/draft-step-1">
-						<CuratorDraftPage1 />
-					</Route> */}
-					{/* <Route exact path="/digital-driller/curator/draft-step-2">
-						<CuratorDraftPage2 />
-					</Route> */}
+					<Route exact path="/digital-driller/draft-step-1">
+						<DraftPage1 />
+					</Route>
+					<Route exact path="/digital-driller/draft-step-2">
+						<DraftPage2 />
+					</Route>
+					<Route exact path="/digital-driller/draft-step-3">
+						<DraftPage3 />
+					</Route>
 					{/* <Route exact path="/digital-driller/curator/draft-step-3">
 						<CuratorDraftPage3 />
 					</Route> */}

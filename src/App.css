@@ -48,17 +48,14 @@ input {
   border-radius: 8px;
 }
 
-.input_width_date input {
+.TextField_width_date input {
   width: 78px;
 }
-.input_width_coordinates input {
-  width: 104px;
-}
-.input_width_degree input {
-  width: 60px;
-}
-.input_width_number input {
-  width: 60px;
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none; 
+  margin: 0;
 }
 
 
@@ -86,3 +83,38 @@ input {
   border-top: 1px solid var(--color-bg-border);
 }
 
+
+.FpbForm {
+
+}
+.FpbForm__row {
+  display: flex;
+  margin-bottom: var(--space-l);
+}
+.FpbForm__item {
+
+}
+.FpbForm__item:not(:last-child) {
+  margin-right: var(--space-l);
+}
+.FpbForm__item_width_quarter {
+  flex-basis: 25%;
+}
+.FpbForm__item_width_third {
+  flex-basis: 33%;
+}
+.FpbForm__item_width_half {
+  flex-basis: 50%;
+}
+.FpbForm__item_width_three-quarter {
+  flex-basis: 75%;
+}
+.FpbForm__item_width_full {
+  flex-basis: 100%;
+}
+.FpbForm__control {
+  flex-basis: 100%;
+}
+.FpbForm__label {
+  margin-bottom: var(--space-2xs);
+}
