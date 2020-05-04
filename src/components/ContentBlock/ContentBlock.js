@@ -60,7 +60,6 @@ function ContentBlock(props) {
         <ContentBlock isEditable={true} type='image' onChange={newBlockHandleChange(index)} key={index}>
           <img src={IMGTemplate} alt=' ' />
         </ContentBlock>);
-    
   }
   
   // скрывание попапа нового блока 
