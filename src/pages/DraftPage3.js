@@ -36,10 +36,10 @@ function DraftPage3() {
     return (
 			<div className='FpbForm__row FpbForm__row_with-buttons' key={index}>
 				<div className='FpbForm__buttons'>
-					<Button onlyIcon={true} view='ghost' iconLeft={IconAdd} onClick={ (e) => { controlUser(e) } } />
+					<Button onlyIcon={true} view='clear' iconLeft={IconAdd} onClick={ (e) => { controlUser(e) } } />
 					
 					{ newUserList.length > 1 ?
-						<Button onlyIcon={true} view='ghost' iconLeft={IconTrash} onClick={ (e) => { controlUser(e, index) } } />
+						<Button onlyIcon={true} view='clear' iconLeft={IconTrash} onClick={ (e) => { controlUser(e, index) } } />
 					: ''}
 				</div>
 
@@ -170,10 +170,10 @@ function DraftPage3() {
               onClick={() => { history.push(`/digital-driller/draft-step-2`) }} />
             <div className='decorator decorator_distribute_between'>
               <Button size='m' view='ghost' label='Удалить'
-                onClick={() => { history.push(`/digital-driller/main`) }} />
+                onClick={() => { history.push(`/digital-driller/main:false`) }} />
               <div className='decorator decorator_indent-l_m'>
                 <Button size='m' view='primary' label='Создать программу'
-                  onClick={() => { history.push(`/digital-driller/main`) }} />
+                  onClick={() => { history.push(`/digital-driller/main:true`) }} />
               </div>
             </div>
           </div>

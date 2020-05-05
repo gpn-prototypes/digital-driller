@@ -45,7 +45,7 @@ function App() {
 						<LoginPage/>
 					</Route>
 					
-					<Route exact path="/digital-driller/main">
+					<Route exact path="/digital-driller/main:newprogramm">
 						<MainPage/>
 					</Route>
 

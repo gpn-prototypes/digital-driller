@@ -22,7 +22,7 @@ function FullHeader(props) {
   const menuItems = [
     {
       label: 'Программы',
-      onClick: () => history.push('/digital-driller/main'),
+      onClick: () => history.push('/digital-driller/main:false'),
       active: page === 'Программы' ? true : false
     },
     {

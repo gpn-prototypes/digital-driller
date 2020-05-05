@@ -12,11 +12,11 @@ function LoginPage() {
 
   const curatorButtonHandler = () => {
     beCurator();
-    history.push(`/digital-driller/main`)
+    history.push(`/digital-driller/main:false`)
   }
   const geologistButtonHandler = () => {
     beGeologist();
-    history.push(`/digital-driller/main`)
+    history.push(`/digital-driller/main:false`)
   }
 
   return (

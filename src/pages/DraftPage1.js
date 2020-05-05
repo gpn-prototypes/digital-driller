@@ -163,7 +163,7 @@ function DraftPage1() {
 
 					<div className='decorator decorator_distribute_right decorator_indent-t_5xl'>
 						<Button size='m' view='ghost' label='Удалить'
-							onClick={() => { history.push(`/digital-driller/main`) }} />
+							onClick={() => { history.push(`/digital-driller/main:false`) }} />
 						<div className='decorator decorator_indent-l_m'>
 							<Button size='m' view='primary' iconRight={IconForward} label='Дальше'
 								onClick={() => { history.push(`/digital-driller/draft-step-2`) }} />

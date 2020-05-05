@@ -19,9 +19,9 @@ import Snackbar from '../components/Snackbar/Snackbar';
 
 import programmList from '../mocks/programmList.js';
 
-function MainPage(props) {
+function MainPage() {
 	const history = useHistory();
-	const { isNew } = useParams();
+	const { newprogramm } = useParams();
 	const { role } = useContext(RoleContext);
 	const allProgrammList = programmList.filter(item => item.stage !== 'Завершено');
 	const doneProgrammList = programmList.filter(item => item.stage === 'Завершено');
@@ -109,8 +109,10 @@ function MainPage(props) {
 				{ choosedProgrammView == 'Карточки' ? <ProgrammCards programmList={filteredProgrammList}></ProgrammCards> : '' }
 			</Content>
 			<TheFooter />
-
-			<Snackbar message='Программа создана. Уведомления ответственным уже отправлены' className={isNew === ':true' ? 'snackbar_visible' : ''} />
+			
+			{ newprogramm ?
+				<Snackbar message='Программа бурения создана. Уведомления ответственным уже отправлены' visible={true} />
+			: ''}
 		</React.Fragment>
 	);
 };
