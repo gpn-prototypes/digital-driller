@@ -92,7 +92,7 @@ function ContentBlock(props) {
     }
   };
 
-  let sizeClassName = size === 'full' ? `content__main_size_full ${className}` : className;
+  let sizeClassName = size === 'full' ? `Article__section_size_full ${className}` : className;
   let leftButton, leftPopup, advicePopup, adviceButton;
   if (comments > 0) {
     rightButton = <Button view='ghost' size='s' iconSize='s' label={comments} className='block__commentbutton block__commentbutton_visible' onClick={showCommentPopup} />;

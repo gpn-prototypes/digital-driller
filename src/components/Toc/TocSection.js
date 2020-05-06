@@ -19,7 +19,7 @@ function TocSection(props) {
   return (
     <div className={`accordion ${isAccordionOpen ? '' : 'accordion_closed'}`}>
       <div className='accordion__header'>
-        <a href={`#${section.name}`} className='toc__section-name'>{section.name}</a>
+        <a href={`#${section.name}`} className='toc__section-name decorator decorator_space-l_s'>{section.name}</a>
         <Button size='xs' view='clear' iconOnly={true} iconLeft={IconSelect} className='accordion__button' onClick={() => setAccordionState(openAccordion)} />
       </div>
       <div className='accordion__list'>

@@ -130,3 +130,18 @@ input[type=number]::-webkit-outer-spin-button {
 .FpbForm__buttons > *:not(:last-child) {
   margin-right: var(--space-2xs) !important;
 }
+
+.Article {
+  padding: var(--space-5xl) 0;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.Article__section {
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Article__section_size_full {
+  width: calc(100% - var(--space-2xl) * 2);
+  overflow-x: auto;
+}

@@ -3,37 +3,30 @@ import { IconCheck } from '@gpn-design/uikit/IconCheck';
 import { IconAlert } from '@gpn-design/uikit/IconAlert';
 
 function TocItem(props) {
-  const { status, content, isMine, role, sectionName } = props;
+  const { status, content, isMine, sectionName } = props;
   let itemInfo = {
     name: '',
     link: '',
-    linkClassName: '',
     icon: ''
   };
 
   if (sectionName) itemInfo.link = `#${sectionName}: ${content}`;
   else itemInfo.link = `#${content}`;
 
-  if (isMine) itemInfo.name = <React.Fragment>{content}<br/></React.Fragment>;
-  else itemInfo.name = content;
 
-
-  if (status === 'done' && role === 'geologist') {
-    itemInfo.icon = <IconCheck size='s' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />;
-    itemInfo.linkClassName = 'toc__item_status_success pt-icon-plus';
-  } else if (status === 'warning' && role === 'geologist') {
-    itemInfo.icon = <IconAlert size='s' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />;
-    itemInfo.linkClassName = 'toc__item_status_warning pt-icon-plus';
-  } else {
-    itemInfo.icon = '';
-    itemInfo.linkClassName = 'toc__item_status_progress decorator decorator_indent-l_xl';
-  }
+  if (status === 'done')
+    itemInfo.icon = <IconCheck size='s' view='success' />;
+  else if (status === 'warning')
+    itemInfo.icon = <IconAlert size='s' view='warning' />;
   
   return (
-    <a href={itemInfo.link} className={`toc__item ${itemInfo.linkClassName}`}>
-      {itemInfo.icon}
+    <a href={itemInfo.link} className='toc__item pt-icon-plus'>
+      <div className='toc__icon pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs'>
+        {itemInfo.icon}
+      </div>
       <div className={`toc__name ${isMine ? 'toc__name_mine' : ''}`}>
-        {itemInfo.name}
+        {content}
+        {isMine ? <br /> : ''}
       </div>
     </a>
   );

@@ -64,7 +64,6 @@ function ProgrammCards(props) {
   }
 
   const list = programmList.map(item => {
-
     return (
       <div className='ProgrammCard' onClick={() => { history.push(`/digital-driller/programm/${item.id}`) }}>
         { getProgress(item.status) }

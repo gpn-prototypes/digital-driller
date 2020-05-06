@@ -14,7 +14,7 @@ import SavingStatus from '../../SavingStatus/SavingStatus';
 import Snackbar from '../../Snackbar/Snackbar';
 
 function MiniHeader(props) {
-  const { page, user, programmName } = props;
+  const { user, programmName } = props;
   const history = useHistory();
   const [snackbar, setSnackbar] = useState(false);
   

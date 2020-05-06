@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import TocItem from './TocItem';
 import TocSection from './TocSection';
 
-import { tocList } from '../../mocks/newProgramm';
+import { RoleContext } from '../../context/ProjectContext';
 import './Toc.css';
 
 function Toc(props) {
-  const { role } = props;
-  const list = tocList.map(item => {
-    if(item.sectionname)
-      return <TocSection section={item} role={role} key={item.name} />;
+  const { programmContent } = props;
+  const { role } = useContext(RoleContext);
+  
+  const list = programmContent.map(item => {
+    if(item.sectionName)
+      return <TocSection section={item} key={item.name} />;
     else
-      return <TocItem status={item.status} content={item.name} isMine={item.member === role} role={role} sectionName='' key={item.name} />;
+      return <TocItem status={ item.status } content={item.name} isMine={item.member === role} sectionName='' key={item.name} />;
   });
 
   return (

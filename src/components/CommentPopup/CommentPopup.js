@@ -9,7 +9,7 @@ import './CommentPopup.css';
 import Field from '../Field/Field';
 
 function CommentPopup(props) {
-  const { isVisible, isEditable, count, className = '' } = props;
+  const { isVisible, isEditable, count } = props;
   let id = 2; // todo
   let commentList = [];
 

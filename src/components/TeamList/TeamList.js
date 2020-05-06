@@ -3,7 +3,8 @@ import { useHistory } from 'react-router-dom';
 import { Text } from '@gpn-design/uikit/Text';
 import { Badge } from '@gpn-design/uikit/Badge';
 
-import { tocList, team } from '../../mocks/newProgramm';
+import { tocList } from '../../mocks/newProgramm';
+import { team } from '../../mocks/team';
 
 import './TeamList.css';
 

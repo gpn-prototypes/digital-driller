@@ -43,30 +43,37 @@ export const team = [
   },
   {
     name: 'Бондарчук Ян',
+    role: '',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-8.png'
   },
   {
     name: 'Клименко Ольга',
+    role: '',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-9.png'
   },
   {
     name: 'Кудашов Эдуард',
+    role: '',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-10.png'
   },
   {
     name: 'Стеблева Анастасия',
+    role: '',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-11.png'
   },
   {
     name: 'Фомина Римма',
+    role: '',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-14.png'
   },
   {
     name: 'Яснов Никита',
+    role: '',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-12.png'
   },
   {
     name: 'Гуськов Владимир',
+    role: '',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-13.png'
   }
 ];

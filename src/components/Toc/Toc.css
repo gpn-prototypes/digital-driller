@@ -1,26 +1,18 @@
 .toc__item {
-  display: block;
-  margin-bottom: var(--space-l);
+  padding: var(--space-xs) var(--space-s);
   text-decoration: none;
   font-size: var(--size-text-s);
   line-height: var(--line-height-text-s);
-  transition: opacity 0.2s ease;
+  border-radius: var(--control-radius);
+  color: var(--color-typo-secondary);
+  transition: background-color 0.2s ease;
 }
   .toc__item:hover {
-    opacity: 0.75;
+    color: var(--color-typo-secondary);
+    background: var(--color-control-bg-clear-hover);
   }
-
-.toc__item_status_success, .toc__item_status_success:hover {
-  color: var(--color-typo-success)
-}
-.toc__item_status_warning, .toc__item_status_warning:hover {
-  color: var(--color-typo-warning)
-}
-.toc__item_status_progress, .toc__item_status_progress:hover {
-  color: var(--color-typo-secondary)
-}
-.toc__section-name {
-  padding-top: var(--space-3xs);
+.toc__section-name, .toc__section-name:hover {
+  padding: var(--space-m) var(--space-s) 0;
   text-decoration: none;
   font-size: var(--size-text-s);
   line-height: var(--line-height-text-s);
@@ -38,6 +30,10 @@
   text-transform: uppercase;
   background-color: var(--color-bg-ghost);
 }
+.toc__icon {
+  width: 16px;
+  height: 16px;
+}
 
 .accordion {
   position: relative;
@@ -46,6 +42,7 @@
   .accordion__header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: var(--space-s);
     background-color: var(--color-bg-secondary);
   }

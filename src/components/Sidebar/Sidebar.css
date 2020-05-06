@@ -1,0 +1,20 @@
+.Sidebar {
+  box-sizing: border-box;
+  height: calc(100vh - 60px);
+  padding: var(--space-m) var(--space-s);
+  overflow-y: auto;
+  background-color: var(--color-bg-secondary);
+}
+.Sidebar__menu {
+  list-style: none;
+}
+.Sidebar__menu-item {
+  padding: var(--space-xs) var(--space-s);
+  margin: 0;
+  border-radius: var(--control-radius);
+  transition: background-color 0.3s ease;
+}
+.Sidebar__menu-item:hover {
+  cursor: pointer;
+  background-color: var(--color-control-bg-clear-hover);
+}

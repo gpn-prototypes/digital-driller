@@ -31,7 +31,7 @@ function Steps(props) {
           <Text size='s' view='ghost' display='inline-block'>{item.name}</Text>
         </div>
       );
-    }
+    } else return ''
   })
   return (
     <div className='Steps'>{ list }</div>

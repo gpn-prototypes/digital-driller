@@ -4,7 +4,7 @@ function Informer(props) {
   const { leftButton, rightButton, leftPopup, rightPopup, className = '', children } = props;
 
   return (
-    <div className={`content__main block block_editable decorator decorator_indent-b_l ${className}`}>
+    <div className={`Article__section block block_editable decorator decorator_indent-b_l ${className}`}>
       <div className='block__left-button'>{leftButton}</div>
       <div className='block__right-button'>{rightButton}</div>
       {leftPopup}

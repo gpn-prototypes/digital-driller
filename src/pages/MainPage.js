@@ -27,7 +27,7 @@ function MainPage() {
 	const doneProgrammList = programmList.filter(item => item.stage === 'Завершено');
 	let myProgrammList;
 
-	if(role == 'Куратор')
+	if(role === 'Куратор')
 		myProgrammList = programmList.filter(item => item.curator === 'Тихон Кувшинов');
 	else
 		myProgrammList = programmList.filter(item => item.geologist === 'Анастасия Алёшина');
@@ -62,7 +62,7 @@ function MainPage() {
 		<React.Fragment>
 			<TheHeader page={`Программы`} />
 			
-			<Content size={ choosedProgrammView == 'Список' ? 'm' : 'l' } centered={true}>
+			<Content size={ choosedProgrammView === 'Список' ? 'm' : 'l' } centered={true}>
 				{/* Заголовок страницы */}
 				<Text as='h1' size='3xl' weight='bold' view='primary' className='decorator decorator_indent-b_2xl decorator_indent-t_none'>
 					Программы
@@ -105,12 +105,12 @@ function MainPage() {
 				</div>
 				
 				{/* Программы */}
-				{ choosedProgrammView == 'Список' ? <ProgrammList programmList={filteredProgrammList}></ProgrammList> : '' }
-				{ choosedProgrammView == 'Карточки' ? <ProgrammCards programmList={filteredProgrammList}></ProgrammCards> : '' }
+				{ choosedProgrammView === 'Список' ? <ProgrammList programmList={filteredProgrammList}></ProgrammList> : '' }
+				{ choosedProgrammView === 'Карточки' ? <ProgrammCards programmList={filteredProgrammList}></ProgrammCards> : '' }
 			</Content>
 			<TheFooter />
 			
-			{ newprogramm ?
+			{ newprogramm === ':true' ?
 				<Snackbar message='Программа бурения создана. Уведомления ответственным уже отправлены' visible={true} />
 			: ''}
 		</React.Fragment>
