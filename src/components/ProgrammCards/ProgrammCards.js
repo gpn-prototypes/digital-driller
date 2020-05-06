@@ -60,7 +60,7 @@ function ProgrammCards(props) {
         button = <Button size='s' view='ghost' width='full' label='Открыть' />;
     }
     
-    return <div className='decorator decorator_space-t_xl'>{ button }</div>
+    return button ? <div className='decorator decorator_space-t_xl'>{ button }</div> : ''
   }
 
   const list = programmList.map(item => {
