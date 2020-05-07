@@ -62,7 +62,7 @@ function MainPage() {
 		<React.Fragment>
 			<TheHeader page={`Программы`} />
 			
-			<Content size={ choosedProgrammView === 'Список' ? 'm' : 'l' } centered={true}>
+			<Content size={ choosedProgrammView === 'Список' ? 'm' : 'l' } centered={true} height='full'>
 				{/* Заголовок страницы */}
 				<Text as='h1' size='3xl' weight='bold' view='primary' className='decorator decorator_indent-b_2xl decorator_indent-t_none'>
 					Программы

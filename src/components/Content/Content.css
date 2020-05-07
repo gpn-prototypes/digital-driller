@@ -10,7 +10,7 @@
 }
 .content {
   position: relative;
-  min-height: calc(100vh - 60px);
+  /*min-height: calc(100vh - 60px);*/
   margin: auto;
 }
   .content_size_s {
@@ -25,6 +25,9 @@
   .content_size_full {
     width: calc(100% - var(--space-2xl) * 2);
     overflow-x: auto;
+  }
+  .content_height_full {
+    min-height: calc(100vh - 200px);
   }
 
 

@@ -14,11 +14,13 @@
   }
 .ProgrammCard__header {
   display: flex;
+  flex-shrink: 0;
   justify-content: space-between;
   padding-bottom: var(--space-s);
 }
 .ProgrammCard__progress {
   display: flex;
+  flex-shrink: 0;
   height: 4px;
   padding-bottom: var(--space-s);
 }
