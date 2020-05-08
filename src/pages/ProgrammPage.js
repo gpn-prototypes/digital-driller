@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { RoleContext } from '../context/ProjectContext';
 
@@ -8,6 +8,7 @@ import TheHeader from '../components/TheHeader/TheHeader';
 import ArticleSection from '../components/ArticleSection/ArticleSection';
 import Snackbar from '../components/Snackbar/Snackbar';
 import Sidebar from '../components/Sidebar/Sidebar';
+import Modal from '../components/Modal/Modal';
 
 import programmList from '../mocks/programmList';
 import programmBlocks from '../mocks/programmBlocks';
@@ -17,6 +18,7 @@ import Content from '../components/Content/Content';
 function ProgrammPage() {
   const { id } = useParams();
   const { role } = useContext(RoleContext);
+  const [ modal, setModal ] = useState('');
   const programmInfo = programmList.filter(item => item.id == id)[0];
   let blockList = [];
 
@@ -67,6 +69,11 @@ function ProgrammPage() {
 
       <Snackbar message='Раздел опубликован' />
       <Snackbar message='Программа сохранена' />
+
+      { modal === 'team' ? <Modal content='team' programmInfo={programmInfo} /> : '' }
+      { modal === 'comment' ? <Modal content='comment' programmInfo={programmInfo} /> : '' }
+      { modal === 'lesson' ? <Modal content='lesson' programmInfo={programmInfo} /> : '' }
+      { modal === 'approve' ? <Modal content='approve' programmInfo={programmInfo} /> : '' }
     </React.Fragment>
   );
 }

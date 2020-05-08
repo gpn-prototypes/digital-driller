@@ -44,7 +44,7 @@ function FullHeader(props) {
         <React.Fragment>
           <HeaderModule>
             <HeaderLogo>
-              <Text size="l" weight="bold">Программа бурения</Text>
+              <Text size="l" weight="bold" onClick={() => history.push('/digital-driller/main:false')}>Программа бурения</Text>
             </HeaderLogo>
           </HeaderModule>
           <HeaderModule indent="l">

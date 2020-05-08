@@ -33,7 +33,7 @@ function MiniHeader(props) {
           <React.Fragment>
             <HeaderModule className='decorator decorator_distribute_left'>
               <HeaderLogo>
-                <Text size="l" weight="bold">Программа бурения</Text>
+                <Text size="l" weight="bold" onClick={() => history.push('/digital-driller/main:false')}>Программа бурения</Text>
               </HeaderLogo>
               <Text size='m' view='ghost' className='decorator decorator_indent-h_m'>/</Text>
               <Text size='m' view='primary'>{programmName}</Text>
