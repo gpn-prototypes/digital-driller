@@ -17,7 +17,7 @@
   position: relative;
   height: var(--input-height);
   width: 100%;
-  padding: 0 var(--input-space);
+  padding: 0 calc(var(--input-space) + var(--space-m)) 0 var(--input-space);
   box-sizing: border-box;
   border: var(--control-border-width) solid var(--color-control-bg-border-default);
   border-radius: var(--control-radius);
@@ -31,6 +31,12 @@
     border-color: var(--color-control-bg-border-focus);
     outline: none;
     z-index: 1;
+  }
+  .select:disabled {
+    border-color: var(--color-control-bg-border-disable);
+    background: var(--color-control-bg-disable);
+    color: var(--color-control-typo-disable);
+    pointer-events: none;
   }
   .select_size_m {
     --input-height: var(--control-height-m);
