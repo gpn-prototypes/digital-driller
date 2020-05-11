@@ -14,9 +14,9 @@ function TocItem(props) {
   else itemInfo.link = `#${content}`;
 
 
-  if (status === 'done')
+  if (status === 'Готово' || status === 'Согласован')
     itemInfo.icon = <IconCheck size='s' view='success' />;
-  else if (status === 'warning')
+  else if (status === 'Непримененный совет' || status === 'На доработку')
     itemInfo.icon = <IconAlert size='s' view='warning' />;
   
   return (

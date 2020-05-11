@@ -1,23 +1,23 @@
 import React, { createContext, useState } from 'react';
 
-export const RoleContext = createContext();
+export const UserContext = createContext();
 
-const RoleProvider = (props) => {
-  const [ role, setRole ] = useState('Куратор');
+const UserProvider = (props) => {
+  const [ user, setUser ] = useState({ role: 'Куратор', name: 'Тихон Кувшинов' });
 
   const beGeologist = () => {
-    setRole('Геолог');
+    setUser({ role: 'Геолог', name: 'Анастасия Алёшина' });
   }
 
   const beCurator = () => {
-    setRole('Куратор');
+    setUser({ role: 'Куратор', name: 'Тихон Кувшинов' });
   }
 
   return (
-    <RoleContext.Provider value={{ role, beGeologist, beCurator }}>
+    <UserContext.Provider value={{ user, beGeologist, beCurator }}>
       { props.children }
-    </RoleContext.Provider>
+    </UserContext.Provider>
   )
 };
 
-export default RoleProvider;
+export default UserProvider;

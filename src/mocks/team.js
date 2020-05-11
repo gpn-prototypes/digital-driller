@@ -43,37 +43,47 @@ export const team = [
   },
   {
     name: 'Бондарчук Ян',
-    role: '',
+    role: 'Куратор',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-8.png'
   },
   {
     name: 'Клименко Ольга',
-    role: '',
+    role: 'Куратор',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-9.png'
   },
   {
     name: 'Кудашов Эдуард',
-    role: '',
+    role: 'Куратор',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-10.png'
   },
   {
     name: 'Стеблева Анастасия',
-    role: '',
+    role: 'Куратор',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-11.png'
   },
   {
     name: 'Фомина Римма',
-    role: '',
+    role: 'Куратор',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-14.png'
   },
   {
     name: 'Яснов Никита',
-    role: '',
+    role: 'Куратор',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-12.png'
   },
   {
     name: 'Гуськов Владимир',
-    role: '',
+    role: 'Куратор',
+    avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-13.png'
+  },
+  {
+    name: 'Фомина Римма',
+    role: 'Геолог',
+    avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-14.png'
+  },
+  {
+    name: 'Гуськов Владимир',
+    role: 'Геолог',
     avatar: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1329536/avatar-13.png'
   }
 ];

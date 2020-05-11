@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
-import { RoleContext } from '../context/ProjectContext';
+import { UserContext } from '../context/ProjectContext';
 
 import { Text } from '@gpn-design/uikit/Text';
 import { Button } from '@gpn-design/uikit/Button';
@@ -9,7 +9,7 @@ import Slider from '../components/Slider/Slider';
 
 function LoginPage() {
   const history = useHistory();
-  const { beGeologist, beCurator } = useContext(RoleContext);
+  const { beGeologist, beCurator } = useContext(UserContext);
 
   const curatorButtonHandler = () => {
     beCurator();

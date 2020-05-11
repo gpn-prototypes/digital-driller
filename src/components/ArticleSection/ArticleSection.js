@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
-import { RoleContext } from '../../context/ProjectContext';
+import { UserContext } from '../../context/ProjectContext';
 
 import { Text } from '@gpn-design/uikit/Text';
 import { Badge } from '@gpn-design/uikit/Badge';
@@ -10,11 +10,11 @@ import { team } from '../../mocks/team';
 import './ArticleSection.css';
 
 function ArticleSection(props) {
-  const { header, status, owner, section, deadline, children } = props;
-  const { role } = useContext(RoleContext);
+  const { isMine, owner, status, header, section, deadline, children } = props;
+  const { user } = useContext(UserContext);
   const history = useHistory();
   // const [isSectionPublished, setSectionStatus] = useState(false);
-  const user = team.filter(member => member.role === owner)[0];
+  // const user = team.filter(member => member.role === owner)[0];
   let badge, sectionID;
   // let sectionInfo;
   // let tocList = programmList.filter(item => item.id == programmID)[0].content;
@@ -57,8 +57,8 @@ function ArticleSection(props) {
         <div className='decorator decorator_distribute_between decorator_vertical-align_center decorator_indent-b_l'>
           <div className='decorator decorator_distribute_left'>
             <Badge size='m' view='stroked' status={badge.status} label={badge.label} />
-            <Text size='m' view={owner === role ? 'brand' : 'ghost'} weight={owner === role ? 'bold' : 'regular'} className='decorator decorator_indent-l_m'
-              onClick={() => { history.push(`/digital-driller/profile`) }}>@{user.name}</Text>
+            <Text size='m' view={isMine ? 'brand' : 'ghost'} weight={isMine ? 'bold' : 'regular'} className='decorator decorator_indent-l_m'
+              onClick={() => { history.push(`/digital-driller/profile`) }}>@{owner}</Text>
           </div>
         </div>
       </div>

@@ -98,12 +98,12 @@ function ContentBlock(props) {
     rightButton = <Button view='ghost' size='s' iconSize='s' label={comments} className='block__commentbutton block__commentbutton_visible' onClick={showCommentPopup} />;
     rightPopup = <CommentPopup isEditable={isEditable} isVisible={isCommentVisible} count={comments} />;
   } else {
-    rightButton = <Button view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconComment} className='block__commentbutton' onClick={showCommentPopup} />;
+    rightButton = <Button view='ghost' size='s' iconSize='s' onlyIcon={true} iconLeft={IconComment} className='block__commentbutton' onClick={showCommentPopup} />;
     rightPopup = <CommentPopup isEditable={isEditable} isVisible={isCommentVisible} count={comments}  />;
   }
 
   if(isEditable) {
-    leftButton = <Button view='ghost' size='s' iconOnly={true} iconSize='s' iconLeft={IconAdd} className='block__addnewblockbutton' onClick={() => {setNewBlockPopupVisibility(changeNewBlockPopupStatus)}} />;
+    leftButton = <Button view='ghost' size='s' onlyIcon={true} iconSize='s' iconLeft={IconAdd} className='block__addnewblockbutton' onClick={() => {setNewBlockPopupVisibility(changeNewBlockPopupStatus)}} />;
     leftPopup = 
       <div className={`newblockpopup ${isNewBlockPopupVisible ? 'newblockpopup_visible': ''}`}>
         <div className='newblockpopup-item pt-icon-plus pt-icon-plus_vertical-align_center' onClick={() => { placeNewBlock('text') }}>
@@ -130,7 +130,7 @@ function ContentBlock(props) {
   }
   if(adviceID) {
     advicePopup = <AdvicePopup id={adviceID} isEditable={isEditable} />;
-    adviceButton = <Button view='ghost' size='s' iconSize='s' iconOnly={true} iconLeft={IconAlert} className='block__avicebutton' />;
+    adviceButton = <Button view='ghost' size='s' iconSize='s' onlyIcon={true} iconLeft={IconAlert} className='block__avicebutton' />;
   }
 
   if(type === 'h3')             block = <ContentBlockH3 leftButton={leftButton} rightButton={rightButton} rightPopup={rightPopup} leftPopup={leftPopup} className={sizeClassName} children={children} />;

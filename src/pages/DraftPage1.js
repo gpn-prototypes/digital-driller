@@ -72,7 +72,7 @@ function DraftPage1() {
 					<div className='FpbForm__row'>
 						<div className='FpbForm__item FpbForm__item_width_three-quarter'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Нулевая отметка</Text>
-							<Field size='m' type='text' dValue='Столб ротора'width='full' />
+							<Field size='m' type='text' dValue='Столб ротора' width='full' />
 						</div>
 
 						<div className='FpbForm__item FpbForm__item_width_quarter'>

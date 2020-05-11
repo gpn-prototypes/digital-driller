@@ -36,7 +36,7 @@ function Sidebar(props) {
           : ''}
         </ul>
         
-        <Toc programmContent={ programmInfo.content } />
+        <Toc programmInfo={ programmInfo } />
       </div>
     </React.Fragment>
   );

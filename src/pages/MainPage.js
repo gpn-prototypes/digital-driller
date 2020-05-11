@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 
-import { RoleContext } from '../context/ProjectContext';
+import { UserContext } from '../context/ProjectContext';
 
 import { Button } from '@gpn-design/uikit/Button';
 import { ChoiceGroup } from '@gpn-design/uikit/ChoiceGroup';
@@ -22,21 +22,22 @@ import programmList from '../mocks/programmList.js';
 function MainPage() {
 	const history = useHistory();
 	const { newprogramm } = useParams();
-	const { role } = useContext(RoleContext);
+	const { user } = useContext(UserContext);
 	const allProgrammList = programmList.filter(item => item.stage !== 'Завершено');
 	const doneProgrammList = programmList.filter(item => item.stage === 'Завершено');
-	let myProgrammList;
+	let myProgrammList = [];
 
-	if(role === 'Куратор')
-		myProgrammList = programmList.filter(item => item.curator === 'Тихон Кувшинов');
-	else
-		myProgrammList = programmList.filter(item => item.geologist === 'Анастасия Алёшина');
+	myProgrammList = programmList.filter(item => {
+		let thisUser = item.team.filter(x => x.role === user.role)[0];
+		if (thisUser.name === user.name)
+			return item
+	});
 	myProgrammList = myProgrammList.filter(item => item.stage !== 'Завершено');
 
 	const [filteredProgrammList, setFilteredProgrammList] = useState(myProgrammList);
 	const [choosedProgrammView, setChoosedProgrammView] = useState('Карточки');
 	
-	const programmFilterLabels = role === 'Куратор' ? [{ name: 'Только мои' }, { name: 'Всего отдела' }, { name: 'Завершенные' }] : [{ name: 'Активные' }, { name: 'Завершенные' }];
+	const programmFilterLabels = user.role === 'Куратор' ? [{ name: 'Только мои' }, { name: 'Всего отдела' }, { name: 'Завершенные' }] : [{ name: 'Активные' }, { name: 'Завершенные' }];
 	const [programmFilter, setProgrammFilter] = useState([programmFilterLabels[0]]);
 	
 	const changeProgrammFilter = (value) => {
@@ -83,7 +84,7 @@ function MainPage() {
 							name="ProgrammFilter"
 						/>
 						
-						{ role === 'Куратор' ?
+						{ user.role === 'Куратор' ?
 							<div className='decorator decorator_indent-l_l'>
 								<Button size='s' view='ghost' iconLeft={IconAdd} label='Новая программа'
 									onClick={() => { history.push(`/digital-driller/draft-step-1`) }} />

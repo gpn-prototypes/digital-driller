@@ -31,31 +31,34 @@ function ProgrammList(props) {
       </div>
     )
   }
-  const getUser = (name) => {
-    let user = team.filter(item => item.name === name)[0];
-    
-    return <User view='clear' size='s' avatarUrl={ user.avatar } name={ name } />
+  const getCurator = (programmTeam) => {
+    let userName = programmTeam.filter(item => item.role === 'Куратор')[0];
+    let user = team.filter(item => item.name === userName.name)[0];
+    return <User view='clear' size='s' avatarUrl={ user.avatar } name={ user.name } />
   }
 
-  const list = programmList.map(item => {
-
-    return <tr className='pt-table__row' onClick={() => { history.push(`/digital-driller/programm/${item.id}`) }}>
+  const list = programmList.map((item, index) => {
+    return <tr className='pt-table__row' onClick={() => { history.push(`/digital-driller/programm/${item.id}`) }} key={`${index}-${item.name}`}>
       <Text size='m' view='primary' weight='semibold' as='td'>{item.type}</Text>
       <td>{ getBush(item.bush, item.well) }</td>
       <td>{ getBadge(item.stage) }</td>
-      <td>{ getUser(item.curator) }</td>
+      <td>{ getCurator(item.team) }</td>
     </tr>
   });
 
   return (
     <table className='programm-list pt-table pt-table_stripe_even'>
-      <tr>
-        <Text as='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Месторождение</Text>
-        <Text as='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Куст и скважина</Text>
-        <Text as='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Этап процесса</Text>
-        <Text as='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Куратор</Text>
-      </tr>
-      {list}
+      <thead>
+        <tr>
+          <Text as='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Месторождение</Text>
+          <Text as='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Куст и скважина</Text>
+          <Text as='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Этап процесса</Text>
+          <Text as='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Куратор</Text>
+        </tr>
+      </thead>
+      <tbody>
+        {list}
+      </tbody>
     </table>
   );
 }

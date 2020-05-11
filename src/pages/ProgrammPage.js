@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { RoleContext } from '../context/ProjectContext';
+import { UserContext } from '../context/ProjectContext';
 
 import { Text } from '@gpn-design/uikit/Text';
 
@@ -17,37 +17,32 @@ import Content from '../components/Content/Content';
 
 function ProgrammPage() {
   const { id } = useParams();
-  const { role } = useContext(RoleContext);
+  const { user } = useContext(UserContext);
   const [ modal, setModal ] = useState('');
   const programmInfo = programmList.filter(item => item.id == id)[0];
-  let blockList = [];
-
-  const getArticleSection = (block) => {
-    if (block.sectionName) {
-      return <div className='content__main decorator decorator_indent-t_4xl' key={block.name}>
-                <Text tag='h2' size='3xl' view='primary' lineHeight='s' id={ block.name }>{ block.name }</Text>
+  
+  let blockList = programmBlocks.map((template, index) => {
+    if (template.isSection) {
+      return <div className='content__main decorator decorator_indent-t_4xl' key={`${index}:${template.name}`}>
+                <Text tag='h2' size='3xl' view='primary' lineHeight='s' id={ template.name }>{ template.name }</Text>
              </div>
-    } else if (block.section) {
-      let blockContent = programmBlocks.find(template => template.name == block.name && template.section == block.section);
-
-      if(role === block.member)
-        return <ArticleSection owner={block.member} status={block.status} header={ block.name } deadline={programmInfo.deadline} section={ block.section } key={block.name}>{ blockContent.contentEditable }</ArticleSection>
-      else
-        return <ArticleSection owner={block.member} status={block.status} header={ block.name } deadline={programmInfo.deadline} section={ block.section } key={block.name}>{ blockContent.contentReadable }</ArticleSection>
     } else {
-      let blockContent = programmBlocks.find(template => template.name == block.name);
-
-      if(role === block.member)
-        return <ArticleSection owner={block.member} status={block.status} header={ block.name } deadline={programmInfo.deadline} key={block.name}>{ blockContent.contentEditable }</ArticleSection>
-      else
-        return <ArticleSection owner={block.member} status={block.status} header={ block.name } deadline={programmInfo.deadline} key={block.name}>{ blockContent.contentReadable }</ArticleSection>
+      let owner = programmInfo.team.filter(x => x.role === template.member)[0];
+    
+      if(programmInfo.stage === 'Заполнение' && user === template.member) {
+        if(owner.status === 'Заполняется')
+          return <ArticleSection isMine={owner.role === user} owner={owner.name} status={owner.status} header={template.name} deadline={programmInfo.deadline} section={template.section} key={`${index}:${template.name}`}>{ template.emptyContentEditable }</ArticleSection>
+        else
+          return <ArticleSection isMine={owner.role === user} owner={owner.name} status={owner.status} header={template.name} deadline={programmInfo.deadline} section={template.section} key={`${index}:${template.name}`}>{ template.contentEditable }</ArticleSection>
+      } else if(programmInfo.stage === 'Заполнение' && user != template.member) {
+        if(owner.status === 'Заполняется')
+          return <ArticleSection isMine={owner.role === user} owner={owner.name} status={owner.status} header={template.name} deadline={programmInfo.deadline} section={template.section} key={`${index}:${template.name}`}>{ template.emptyContentReadable }</ArticleSection>
+        else
+          return <ArticleSection isMine={owner.role === user} owner={owner.name} status={owner.status} header={template.name} deadline={programmInfo.deadline} section={template.section} key={`${index}:${template.name}`}>{ template.contentReadable }</ArticleSection>
+      } else {
+        return <ArticleSection isMine={owner.role === user} owner={owner.name} status={owner.status} header={template.name} section={template.section} key={`${index}:${template.name}`}>{ template.contentReadable }</ArticleSection>
+      }
     }
-  }
-  programmInfo.content.map(item => {
-    if (item.sectionName)
-      return blockList.push(item.list.map(x => getArticleSection(x)));
-    else
-      return blockList.push(getArticleSection(item));
   });
 
   return (

@@ -12,7 +12,10 @@
     background: var(--color-control-bg-clear-hover);
   }
 .toc__section-name, .toc__section-name:hover {
-  padding: var(--space-m) var(--space-s) 0;
+  padding: var(--space-m) var(--space-s) 0 0;
+  cursor: pointer;
+}
+.toc__section-name a, .toc__section-name:hover a {
   text-decoration: none;
   font-size: var(--size-text-s);
   line-height: var(--line-height-text-s);

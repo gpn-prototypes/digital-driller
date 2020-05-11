@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import RoleProvider from './context/ProjectContext';
+import UserProvider from './context/ProjectContext';
 
 import { cnTheme } from '@gpn-design/uikit/Theme';
 import '@gpn-design/uikit/__internal__/src/components/Theme/_color/Theme_color_gpnDefault.css';
@@ -32,7 +32,7 @@ import './App.css';
 
 function App() {
   return (
-		<RoleProvider>
+		<UserProvider>
 			<div className={cnTheme({
 				color: 'gpnDefault',
 				control: 'gpnDefault',
@@ -69,7 +69,7 @@ function App() {
 				</Switch>
 
 			</div>
-		</RoleProvider>
+		</UserProvider>
 	);
 }
 
