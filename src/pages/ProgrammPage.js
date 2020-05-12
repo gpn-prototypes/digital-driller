@@ -29,18 +29,18 @@ function ProgrammPage() {
     } else {
       let owner = programmInfo.team.filter(x => x.role === template.member)[0];
     
-      if(programmInfo.stage === 'Заполнение' && user === template.member) {
+      if(programmInfo.stage === 'Заполнение' && user.role === template.member) {
         if(owner.status === 'Заполняется')
-          return <ArticleSection isMine={owner.role === user} owner={owner.name} status={owner.status} header={template.name} deadline={programmInfo.deadline} section={template.section} key={`${index}:${template.name}`}>{ template.emptyContentEditable }</ArticleSection>
+          return <ArticleSection isMine={owner.role === user.role} owner={owner.name} status={owner.status} header={template.name} deadline={programmInfo.deadline} section={template.section} key={`${index}:${template.name}`}>{ template.emptyContentEditable }</ArticleSection>
         else
-          return <ArticleSection isMine={owner.role === user} owner={owner.name} status={owner.status} header={template.name} deadline={programmInfo.deadline} section={template.section} key={`${index}:${template.name}`}>{ template.contentEditable }</ArticleSection>
-      } else if(programmInfo.stage === 'Заполнение' && user != template.member) {
+          return <ArticleSection isMine={owner.role === user.role} owner={owner.name} status={owner.status} header={template.name} deadline={programmInfo.deadline} section={template.section} key={`${index}:${template.name}`}>{ template.contentEditable }</ArticleSection>
+      } else if(programmInfo.stage === 'Заполнение' && user.role != template.member) {
         if(owner.status === 'Заполняется')
-          return <ArticleSection isMine={owner.role === user} owner={owner.name} status={owner.status} header={template.name} deadline={programmInfo.deadline} section={template.section} key={`${index}:${template.name}`}>{ template.emptyContentReadable }</ArticleSection>
+          return <ArticleSection isMine={owner.role === user.role} owner={owner.name} status={owner.status} header={template.name} deadline={programmInfo.deadline} section={template.section} key={`${index}:${template.name}`}>{ template.emptyContentReadable }</ArticleSection>
         else
-          return <ArticleSection isMine={owner.role === user} owner={owner.name} status={owner.status} header={template.name} deadline={programmInfo.deadline} section={template.section} key={`${index}:${template.name}`}>{ template.contentReadable }</ArticleSection>
+          return <ArticleSection isMine={owner.role === user.role} owner={owner.name} status={owner.status} header={template.name} deadline={programmInfo.deadline} section={template.section} key={`${index}:${template.name}`}>{ template.contentReadable }</ArticleSection>
       } else {
-        return <ArticleSection isMine={owner.role === user} owner={owner.name} status={owner.status} header={template.name} section={template.section} key={`${index}:${template.name}`}>{ template.contentReadable }</ArticleSection>
+        return <ArticleSection isMine={owner.role === user.role} owner={owner.name} status={owner.status} header={template.name} section={template.section} key={`${index}:${template.name}`}>{ template.contentReadable }</ArticleSection>
       }
     }
   });
@@ -50,7 +50,7 @@ function ProgrammPage() {
       <TheHeader isMinified={true} programmName={programmInfo.field + ' > ' + programmInfo.bush + ' > ' + programmInfo.well} role='Геолог' />
       
       <Content split={true}>
-        <Sidebar programmInfo={ programmInfo } />
+        <Sidebar programmInfo={ programmInfo } teamOnClick={ () => setModal('team') } commentOnClick={ () => setModal('comment') } lessonOnClick={ () => setModal('lesson') } approveOnClick={ () => setModal('approve') } />
 
         <div className='Article'>
           <div className='Article__section'>
@@ -65,10 +65,10 @@ function ProgrammPage() {
       <Snackbar message='Раздел опубликован' />
       <Snackbar message='Программа сохранена' />
 
-      { modal === 'team' ? <Modal content='team' programmInfo={programmInfo} /> : '' }
-      { modal === 'comment' ? <Modal content='comment' programmInfo={programmInfo} /> : '' }
-      { modal === 'lesson' ? <Modal content='lesson' programmInfo={programmInfo} /> : '' }
-      { modal === 'approve' ? <Modal content='approve' programmInfo={programmInfo} /> : '' }
+      { modal === 'team' ? <Modal content='team' programmInfo={programmInfo} onClose={ () => setModal('') } /> : '' }
+      {/* { modal === 'comment' ? <Modal content='comment' programmInfo={programmInfo} onClose={ () => setModal('') } /> : '' } */}
+      {/* { modal === 'lesson' ? <Modal content='lesson' programmInfo={programmInfo} onClose={ () => setModal('') } /> : '' } */}
+      {/* { modal === 'approve' ? <Modal content='approve' programmInfo={programmInfo} onClose={ () => setModal('') } /> : '' } */}
     </React.Fragment>
   );
 }

@@ -68,3 +68,6 @@
   .selectWrap_view_clear::after {
     right: 0;
   }
+  .select_filled {
+    color: var(--color-control-typo-placeholder);
+  }

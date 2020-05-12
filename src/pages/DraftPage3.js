@@ -45,18 +45,18 @@ function DraftPage3() {
 
         <div className='FpbForm__item FpbForm__item_width_half'>
           <Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Компания</Text>
-          <SelectWrap size='m' items={['ООО «БКЕ»', 'ООО "ПетроТул"', 'ООО "ЭНГС"', 'ООО "СПС"', 'Халлибуртон Интернэшнл ГмбХ', 'ООО "НьюТек Сервисез"', 'ООО "Везерфорд"']} />
+          <SelectWrap size='m' placeholder='Выберите компанию' items={['ООО «БКЕ»', 'ООО "ПетроТул"', 'ООО "ЭНГС"', 'ООО "СПС"', 'Халлибуртон Интернэшнл ГмбХ', 'ООО "НьюТек Сервисез"', 'ООО "Везерфорд"']} />
         </div>
         
         <div className='FpbForm__item FpbForm__item_width_half'>
           <Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Ответственный</Text>
-          <SelectWrap size='m' items={['Фёдор Савенко', 'Абрам Дьячков', 'Ирина Уварова', 'Элла Чикольба', 'Егор Корнейчук', 'Лилия Лебедева', 'Денис Беляков']} />
+          <SelectWrap size='m' placeholder='Выберите сотрудника' items={['Фёдор Савенко', 'Абрам Дьячков', 'Ирина Уварова', 'Элла Чикольба', 'Егор Корнейчук', 'Лилия Лебедева', 'Денис Беляков']} />
         </div>
         
         { newUserList.length > 1 ?
           <div className='FpbForm__item FpbForm__item_width_half'>
             <Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Секция</Text>
-            <SelectWrap size='m' items={['Комбинированный кондуктор', 'Техническая колонна', 'Эксплуатационная колонна', 'Хвостовик']} />
+            <SelectWrap size='m' placeholder='Выберите секцию' items={['Комбинированный кондуктор', 'Техническая колонна', 'Эксплуатационная колонна', 'Хвостовик']} />
           </div> : ''
         }
       </div>);
@@ -85,12 +85,12 @@ function DraftPage3() {
 					<div className='FpbForm__row'>
 						<div className='FpbForm__item FpbForm__item_width_half'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Компания</Text>
-							<SelectWrap size='m' disabled={true} items={['ПАО «Газпром нефть', 'ООО «БКЕ»', 'ООО "ПетроТул"', 'ООО "ЭНГС"', 'ООО "СПС"', 'Халлибуртон Интернэшнл ГмбХ', 'ООО "НьюТек Сервисез"', 'ООО "Везерфорд"']} />
+							<SelectWrap size='m' placeholder='Выберите компанию' items={['ПАО «Газпром нефть', 'ООО «БКЕ»', 'ООО "ПетроТул"', 'ООО "ЭНГС"', 'ООО "СПС"', 'Халлибуртон Интернэшнл ГмбХ', 'ООО "НьюТек Сервисез"', 'ООО "Везерфорд"']} />
 						</div>
 						
             <div className='FpbForm__item FpbForm__item_width_half'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Ответственный</Text>
-							<SelectWrap size='m' items={['Анастасия Алёшина', 'Дина Наумова', 'Валентина Спивак', 'Татьяна Сусаренко', 'Софья Миклашевска', 'Лилия Коновалова', 'Геннадий Воронов', 'Фёдор Батейко', 'Егор Киселёв', 'Харитон Гаврилов', 'Богдан Ершов', 'Марк Зимин', 'Тимур Алчевский']} />
+							<SelectWrap size='m' placeholder='Выберите сотрудника' items={['Анастасия Алёшина', 'Дина Наумова', 'Валентина Спивак', 'Татьяна Сусаренко', 'Софья Миклашевска', 'Лилия Коновалова', 'Геннадий Воронов', 'Фёдор Батейко', 'Егор Киселёв', 'Харитон Гаврилов', 'Богдан Ершов', 'Марк Зимин', 'Тимур Алчевский']} />
 						</div>
 					</div>
           
@@ -101,12 +101,12 @@ function DraftPage3() {
 					<div className='FpbForm__row'>
 						<div className='FpbForm__item FpbForm__item_width_half'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Компания</Text>
-							<SelectWrap size='m' items={['ООО «БКЕ»', 'ООО "ПетроТул"', 'ООО "ЭНГС"', 'ООО "СПС"', 'Халлибуртон Интернэшнл ГмбХ', 'ООО "НьюТек Сервисез"', 'ООО "Везерфорд"']} />
+							<SelectWrap size='m' placeholder='Выберите компанию' items={['ООО «БКЕ»', 'ООО "ПетроТул"', 'ООО "ЭНГС"', 'ООО "СПС"', 'Халлибуртон Интернэшнл ГмбХ', 'ООО "НьюТек Сервисез"', 'ООО "Везерфорд"']} />
 						</div>
 						
             <div className='FpbForm__item FpbForm__item_width_half'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Ответственный</Text>
-							<SelectWrap size='m' items={['Дмитрий Ореховский', 'Инга Козлова', 'Захар Кравченко', 'Тимур Калашников', 'Нина Константинова', 'Марат Исаев', 'Юлий Дмитриев']} />
+							<SelectWrap size='m' placeholder='Выберите сотрудника' items={['Дмитрий Ореховский', 'Инга Козлова', 'Захар Кравченко', 'Тимур Калашников', 'Нина Константинова', 'Марат Исаев', 'Юлий Дмитриев']} />
 						</div>
 					</div>
           
@@ -117,12 +117,12 @@ function DraftPage3() {
 					<div className='FpbForm__row'>
 						<div className='FpbForm__item FpbForm__item_width_half'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Компания</Text>
-							<SelectWrap size='m' items={['ООО «БКЕ»', 'ООО "ПетроТул"', 'ООО "ЭНГС"', 'ООО "СПС"', 'Халлибуртон Интернэшнл ГмбХ', 'ООО "НьюТек Сервисез"', 'ООО "Везерфорд"']} />
+							<SelectWrap size='m' placeholder='Выберите компанию' items={['ООО «БКЕ»', 'ООО "ПетроТул"', 'ООО "ЭНГС"', 'ООО "СПС"', 'Халлибуртон Интернэшнл ГмбХ', 'ООО "НьюТек Сервисез"', 'ООО "Везерфорд"']} />
 						</div>
 						
             <div className='FpbForm__item FpbForm__item_width_half'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Ответственный</Text>
-							<SelectWrap size='m' items={['Оксана Романова', 'Пётр Савенко', 'Полина Зиновьева', 'Регина Пономарёва', 'Олег Кобзарь', 'Ева Кириленко', 'Адам Моисеев']} />
+							<SelectWrap size='m' placeholder='Выберите сотрудника' items={['Оксана Романова', 'Пётр Савенко', 'Полина Зиновьева', 'Регина Пономарёва', 'Олег Кобзарь', 'Ева Кириленко', 'Адам Моисеев']} />
 						</div>
 					</div>
           
@@ -133,12 +133,12 @@ function DraftPage3() {
 					<div className='FpbForm__row'>
 						<div className='FpbForm__item FpbForm__item_width_half'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Компания</Text>
-							<SelectWrap size='m' items={['ООО «БКЕ»', 'ООО "ПетроТул"', 'ООО "ЭНГС"', 'ООО "СПС"', 'Халлибуртон Интернэшнл ГмбХ', 'ООО "НьюТек Сервисез"', 'ООО "Везерфорд"']} />
+							<SelectWrap size='m' placeholder='Выберите компанию' items={['ООО «БКЕ»', 'ООО "ПетроТул"', 'ООО "ЭНГС"', 'ООО "СПС"', 'Халлибуртон Интернэшнл ГмбХ', 'ООО "НьюТек Сервисез"', 'ООО "Везерфорд"']} />
 						</div>
 						
             <div className='FpbForm__item FpbForm__item_width_half'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Ответственный</Text>
-							<SelectWrap size='m' items={['Никита Соболев', 'Валерия Кириллова', 'Георгий Степанов', 'Осип Афанасьев', 'Алёна Фролова', 'Осип Кравченко', 'Регина Голубева']} />
+							<SelectWrap size='m' placeholder='Выберите сотрудника' items={['Никита Соболев', 'Валерия Кириллова', 'Георгий Степанов', 'Осип Афанасьев', 'Алёна Фролова', 'Осип Кравченко', 'Регина Голубева']} />
 						</div>
 					</div>
           
@@ -149,12 +149,12 @@ function DraftPage3() {
 					<div className='FpbForm__row'>
 						<div className='FpbForm__item FpbForm__item_width_half'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Компания</Text>
-							<SelectWrap size='m' items={['ООО «БКЕ»', 'ООО "ПетроТул"', 'ООО "ЭНГС"', 'ООО "СПС"', 'Халлибуртон Интернэшнл ГмбХ', 'ООО "НьюТек Сервисез"', 'ООО "Везерфорд"']} />
+							<SelectWrap size='m' placeholder='Выберите компанию' items={['ООО «БКЕ»', 'ООО "ПетроТул"', 'ООО "ЭНГС"', 'ООО "СПС"', 'Халлибуртон Интернэшнл ГмбХ', 'ООО "НьюТек Сервисез"', 'ООО "Везерфорд"']} />
 						</div>
 						
             <div className='FpbForm__item FpbForm__item_width_half'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Ответственный</Text>
-							<SelectWrap size='m' items={['Тимофей Гайчук', 'Екатерина Кудрявцева', 'Леон Савельев', 'Ярослав Соболев', 'Мария Егорова', 'Варвара Трублаевска', 'Филипп Корнейчук']} />
+							<SelectWrap size='m' placeholder='Выберите сотрудника' items={['Тимофей Гайчук', 'Екатерина Кудрявцева', 'Леон Савельев', 'Ярослав Соболев', 'Мария Егорова', 'Варвара Трублаевска', 'Филипп Корнейчук']} />
 						</div>
 					</div>
           

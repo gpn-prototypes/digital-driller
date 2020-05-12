@@ -37,17 +37,17 @@ function DraftPage1() {
 					<div className='FpbForm__row'>
 						<div className='FpbForm__item FpbForm__item_width_half'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Назначение скважины</Text>
-							<SelectWrap size='m' items={['Структурно-поисковая', 'Разведочная', 'Эксплуатационная', 'Опережающая добывающая', 'Нагнетательная', 'Оценочная', 'Утилизационная']} />
+							<SelectWrap size='m' placeholder='Выберите значение' items={['Структурно-поисковая', 'Разведочная', 'Эксплуатационная', 'Опережающая добывающая', 'Нагнетательная', 'Оценочная', 'Утилизационная']} />
 						</div>
 
 						<div className='FpbForm__item FpbForm__item_width_quarter'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Тип скважины</Text>
-							<SelectWrap size='m' items={['ГС 1000', 'ГС 1290']} />
+							<SelectWrap size='m' placeholder='Выберите значение' items={['ГС 1000', 'ГС 1290']} />
 						</div>
 
 						<div className='FpbForm__item FpbForm__item_width_quarter'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Индекс сложности</Text>
-							<Field size='m' type='number' placeholder='0' dValue='6.582' rightSide='DDI' width='full' />
+							<Field size='m' type='number' placeholder='0' rightSide='DDI' width='full' />
 						</div>
 					</div>
 
@@ -66,26 +66,26 @@ function DraftPage1() {
 
 						<div className='FpbForm__item FpbForm__item_width_quarter'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Скважина</Text>
-							<SelectWrap size='m' items={['5238', '482', '12/56', '38/49']} />
+							<SelectWrap size='m' placeholder='Выберите значение' items={['5238', '482', '12/56', '38/49']} />
 						</div>
 					</div>
 					<div className='FpbForm__row'>
 						<div className='FpbForm__item FpbForm__item_width_three-quarter'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Нулевая отметка</Text>
-							<Field size='m' type='text' dValue='Столб ротора' width='full' />
+							<Field size='m' type='text' width='full' />
 						</div>
 
 						<div className='FpbForm__item FpbForm__item_width_quarter'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Передвижка БУ на</Text>
-							<Field size='m' type='number' placeholder='0' dValue='9' rightSide='м' width='full' />
+							<Field size='m' type='number' placeholder='0' rightSide='м' width='full' />
 						</div>
 					</div>
 					<div className='FpbForm__row'>
 						<div className='FpbForm__item FpbForm__item_width_full'>
-							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Плановая альтитуда стола ротора</Text>
+							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Плановая альтитуда нулевой отметки</Text>
 							<div className='decorator decorator_distribute_left'>
-								<Field size='m' type='text' form='defaultClear' placeholder='0' dValue='49.64' leftSide='От уровня моря' rightSide='м' width='full' />
-								<Field size='m' type='text' form='brickDefault' placeholder='0' dValue='39.63' leftSide='От уровня земли' rightSide='м' width='full' />
+								<Field size='m' type='text' form='defaultClear' placeholder='0' leftSide='От уровня моря' rightSide='м' width='full' />
+								<Field size='m' type='text' form='brickDefault' placeholder='0' leftSide='От уровня земли' rightSide='м' width='full' />
 							</div>
 						</div>
 					</div>
@@ -93,9 +93,9 @@ function DraftPage1() {
 						<div className='FpbForm__item FpbForm__item_width_full'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Географические координаты устья скважины</Text>
 							<div className='decorator decorator_distribute_left'>
-								<Field size='m' form='defaultClear' type='text' placeholder='00° 00′ 00' dValue='67° 50′ 24.529' rightSide='N' className='FpbForm__control' />
-								<Field size='m' form='brickClear' type='text' placeholder='00° 00′ 00' dValue='72° 34′ 22.819' rightSide='E' className='FpbForm__control' />
-								<Field width='full' size='m' form='brickDefault' type='text' placeholder='0' dValue='49.64' leftSide='Z:' rightSide='м' className='FpbForm__control' />
+								<Field size='m' form='defaultClear' type='text' placeholder='00° 00′ 00' rightSide='N' className='FpbForm__control' />
+								<Field size='m' form='brickClear' type='text' placeholder='00° 00′ 00' rightSide='E' className='FpbForm__control' />
+								<Field width='full' size='m' form='brickDefault' type='text' placeholder='0' leftSide='Z:' rightSide='м' className='FpbForm__control' />
 							</div>
 						</div>
 					</div>
@@ -103,9 +103,9 @@ function DraftPage1() {
 						<div className='FpbForm__item FpbForm__item_width_full'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Географические координаты точки Т2</Text>
 							<div className='decorator decorator_distribute_left'>
-								<Field size='m' form='defaultClear' type='text' placeholder='00° 00′ 00' dValue='67° 49′ 28.618' rightSide='N' className='FpbForm__control' />
-								<Field size='m' form='brickClear' type='text' placeholder='00° 00′ 00' dValue='72° 32′ 38.960' rightSide='E' className='FpbForm__control' />
-								<Field width='full' size='m' form='brickDefault' type='text' placeholder='0' dValue='1892.64' leftSide='Z:' rightSide='м' className='FpbForm__control' />
+								<Field size='m' form='defaultClear' type='text' placeholder='00° 00′ 00' rightSide='N' className='FpbForm__control' />
+								<Field size='m' form='brickClear' type='text' placeholder='00° 00′ 00' rightSide='E' className='FpbForm__control' />
+								<Field width='full' size='m' form='brickDefault' type='text' placeholder='0' leftSide='Z:' rightSide='м' className='FpbForm__control' />
 							</div>
 						</div>
 					</div>
@@ -113,9 +113,9 @@ function DraftPage1() {
 						<div className='FpbForm__item FpbForm__item_width_full'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Географические координаты точки Т3</Text>
 							<div className='decorator decorator_distribute_left'>
-								<Field size='m' form='defaultClear' type='text' placeholder='00° 00′ 00' dValue='67° 48′ 50.438' rightSide='N' className='FpbForm__control' />
-								<Field size='m' form='brickClear' type='text' placeholder='00° 00′ 00' dValue='72° 32′ 11.282' rightSide='E' className='FpbForm__control' />
-								<Field width='full' size='m' form='brickDefault' type='text' placeholder='0' dValue='1892.64' leftSide='Z:' rightSide='м' className='FpbForm__control' />
+								<Field size='m' form='defaultClear' type='text' placeholder='00° 00′ 00' rightSide='N' className='FpbForm__control' />
+								<Field size='m' form='brickClear' type='text' placeholder='00° 00′ 00' rightSide='E' className='FpbForm__control' />
+								<Field width='full' size='m' form='brickDefault' type='text' placeholder='0' leftSide='Z:' rightSide='м' className='FpbForm__control' />
 							</div>
 						</div>
 					</div>
@@ -125,39 +125,39 @@ function DraftPage1() {
 					<div className='FpbForm__row'>
 						<div className='FpbForm__item FpbForm__item_width_third'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Проектный пласт</Text>
-							<SelectWrap size='m' items={['НП 5', 'НП 6', 'НП 7', 'НП 8', 'НП 9']} />
+							<SelectWrap size='m' placeholder='Выберите значение' items={['НП 5', 'НП 6', 'НП 7', 'НП 8', 'НП 9']} />
 						</div>
 
 						<div className='FpbForm__item FpbForm__item_width_third'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Давление</Text>
-							<Field size='m' type='number' placeholder='0' dValue='183' rightSide='МПа' width='full' />
+							<Field size='m' type='number' placeholder='0' rightSide='МПа' width='full' />
 						</div>
 
 						<div className='FpbForm__item FpbForm__item_width_third'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Температура</Text>
-							<Field size='m' type='number' placeholder='0' dValue='57.4' rightSide='°С' width='full' />
+							<Field size='m' type='number' placeholder='0' rightSide='°С' width='full' />
 						</div>
 					</div>
 					<div className='FpbForm__row'>
 						<div className='FpbForm__item FpbForm__item_width_third'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Магнитное склонение</Text>
-							<Field size='m' type='number' placeholder='0' dValue='24.70' rightSide='°' width='full' />
+							<Field size='m' type='number' placeholder='0' rightSide='°' width='full' />
 						</div>
 
 						<div className='FpbForm__item FpbForm__item_width_third'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Схождение меридианов</Text>
-							<Field size='m' type='number' placeholder='0' dValue='-2.25' rightSide='°' width='full' />
+							<Field size='m' type='number' placeholder='0' rightSide='°' width='full' />
 						</div>
 
 						<div className='FpbForm__item FpbForm__item_width_third'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Магнитная поправка</Text>
-							<Field size='m' type='number' placeholder='0' dValue='26.95' rightSide='°' width='full' />
+							<Field size='m' type='number' placeholder='0' rightSide='°' width='full' />
 						</div>
 					</div>
 					
 					<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Начало бурения</Text>
 					<div className='decorator decorator_distribute_left decorator_indent-b_2xl'>
-						<Field size='m' dValue='24.11.2020' rightSide={IconCalendar} width='date' />
+						<Field size='m' placeholder='10.05.2020' rightSide={IconCalendar} width='date' />
 						<Text size='s' view='ghost' lineHeight='s' className='decorator decorator_indent-l_s' style={{ width: '50ch' }}>Дедлайны для заполнения разделов программы высчитаются автоматически</Text>
 					</div>
 

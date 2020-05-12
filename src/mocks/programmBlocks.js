@@ -17,7 +17,7 @@ export const programmBlocks = [
     member: 'Куратор',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -27,13 +27,13 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Строительство эксплуатационной скважины на Новопортовском НГКМ в соответствии с геолого-техническим заданием, в рамках утвержденного бюджета и в установленные временные сроки.' />
       </ContentBlock>
 
       <ContentBlock isEditable={true} type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Программа бурения составлена в соответствии с проектной документацией на строительство горизонтальных скважин на Новопортовском НГКМ. Данная программа предназначена в качестве руководства, которое необходимо соблюдать в процессе проведения работ, если фактические геолого-технические условия соответствуют проектным. В случае если геолого-технические условия в процессе проведения работ не будут соответствовать проектным, то Подрядчик обязан прекратить дальнейшее проведение работ, принять все меры по недопущению усугубления ситуации и согласовать проведение дальнейших работ с представителем Заказчика.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Программа бурения составлена в соответствии с проектной документацией на строительство горизонтальных скважин на Новопортовском НГКМ. Данная программа предназначена в качестве руководства, которое необходимо соблюдать в процессе проведения работ, если фактические геолого-технические условия соответствуют проектным. В случае если геолого-технические условия в процессе проведения работ не будут соответствовать проектным, то Подрядчик обязан прекратить дальнейшее проведение работ, принять все меры по недопущению усугубления ситуации и согласовать проведение дальнейших работ с представителем Заказчика.' />
         </Informer>
       </ContentBlock>
 
@@ -42,7 +42,7 @@ export const programmBlocks = [
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Распределение обязанностей и ответственность сторон при выполнении любых операций определяется в соответствии с приложениями к договорам на оказание услуг «Распределение обязанностей в процессе строительства скважин между Заказчиком, Буровым и Нефтесервисными подрядчиками, участвующими в строительстве скважин» или данной программой бурения.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Распределение обязанностей и ответственность сторон при выполнении любых операций определяется в соответствии с приложениями к договорам на оказание услуг «Распределение обязанностей в процессе строительства скважин между Заказчиком, Буровым и Нефтесервисными подрядчиками, участвующими в строительстве скважин» или данной программой бурения.' />
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='h3'>
@@ -50,7 +50,7 @@ export const programmBlocks = [
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Основной целью требований в области ОТ, ПБ и ООС является отсутствие в процессе проведения всего комплекса работ любых инцидентов, связанных с травмированием и потерей трудоспособности персонала, а также причинением ущерба окружающей среде. Все выполняемые работы обязаны соответствовать отраслевым нормативным документам, действующим на территории Российской Федерации, а также стандартам и нормативно — методическим документам ПАО «Газпром нефть».' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Основной целью требований в области ОТ, ПБ и ООС является отсутствие в процессе проведения всего комплекса работ любых инцидентов, связанных с травмированием и потерей трудоспособности персонала, а также причинением ущерба окружающей среде. Все выполняемые работы обязаны соответствовать отраслевым нормативным документам, действующим на территории Российской Федерации, а также стандартам и нормативно — методическим документам ПАО «Газпром нефть».' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -974,7 +974,7 @@ export const programmBlocks = [
           <tbody>
             <tr>
               <td><SelectWrap size='m' view='clear' items={['Не выбрано', 'Комбинированный кондуктор', 'Техническая колонна', 'Эксплуатационная колонна', 'Хвостовик']} /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
               <td>
                 <div className='decorator decorator_distribute_left'>
                   <Field width='full' size='m' view='clear' type='text' placeholder='0' leftSide='от' rightSide='м' />
@@ -1046,7 +1046,7 @@ export const programmBlocks = [
               <td rowSpan='2'>
                 <SelectWrap size='m' view='clear' items={['Комбинированный кондуктор', 'Техническая колонна', 'Эксплуатационная колонна', 'Хвостовик']} />
               </td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='ОТТМ 530/324*9,5 «Д»' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='ОТТМ 530/324*9,5 «Д»' /></td>
               <td>
                 <div className='decorator decorator_distribute_left'>
                   <Field width='full' size='m' view='clear' type='text' dValue='0' leftSide='от' rightSide='м' />
@@ -1069,7 +1069,7 @@ export const programmBlocks = [
             </tr>
 
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='ОТТГ-324*9,5 мм «Д»' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='ОТТГ-324*9,5 мм «Д»' /></td>
               <td>
                 <div className='decorator decorator_distribute_left'>
                   <Field width='full' size='m' view='clear' type='text' dValue='50' leftSide='от' rightSide='м' />
@@ -1974,7 +1974,7 @@ export const programmBlocks = [
       <ContentBlock isEditable={true} type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>                  
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Максимально допустимая пространственная интенсивность в интервале набора параметров кривизны определяется от плановой + 0,50/10м. Максимально допустимая пространственная интенсивность в интервале стабилизации не более 10/10м. Максимально допустимая пространственная интенсивность в зоне ГНО не более 0.30/10м.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Максимально допустимая пространственная интенсивность в интервале набора параметров кривизны определяется от плановой + 0,50/10м. Максимально допустимая пространственная интенсивность в интервале стабилизации не более 10/10м. Максимально допустимая пространственная интенсивность в зоне ГНО не более 0.30/10м.' />
         </Informer>
       </ContentBlock>
       
@@ -2120,7 +2120,7 @@ export const programmBlocks = [
     member: 'Геолог',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -2315,7 +2315,7 @@ export const programmBlocks = [
       <ContentBlock isEditable={true} type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Перед началом бурения скважины согласовать с геологической службой Заказчика порядок предоставления каротажных данных и список рассылки. Интервал перезаписи каротажных данных после смены КНБК согласовать с геологической службой Заказчика.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Перед началом бурения скважины согласовать с геологической службой Заказчика порядок предоставления каротажных данных и список рассылки. Интервал перезаписи каротажных данных после смены КНБК согласовать с геологической службой Заказчика.' />
         </Informer>
       </ContentBlock>
     </React.Fragment>),
@@ -2384,7 +2384,7 @@ export const programmBlocks = [
     member: 'ННБ',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -2394,11 +2394,11 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Частота взятия замеров на участке стабилизации каждые 24м, снятие замеров после наращивания*. В интервалах набора параметров кривизны (по мере необходимости) и в случае сближения с ранее пробуренными скважинами каждые 12м, снятие замеров до наращивания**.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Частота взятия замеров на участке стабилизации каждые 24м, снятие замеров после наращивания*. В интервалах набора параметров кривизны (по мере необходимости) и в случае сближения с ранее пробуренными скважинами каждые 12м, снятие замеров до наращивания**.' />
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='При бурении секции под хвостовик (152,4мм) снятие замеров производить согласно протоколу ПТ-4/038 от 07.10.16г., снятие замера после наращивания.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='При бурении секции под хвостовик (152,4мм) снятие замеров производить согласно протоколу ПТ-4/038 от 07.10.16г., снятие замера после наращивания.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -2450,8 +2450,8 @@ export const programmBlocks = [
                 </div>
               </td>
               <td><Field width='full' size='s' view='clear' type='number' placeholder='0' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} /></td>
               <td><Field width='full' size='s' view='clear' type='number' placeholder='0' rightSide='м' /></td>
               <td><SelectWrap size='s' view='clear' items={['—', 'до', 'после']} /></td>
               <td><Field width='full' size='s' view='clear' type='number' placeholder='0' /></td>
@@ -2460,8 +2460,8 @@ export const programmBlocks = [
               <td><Field width='full' size='s' view='clear' type='number' placeholder='0' rightSide='ч' /></td>
               <td><Field width='full' size='s' view='clear' type='number' placeholder='0' rightSide='ч' /></td>
               <td><Field width='full' size='s' view='clear' type='number' placeholder='0' rightSide='ч' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} /></td>
             </tr>
             
             <tr>
@@ -2521,74 +2521,74 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В транспортном стволе периодичность:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В транспортном стволе периодичность:' />
       </ContentBlock>
       <ul>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Выше 150 м до Т2 по вертикали — замеры высылаются дважды в сутки на 06:00 и 17:00.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Выше 150 м до Т2 по вертикали — замеры высылаются дважды в сутки на 06:00 и 17:00.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='За 150 м до Т2 по вертикали — каждую пробуренную «свечу».' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='За 150 м до Т2 по вертикали — каждую пробуренную «свечу».' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='За 80 м до Т2 по вертикали — каждую пробуренную «трубку» (по согласованию с ЦУБ).' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='За 80 м до Т2 по вертикали — каждую пробуренную «трубку» (по согласованию с ЦУБ).' />
         </ContentBlock>
       </ul>
 
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В горизонтальном стволе периодичность:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В горизонтальном стволе периодичность:' />
       </ContentBlock>
       <ul>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Интервал перезаписи в эксплуатационной колонне, перед разбуриванием оснастки, согласовывается с геологической службой заказчика.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Интервал перезаписи в эксплуатационной колонне, перед разбуриванием оснастки, согласовывается с геологической службой заказчика.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='После добуривания свечи, перед отрывом от забоя производить промывку до полной выработки осевой нагрузки на долото, нормализации давления и крутящего момента на ВСП но не менее двух минут.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='После добуривания свечи, перед отрывом от забоя производить промывку до полной выработки осевой нагрузки на долото, нормализации давления и крутящего момента на ВСП но не менее двух минут.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Произвести проработку пробуренного интервала с расхаживанием на длину свечи (при движении вверх 30 об/мин не допуская затяжки до 5т, не допускать увеличения и скачков крутящего момента; движение вниз c вращением 50 об/мин);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Произвести проработку пробуренного интервала с расхаживанием на длину свечи (при движении вверх 30 об/мин не допуская затяжки до 5т, не допускать увеличения и скачков крутящего момента; движение вниз c вращением 50 об/мин);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Остановить вращение, произвести расхаживание на длину свечи, установить долото на расстояние 1-2 м от забоя;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Остановить вращение, произвести расхаживание на длину свечи, установить долото на расстояние 1-2 м от забоя;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Выключить насосы, произвести наращивание;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Выключить насосы, произвести наращивание;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Восстановить циркуляцию, дождаться выхода замера в течение 3 минут после запуска насосов (время выхода замера);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Восстановить циркуляцию, дождаться выхода замера в течение 3 минут после запуска насосов (время выхода замера);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Не оставлять движение инструмента более 3 минут, ответственный за отслеживание времени инженер ННБ, после подачи команды на движение бурильщик буровой компании обязан принять меры по исполнению команды, время на принятие команды и исполнение не более 5 секунд. Контроль за исполнением супервайзер ООО «Газпромнефть-Ямал». Отв. Инженер ННБ, Буровой мастер' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Не оставлять движение инструмента более 3 минут, ответственный за отслеживание времени инженер ННБ, после подачи команды на движение бурильщик буровой компании обязан принять меры по исполнению команды, время на принятие команды и исполнение не более 5 секунд. Контроль за исполнением супервайзер ООО «Газпромнефть-Ямал». Отв. Инженер ННБ, Буровой мастер' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В любом случае (если инженер по ННБ не дал команду), согласно мероприятий по предупреждению аварий, бурильщик должен принять соответствующие меры и не оставлять инструмент без движения более 3 минут. Отв. Буровой мастер' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В любом случае (если инженер по ННБ не дал команду), согласно мероприятий по предупреждению аварий, бурильщик должен принять соответствующие меры и не оставлять инструмент без движения более 3 минут. Отв. Буровой мастер' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Продолжить бурение.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Продолжить бурение.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='После добуривания свечи, перед отрывом от забоя производить промывку до полной выработки осевой нагрузки на долото, нормализации давления и крутящего момента на ВСП но не менее двух минут;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='После добуривания свечи, перед отрывом от забоя производить промывку до полной выработки осевой нагрузки на долото, нормализации давления и крутящего момента на ВСП но не менее двух минут;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Произвести проработку пробуренного интервала с расхаживанием на длину свечи при движении вверх 30 об/мин не допуская затяжки до 5т, не допускать увеличения и скачков крутящего момента; движение вниз c вращением 50 об/мин);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Произвести проработку пробуренного интервала с расхаживанием на длину свечи при движении вверх 30 об/мин не допуская затяжки до 5т, не допускать увеличения и скачков крутящего момента; движение вниз c вращением 50 об/мин);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Остановить вращение, произвести расхаживание на длину свечи, установить долото на расстояние 1-2 м от забоя;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Остановить вращение, произвести расхаживание на длину свечи, установить долото на расстояние 1-2 м от забоя;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Выключить насосы, на одну минуту для снятия замера оставить инструмент без движения;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Выключить насосы, на одну минуту для снятия замера оставить инструмент без движения;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Восстановить циркуляцию, включить вращение ВСП, дождаться выхода замера (ориентировочно 4 — 5 минут);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Восстановить циркуляцию, включить вращение ВСП, дождаться выхода замера (ориентировочно 4 — 5 минут);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Произвести наращивание (максимально сократить время оставления инструмента без движения);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Произвести наращивание (максимально сократить время оставления инструмента без движения);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Продолжить бурение.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Продолжить бурение.' />
         </ContentBlock>
       </ul>
 
@@ -2627,8 +2627,8 @@ export const programmBlocks = [
                 </div>
               </td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='410' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='PCDC' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='ОС' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='PCDC' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='ОС' /></td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='24' rightSide='м' /></td>
               <td><SelectWrap size='s' view='clear' items={['—', 'до', 'после']} /></td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='18' /></td>
@@ -2637,8 +2637,8 @@ export const programmBlocks = [
               <td><Field width='full' size='s' view='clear' type='number' dValue='0' rightSide='ч' /></td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='0.6' rightSide='ч' /></td>
               <td><Field width='full' size='s' view='clear' type='number' rightSide='ч' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='3 MWD + AX' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='Метод короткой УБТ, с учетом коррекции осевой магнитной' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='3 MWD + AX' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='Метод короткой УБТ, с учетом коррекции осевой магнитной' /></td>
             </tr>
             <tr>
               <td><Field width='full' size='s' view='clear' type='number' dValue='2' /></td>
@@ -2651,8 +2651,8 @@ export const programmBlocks = [
                 </div>
               </td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='920' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='PCDC' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='ОС' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='PCDC' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='ОС' /></td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='24' rightSide='м' /></td>
               <td><SelectWrap size='s' view='clear' items={['—', 'до', 'после']} /></td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='39' /></td>
@@ -2661,8 +2661,8 @@ export const programmBlocks = [
               <td><Field width='full' size='s' view='clear' type='number' dValue='0' rightSide='ч' /></td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='1.3' rightSide='ч' /></td>
               <td><Field width='full' size='s' view='clear' type='number' rightSide='ч' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='3 MWD + AX' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='Метод короткой УБТ, с учетом коррекции осевой магнитной' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='3 MWD + AX' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='Метод короткой УБТ, с учетом коррекции осевой магнитной' /></td>
             </tr>
             <tr>
               <td><Field width='full' size='s' view='clear' type='number' dValue='3' /></td>
@@ -2675,8 +2675,8 @@ export const programmBlocks = [
                 </div>
               </td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='1736' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='PCDC' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='ОС' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='PCDC' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='ОС' /></td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='24' rightSide='м' /></td>
               <td><SelectWrap size='s' view='clear' items={['—', 'до', 'после']} /></td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='73' /></td>
@@ -2685,8 +2685,8 @@ export const programmBlocks = [
               <td><Field width='full' size='s' view='clear' type='number' dValue='6.1' rightSide='ч' /></td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='2.4' rightSide='ч' /></td>
               <td><Field width='full' size='s' view='clear' type='number' rightSide='ч' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='3 MWD + AX' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='Метод короткой УБТ, с учетом коррекции осевой магнитной' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='3 MWD + AX' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='Метод короткой УБТ, с учетом коррекции осевой магнитной' /></td>
             </tr>
             <tr>
               <td><Field width='full' size='s' view='clear' type='number' dValue='4' /></td>
@@ -2699,8 +2699,8 @@ export const programmBlocks = [
                 </div>
               </td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='1226.7' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='PCDC' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='ОС' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='PCDC' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='ОС' /></td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='12' rightSide='м' /></td>
               <td><SelectWrap size='s' view='clear' items={['—', 'до', 'после']} /></td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='103' /></td>
@@ -2709,8 +2709,8 @@ export const programmBlocks = [
               <td><Field width='full' size='s' view='clear' type='number' dValue='14.7' rightSide='ч' /></td>
               <td><Field width='full' size='s' view='clear' type='number' rightSide='ч' /></td>
               <td><Field width='full' size='s' view='clear' type='number' dValue='6.9' rightSide='ч' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='3 MWD + AX' /></td>
-              <td><Field width='full' size='s' view='clear' type='textarea' maxRows='10000' dValue='Метод короткой УБТ, с учетом коррекции осевой магнитной' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='3 MWD + AX' /></td>
+              <td><Field width='full' size='s' view='clear' type='textarea' maxRows={10000} dValue='Метод короткой УБТ, с учетом коррекции осевой магнитной' /></td>
             </tr>
             
             <tr>
@@ -2917,8 +2917,8 @@ export const programmBlocks = [
           </thead>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             <tr>
               <td colSpan='2'><Button size='s' view='clear' width='full' label='Новая строка' /></td>
@@ -2956,16 +2956,16 @@ export const programmBlocks = [
           </thead>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Сальникообразования' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Соблюдение режимов промывки, использование противосальниковой добавоки MEX-CLEAN. Расхаживание КНБК на всю длину свечи. До начала бурения секции под кондуктор иметь в наличии на буровой объем бурового раствора с низкими реологическими параметрами для оперативного разбавления после интервала ММП. При бурении секции 393,7 мм начать снижение условной вязкости бурового раствора с глубины 190* метров. При бурении секции 393,7 мм ограничить мех. скорость в интервале 170-280 м* до 90 м/час, (* глубина условная, до полного перехода из песка в глину). С глубины 190 метров производить одно расхаживание КНБК с вращением инструмента, не допускать превышения мгновенной мех. скорости свыше 140 м/час. При бурении интервала 0-190 м поддерживать производительность буровых насосов 50-55 м/ч, 190-460 м не менее 65 л/сек.' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Сальникообразования' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Соблюдение режимов промывки, использование противосальниковой добавоки MEX-CLEAN. Расхаживание КНБК на всю длину свечи. До начала бурения секции под кондуктор иметь в наличии на буровой объем бурового раствора с низкими реологическими параметрами для оперативного разбавления после интервала ММП. При бурении секции 393,7 мм начать снижение условной вязкости бурового раствора с глубины 190* метров. При бурении секции 393,7 мм ограничить мех. скорость в интервале 170-280 м* до 90 м/час, (* глубина условная, до полного перехода из песка в глину). С глубины 190 метров производить одно расхаживание КНБК с вращением инструмента, не допускать превышения мгновенной мех. скорости свыше 140 м/час. При бурении интервала 0-190 м поддерживать производительность буровых насосов 50-55 м/ч, 190-460 м не менее 65 л/сек.' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Отсутствие центра скважины относительно центра ротора. Отклонение от вертикали' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Забуривание под направление после центрирования вышки БУ, ротора с использованием прямолинейного бурильного инструмента.' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Отсутствие центра скважины относительно центра ротора. Отклонение от вертикали' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Забуривание под направление после центрирования вышки БУ, ротора с использованием прямолинейного бурильного инструмента.' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Проседание грунта и образование воронок в процессе бурения скважин' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Оборудование устья скважины металлическим коробом. Сокращение сроков бурения. Поддержание минимальной температуры бурового раствора в емкостях (10-15°С), посредством отключения во время бурения подогрева емкостей.' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Проседание грунта и образование воронок в процессе бурения скважин' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Оборудование устья скважины металлическим коробом. Сокращение сроков бурения. Поддержание минимальной температуры бурового раствора в емкостях (10-15°С), посредством отключения во время бурения подогрева емкостей.' /></td>
             </tr>
             <tr>
               <td colSpan='2'><Button size='s' view='clear' width='full' label='Новая строка' /></td>
@@ -3010,8 +3010,8 @@ export const programmBlocks = [
         <table className='table'>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             
             <tr>
@@ -3038,38 +3038,38 @@ export const programmBlocks = [
         <table className='table'>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Забой скважины' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='460м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Забой скважины' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='460м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Глубина спуска обсадной колонны' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='457м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Глубина спуска обсадной колонны' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='457м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Интервал цементирования цементным раствором' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='от 460м до 280м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Интервал цементирования цементным раствором' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='от 460м до 280м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Интервал цементирования гельцементным раствором' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='от 280м до 0м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Интервал цементирования гельцементным раствором' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='от 280м до 0м' /></td>
             </tr>
 
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Статическая температура на забое' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='+8,0°С' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Статическая температура на забое' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='+8,0°С' /></td>
             </tr>
 
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Градиент пластового давления' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='0,0098 МПа/м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Градиент пластового давления' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='0,0098 МПа/м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Градиент давления гидроразрыва' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='0,0206 МПа/м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Градиент давления гидроразрыва' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='0,0206 МПа/м' /></td>
             </tr>
             
             <tr>
@@ -3138,7 +3138,7 @@ export const programmBlocks = [
     member: 'Куратор',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -3148,68 +3148,68 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='До начала бурения обеспечить наличие на кустовой площадке следующих материалов и оборудования:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='До начала бурения обеспечить наличие на кустовой площадке следующих материалов и оборудования:' />
       </ContentBlock>
       <ol>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обсадная труба 324*9,5 (марка стали «Д», резьбовое соединение ОТТГ) – 455 м (с учетом запаса 5%);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обсадная труба 324*9,5 (марка стали «Д», резьбовое соединение ОТТГ) – 455 м (с учетом запаса 5%);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обсадная труба 530/324*9,5 (марка стали «Д», резьбовое соединение ОТТГ*) – 55 м (с учетом запаса 5%);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обсадная труба 530/324*9,5 (марка стали «Д», резьбовое соединение ОТТГ*) – 55 м (с учетом запаса 5%);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Нулевой патрубок ОТТГ / ОТТГ* 324 мм – 1 шт.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Нулевой патрубок ОТТГ / ОТТГ* 324 мм – 1 шт.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Башмак направляющий 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Башмак направляющий 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦКОД 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦКОД 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Пробка цементировочная – 1 ед. (продавочная, с паспортом) **.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Пробка цементировочная – 1 ед. (продавочная, с паспортом) **.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Центратор ЦЦ-324 – 19 ед.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Центратор ЦЦ-324 – 19 ед.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Резьбовой клей герметик (холодная сварка) – 1 ед**.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Резьбовой клей герметик (холодная сварка) – 1 ед**.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Шаблон для обсадных труб 324*9,5 мм (D = 301 мм, L = 300 мм).' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Шаблон для обсадных труб 324*9,5 мм (D = 301 мм, L = 300 мм).' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Смазка резьбоуплотняющая РУСМА или аналог – 10 кг.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Смазка резьбоуплотняющая РУСМА или аналог – 10 кг.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Промывочный переводник под обсадную трубу диаметром 324 мм – 2ед.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Промывочный переводник под обсадную трубу диаметром 324 мм – 2ед.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Специальное устройство для наворота колонных головок – 1 ед.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Специальное устройство для наворота колонных головок – 1 ед.' />
         </ContentBlock>
       </ol>
 
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Распределение ответственности: пункты № 1 – 3, 7 ООО «Газпромнефть-Ямал», пункты № 9 - 12 буровой подрядчик, пункты № 4-6, 8 подрядчик по цементированию.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Распределение ответственности: пункты № 1 – 3, 7 ООО «Газпромнефть-Ямал», пункты № 9 - 12 буровой подрядчик, пункты № 4-6, 8 подрядчик по цементированию.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='** - в случае наличия остатков использовать МТР ООО «Газпромнефть-Ямал».' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='** - в случае наличия остатков использовать МТР ООО «Газпромнефть-Ямал».' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='* - в случае использования обсадной трубы 530/324*9,5 с резьбовым соединением ОТТМ необходимо предусмотреть использование нулевого патрубка ОТТМ / ОТТГ, допускной трубы с резьбовым соединением ОТТМ.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='* - в случае использования обсадной трубы 530/324*9,5 с резьбовым соединением ОТТМ необходимо предусмотреть использование нулевого патрубка ОТТМ / ОТТГ, допускной трубы с резьбовым соединением ОТТМ.' />
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент, оборудование, необходимые для строительства секции находятся на буровой, проверены и работоспособны, имеют соответствующие документы (сертификаты, паспорта).' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент, оборудование, необходимые для строительства секции находятся на буровой, проверены и работоспособны, имеют соответствующие документы (сертификаты, паспорта).' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Иметь в наличии три насоса типа «ВШН-150». Один из них резервный для быстрой установки его в шахту, в случае выхода из строя одного из двух «ВШН-150», установленных в шахте. Забурочную шахту оборудовать коробом с размерами 2х2х2 м.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Иметь в наличии три насоса типа «ВШН-150». Один из них резервный для быстрой установки его в шахту, в случае выхода из строя одного из двух «ВШН-150», установленных в шахте. Забурочную шахту оборудовать коробом с размерами 2х2х2 м.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обсадные трубы укладывать муфтовой частью в направлении буровой установки с учетом очередности спуска их в скважину. Снять защитные колпаки с ниппелей и муфт, очистить резьбовые соединения. Очистку от смазки проводить ветошью при помощи растворителя, не содержащего хлор, либо пароочистителем (ППУ). Не допускается использовать для удаления смазки дизельное топливо, соленую воду, барит и металлические щетки. После удаления смазки, резьбовые соединения следует тщательно протереть сухой и чистой ветошью или просушить продувкой сжатым воздухом. Осмотреть резьбовые соединения ниппеля и муфт. Трубы с поврежденными резьбами к спуску не допускаются. Измерить длину каждой трубы. Измерения производят от свободного торца муфты до того места трубы с наружной резьбой, которое соответствует положению торца муфты при закреплении гидравлическим ключом, для ОТТГ - последняя риска резьбы. Промаркировать (номер трубы в порядке спуска, длина) светлой краской или мелом, сформировать реестр спуска обсадной колонны. Произвести шаблонирование обсадных труб на стеллажах. Шаблонирование произвести внутренним шаблоном по всей длине труб. В случае если внутренний шаблон не проходит через обсадную трубу – отбраковать. Установить защитные колпаки. Перед наворотом убедиться в чистоте защитных колпаков и отсутствии на них посторонних предметов. Не допускается использование защитных колпаков со значительными повреждениями резьбы и формы. [Трубы обсадные. Руководство по эксплуатации. 2015г. ООО «Научно-исследовательский институт разработки и эксплуатации нефтепромысловых труб»].' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обсадные трубы укладывать муфтовой частью в направлении буровой установки с учетом очередности спуска их в скважину. Снять защитные колпаки с ниппелей и муфт, очистить резьбовые соединения. Очистку от смазки проводить ветошью при помощи растворителя, не содержащего хлор, либо пароочистителем (ППУ). Не допускается использовать для удаления смазки дизельное топливо, соленую воду, барит и металлические щетки. После удаления смазки, резьбовые соединения следует тщательно протереть сухой и чистой ветошью или просушить продувкой сжатым воздухом. Осмотреть резьбовые соединения ниппеля и муфт. Трубы с поврежденными резьбами к спуску не допускаются. Измерить длину каждой трубы. Измерения производят от свободного торца муфты до того места трубы с наружной резьбой, которое соответствует положению торца муфты при закреплении гидравлическим ключом, для ОТТГ - последняя риска резьбы. Промаркировать (номер трубы в порядке спуска, длина) светлой краской или мелом, сформировать реестр спуска обсадной колонны. Произвести шаблонирование обсадных труб на стеллажах. Шаблонирование произвести внутренним шаблоном по всей длине труб. В случае если внутренний шаблон не проходит через обсадную трубу – отбраковать. Установить защитные колпаки. Перед наворотом убедиться в чистоте защитных колпаков и отсутствии на них посторонних предметов. Не допускается использование защитных колпаков со значительными повреждениями резьбы и формы. [Трубы обсадные. Руководство по эксплуатации. 2015г. ООО «Научно-исследовательский институт разработки и эксплуатации нефтепромысловых труб»].' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='После замера обсадных труб скорректировать конечный забой интервала под кондуктор исходя из того, что он должен составлять не более 460 метров по вертикали. Обеспечить на буровой запас обработанного до проектных параметров бурового раствора в объеме не менее одного объема скважины, запас технической воды в объеме не менее 100 м3 для приготовления бурового и цементного растворов, а так же буферных жидкостей. При температуре окружающей среды ниже +100С обеспечить температуру воды затворения +250С, проверить на наличие механических примесей, содержание хлоридов (<500 мг/л), рН 6 – 8.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='После замера обсадных труб скорректировать конечный забой интервала под кондуктор исходя из того, что он должен составлять не более 460 метров по вертикали. Обеспечить на буровой запас обработанного до проектных параметров бурового раствора в объеме не менее одного объема скважины, запас технической воды в объеме не менее 100 м3 для приготовления бурового и цементного растворов, а так же буферных жидкостей. При температуре окружающей среды ниже +100С обеспечить температуру воды затворения +250С, проверить на наличие механических примесей, содержание хлоридов (<500 мг/л), рН 6 – 8.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -3490,7 +3490,7 @@ export const programmBlocks = [
     member: 'Буровые растворы',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -3500,7 +3500,7 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='С целью предотвращения размыва слабосцементированного песчаника в интервале залегания зоны ММП и предотвращения интенсивной гидратации глин для бурения данной секции применяется глинистый буровой раствор на основе бентонита. Данная система за счет высокой вязкости позволяет предотвратить осыпи и обвалообразования, а также обеспечить удовлетворительное качество очистки ствола скважины большого диаметра.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='С целью предотвращения размыва слабосцементированного песчаника в интервале залегания зоны ММП и предотвращения интенсивной гидратации глин для бурения данной секции применяется глинистый буровой раствор на основе бентонита. Данная система за счет высокой вязкости позволяет предотвратить осыпи и обвалообразования, а также обеспечить удовлетворительное качество очистки ствола скважины большого диаметра.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -3681,18 +3681,18 @@ export const programmBlocks = [
         </table>
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='*При прохождении песков до глубины 190 м в процессе бурения поддерживать условную вязкость более 90 сек/кварта и производительность насосов 50 л/сек. С глубины 190-200 м необходимо ступенчато увеличить производительность насосов до 65 л/сек и постепенно снизить условную вязкость до 50-65 сек/кварта путём разбавления свежеприготовленным буровым раствором со скоростью не более 40 м3/час.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='*При прохождении песков до глубины 190 м в процессе бурения поддерживать условную вязкость более 90 сек/кварта и производительность насосов 50 л/сек. С глубины 190-200 м необходимо ступенчато увеличить производительность насосов до 65 л/сек и постепенно снизить условную вязкость до 50-65 сек/кварта путём разбавления свежеприготовленным буровым раствором со скоростью не более 40 м3/час.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='**При отсутствии признаков перехода песок-глина необходимо поддерживать при бурении интервала (с глубины 190 м до окончательного забоя) условную вязкость бурового раствора в пределах 70-100 сек/кварта. Необходимо вести постоянный контроль за уровнем бурового раствора в рабочих емкостях. В случае сверхнормативного ухода бурового раствора, не объясняемого потерями на системе очистки (размыв ствола скважины), необходимо по согласованию со службой инжиниринга снизить производительность буровых насосов. В случае снижения производительности буровых насосов необходимо осуществлять последующий контроль очистки ствола от выбуренной породы.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='**При отсутствии признаков перехода песок-глина необходимо поддерживать при бурении интервала (с глубины 190 м до окончательного забоя) условную вязкость бурового раствора в пределах 70-100 сек/кварта. Необходимо вести постоянный контроль за уровнем бурового раствора в рабочих емкостях. В случае сверхнормативного ухода бурового раствора, не объясняемого потерями на системе очистки (размыв ствола скважины), необходимо по согласованию со службой инжиниринга снизить производительность буровых насосов. В случае снижения производительности буровых насосов необходимо осуществлять последующий контроль очистки ствола от выбуренной породы.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='*** В процессе подготовки ствола для последующего спуска кондуктора.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='*** В процессе подготовки ствола для последующего спуска кондуктора.' />
       </ContentBlock>
       <ContentBlock type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='При бурении в интервале 190-460 м при отсутствии активной глины в выбуренной породе продолжить бурение скважины с производительностью буровых насосов 50-55 л/с. Условную вязкость бурового раствора поддерживать не менее 80 сек/кварта. При возникновении признаков некачественной очистки (скачки давления, рост момента) произвести дополнительную промывку и прокачку ВУС.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='При бурении в интервале 190-460 м при отсутствии активной глины в выбуренной породе продолжить бурение скважины с производительностью буровых насосов 50-55 л/с. Условную вязкость бурового раствора поддерживать не менее 80 сек/кварта. При возникновении признаков некачественной очистки (скачки давления, рост момента) произвести дополнительную промывку и прокачку ВУС.' />
         </Informer>
       </ContentBlock>
     </React.Fragment>),
@@ -3774,7 +3774,7 @@ export const programmBlocks = [
     member: 'Буровые растворы',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -3787,88 +3787,88 @@ export const programmBlocks = [
         <table className='table'>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Интервал' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Кондуктор' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Интервал' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Кондуктор' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Тип раствора' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Глинистый' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Тип раствора' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Глинистый' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Интервал по инструменту' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0–460' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Интервал по инструменту' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0–460' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Диаметр долота' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='393.7' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Диаметр долота' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='393.7' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Диаметр колонны' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Диаметр колонны' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Внутренний диаметр предыдущей колонны' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Внутренний диаметр предыдущей колонны' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Длина участка по инструменту' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='460' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Длина участка по инструменту' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='460' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Ожидаемый коэффициент кавернозности' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='1.4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Ожидаемый коэффициент кавернозности' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='1.4' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Переведено с предыдущего интервала/скважины' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Переведено с предыдущего интервала/скважины' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора на поверхности' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='50' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора на поверхности' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='50' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора в колонне' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора в колонне' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора в открытом стволе' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='78.4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора в открытом стволе' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='78.4' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Коэффициент эффективности оборудования очистки' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='75' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Коэффициент эффективности оборудования очистки' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='75' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем выбуренной породы с учетом коэф.разуплотнения' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='94' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем выбуренной породы с учетом коэф.разуплотнения' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='94' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Максимальное содержание выбуренной породы' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='25' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Максимальное содержание выбуренной породы' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='25' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Влажность шлама' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0.9' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Влажность шлама' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0.9' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Потери раствора со шламом' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='56' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Потери раствора со шламом' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='56' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Потери в скважине' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='5.6' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Потери в скважине' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='5.6' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора на поверхности по окончанию бурения интервала' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='50' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора на поверхности по окончанию бурения интервала' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='50' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Расчетный объем свежеприготовленного раствора к обработке на бурение интервала' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='190' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Расчетный объем свежеприготовленного раствора к обработке на бурение интервала' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='190' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Переведено на следующий интервал/скважину' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='80' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Переведено на следующий интервал/скважину' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='80' /></td>
             </tr>
           </tbody>
         </table>
@@ -3973,7 +3973,7 @@ export const programmBlocks = [
     member: 'Буровые растворы',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -3996,129 +3996,129 @@ export const programmBlocks = [
           </thead>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='БЕНТОНИТ ПБМА' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Регулятор вязкости' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='80' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='15200' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='17' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='900' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='БЕНТОНИТ ПБМА' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Регулятор вязкости' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='80' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='15200' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='17' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='900' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Каустическая сода' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Регулятор рН' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0.5' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='95' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='4' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='25' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Каустическая сода' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Регулятор рН' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0.5' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='95' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='25' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='MEX-CLEAN' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Противосальниковая добавка' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='2' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='380' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='2' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='200' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='MEX-CLEAN' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Противосальниковая добавка' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='2' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='380' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='2' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='200' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='SAPP' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Разжижитель' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0.5' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='95' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='4' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='25' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='SAPP' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Разжижитель' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0.5' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='95' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='25' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='PRAESTOL 2540H' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Инкапсулятор' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0.5' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='95' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='4' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='25' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='PRAESTOL 2540H' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Инкапсулятор' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0.5' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='95' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='25' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ВПРГ' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Понизитель фильтрации' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='1' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='190' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='9' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='20' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ВПРГ' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Понизитель фильтрации' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='1' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='190' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='9' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='20' /></td>
             </tr>
             <tr><td colSpan='6'><Button size='s' view='clear' width='full' label='Новая строка' /></td></tr>
           </tbody>
         </table>
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Порядок ввода противосальниковой добавки MEX-CLEAN: при наращиваниях в трубное пространство по 10 – 15 л, либо обработка активного объема раствора по циркуляции. Эффективная обработка – при наращивании в трубное пространство.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Порядок ввода противосальниковой добавки MEX-CLEAN: при наращиваниях в трубное пространство по 10 – 15 л, либо обработка активного объема раствора по циркуляции. Эффективная обработка – при наращивании в трубное пространство.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Верхний интервал (до 190-200м) в основном представлен слабосцементированным песчаником. Для предотвращения кавернообразования и размывания стенок скважины рекомендуется поддерживать производительность бурового насоса не более 56 л/с при бурении в интервале песков. В интервале глин с глубины 190 м ступенчато увеличить производительность насоса до 65 л/с, УВ бурового раствора снизить до 90с.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Верхний интервал (до 190-200м) в основном представлен слабосцементированным песчаником. Для предотвращения кавернообразования и размывания стенок скважины рекомендуется поддерживать производительность бурового насоса не более 56 л/с при бурении в интервале песков. В интервале глин с глубины 190 м ступенчато увеличить производительность насоса до 65 л/с, УВ бурового раствора снизить до 90с.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В интервале глин, углубившись на 30 - 50м, необходимо снизить УВ до 50-65 с и поддерживать ее в данном интервале до окончания бурения секции с целью снижения вероятности сальникообразования.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В интервале глин, углубившись на 30 - 50м, необходимо снизить УВ до 50-65 с и поддерживать ее в данном интервале до окончания бурения секции с целью снижения вероятности сальникообразования.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Поддержание параметров бурового раствора в заданных пределах при соблюдении требований технической и технологической документации на строительство скважины, а также инженерных рекомендаций, изложенных в программе по буровым растворам, позволит вести безаварийное бурение данного интервала.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Поддержание параметров бурового раствора в заданных пределах при соблюдении требований технической и технологической документации на строительство скважины, а также инженерных рекомендаций, изложенных в программе по буровым растворам, позволит вести безаварийное бурение данного интервала.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='С целью снижения вероятности осыпания стенок скважины в интервалах потенциально неустойчивых отложений рекомендуется:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='С целью снижения вероятности осыпания стенок скважины в интервалах потенциально неустойчивых отложений рекомендуется:' />
       </ContentBlock>
       <ol>
         <ContentBlock type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Поддерживать плотность бурового раствора до 1,18 г/см3 на момент окончания строительства интервала.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Поддерживать плотность бурового раствора до 1,18 г/см3 на момент окончания строительства интервала.' />
         </ContentBlock>
         <ContentBlock type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Усилить контроль за скоростью проведения спуско-подъемных операций и доливом скважины.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Усилить контроль за скоростью проведения спуско-подъемных операций и доливом скважины.' />
         </ContentBlock>
         <ContentBlock type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='По возможности максимально сократить время между вскрытием интервала неустойчивых отложений и спуском обсадной колонны.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='По возможности максимально сократить время между вскрытием интервала неустойчивых отложений и спуском обсадной колонны.' />
         </ContentBlock>
       </ol>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Данный интервал содержит значительное количество глинистых пород.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Данный интервал содержит значительное количество глинистых пород.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Среди возможных осложнений при бурении данного интервала следует отметить:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Среди возможных осложнений при бурении данного интервала следует отметить:' />
       </ContentBlock>
       <ul>
         <ContentBlock type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='низкое качество промывки и очистки скважины от выбуренного шлама, осыпи и обвалы стенок скважины в интервалах залегания глинистых пород' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='низкое качество промывки и очистки скважины от выбуренного шлама, осыпи и обвалы стенок скважины в интервалах залегания глинистых пород' />
         </ContentBlock>
         <ContentBlock type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='кавернообразование' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='кавернообразование' />
         </ContentBlock>
         <ContentBlock type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='частичные поглощения раствора в высокопроницаемых рыхлых породах' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='частичные поглощения раствора в высокопроницаемых рыхлых породах' />
         </ContentBlock>
         <ContentBlock type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='высокая наработка раствора при разбуривании активных глин с неконтролируемым ростом плотности бурового раствора' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='высокая наработка раствора при разбуривании активных глин с неконтролируемым ростом плотности бурового раствора' />
         </ContentBlock>
         <ContentBlock type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='затяжки и посадки при СПО' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='затяжки и посадки при СПО' />
         </ContentBlock>
       </ul>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Практика бурения предъявляет повышенные требования к выполнению целого комплекса технологических мер, направленных на улучшение выноса выбуренного шлама. Невыполнение их в полном объёме, может привести к осложнению ствола скважины. Ниже приводятся рекомендуемые меры:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Практика бурения предъявляет повышенные требования к выполнению целого комплекса технологических мер, направленных на улучшение выноса выбуренного шлама. Невыполнение их в полном объёме, может привести к осложнению ствола скважины. Ниже приводятся рекомендуемые меры:' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='При подъёме места затяжек необходимо обязательно прорабатывать для обеспечения выноса шлама. Важно не допустить слёживания выбуренного шлама на стенках скважины. Проработки рекомендуется начинать с малых производительностей насоса с постепенным (после стабилизации давления) повышением подачи раствора и доведением её до рабочей.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='При подъёме места затяжек необходимо обязательно прорабатывать для обеспечения выноса шлама. Важно не допустить слёживания выбуренного шлама на стенках скважины. Проработки рекомендуется начинать с малых производительностей насоса с постепенным (после стабилизации давления) повышением подачи раствора и доведением её до рабочей.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Для обеспечения эффективного выноса выбуренной породы, бурение рекомендуется производить с вращением бурильной колонны 40-60 об/мин в тех случаях, когда вращение бурильной колонны возможно.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Для обеспечения эффективного выноса выбуренной породы, бурение рекомендуется производить с вращением бурильной колонны 40-60 об/мин в тех случаях, когда вращение бурильной колонны возможно.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='При спуске места посадок также прорабатываются с вымывом шлама с постепенным повышением производительности насоса.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='При спуске места посадок также прорабатываются с вымывом шлама с постепенным повышением производительности насоса.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Если в ходе бурения при отрыве от забоя происходят затяжки, рекомендуется сделать контрольный подъём свежепробуренного участка с проработкой и промывкой интервалов затяжек. При увеличении проходки выше рекомендованной для бурения интервала (при отсутствии затяжек при наращивании) также проводить периодически контрольный подъём в интервале свежепробуренного участка.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Если в ходе бурения при отрыве от забоя происходят затяжки, рекомендуется сделать контрольный подъём свежепробуренного участка с проработкой и промывкой интервалов затяжек. При увеличении проходки выше рекомендованной для бурения интервала (при отсутствии затяжек при наращивании) также проводить периодически контрольный подъём в интервале свежепробуренного участка.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Для предотвращения сальникообразования, очистки забоя от выбуренного шлама, а также для увеличения механической скорости бурения рекомендуется подбирать гидромониторные насадки с учетом максимально эффективной скорости истечения.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Для предотвращения сальникообразования, очистки забоя от выбуренного шлама, а также для увеличения механической скорости бурения рекомендуется подбирать гидромониторные насадки с учетом максимально эффективной скорости истечения.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Рекомендуемое значение производительности насосов не менее 65 л/c и ограничение механической скорости бурения до 90 м/час при входе в интервал активных глин. При проведении промывки перед очередным наращиванием обеспечить максимально возможную производительность буровых насосов (не менее 65 л/c).' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Рекомендуемое значение производительности насосов не менее 65 л/c и ограничение механической скорости бурения до 90 м/час при входе в интервал активных глин. При проведении промывки перед очередным наращиванием обеспечить максимально возможную производительность буровых насосов (не менее 65 л/c).' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='При бурении интервала под кондуктор необходимо производить постоянный контроль выбуренной породы, с целью фиксирования входа в интервал активных глин. При появлении подтвержденных признаков изменения литологии с песчаников на глины инженер по буровым растворам незамедлительно оповещает инженеров ННБ, представителя Заказчика, мастера буровой бригады.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='При бурении интервала под кондуктор необходимо производить постоянный контроль выбуренной породы, с целью фиксирования входа в интервал активных глин. При появлении подтвержденных признаков изменения литологии с песчаников на глины инженер по буровым растворам незамедлительно оповещает инженеров ННБ, представителя Заказчика, мастера буровой бригады.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -5189,8 +5189,8 @@ export const programmBlocks = [
       <ContentBlock isEditable={true} type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Плановые значения параметров режима бурения, весов на крюке, крутящего момента на ВСП и эквивалентной циркуляционной плотности рассчитываются подрядчиком по ННБ и растворным подрядчиком при проектировании скважины в специализированном программном обеспечении и заносятся в режимную карту бурения. Фактические значения данных параметров заносятся в режимную карту бурильщиком в процессе бурения секции. Фактические значения эквивалентной циркуляционной плотности заносятся инженером по ННБ при условии наличия в КНБК датчика затрубного давления.' />
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Супервайзеру Заказчика отправить заполненную режимную карту по электронной почте инженеру – куратору кустовой площадки в течении суток после окончания бурения секции.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Плановые значения параметров режима бурения, весов на крюке, крутящего момента на ВСП и эквивалентной циркуляционной плотности рассчитываются подрядчиком по ННБ и растворным подрядчиком при проектировании скважины в специализированном программном обеспечении и заносятся в режимную карту бурения. Фактические значения данных параметров заносятся в режимную карту бурильщиком в процессе бурения секции. Фактические значения эквивалентной циркуляционной плотности заносятся инженером по ННБ при условии наличия в КНБК датчика затрубного давления.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Супервайзеру Заказчика отправить заполненную режимную карту по электронной почте инженеру – куратору кустовой площадки в течении суток после окончания бурения секции.' />
         </Informer>
       </ContentBlock>
     </React.Fragment>),
@@ -5485,7 +5485,7 @@ export const programmBlocks = [
     member: 'Бурение',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -5495,16 +5495,16 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Собрать роторную КНБК для бурения тех. кармана L – 30 м: Долото 393,7 мм + УБТ 203 – 9 м + СБТ 127 – остальной. Пробурить тех. карман для сборки КНБК для бурения при бурении секции 393,7 мм необходимо соблюдать следующие режимы бурения: 0-25 м расход – 15 л/с, обороты ВСП 80 – 100 об/мин.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Собрать роторную КНБК для бурения тех. кармана L – 30 м: Долото 393,7 мм + УБТ 203 – 9 м + СБТ 127 – остальной. Пробурить тех. карман для сборки КНБК для бурения при бурении секции 393,7 мм необходимо соблюдать следующие режимы бурения: 0-25 м расход – 15 л/с, обороты ВСП 80 – 100 об/мин.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент и оборудование, необходимые для строительства секции, находятся на буровой, проверены и работоспособны, имеют соответствующие документы (паспорта). Перед началом бурения обеспечить наличие бурового раствора на поверхности в объеме 105 м3. Собрать КНБК для бурения секции 393,7 мм согласно настоящей программы, тестирование оборудования для ННБ не производить (протокол ПТ-10-01/011 от 22.11.17). Поддерживать температуру бурового раствора на минимальном уровне, отключив подогрев всех емкостей. Бурение секции в интервале 0 - 460 м производить без проработки перед наращиванием. «Снятие пружины» перед снятием замеров в статике производить на длину одной трубы (12 метров). В случае наличия признаков зашламованности ствола скважины (скачки давления и крутящего момента на ВСП, несоответствие весов на крюке с расчетными на величину более 10%), произвести промывку ствола скважины и продолжить бурение с проработкой ствола скважины перед наращиванием. Расхаживание производить с вращением бурильного инструмента с частотой при движении «вверх» 40 об/мин, при движении «вниз» 60 об/мин. Фактический забой секции выбрать исходя из фактической длины обсадной колонны (с учетом технологической оснастки) – ЗУМПФ не должен превышать 3 м. После окончания бурения секции произвести прокачку очищающей пачки ВУС по рецептуре подрядчика по буровым растворам в объёме не менее 8 м3 с промывкой ствола скважины с расхаживанием и вращением бурильного инструмента до момента выхода пачки на устье скважины. Режим промывки: расход промывочной жидкости 65 л/сек, частота вращения ВСП 60 об/мин. Произвести подъём КНБК до глубины 50 м со сплошной проработкой. Режим проработки: в интервале 460-170 м расход промывочной жидкости 65 л/сек, частота вращения ВСП 40 об/мин; в интервале 170 – 50 м расход промывочной жидкости 50 л/сек, частота вращения ВСП 40 об/мин, скорость проработки ствола скважины не более 500 м/час. В интервале перехода «пески – глина» (подъем произвести на 50 метров выше зоны перехода), произвести спуск на 50 метров ниже интервала перехода без циркуляции и вращения. В случае получения посадки проработать до свободного хождения «на сухую».' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент и оборудование, необходимые для строительства секции, находятся на буровой, проверены и работоспособны, имеют соответствующие документы (паспорта). Перед началом бурения обеспечить наличие бурового раствора на поверхности в объеме 105 м3. Собрать КНБК для бурения секции 393,7 мм согласно настоящей программы, тестирование оборудования для ННБ не производить (протокол ПТ-10-01/011 от 22.11.17). Поддерживать температуру бурового раствора на минимальном уровне, отключив подогрев всех емкостей. Бурение секции в интервале 0 - 460 м производить без проработки перед наращиванием. «Снятие пружины» перед снятием замеров в статике производить на длину одной трубы (12 метров). В случае наличия признаков зашламованности ствола скважины (скачки давления и крутящего момента на ВСП, несоответствие весов на крюке с расчетными на величину более 10%), произвести промывку ствола скважины и продолжить бурение с проработкой ствола скважины перед наращиванием. Расхаживание производить с вращением бурильного инструмента с частотой при движении «вверх» 40 об/мин, при движении «вниз» 60 об/мин. Фактический забой секции выбрать исходя из фактической длины обсадной колонны (с учетом технологической оснастки) – ЗУМПФ не должен превышать 3 м. После окончания бурения секции произвести прокачку очищающей пачки ВУС по рецептуре подрядчика по буровым растворам в объёме не менее 8 м3 с промывкой ствола скважины с расхаживанием и вращением бурильного инструмента до момента выхода пачки на устье скважины. Режим промывки: расход промывочной жидкости 65 л/сек, частота вращения ВСП 60 об/мин. Произвести подъём КНБК до глубины 50 м со сплошной проработкой. Режим проработки: в интервале 460-170 м расход промывочной жидкости 65 л/сек, частота вращения ВСП 40 об/мин; в интервале 170 – 50 м расход промывочной жидкости 50 л/сек, частота вращения ВСП 40 об/мин, скорость проработки ствола скважины не более 500 м/час. В интервале перехода «пески – глина» (подъем произвести на 50 метров выше зоны перехода), произвести спуск на 50 метров ниже интервала перехода без циркуляции и вращения. В случае получения посадки проработать до свободного хождения «на сухую».' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В случае свободного хождения продолжить подъем сплошной проработкой до устья. После подъема произвести сборку роторную КНБК 660,4 мм, для шаблонировки ствола в интервале 0-50 м. Спустить КНБК до глубины исходя из следующего расчета: 1 м + 4 трубы термокейс 530 х 324*9,5 + высота стола ротора. В случае свободного прохождения КНБК в интервале 0-50 м произвести подъем и разборку КНБК. При отрицательном результате (спуск с посадками свыше 5 тн) проработать интервал до свободного хождения «на сухую». Режим проработки: расход промывочной жидкости 20 л/сек, частота вращения ВСП 40 об/мин.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В случае свободного хождения продолжить подъем сплошной проработкой до устья. После подъема произвести сборку роторную КНБК 660,4 мм, для шаблонировки ствола в интервале 0-50 м. Спустить КНБК до глубины исходя из следующего расчета: 1 м + 4 трубы термокейс 530 х 324*9,5 + высота стола ротора. В случае свободного прохождения КНБК в интервале 0-50 м произвести подъем и разборку КНБК. При отрицательном результате (спуск с посадками свыше 5 тн) проработать интервал до свободного хождения «на сухую». Режим проработки: расход промывочной жидкости 20 л/сек, частота вращения ВСП 40 об/мин.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В случае осложнения при подготовке ствола оповестить РН по планированию бурения. Произвести подъем и разборку КНБК, места затяжек проработать до свободного хождения КНБК без циркуляции. С целью недопущения зарезки нового ствола, механическая скорость проработки 75 - 100 м/час.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В случае осложнения при подготовке ствола оповестить РН по планированию бурения. Произвести подъем и разборку КНБК, места затяжек проработать до свободного хождения КНБК без циркуляции. С целью недопущения зарезки нового ствола, механическая скорость проработки 75 - 100 м/час.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -5528,7 +5528,7 @@ export const programmBlocks = [
     member: 'Бурение',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -5538,16 +5538,16 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Составить график дежурства ИТР (бурового подрядчика) на буровой во время проведения работ по подготовке и спуску обсадных труб. График дежурства ИТР должен включать в себя ответственность и обязанности ответственного лица.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Составить график дежурства ИТР (бурового подрядчика) на буровой во время проведения работ по подготовке и спуску обсадных труб. График дежурства ИТР должен включать в себя ответственность и обязанности ответственного лица.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Проверить техническое состояние буровой установки: вышки, подвышечного основания, подроторных балок, талевой системы, буровой лебедки и тормозной системы, силового и энергетического оборудования, буровых насосов и циркуляционной системы, оборудования и инструмента для СПО, КИП и освещения, центровку вышки, запас диз. топлива, работоспособность аварийной ДЭС. При необходимости на приёмных мостках установить дополнительное освещение. Проверить работоспособность станции ГТИ. Составить акт готовности к спуску и цементированию обсадной колонны.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Проверить техническое состояние буровой установки: вышки, подвышечного основания, подроторных балок, талевой системы, буровой лебедки и тормозной системы, силового и энергетического оборудования, буровых насосов и циркуляционной системы, оборудования и инструмента для СПО, КИП и освещения, центровку вышки, запас диз. топлива, работоспособность аварийной ДЭС. При необходимости на приёмных мостках установить дополнительное освещение. Проверить работоспособность станции ГТИ. Составить акт готовности к спуску и цементированию обсадной колонны.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Провести внеплановый инструктаж работникам буровой бригады по правилам безопасного производства работ при спуске и цементировании обсадных колонн с записью в журнале проведения инструктажей. Из состава работников буровой бригады назначить ответственных работников за очистку и смазку резьбовых соединений, за долив обсадной колонны, за контроль вытеснения промывочной жидкости с записью в буровом журнале. Ответственность за порядок спуска и длину обсадных труб возлагается на ответственного ИТР подрядчика по бурению скважин.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Провести внеплановый инструктаж работникам буровой бригады по правилам безопасного производства работ при спуске и цементировании обсадных колонн с записью в журнале проведения инструктажей. Из состава работников буровой бригады назначить ответственных работников за очистку и смазку резьбовых соединений, за долив обсадной колонны, за контроль вытеснения промывочной жидкости с записью в буровом журнале. Ответственность за порядок спуска и длину обсадных труб возлагается на ответственного ИТР подрядчика по бурению скважин.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Произвести спуск обсадной колонны в следующем порядке: Башмак направляющий 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 10 м, ЦКОД 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 400 м; Обсадная труба 530/324х9,5 ОТТМ - остальное. На соединения «башмак - обсадная труба» и «ЦКОД – обсадная труба» нанести резьбовую герметизирующую смазку. Технологическую оснастку установить согласно приведенной ниже таблице. Сборку и монтаж технологической оснастки осуществлять согласно руководства завода – изготовителя. Свинчивание и докрепление ротором запрещено.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Произвести спуск обсадной колонны в следующем порядке: Башмак направляющий 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 10 м, ЦКОД 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 400 м; Обсадная труба 530/324х9,5 ОТТМ - остальное. На соединения «башмак - обсадная труба» и «ЦКОД – обсадная труба» нанести резьбовую герметизирующую смазку. Технологическую оснастку установить согласно приведенной ниже таблице. Сборку и монтаж технологической оснастки осуществлять согласно руководства завода – изготовителя. Свинчивание и докрепление ротором запрещено.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -5571,7 +5571,7 @@ export const programmBlocks = [
     member: 'Долота',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -5592,124 +5592,124 @@ export const programmBlocks = [
           </thead>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='1' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='60 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='95 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='1' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='60 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='95 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='2' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='155 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='118 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='2' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='155 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='118 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='3' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='273 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='3' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='273 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='4' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='284 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='284 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='5' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='295 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='5' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='295 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='6' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='306 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='6' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='306 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='7' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='317 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='7' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='317 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='8' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='328 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='8' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='328 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='9' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='328 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='9' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='328 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='10' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='339 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='10' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='339 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='350 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='350 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='12' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='361 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='12' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='361 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='13' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='372 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='13' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='372 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='14' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='383 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='14' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='383 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='15' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='394 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='15' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='394 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='16' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='405 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='16' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='405 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='17' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='416 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='17' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='416 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='18' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='427 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='18' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='427 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='19' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='438 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='19' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='438 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='20' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='449 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='20' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='449 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
 
             <tr><td colSpan='4'><Button size='s' view='clear' width='full' label='Новая строка' /></td></tr>
@@ -5720,61 +5720,61 @@ export const programmBlocks = [
       <ContentBlock isEditable={true} type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='На трубу с башмаком установку центратора не производить.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='На трубу с башмаком установку центратора не производить.' />
         </Informer>
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Спуск первых 10 (десяти) обсадных труб производить на двух элеваторах. Без присутствия супервайзера Заказчика сборка компоновки низа обсадной колонны запрещена. В случае наличия каких-либо затруднений (невозможность наворота, повреждение резьбовых соединений, выявление дефектов, несовпадение меток после полного свинчивания и др.) при сборке низа обсадной колонны, связанных с формированием промысловых соединений, ответственный ИТР Подрядчика по бурению совместно с супервайзером Заказчика принимает решение об отбраковке элементов технологической оснастки и обсадных труб.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Спуск первых 10 (десяти) обсадных труб производить на двух элеваторах. Без присутствия супервайзера Заказчика сборка компоновки низа обсадной колонны запрещена. В случае наличия каких-либо затруднений (невозможность наворота, повреждение резьбовых соединений, выявление дефектов, несовпадение меток после полного свинчивания и др.) при сборке низа обсадной колонны, связанных с формированием промысловых соединений, ответственный ИТР Подрядчика по бурению совместно с супервайзером Заказчика принимает решение об отбраковке элементов технологической оснастки и обсадных труб.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='При подъеме обсадных труб на буровую площадку необходимо соблюдать осторожность, не допускать изгиба труб и ударов муфт о любую поверхность буровой установки или другого оборудования. Установить на буровой вышке удерживающий канат. Подъем труб на буровую площадку должен проводиться только с установленными защитными колпаками.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='При подъеме обсадных труб на буровую площадку необходимо соблюдать осторожность, не допускать изгиба труб и ударов муфт о любую поверхность буровой установки или другого оборудования. Установить на буровой вышке удерживающий канат. Подъем труб на буровую площадку должен проводиться только с установленными защитными колпаками.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Во время сборки колонны каждая труба должна быть отцентрирована относительно муфты и оси скважины. Перед началом свинчивания необходимо проверить на ощупь отсутствие механических повреждений уплотнительных и упорных поверхностей на свободном конце трубы. Защитные колпаки с ниппельной части удаляются непосредственно перед посадкой в муфту, в это же время на ниппельную часть наносится смазка. При свинчивании соединений необходимо применять резьбовую смазку. Расход смазки на одно соединение согласно рекомендациям компании-изготовителя резьбовой смазки. Резьбовая смазка должна распределяться между муфтой и ниппелем: 2/3 количества - на муфту, 1/3 – на ниппель. Смазку необходимо наносить на поверхности равномерно. Смазку наносить на высушенную поверхность резьбового соединения кистью, либо нейлоновой щеткой. Смазку перед применением тщательно перемещать, смазка должна быть однородно, иметь консистенцию мази, не содержать твердых включений. Запрещается свинчивание резьб без смазки, а также применение машинного, дизельного масла в качестве заменителей.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Во время сборки колонны каждая труба должна быть отцентрирована относительно муфты и оси скважины. Перед началом свинчивания необходимо проверить на ощупь отсутствие механических повреждений уплотнительных и упорных поверхностей на свободном конце трубы. Защитные колпаки с ниппельной части удаляются непосредственно перед посадкой в муфту, в это же время на ниппельную часть наносится смазка. При свинчивании соединений необходимо применять резьбовую смазку. Расход смазки на одно соединение согласно рекомендациям компании-изготовителя резьбовой смазки. Резьбовая смазка должна распределяться между муфтой и ниппелем: 2/3 количества - на муфту, 1/3 – на ниппель. Смазку необходимо наносить на поверхности равномерно. Смазку наносить на высушенную поверхность резьбового соединения кистью, либо нейлоновой щеткой. Смазку перед применением тщательно перемещать, смазка должна быть однородно, иметь консистенцию мази, не содержать твердых включений. Запрещается свинчивание резьб без смазки, а также применение машинного, дизельного масла в качестве заменителей.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Свинчивание и докрепление производить гидравлическим ключом с моментомером. При свинчивании обсадных труб на буровой муфта может слегка провернуться в соединении, закрепленном на заводе. Это не означает, что муфта на заводе была закреплена ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 29 слишком слабо, а доказывает, что усилие докрепления достигает той же величины, что и при свинчивании соединения на заводе.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Свинчивание и докрепление производить гидравлическим ключом с моментомером. При свинчивании обсадных труб на буровой муфта может слегка провернуться в соединении, закрепленном на заводе. Это не означает, что муфта на заводе была закреплена ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 29 слишком слабо, а доказывает, что усилие докрепления достигает той же величины, что и при свинчивании соединения на заводе.' />
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Свинчивание обсадных труб с резьбовым соединением ОТТГ (ОТТМ) рекомендуется проводить в следующем порядке:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Свинчивание обсадных труб с резьбовым соединением ОТТГ (ОТТМ) рекомендуется проводить в следующем порядке:' />
       </ContentBlock>
       <ul>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Подготовленную и поднятую очередную трубу над устьем скважины необходимо направлять в муфту спущенной трубы вертикально. Чтобы не повредить резьбу посадки труб следует производить плавно, без ударов.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Подготовленную и поднятую очередную трубу над устьем скважины необходимо направлять в муфту спущенной трубы вертикально. Чтобы не повредить резьбу посадки труб следует производить плавно, без ударов.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Произвести измерение расстояния от внутреннего упорного торца до наружного торца муфты с помощью штангенциркуля. Затем на ответной ниппельной части трубы нанести риску на расстоянии от торца трубы, равном измеренному расстоянию от упорного торца до наружного торца муфты.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Произвести измерение расстояния от внутреннего упорного торца до наружного торца муфты с помощью штангенциркуля. Затем на ответной ниппельной части трубы нанести риску на расстоянии от торца трубы, равном измеренному расстоянию от упорного торца до наружного торца муфты.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Свинчивание производить без перекосов, убедившись, что резьбы ниппеля и муфты вошли в зацепление.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Свинчивание производить без перекосов, убедившись, что резьбы ниппеля и муфты вошли в зацепление.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Для предотвращения заедания резьбы при свинчивании следует свинчивать соединение со скоростью не более 25 об/мин. При возрастании момента скорость свинчивания должна быть снижена до скорости не более 5 об/мин, при этом происходит докрепление соединения.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Для предотвращения заедания резьбы при свинчивании следует свинчивать соединение со скоростью не более 25 об/мин. При возрастании момента скорость свинчивания должна быть снижена до скорости не более 5 об/мин, при этом происходит докрепление соединения.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='После силового свинчивания торец муфты должен совпадать с риской, нанесенной на ниппельную часть трубы. По достижению торцом трубы упорного уступа муфты при силовом свинчивании происходит резкое увеличение крутящего момента. Зафиксированный при этом крутящий момент будет являться оптимальным для данных условий.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='После силового свинчивания торец муфты должен совпадать с риской, нанесенной на ниппельную часть трубы. По достижению торцом трубы упорного уступа муфты при силовом свинчивании происходит резкое увеличение крутящего момента. Зафиксированный при этом крутящий момент будет являться оптимальным для данных условий.' />
         </ContentBlock>
       </ul>
       
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Дальнейшее свинчивание труб производится по установленному среднеарифметическому значению крутящего момента, полученного при проведении свинчивания десяти труб, следующих друг за другом. Полученные среднеарифметические значения крутящего момента являются оптимальными для данной сборки колонны. Минимальный крутящий момент, при этом, должен быть не менее 75% от принятого, а максимальный, не более 125%. Если при свинчивании происходит биение верхнего конца обсадной трубы, то следует снизить скорость вращения, чтобы не допустить пластической деформации резьбы.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Дальнейшее свинчивание труб производится по установленному среднеарифметическому значению крутящего момента, полученного при проведении свинчивания десяти труб, следующих друг за другом. Полученные среднеарифметические значения крутящего момента являются оптимальными для данной сборки колонны. Минимальный крутящий момент, при этом, должен быть не менее 75% от принятого, а максимальный, не более 125%. Если при свинчивании происходит биение верхнего конца обсадной трубы, то следует снизить скорость вращения, чтобы не допустить пластической деформации резьбы.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Свинчивание обсадных труб производить гидравлическим ключом, оборудованным моментомером с регистрацией момента свинчивания на электронном носителе. Без регистрации момента свинчивания спуск обсадной колонны запрещается. Установить контроль станцией ГТИ за моментом свинчивания обсадных труб, при отклонении от установленных значений незамедлительно оповестить бурильщика, супервайзера Заказчика, ИТР Подрядчика по бурению.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Свинчивание обсадных труб производить гидравлическим ключом, оборудованным моментомером с регистрацией момента свинчивания на электронном носителе. Без регистрации момента свинчивания спуск обсадной колонны запрещается. Установить контроль станцией ГТИ за моментом свинчивания обсадных труб, при отклонении от установленных значений незамедлительно оповестить бурильщика, супервайзера Заказчика, ИТР Подрядчика по бурению.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Скорость спуска обсадной колонны не более 0,5 м/сек. При спуске обсадной колонны не допускать посадок более 50% от собственного веса при движении «вниз» обсадной колонны. В случае получения посадки, прекратить спуск обсадной колонны, поднять обсадную колонну на 5 – 10 метров выше интервала посадки, восстановить циркуляцию промывочной жидкости с минимальной производительностью буровых насосов (10 л/сек) и плавным (5 л/сек) увеличением, по мере стабилизации давления, до 32 л/сек, расходить обсадную колонну до свободного хождения, остановить промывку и продолжить спуск.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Скорость спуска обсадной колонны не более 0,5 м/сек. При спуске обсадной колонны не допускать посадок более 50% от собственного веса при движении «вниз» обсадной колонны. В случае получения посадки, прекратить спуск обсадной колонны, поднять обсадную колонну на 5 – 10 метров выше интервала посадки, восстановить циркуляцию промывочной жидкости с минимальной производительностью буровых насосов (10 л/сек) и плавным (5 л/сек) увеличением, по мере стабилизации давления, до 32 л/сек, расходить обсадную колонну до свободного хождения, остановить промывку и продолжить спуск.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Установить контроль станцией ГТИ за спуском обсадной колонны (веса на крюке, моментом свинчивания, вытеснение промывочной жидкости), при отклонении от установленных значений незамедлительно оповестить бурильщика, супервайзера Заказчика, ИТР Подрядчика по бурению.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Установить контроль станцией ГТИ за спуском обсадной колонны (веса на крюке, моментом свинчивания, вытеснение промывочной жидкости), при отклонении от установленных значений незамедлительно оповестить бурильщика, супервайзера Заказчика, ИТР Подрядчика по бурению.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В случае, если не удается получить свободное хождение, приступить к подъему обсадной колонны. Решение по подъему обсадной колонны принимает начальник управления ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 30 инжиниринга ООО «Газпромнефть – Ямал» (согласовывает супервайзер Заказчика через руководителя направления по планированию бурения). Дальнейшие работы по переподготовке ствола скважины производить по дополнительному плану.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В случае, если не удается получить свободное хождение, приступить к подъему обсадной колонны. Решение по подъему обсадной колонны принимает начальник управления ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 30 инжиниринга ООО «Газпромнефть – Ямал» (согласовывает супервайзер Заказчика через руководителя направления по планированию бурения). Дальнейшие работы по переподготовке ствола скважины производить по дополнительному плану.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='По достижению проектной глубины произвести промывку ствола скважины в объеме трех объемов затрубного пространства. Циркуляцию восстанавливать с минимальной производительностью буровых насосов (10 л/сек) и плавным (5 л/сек) по мере стабилизации давления и увеличением до 32 л/сек. В случае, если отсутствует возможность увеличения производительности буровых насосов до 32 л/сек по причине повышения давления, зафиксировать максимально достигнутую производительность буровых насосов, супервайзеру Заказчика совместно с подрядчиком по цементированию произвести пересчет времени цементирования обсадной колонны и определить возможность проведения работ с пониженной производительностью.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='По достижению проектной глубины произвести промывку ствола скважины в объеме трех объемов затрубного пространства. Циркуляцию восстанавливать с минимальной производительностью буровых насосов (10 л/сек) и плавным (5 л/сек) по мере стабилизации давления и увеличением до 32 л/сек. В случае, если отсутствует возможность увеличения производительности буровых насосов до 32 л/сек по причине повышения давления, зафиксировать максимально достигнутую производительность буровых насосов, супервайзеру Заказчика совместно с подрядчиком по цементированию произвести пересчет времени цементирования обсадной колонны и определить возможность проведения работ с пониженной производительностью.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -5981,7 +5981,7 @@ export const programmBlocks = [
     member: 'Цементирование',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -5991,87 +5991,87 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='После прибытия цементировочного флота на кустовую площадку супервайзеру Заказчика организовать проведение короткой встречи с ИТР сервисных подрядчиков, задействованных в данной операции, для обсуждения предстоящей работы, способов коммуникации и сигналов, рисков в области ОТ, ПБ и ООС, последовательности всех операций.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='После прибытия цементировочного флота на кустовую площадку супервайзеру Заказчика организовать проведение короткой встречи с ИТР сервисных подрядчиков, задействованных в данной операции, для обсуждения предстоящей работы, способов коммуникации и сигналов, рисков в области ОТ, ПБ и ООС, последовательности всех операций.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Произвести расстановку и монтаж цементировочного флота согласно требований нормативных документов. Cоставить трехсторонний АКТ о готовности буровой установки к цементированию, акты о передаче скважины для цементирования (Приложение № 11 Договора) и акта контрольного замера параметров бурового раствора с участием представителя Заказчика, бурового мастера/технолога бурового подрядчика, инженера по цементированию, инженера по буровым растворам.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Произвести расстановку и монтаж цементировочного флота согласно требований нормативных документов. Cоставить трехсторонний АКТ о готовности буровой установки к цементированию, акты о передаче скважины для цементирования (Приложение № 11 Договора) и акта контрольного замера параметров бурового раствора с участием представителя Заказчика, бурового мастера/технолога бурового подрядчика, инженера по цементированию, инженера по буровым растворам.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Предоставить супервайзеру ООО «ГПН-Ямал» оригиналы контрольных лабораторных тестов на время загустевания облегченного цементного раствора и цементного раствора нормальной плотности по замешанным (затаренным) на цем. заводе цементным смесям. Без предоставления оригиналов лабораторных тестов цементирование запрещено.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Предоставить супервайзеру ООО «ГПН-Ямал» оригиналы контрольных лабораторных тестов на время загустевания облегченного цементного раствора и цементного раствора нормальной плотности по замешанным (затаренным) на цем. заводе цементным смесям. Без предоставления оригиналов лабораторных тестов цементирование запрещено.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Подготовить жидкость затворения тех. вода для замешивания буферов цементных растворов в объеме указанном ниже в таблице (провести анализ на наличие посторонних примесей, проверить на Рh, хлориды, проверить объем, в зимнее время прогреть до температуры указанной в таблице, инженеру по цементированию совместно с мастером буровой бригады обговорить очередность подачи жидкостей). Буровой подрядчик предоставляет чистую воду для замеса, качество которой проверяется представителем подрядчика по цементированию до начала работ по цементированию. Без проверки качества жидкости затворения, цементирование не начинать. Отобрать две пробы жидкости затворения (минимум по 5 л.).' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Подготовить жидкость затворения тех. вода для замешивания буферов цементных растворов в объеме указанном ниже в таблице (провести анализ на наличие посторонних примесей, проверить на Рh, хлориды, проверить объем, в зимнее время прогреть до температуры указанной в таблице, инженеру по цементированию совместно с мастером буровой бригады обговорить очередность подачи жидкостей). Буровой подрядчик предоставляет чистую воду для замеса, качество которой проверяется представителем подрядчика по цементированию до начала работ по цементированию. Без проверки качества жидкости затворения, цементирование не начинать. Отобрать две пробы жидкости затворения (минимум по 5 л.).' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обеспечить регистрацию основных параметров процесса цементирования (плотность, расход, давление, объемы закачанных растворов).' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обеспечить регистрацию основных параметров процесса цементирования (плотность, расход, давление, объемы закачанных растворов).' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Установить продавочную пробку в цементировочную головку в присутствии представителя Заказчика. Заполнить цементировочную линию тех.водой. Произвести опрессовку линии ВД в 2 этапа, сначала создать давление 34 атм., осмотреть линию ВД на предмет пропусков и утечек (при выявлении устранить), затем поднять давление до 225 атм. с выдержкой не менее 5 мин. Во время производства работ по цементированию запрещается превышать давление 115 атм. Закачку любых жидкостей начинать плавно с минимальной производительностью 10 л/с, плавно увеличивая расход до программных значений, следить за давлением. Закачать буферные жидкости и цементный раствор ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 31 согласно таблицы объемов и режимов закачки. Перед закачкой произвести замер плотности цементного раствора по рычажным весам. Отобрать пробы сухих цементных смесей и затворенного раствора, один комплект передать в лабораторию подрядчика по цементированию для проведения анализа, второй комплект передать супервайзеру Заказчика для хранения. Не промывая цементировочную линию, сбросить продавочную пробку в присутствии супервайзера Заказчика. Закачать продавочную жидкость (буровой раствор) согласно таблицы объемов и режимов закачки. На время работы обеспечить контроль за наличием и характером циркуляции растворов из скважины, производить постоянный замер плотности и рН, при выходе буферной жидкости отсечь циркуляционную систему буровой установки и направить в шламовый амбар. В случае несоответствия расходов на входе и выходе из скважины или полной потери циркуляции снизить скорость закачки до минимально возможного значения, произведя перерасчет времени продавки на новой скорости закачки и сопоставив полученное значение со временем загустевания тампонажных растворов. Прокачав продавочную пробку до посадочного узла ЦКОДа, поднять давление на 3 МПа выше рабочего, выдержать в течение 5 минут.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Установить продавочную пробку в цементировочную головку в присутствии представителя Заказчика. Заполнить цементировочную линию тех.водой. Произвести опрессовку линии ВД в 2 этапа, сначала создать давление 34 атм., осмотреть линию ВД на предмет пропусков и утечек (при выявлении устранить), затем поднять давление до 225 атм. с выдержкой не менее 5 мин. Во время производства работ по цементированию запрещается превышать давление 115 атм. Закачку любых жидкостей начинать плавно с минимальной производительностью 10 л/с, плавно увеличивая расход до программных значений, следить за давлением. Закачать буферные жидкости и цементный раствор ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 31 согласно таблицы объемов и режимов закачки. Перед закачкой произвести замер плотности цементного раствора по рычажным весам. Отобрать пробы сухих цементных смесей и затворенного раствора, один комплект передать в лабораторию подрядчика по цементированию для проведения анализа, второй комплект передать супервайзеру Заказчика для хранения. Не промывая цементировочную линию, сбросить продавочную пробку в присутствии супервайзера Заказчика. Закачать продавочную жидкость (буровой раствор) согласно таблицы объемов и режимов закачки. На время работы обеспечить контроль за наличием и характером циркуляции растворов из скважины, производить постоянный замер плотности и рН, при выходе буферной жидкости отсечь циркуляционную систему буровой установки и направить в шламовый амбар. В случае несоответствия расходов на входе и выходе из скважины или полной потери циркуляции снизить скорость закачки до минимально возможного значения, произведя перерасчет времени продавки на новой скорости закачки и сопоставив полученное значение со временем загустевания тампонажных растворов. Прокачав продавочную пробку до посадочного узла ЦКОДа, поднять давление на 3 МПа выше рабочего, выдержать в течение 5 минут.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Проверить ЦКОД на герметичность. При стравливании давления замерить количество жидкости возвратившейся в емкость агрегата. В случае перелива из колонны, если ЦКОД не держит, закачать вернувшуюся жидкость и поднять до рабочего давления. Затем стравить давление до нуля и проверить возврат (при необходимости повторить процедуру еще 1 раз). Если ЦКОД не герметичен, стравить 400 литров продавочной жидкости в мерник цем. агрегата, закрыть КВД на цементировочной головке и оставить скважину на ОЗЦ под давлением, не превышающим рабочего давления посадки пробки на срок загустевания утяжеленного цемента плюс 1 час. Установить манометр за контролем давления на устье. Представитель подрядчика по цементированию осуществляет контроль устьевого давления. При необходимости с периодичностью 1 раз в 30 мин. производить стравливание давления до рабочего.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Проверить ЦКОД на герметичность. При стравливании давления замерить количество жидкости возвратившейся в емкость агрегата. В случае перелива из колонны, если ЦКОД не держит, закачать вернувшуюся жидкость и поднять до рабочего давления. Затем стравить давление до нуля и проверить возврат (при необходимости повторить процедуру еще 1 раз). Если ЦКОД не герметичен, стравить 400 литров продавочной жидкости в мерник цем. агрегата, закрыть КВД на цементировочной головке и оставить скважину на ОЗЦ под давлением, не превышающим рабочего давления посадки пробки на срок загустевания утяжеленного цемента плюс 1 час. Установить манометр за контролем давления на устье. Представитель подрядчика по цементированию осуществляет контроль устьевого давления. При необходимости с периодичностью 1 раз в 30 мин. производить стравливание давления до рабочего.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Промыть цементировочное оборудование и произвести его демонтаж (не допускать розлива технологических жидкостей), цементировочную головку демонтировать в последнюю очередь.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Промыть цементировочное оборудование и произвести его демонтаж (не допускать розлива технологических жидкостей), цементировочную головку демонтировать в последнюю очередь.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Выдержать время ОЗЦ до набора прочности тяжёлого цемента 500 psi. Во время ОЗЦ произвести ГИС на кабеле (ЦМ кондуктора). Произвести оборудование устья скважины согласно утвержденной схемы. В процессе оборудования устья докрепление ОКК и «нулевого» патрубка с ОКК-324мм необходимо произвести с контролем крутящего момента свинчивания, момент свинчивания – 9 кН*м (момент свинчивания должен быть скорректирован по фактическому моменту свинчивания обсадных труб при спуске ОК- 324мм), для чего:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Выдержать время ОЗЦ до набора прочности тяжёлого цемента 500 psi. Во время ОЗЦ произвести ГИС на кабеле (ЦМ кондуктора). Произвести оборудование устья скважины согласно утвержденной схемы. В процессе оборудования устья докрепление ОКК и «нулевого» патрубка с ОКК-324мм необходимо произвести с контролем крутящего момента свинчивания, момент свинчивания – 9 кН*м (момент свинчивания должен быть скорректирован по фактическому моменту свинчивания обсадных труб при спуске ОК- 324мм), для чего:' />
       </ContentBlock>
       <ul>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='отвернуть допускную трубу ОК-324мм;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='отвернуть допускную трубу ОК-324мм;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='проверить на целостность, наличие посторонних материалов на муфте ОК-324 (на устье);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='проверить на целостность, наличие посторонних материалов на муфте ОК-324 (на устье);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='подготовить соединение к навороту нулевого патрубка: очистить, нанести резьбоуплотняющую смазку;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='подготовить соединение к навороту нулевого патрубка: очистить, нанести резьбоуплотняющую смазку;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='подготовить резьбовые соединения «нулевого» патрубка к навороту (проверить целостность, очистить, нанести резьбоуплотняющую смазку);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='подготовить резьбовые соединения «нулевого» патрубка к навороту (проверить целостность, очистить, нанести резьбоуплотняющую смазку);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='подготовить резьбовое соединение на ОКК (проверить целостность, очистить, нанести резьбоуплотняющую смазку);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='подготовить резьбовое соединение на ОКК (проверить целостность, очистить, нанести резьбоуплотняющую смазку);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='произвести ручное свинчивание ОКК с «нулевым» патрубком на устье скважины;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='произвести ручное свинчивание ОКК с «нулевым» патрубком на устье скважины;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='данную сборку путем ручного наворота закрепить на муфту ОК-324 мм;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='данную сборку путем ручного наворота закрепить на муфту ОК-324 мм;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='подготовить переходной (совместимый) адаптер «ОКК (ответный фланец) – ТБПК 127 мм (З-133)» (проверить целостность резьбовых соединений, очистить, нанести резьбоуплотняющую смазку);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='подготовить переходной (совместимый) адаптер «ОКК (ответный фланец) – ТБПК 127 мм (З-133)» (проверить целостность резьбовых соединений, очистить, нанести резьбоуплотняющую смазку);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='навернуть адаптер на ТБПК-127 мм;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='навернуть адаптер на ТБПК-127 мм;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='закрепить ТБПК-127 мм с ВСП, спустить переходной адаптер на СБТ-127мм муфты;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='закрепить ТБПК-127 мм с ВСП, спустить переходной адаптер на СБТ-127мм муфты;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='закрепить ОКК и переходной адаптер 4-мя шпильками;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='закрепить ОКК и переходной адаптер 4-мя шпильками;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='установить ограничитель момента на ВСП на 9 кН*м;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='установить ограничитель момента на ВСП на 9 кН*м;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='установить на задержку колонну, во избежание её проворота во время докрепления ОКК и «нулевого патрубка»' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='установить на задержку колонну, во избежание её проворота во время докрепления ОКК и «нулевого патрубка»' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='произвести докрепление ОКК и «нулевого» патрубка с моментом 9 кН*м (момент свинчивания должен быть скорректирован по фактическому моменту свинчивания обсадных труб при спуске ОК-324мм), создание крутящего момента производить путем вращения ВСП, докрепление производить плавно без рывков с шагом по 0,5 кН*м, обеспечить фиксацию момента на диаграммах (диаграмму момента свинчивания предоставить в отдел инжиниринга бурения);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='произвести докрепление ОКК и «нулевого» патрубка с моментом 9 кН*м (момент свинчивания должен быть скорректирован по фактическому моменту свинчивания обсадных труб при спуске ОК-324мм), создание крутящего момента производить путем вращения ВСП, докрепление производить плавно без рывков с шагом по 0,5 кН*м, обеспечить фиксацию момента на диаграммах (диаграмму момента свинчивания предоставить в отдел инжиниринга бурения);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='демонтировать переходной адаптер;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='демонтировать переходной адаптер;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='составить акт новорота ОКК и «нулевого» патрубка на ОК-324мм (в акте отразить момент свинчивания, приложить диаграмму).' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='составить акт новорота ОКК и «нулевого» патрубка на ОК-324мм (в акте отразить момент свинчивания, приложить диаграмму).' />
         </ContentBlock>
       </ul>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='После окончания проведения работ по бурению секции 393,7 мм супервайзеру Заказчика организовать собрание всех участников производственного процесса, обсудить результаты проведенных работ, выявить положительные и отрицательные моменты, разработать мероприятия по оптимизации.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='После окончания проведения работ по бурению секции 393,7 мм супервайзеру Заказчика организовать собрание всех участников производственного процесса, обсудить результаты проведенных работ, выявить положительные и отрицательные моменты, разработать мероприятия по оптимизации.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Мероприятия в течение 1-х суток после завершения работ по настоящему плану, направить руководителю направления по планированию бурения ООО «ГПН-Ямал» и руководителю направления по супервайзингу бурения ООО «ГПН- Ямал».' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Мероприятия в течение 1-х суток после завершения работ по настоящему плану, направить руководителю направления по планированию бурения ООО «ГПН-Ямал» и руководителю направления по супервайзингу бурения ООО «ГПН- Ямал».' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -6180,8 +6180,8 @@ export const programmBlocks = [
           </thead>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             <tr>
               <td colSpan='2'><Button size='s' view='clear' width='full' label='Новая строка' /></td>
@@ -6219,16 +6219,16 @@ export const programmBlocks = [
           </thead>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Сальникообразования' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Соблюдение режимов промывки, использование противосальниковой добавоки MEX-CLEAN. Расхаживание КНБК на всю длину свечи. До начала бурения секции под кондуктор иметь в наличии на буровой объем бурового раствора с низкими реологическими параметрами для оперативного разбавления после интервала ММП. При бурении секции 393,7 мм начать снижение условной вязкости бурового раствора с глубины 190* метров. При бурении секции 393,7 мм ограничить мех. скорость в интервале 170-280 м* до 90 м/час, (* глубина условная, до полного перехода из песка в глину). С глубины 190 метров производить одно расхаживание КНБК с вращением инструмента, не допускать превышения мгновенной мех. скорости свыше 140 м/час. При бурении интервала 0-190 м поддерживать производительность буровых насосов 50-55 м/ч, 190-460 м не менее 65 л/сек.' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Сальникообразования' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Соблюдение режимов промывки, использование противосальниковой добавоки MEX-CLEAN. Расхаживание КНБК на всю длину свечи. До начала бурения секции под кондуктор иметь в наличии на буровой объем бурового раствора с низкими реологическими параметрами для оперативного разбавления после интервала ММП. При бурении секции 393,7 мм начать снижение условной вязкости бурового раствора с глубины 190* метров. При бурении секции 393,7 мм ограничить мех. скорость в интервале 170-280 м* до 90 м/час, (* глубина условная, до полного перехода из песка в глину). С глубины 190 метров производить одно расхаживание КНБК с вращением инструмента, не допускать превышения мгновенной мех. скорости свыше 140 м/час. При бурении интервала 0-190 м поддерживать производительность буровых насосов 50-55 м/ч, 190-460 м не менее 65 л/сек.' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Отсутствие центра скважины относительно центра ротора. Отклонение от вертикали' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Забуривание под направление после центрирования вышки БУ, ротора с использованием прямолинейного бурильного инструмента.' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Отсутствие центра скважины относительно центра ротора. Отклонение от вертикали' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Забуривание под направление после центрирования вышки БУ, ротора с использованием прямолинейного бурильного инструмента.' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Проседание грунта и образование воронок в процессе бурения скважин' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Оборудование устья скважины металлическим коробом. Сокращение сроков бурения. Поддержание минимальной температуры бурового раствора в емкостях (10-15°С), посредством отключения во время бурения подогрева емкостей.' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Проседание грунта и образование воронок в процессе бурения скважин' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Оборудование устья скважины металлическим коробом. Сокращение сроков бурения. Поддержание минимальной температуры бурового раствора в емкостях (10-15°С), посредством отключения во время бурения подогрева емкостей.' /></td>
             </tr>
             <tr>
               <td colSpan='2'><Button size='s' view='clear' width='full' label='Новая строка' /></td>
@@ -6273,8 +6273,8 @@ export const programmBlocks = [
         <table className='table'>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             
             <tr>
@@ -6301,38 +6301,38 @@ export const programmBlocks = [
         <table className='table'>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Забой скважины' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='460м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Забой скважины' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='460м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Глубина спуска обсадной колонны' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='457м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Глубина спуска обсадной колонны' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='457м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Интервал цементирования цементным раствором' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='от 460м до 280м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Интервал цементирования цементным раствором' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='от 460м до 280м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Интервал цементирования гельцементным раствором' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='от 280м до 0м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Интервал цементирования гельцементным раствором' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='от 280м до 0м' /></td>
             </tr>
 
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Статическая температура на забое' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='+8,0°С' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Статическая температура на забое' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='+8,0°С' /></td>
             </tr>
 
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Градиент пластового давления' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='0,0098 МПа/м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Градиент пластового давления' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='0,0098 МПа/м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Градиент давления гидроразрыва' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='0,0206 МПа/м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Градиент давления гидроразрыва' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='0,0206 МПа/м' /></td>
             </tr>
             
             <tr>
@@ -6401,7 +6401,7 @@ export const programmBlocks = [
     member: 'Куратор',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -6411,68 +6411,68 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='До начала бурения обеспечить наличие на кустовой площадке следующих материалов и оборудования:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='До начала бурения обеспечить наличие на кустовой площадке следующих материалов и оборудования:' />
       </ContentBlock>
       <ol>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обсадная труба 324*9,5 (марка стали «Д», резьбовое соединение ОТТГ) – 455 м (с учетом запаса 5%);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обсадная труба 324*9,5 (марка стали «Д», резьбовое соединение ОТТГ) – 455 м (с учетом запаса 5%);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обсадная труба 530/324*9,5 (марка стали «Д», резьбовое соединение ОТТГ*) – 55 м (с учетом запаса 5%);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обсадная труба 530/324*9,5 (марка стали «Д», резьбовое соединение ОТТГ*) – 55 м (с учетом запаса 5%);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Нулевой патрубок ОТТГ / ОТТГ* 324 мм – 1 шт.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Нулевой патрубок ОТТГ / ОТТГ* 324 мм – 1 шт.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Башмак направляющий 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Башмак направляющий 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦКОД 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦКОД 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Пробка цементировочная – 1 ед. (продавочная, с паспортом) **.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Пробка цементировочная – 1 ед. (продавочная, с паспортом) **.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Центратор ЦЦ-324 – 19 ед.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Центратор ЦЦ-324 – 19 ед.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Резьбовой клей герметик (холодная сварка) – 1 ед**.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Резьбовой клей герметик (холодная сварка) – 1 ед**.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Шаблон для обсадных труб 324*9,5 мм (D = 301 мм, L = 300 мм).' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Шаблон для обсадных труб 324*9,5 мм (D = 301 мм, L = 300 мм).' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Смазка резьбоуплотняющая РУСМА или аналог – 10 кг.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Смазка резьбоуплотняющая РУСМА или аналог – 10 кг.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Промывочный переводник под обсадную трубу диаметром 324 мм – 2ед.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Промывочный переводник под обсадную трубу диаметром 324 мм – 2ед.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Специальное устройство для наворота колонных головок – 1 ед.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Специальное устройство для наворота колонных головок – 1 ед.' />
         </ContentBlock>
       </ol>
 
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Распределение ответственности: пункты № 1 – 3, 7 ООО «Газпромнефть-Ямал», пункты № 9 - 12 буровой подрядчик, пункты № 4-6, 8 подрядчик по цементированию.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Распределение ответственности: пункты № 1 – 3, 7 ООО «Газпромнефть-Ямал», пункты № 9 - 12 буровой подрядчик, пункты № 4-6, 8 подрядчик по цементированию.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='** - в случае наличия остатков использовать МТР ООО «Газпромнефть-Ямал».' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='** - в случае наличия остатков использовать МТР ООО «Газпромнефть-Ямал».' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='* - в случае использования обсадной трубы 530/324*9,5 с резьбовым соединением ОТТМ необходимо предусмотреть использование нулевого патрубка ОТТМ / ОТТГ, допускной трубы с резьбовым соединением ОТТМ.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='* - в случае использования обсадной трубы 530/324*9,5 с резьбовым соединением ОТТМ необходимо предусмотреть использование нулевого патрубка ОТТМ / ОТТГ, допускной трубы с резьбовым соединением ОТТМ.' />
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент, оборудование, необходимые для строительства секции находятся на буровой, проверены и работоспособны, имеют соответствующие документы (сертификаты, паспорта).' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент, оборудование, необходимые для строительства секции находятся на буровой, проверены и работоспособны, имеют соответствующие документы (сертификаты, паспорта).' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Иметь в наличии три насоса типа «ВШН-150». Один из них резервный для быстрой установки его в шахту, в случае выхода из строя одного из двух «ВШН-150», установленных в шахте. Забурочную шахту оборудовать коробом с размерами 2х2х2 м.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Иметь в наличии три насоса типа «ВШН-150». Один из них резервный для быстрой установки его в шахту, в случае выхода из строя одного из двух «ВШН-150», установленных в шахте. Забурочную шахту оборудовать коробом с размерами 2х2х2 м.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обсадные трубы укладывать муфтовой частью в направлении буровой установки с учетом очередности спуска их в скважину. Снять защитные колпаки с ниппелей и муфт, очистить резьбовые соединения. Очистку от смазки проводить ветошью при помощи растворителя, не содержащего хлор, либо пароочистителем (ППУ). Не допускается использовать для удаления смазки дизельное топливо, соленую воду, барит и металлические щетки. После удаления смазки, резьбовые соединения следует тщательно протереть сухой и чистой ветошью или просушить продувкой сжатым воздухом. Осмотреть резьбовые соединения ниппеля и муфт. Трубы с поврежденными резьбами к спуску не допускаются. Измерить длину каждой трубы. Измерения производят от свободного торца муфты до того места трубы с наружной резьбой, которое соответствует положению торца муфты при закреплении гидравлическим ключом, для ОТТГ - последняя риска резьбы. Промаркировать (номер трубы в порядке спуска, длина) светлой краской или мелом, сформировать реестр спуска обсадной колонны. Произвести шаблонирование обсадных труб на стеллажах. Шаблонирование произвести внутренним шаблоном по всей длине труб. В случае если внутренний шаблон не проходит через обсадную трубу – отбраковать. Установить защитные колпаки. Перед наворотом убедиться в чистоте защитных колпаков и отсутствии на них посторонних предметов. Не допускается использование защитных колпаков со значительными повреждениями резьбы и формы. [Трубы обсадные. Руководство по эксплуатации. 2015г. ООО «Научно-исследовательский институт разработки и эксплуатации нефтепромысловых труб»].' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обсадные трубы укладывать муфтовой частью в направлении буровой установки с учетом очередности спуска их в скважину. Снять защитные колпаки с ниппелей и муфт, очистить резьбовые соединения. Очистку от смазки проводить ветошью при помощи растворителя, не содержащего хлор, либо пароочистителем (ППУ). Не допускается использовать для удаления смазки дизельное топливо, соленую воду, барит и металлические щетки. После удаления смазки, резьбовые соединения следует тщательно протереть сухой и чистой ветошью или просушить продувкой сжатым воздухом. Осмотреть резьбовые соединения ниппеля и муфт. Трубы с поврежденными резьбами к спуску не допускаются. Измерить длину каждой трубы. Измерения производят от свободного торца муфты до того места трубы с наружной резьбой, которое соответствует положению торца муфты при закреплении гидравлическим ключом, для ОТТГ - последняя риска резьбы. Промаркировать (номер трубы в порядке спуска, длина) светлой краской или мелом, сформировать реестр спуска обсадной колонны. Произвести шаблонирование обсадных труб на стеллажах. Шаблонирование произвести внутренним шаблоном по всей длине труб. В случае если внутренний шаблон не проходит через обсадную трубу – отбраковать. Установить защитные колпаки. Перед наворотом убедиться в чистоте защитных колпаков и отсутствии на них посторонних предметов. Не допускается использование защитных колпаков со значительными повреждениями резьбы и формы. [Трубы обсадные. Руководство по эксплуатации. 2015г. ООО «Научно-исследовательский институт разработки и эксплуатации нефтепромысловых труб»].' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='После замера обсадных труб скорректировать конечный забой интервала под кондуктор исходя из того, что он должен составлять не более 460 метров по вертикали. Обеспечить на буровой запас обработанного до проектных параметров бурового раствора в объеме не менее одного объема скважины, запас технической воды в объеме не менее 100 м3 для приготовления бурового и цементного растворов, а так же буферных жидкостей. При температуре окружающей среды ниже +100С обеспечить температуру воды затворения +250С, проверить на наличие механических примесей, содержание хлоридов (<500 мг/л), рН 6 – 8.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='После замера обсадных труб скорректировать конечный забой интервала под кондуктор исходя из того, что он должен составлять не более 460 метров по вертикали. Обеспечить на буровой запас обработанного до проектных параметров бурового раствора в объеме не менее одного объема скважины, запас технической воды в объеме не менее 100 м3 для приготовления бурового и цементного растворов, а так же буферных жидкостей. При температуре окружающей среды ниже +100С обеспечить температуру воды затворения +250С, проверить на наличие механических примесей, содержание хлоридов (<500 мг/л), рН 6 – 8.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -6753,7 +6753,7 @@ export const programmBlocks = [
     member: 'Буровые растворы',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -6763,7 +6763,7 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='С целью предотвращения размыва слабосцементированного песчаника в интервале залегания зоны ММП и предотвращения интенсивной гидратации глин для бурения данной секции применяется глинистый буровой раствор на основе бентонита. Данная система за счет высокой вязкости позволяет предотвратить осыпи и обвалообразования, а также обеспечить удовлетворительное качество очистки ствола скважины большого диаметра.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='С целью предотвращения размыва слабосцементированного песчаника в интервале залегания зоны ММП и предотвращения интенсивной гидратации глин для бурения данной секции применяется глинистый буровой раствор на основе бентонита. Данная система за счет высокой вязкости позволяет предотвратить осыпи и обвалообразования, а также обеспечить удовлетворительное качество очистки ствола скважины большого диаметра.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -6944,18 +6944,18 @@ export const programmBlocks = [
         </table>
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='*При прохождении песков до глубины 190 м в процессе бурения поддерживать условную вязкость более 90 сек/кварта и производительность насосов 50 л/сек. С глубины 190-200 м необходимо ступенчато увеличить производительность насосов до 65 л/сек и постепенно снизить условную вязкость до 50-65 сек/кварта путём разбавления свежеприготовленным буровым раствором со скоростью не более 40 м3/час.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='*При прохождении песков до глубины 190 м в процессе бурения поддерживать условную вязкость более 90 сек/кварта и производительность насосов 50 л/сек. С глубины 190-200 м необходимо ступенчато увеличить производительность насосов до 65 л/сек и постепенно снизить условную вязкость до 50-65 сек/кварта путём разбавления свежеприготовленным буровым раствором со скоростью не более 40 м3/час.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='**При отсутствии признаков перехода песок-глина необходимо поддерживать при бурении интервала (с глубины 190 м до окончательного забоя) условную вязкость бурового раствора в пределах 70-100 сек/кварта. Необходимо вести постоянный контроль за уровнем бурового раствора в рабочих емкостях. В случае сверхнормативного ухода бурового раствора, не объясняемого потерями на системе очистки (размыв ствола скважины), необходимо по согласованию со службой инжиниринга снизить производительность буровых насосов. В случае снижения производительности буровых насосов необходимо осуществлять последующий контроль очистки ствола от выбуренной породы.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='**При отсутствии признаков перехода песок-глина необходимо поддерживать при бурении интервала (с глубины 190 м до окончательного забоя) условную вязкость бурового раствора в пределах 70-100 сек/кварта. Необходимо вести постоянный контроль за уровнем бурового раствора в рабочих емкостях. В случае сверхнормативного ухода бурового раствора, не объясняемого потерями на системе очистки (размыв ствола скважины), необходимо по согласованию со службой инжиниринга снизить производительность буровых насосов. В случае снижения производительности буровых насосов необходимо осуществлять последующий контроль очистки ствола от выбуренной породы.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='*** В процессе подготовки ствола для последующего спуска кондуктора.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='*** В процессе подготовки ствола для последующего спуска кондуктора.' />
       </ContentBlock>
       <ContentBlock type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='При бурении в интервале 190-460 м при отсутствии активной глины в выбуренной породе продолжить бурение скважины с производительностью буровых насосов 50-55 л/с. Условную вязкость бурового раствора поддерживать не менее 80 сек/кварта. При возникновении признаков некачественной очистки (скачки давления, рост момента) произвести дополнительную промывку и прокачку ВУС.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='При бурении в интервале 190-460 м при отсутствии активной глины в выбуренной породе продолжить бурение скважины с производительностью буровых насосов 50-55 л/с. Условную вязкость бурового раствора поддерживать не менее 80 сек/кварта. При возникновении признаков некачественной очистки (скачки давления, рост момента) произвести дополнительную промывку и прокачку ВУС.' />
         </Informer>
       </ContentBlock>
     </React.Fragment>),
@@ -7037,7 +7037,7 @@ export const programmBlocks = [
     member: 'Буровые растворы',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -7050,88 +7050,88 @@ export const programmBlocks = [
         <table className='table'>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Интервал' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Кондуктор' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Интервал' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Кондуктор' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Тип раствора' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Глинистый' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Тип раствора' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Глинистый' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Интервал по инструменту' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0–460' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Интервал по инструменту' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0–460' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Диаметр долота' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='393.7' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Диаметр долота' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='393.7' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Диаметр колонны' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Диаметр колонны' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Внутренний диаметр предыдущей колонны' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Внутренний диаметр предыдущей колонны' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Длина участка по инструменту' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='460' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Длина участка по инструменту' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='460' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Ожидаемый коэффициент кавернозности' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='1.4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Ожидаемый коэффициент кавернозности' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='1.4' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Переведено с предыдущего интервала/скважины' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Переведено с предыдущего интервала/скважины' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора на поверхности' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='50' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора на поверхности' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='50' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора в колонне' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора в колонне' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора в открытом стволе' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='78.4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора в открытом стволе' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='78.4' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Коэффициент эффективности оборудования очистки' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='75' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Коэффициент эффективности оборудования очистки' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='75' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем выбуренной породы с учетом коэф.разуплотнения' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='94' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем выбуренной породы с учетом коэф.разуплотнения' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='94' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Максимальное содержание выбуренной породы' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='25' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Максимальное содержание выбуренной породы' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='25' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Влажность шлама' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0.9' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Влажность шлама' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0.9' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Потери раствора со шламом' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='56' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Потери раствора со шламом' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='56' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Потери в скважине' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='5.6' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Потери в скважине' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='5.6' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора на поверхности по окончанию бурения интервала' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='50' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора на поверхности по окончанию бурения интервала' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='50' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Расчетный объем свежеприготовленного раствора к обработке на бурение интервала' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='190' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Расчетный объем свежеприготовленного раствора к обработке на бурение интервала' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='190' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Переведено на следующий интервал/скважину' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='80' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Переведено на следующий интервал/скважину' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='80' /></td>
             </tr>
           </tbody>
         </table>
@@ -8158,8 +8158,8 @@ export const programmBlocks = [
       <ContentBlock isEditable={true} type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Плановые значения параметров режима бурения, весов на крюке, крутящего момента на ВСП и эквивалентной циркуляционной плотности рассчитываются подрядчиком по ННБ и растворным подрядчиком при проектировании скважины в специализированном программном обеспечении и заносятся в режимную карту бурения. Фактические значения данных параметров заносятся в режимную карту бурильщиком в процессе бурения секции. Фактические значения эквивалентной циркуляционной плотности заносятся инженером по ННБ при условии наличия в КНБК датчика затрубного давления.' />
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Супервайзеру Заказчика отправить заполненную режимную карту по электронной почте инженеру – куратору кустовой площадки в течении суток после окончания бурения секции.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Плановые значения параметров режима бурения, весов на крюке, крутящего момента на ВСП и эквивалентной циркуляционной плотности рассчитываются подрядчиком по ННБ и растворным подрядчиком при проектировании скважины в специализированном программном обеспечении и заносятся в режимную карту бурения. Фактические значения данных параметров заносятся в режимную карту бурильщиком в процессе бурения секции. Фактические значения эквивалентной циркуляционной плотности заносятся инженером по ННБ при условии наличия в КНБК датчика затрубного давления.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Супервайзеру Заказчика отправить заполненную режимную карту по электронной почте инженеру – куратору кустовой площадки в течении суток после окончания бурения секции.' />
         </Informer>
       </ContentBlock>
     </React.Fragment>),
@@ -8454,7 +8454,7 @@ export const programmBlocks = [
     member: 'Куратор',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -8464,16 +8464,16 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Собрать роторную КНБК для бурения тех. кармана L – 30 м: Долото 393,7 мм + УБТ 203 – 9 м + СБТ 127 – остальной. Пробурить тех. карман для сборки КНБК для бурения при бурении секции 393,7 мм необходимо соблюдать следующие режимы бурения: 0-25 м расход – 15 л/с, обороты ВСП 80 – 100 об/мин.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Собрать роторную КНБК для бурения тех. кармана L – 30 м: Долото 393,7 мм + УБТ 203 – 9 м + СБТ 127 – остальной. Пробурить тех. карман для сборки КНБК для бурения при бурении секции 393,7 мм необходимо соблюдать следующие режимы бурения: 0-25 м расход – 15 л/с, обороты ВСП 80 – 100 об/мин.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент и оборудование, необходимые для строительства секции, находятся на буровой, проверены и работоспособны, имеют соответствующие документы (паспорта). Перед началом бурения обеспечить наличие бурового раствора на поверхности в объеме 105 м3. Собрать КНБК для бурения секции 393,7 мм согласно настоящей программы, тестирование оборудования для ННБ не производить (протокол ПТ-10-01/011 от 22.11.17). Поддерживать температуру бурового раствора на минимальном уровне, отключив подогрев всех емкостей. Бурение секции в интервале 0 - 460 м производить без проработки перед наращиванием. «Снятие пружины» перед снятием замеров в статике производить на длину одной трубы (12 метров). В случае наличия признаков зашламованности ствола скважины (скачки давления и крутящего момента на ВСП, несоответствие весов на крюке с расчетными на величину более 10%), произвести промывку ствола скважины и продолжить бурение с проработкой ствола скважины перед наращиванием. Расхаживание производить с вращением бурильного инструмента с частотой при движении «вверх» 40 об/мин, при движении «вниз» 60 об/мин. Фактический забой секции выбрать исходя из фактической длины обсадной колонны (с учетом технологической оснастки) – ЗУМПФ не должен превышать 3 м. После окончания бурения секции произвести прокачку очищающей пачки ВУС по рецептуре подрядчика по буровым растворам в объёме не менее 8 м3 с промывкой ствола скважины с расхаживанием и вращением бурильного инструмента до момента выхода пачки на устье скважины. Режим промывки: расход промывочной жидкости 65 л/сек, частота вращения ВСП 60 об/мин. Произвести подъём КНБК до глубины 50 м со сплошной проработкой. Режим проработки: в интервале 460-170 м расход промывочной жидкости 65 л/сек, частота вращения ВСП 40 об/мин; в интервале 170 – 50 м расход промывочной жидкости 50 л/сек, частота вращения ВСП 40 об/мин, скорость проработки ствола скважины не более 500 м/час. В интервале перехода «пески – глина» (подъем произвести на 50 метров выше зоны перехода), произвести спуск на 50 метров ниже интервала перехода без циркуляции и вращения. В случае получения посадки проработать до свободного хождения «на сухую».' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент и оборудование, необходимые для строительства секции, находятся на буровой, проверены и работоспособны, имеют соответствующие документы (паспорта). Перед началом бурения обеспечить наличие бурового раствора на поверхности в объеме 105 м3. Собрать КНБК для бурения секции 393,7 мм согласно настоящей программы, тестирование оборудования для ННБ не производить (протокол ПТ-10-01/011 от 22.11.17). Поддерживать температуру бурового раствора на минимальном уровне, отключив подогрев всех емкостей. Бурение секции в интервале 0 - 460 м производить без проработки перед наращиванием. «Снятие пружины» перед снятием замеров в статике производить на длину одной трубы (12 метров). В случае наличия признаков зашламованности ствола скважины (скачки давления и крутящего момента на ВСП, несоответствие весов на крюке с расчетными на величину более 10%), произвести промывку ствола скважины и продолжить бурение с проработкой ствола скважины перед наращиванием. Расхаживание производить с вращением бурильного инструмента с частотой при движении «вверх» 40 об/мин, при движении «вниз» 60 об/мин. Фактический забой секции выбрать исходя из фактической длины обсадной колонны (с учетом технологической оснастки) – ЗУМПФ не должен превышать 3 м. После окончания бурения секции произвести прокачку очищающей пачки ВУС по рецептуре подрядчика по буровым растворам в объёме не менее 8 м3 с промывкой ствола скважины с расхаживанием и вращением бурильного инструмента до момента выхода пачки на устье скважины. Режим промывки: расход промывочной жидкости 65 л/сек, частота вращения ВСП 60 об/мин. Произвести подъём КНБК до глубины 50 м со сплошной проработкой. Режим проработки: в интервале 460-170 м расход промывочной жидкости 65 л/сек, частота вращения ВСП 40 об/мин; в интервале 170 – 50 м расход промывочной жидкости 50 л/сек, частота вращения ВСП 40 об/мин, скорость проработки ствола скважины не более 500 м/час. В интервале перехода «пески – глина» (подъем произвести на 50 метров выше зоны перехода), произвести спуск на 50 метров ниже интервала перехода без циркуляции и вращения. В случае получения посадки проработать до свободного хождения «на сухую».' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В случае свободного хождения продолжить подъем сплошной проработкой до устья. После подъема произвести сборку роторную КНБК 660,4 мм, для шаблонировки ствола в интервале 0-50 м. Спустить КНБК до глубины исходя из следующего расчета: 1 м + 4 трубы термокейс 530 х 324*9,5 + высота стола ротора. В случае свободного прохождения КНБК в интервале 0-50 м произвести подъем и разборку КНБК. При отрицательном результате (спуск с посадками свыше 5 тн) проработать интервал до свободного хождения «на сухую». Режим проработки: расход промывочной жидкости 20 л/сек, частота вращения ВСП 40 об/мин.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В случае свободного хождения продолжить подъем сплошной проработкой до устья. После подъема произвести сборку роторную КНБК 660,4 мм, для шаблонировки ствола в интервале 0-50 м. Спустить КНБК до глубины исходя из следующего расчета: 1 м + 4 трубы термокейс 530 х 324*9,5 + высота стола ротора. В случае свободного прохождения КНБК в интервале 0-50 м произвести подъем и разборку КНБК. При отрицательном результате (спуск с посадками свыше 5 тн) проработать интервал до свободного хождения «на сухую». Режим проработки: расход промывочной жидкости 20 л/сек, частота вращения ВСП 40 об/мин.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В случае осложнения при подготовке ствола оповестить РН по планированию бурения. Произвести подъем и разборку КНБК, места затяжек проработать до свободного хождения КНБК без циркуляции. С целью недопущения зарезки нового ствола, механическая скорость проработки 75 - 100 м/час.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В случае осложнения при подготовке ствола оповестить РН по планированию бурения. Произвести подъем и разборку КНБК, места затяжек проработать до свободного хождения КНБК без циркуляции. С целью недопущения зарезки нового ствола, механическая скорость проработки 75 - 100 м/час.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -8497,7 +8497,7 @@ export const programmBlocks = [
     member: 'Куратор',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -8507,16 +8507,16 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Составить график дежурства ИТР (бурового подрядчика) на буровой во время проведения работ по подготовке и спуску обсадных труб. График дежурства ИТР должен включать в себя ответственность и обязанности ответственного лица.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Составить график дежурства ИТР (бурового подрядчика) на буровой во время проведения работ по подготовке и спуску обсадных труб. График дежурства ИТР должен включать в себя ответственность и обязанности ответственного лица.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Проверить техническое состояние буровой установки: вышки, подвышечного основания, подроторных балок, талевой системы, буровой лебедки и тормозной системы, силового и энергетического оборудования, буровых насосов и циркуляционной системы, оборудования и инструмента для СПО, КИП и освещения, центровку вышки, запас диз. топлива, работоспособность аварийной ДЭС. При необходимости на приёмных мостках установить дополнительное освещение. Проверить работоспособность станции ГТИ. Составить акт готовности к спуску и цементированию обсадной колонны.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Проверить техническое состояние буровой установки: вышки, подвышечного основания, подроторных балок, талевой системы, буровой лебедки и тормозной системы, силового и энергетического оборудования, буровых насосов и циркуляционной системы, оборудования и инструмента для СПО, КИП и освещения, центровку вышки, запас диз. топлива, работоспособность аварийной ДЭС. При необходимости на приёмных мостках установить дополнительное освещение. Проверить работоспособность станции ГТИ. Составить акт готовности к спуску и цементированию обсадной колонны.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Провести внеплановый инструктаж работникам буровой бригады по правилам безопасного производства работ при спуске и цементировании обсадных колонн с записью в журнале проведения инструктажей. Из состава работников буровой бригады назначить ответственных работников за очистку и смазку резьбовых соединений, за долив обсадной колонны, за контроль вытеснения промывочной жидкости с записью в буровом журнале. Ответственность за порядок спуска и длину обсадных труб возлагается на ответственного ИТР подрядчика по бурению скважин.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Провести внеплановый инструктаж работникам буровой бригады по правилам безопасного производства работ при спуске и цементировании обсадных колонн с записью в журнале проведения инструктажей. Из состава работников буровой бригады назначить ответственных работников за очистку и смазку резьбовых соединений, за долив обсадной колонны, за контроль вытеснения промывочной жидкости с записью в буровом журнале. Ответственность за порядок спуска и длину обсадных труб возлагается на ответственного ИТР подрядчика по бурению скважин.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Произвести спуск обсадной колонны в следующем порядке: Башмак направляющий 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 10 м, ЦКОД 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 400 м; Обсадная труба 530/324х9,5 ОТТМ - остальное. На соединения «башмак - обсадная труба» и «ЦКОД – обсадная труба» нанести резьбовую герметизирующую смазку. Технологическую оснастку установить согласно приведенной ниже таблице. Сборку и монтаж технологической оснастки осуществлять согласно руководства завода – изготовителя. Свинчивание и докрепление ротором запрещено.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Произвести спуск обсадной колонны в следующем порядке: Башмак направляющий 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 10 м, ЦКОД 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 400 м; Обсадная труба 530/324х9,5 ОТТМ - остальное. На соединения «башмак - обсадная труба» и «ЦКОД – обсадная труба» нанести резьбовую герметизирующую смазку. Технологическую оснастку установить согласно приведенной ниже таблице. Сборку и монтаж технологической оснастки осуществлять согласно руководства завода – изготовителя. Свинчивание и докрепление ротором запрещено.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -8540,7 +8540,7 @@ export const programmBlocks = [
     member: 'Долота',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -8561,124 +8561,124 @@ export const programmBlocks = [
           </thead>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='1' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='60 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='95 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='1' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='60 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='95 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='2' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='155 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='118 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='2' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='155 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='118 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='3' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='273 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='3' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='273 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='4' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='284 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='284 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='5' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='295 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='5' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='295 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='6' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='306 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='6' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='306 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='7' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='317 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='7' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='317 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='8' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='328 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='8' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='328 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='9' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='328 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='9' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='328 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='10' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='339 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='10' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='339 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='350 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='350 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='12' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='361 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='12' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='361 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='13' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='372 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='13' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='372 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='14' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='383 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='14' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='383 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='15' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='394 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='15' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='394 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='16' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='405 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='16' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='405 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='17' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='416 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='17' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='416 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='18' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='427 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='18' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='427 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='19' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='438 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='19' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='438 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='20' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='449 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='20' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='449 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
 
             <tr><td colSpan='4'><Button size='s' view='clear' width='full' label='Новая строка' /></td></tr>
@@ -8689,61 +8689,61 @@ export const programmBlocks = [
       <ContentBlock isEditable={true} type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='На трубу с башмаком установку центратора не производить.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='На трубу с башмаком установку центратора не производить.' />
         </Informer>
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Спуск первых 10 (десяти) обсадных труб производить на двух элеваторах. Без присутствия супервайзера Заказчика сборка компоновки низа обсадной колонны запрещена. В случае наличия каких-либо затруднений (невозможность наворота, повреждение резьбовых соединений, выявление дефектов, несовпадение меток после полного свинчивания и др.) при сборке низа обсадной колонны, связанных с формированием промысловых соединений, ответственный ИТР Подрядчика по бурению совместно с супервайзером Заказчика принимает решение об отбраковке элементов технологической оснастки и обсадных труб.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Спуск первых 10 (десяти) обсадных труб производить на двух элеваторах. Без присутствия супервайзера Заказчика сборка компоновки низа обсадной колонны запрещена. В случае наличия каких-либо затруднений (невозможность наворота, повреждение резьбовых соединений, выявление дефектов, несовпадение меток после полного свинчивания и др.) при сборке низа обсадной колонны, связанных с формированием промысловых соединений, ответственный ИТР Подрядчика по бурению совместно с супервайзером Заказчика принимает решение об отбраковке элементов технологической оснастки и обсадных труб.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='При подъеме обсадных труб на буровую площадку необходимо соблюдать осторожность, не допускать изгиба труб и ударов муфт о любую поверхность буровой установки или другого оборудования. Установить на буровой вышке удерживающий канат. Подъем труб на буровую площадку должен проводиться только с установленными защитными колпаками.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='При подъеме обсадных труб на буровую площадку необходимо соблюдать осторожность, не допускать изгиба труб и ударов муфт о любую поверхность буровой установки или другого оборудования. Установить на буровой вышке удерживающий канат. Подъем труб на буровую площадку должен проводиться только с установленными защитными колпаками.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Во время сборки колонны каждая труба должна быть отцентрирована относительно муфты и оси скважины. Перед началом свинчивания необходимо проверить на ощупь отсутствие механических повреждений уплотнительных и упорных поверхностей на свободном конце трубы. Защитные колпаки с ниппельной части удаляются непосредственно перед посадкой в муфту, в это же время на ниппельную часть наносится смазка. При свинчивании соединений необходимо применять резьбовую смазку. Расход смазки на одно соединение согласно рекомендациям компании-изготовителя резьбовой смазки. Резьбовая смазка должна распределяться между муфтой и ниппелем: 2/3 количества - на муфту, 1/3 – на ниппель. Смазку необходимо наносить на поверхности равномерно. Смазку наносить на высушенную поверхность резьбового соединения кистью, либо нейлоновой щеткой. Смазку перед применением тщательно перемещать, смазка должна быть однородно, иметь консистенцию мази, не содержать твердых включений. Запрещается свинчивание резьб без смазки, а также применение машинного, дизельного масла в качестве заменителей.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Во время сборки колонны каждая труба должна быть отцентрирована относительно муфты и оси скважины. Перед началом свинчивания необходимо проверить на ощупь отсутствие механических повреждений уплотнительных и упорных поверхностей на свободном конце трубы. Защитные колпаки с ниппельной части удаляются непосредственно перед посадкой в муфту, в это же время на ниппельную часть наносится смазка. При свинчивании соединений необходимо применять резьбовую смазку. Расход смазки на одно соединение согласно рекомендациям компании-изготовителя резьбовой смазки. Резьбовая смазка должна распределяться между муфтой и ниппелем: 2/3 количества - на муфту, 1/3 – на ниппель. Смазку необходимо наносить на поверхности равномерно. Смазку наносить на высушенную поверхность резьбового соединения кистью, либо нейлоновой щеткой. Смазку перед применением тщательно перемещать, смазка должна быть однородно, иметь консистенцию мази, не содержать твердых включений. Запрещается свинчивание резьб без смазки, а также применение машинного, дизельного масла в качестве заменителей.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Свинчивание и докрепление производить гидравлическим ключом с моментомером. При свинчивании обсадных труб на буровой муфта может слегка провернуться в соединении, закрепленном на заводе. Это не означает, что муфта на заводе была закреплена ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 29 слишком слабо, а доказывает, что усилие докрепления достигает той же величины, что и при свинчивании соединения на заводе.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Свинчивание и докрепление производить гидравлическим ключом с моментомером. При свинчивании обсадных труб на буровой муфта может слегка провернуться в соединении, закрепленном на заводе. Это не означает, что муфта на заводе была закреплена ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 29 слишком слабо, а доказывает, что усилие докрепления достигает той же величины, что и при свинчивании соединения на заводе.' />
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Свинчивание обсадных труб с резьбовым соединением ОТТГ (ОТТМ) рекомендуется проводить в следующем порядке:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Свинчивание обсадных труб с резьбовым соединением ОТТГ (ОТТМ) рекомендуется проводить в следующем порядке:' />
       </ContentBlock>
       <ul>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Подготовленную и поднятую очередную трубу над устьем скважины необходимо направлять в муфту спущенной трубы вертикально. Чтобы не повредить резьбу посадки труб следует производить плавно, без ударов.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Подготовленную и поднятую очередную трубу над устьем скважины необходимо направлять в муфту спущенной трубы вертикально. Чтобы не повредить резьбу посадки труб следует производить плавно, без ударов.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Произвести измерение расстояния от внутреннего упорного торца до наружного торца муфты с помощью штангенциркуля. Затем на ответной ниппельной части трубы нанести риску на расстоянии от торца трубы, равном измеренному расстоянию от упорного торца до наружного торца муфты.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Произвести измерение расстояния от внутреннего упорного торца до наружного торца муфты с помощью штангенциркуля. Затем на ответной ниппельной части трубы нанести риску на расстоянии от торца трубы, равном измеренному расстоянию от упорного торца до наружного торца муфты.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Свинчивание производить без перекосов, убедившись, что резьбы ниппеля и муфты вошли в зацепление.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Свинчивание производить без перекосов, убедившись, что резьбы ниппеля и муфты вошли в зацепление.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Для предотвращения заедания резьбы при свинчивании следует свинчивать соединение со скоростью не более 25 об/мин. При возрастании момента скорость свинчивания должна быть снижена до скорости не более 5 об/мин, при этом происходит докрепление соединения.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Для предотвращения заедания резьбы при свинчивании следует свинчивать соединение со скоростью не более 25 об/мин. При возрастании момента скорость свинчивания должна быть снижена до скорости не более 5 об/мин, при этом происходит докрепление соединения.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='После силового свинчивания торец муфты должен совпадать с риской, нанесенной на ниппельную часть трубы. По достижению торцом трубы упорного уступа муфты при силовом свинчивании происходит резкое увеличение крутящего момента. Зафиксированный при этом крутящий момент будет являться оптимальным для данных условий.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='После силового свинчивания торец муфты должен совпадать с риской, нанесенной на ниппельную часть трубы. По достижению торцом трубы упорного уступа муфты при силовом свинчивании происходит резкое увеличение крутящего момента. Зафиксированный при этом крутящий момент будет являться оптимальным для данных условий.' />
         </ContentBlock>
       </ul>
       
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Дальнейшее свинчивание труб производится по установленному среднеарифметическому значению крутящего момента, полученного при проведении свинчивания десяти труб, следующих друг за другом. Полученные среднеарифметические значения крутящего момента являются оптимальными для данной сборки колонны. Минимальный крутящий момент, при этом, должен быть не менее 75% от принятого, а максимальный, не более 125%. Если при свинчивании происходит биение верхнего конца обсадной трубы, то следует снизить скорость вращения, чтобы не допустить пластической деформации резьбы.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Дальнейшее свинчивание труб производится по установленному среднеарифметическому значению крутящего момента, полученного при проведении свинчивания десяти труб, следующих друг за другом. Полученные среднеарифметические значения крутящего момента являются оптимальными для данной сборки колонны. Минимальный крутящий момент, при этом, должен быть не менее 75% от принятого, а максимальный, не более 125%. Если при свинчивании происходит биение верхнего конца обсадной трубы, то следует снизить скорость вращения, чтобы не допустить пластической деформации резьбы.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Свинчивание обсадных труб производить гидравлическим ключом, оборудованным моментомером с регистрацией момента свинчивания на электронном носителе. Без регистрации момента свинчивания спуск обсадной колонны запрещается. Установить контроль станцией ГТИ за моментом свинчивания обсадных труб, при отклонении от установленных значений незамедлительно оповестить бурильщика, супервайзера Заказчика, ИТР Подрядчика по бурению.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Свинчивание обсадных труб производить гидравлическим ключом, оборудованным моментомером с регистрацией момента свинчивания на электронном носителе. Без регистрации момента свинчивания спуск обсадной колонны запрещается. Установить контроль станцией ГТИ за моментом свинчивания обсадных труб, при отклонении от установленных значений незамедлительно оповестить бурильщика, супервайзера Заказчика, ИТР Подрядчика по бурению.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Скорость спуска обсадной колонны не более 0,5 м/сек. При спуске обсадной колонны не допускать посадок более 50% от собственного веса при движении «вниз» обсадной колонны. В случае получения посадки, прекратить спуск обсадной колонны, поднять обсадную колонну на 5 – 10 метров выше интервала посадки, восстановить циркуляцию промывочной жидкости с минимальной производительностью буровых насосов (10 л/сек) и плавным (5 л/сек) увеличением, по мере стабилизации давления, до 32 л/сек, расходить обсадную колонну до свободного хождения, остановить промывку и продолжить спуск.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Скорость спуска обсадной колонны не более 0,5 м/сек. При спуске обсадной колонны не допускать посадок более 50% от собственного веса при движении «вниз» обсадной колонны. В случае получения посадки, прекратить спуск обсадной колонны, поднять обсадную колонну на 5 – 10 метров выше интервала посадки, восстановить циркуляцию промывочной жидкости с минимальной производительностью буровых насосов (10 л/сек) и плавным (5 л/сек) увеличением, по мере стабилизации давления, до 32 л/сек, расходить обсадную колонну до свободного хождения, остановить промывку и продолжить спуск.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Установить контроль станцией ГТИ за спуском обсадной колонны (веса на крюке, моментом свинчивания, вытеснение промывочной жидкости), при отклонении от установленных значений незамедлительно оповестить бурильщика, супервайзера Заказчика, ИТР Подрядчика по бурению.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Установить контроль станцией ГТИ за спуском обсадной колонны (веса на крюке, моментом свинчивания, вытеснение промывочной жидкости), при отклонении от установленных значений незамедлительно оповестить бурильщика, супервайзера Заказчика, ИТР Подрядчика по бурению.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В случае, если не удается получить свободное хождение, приступить к подъему обсадной колонны. Решение по подъему обсадной колонны принимает начальник управления ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 30 инжиниринга ООО «Газпромнефть – Ямал» (согласовывает супервайзер Заказчика через руководителя направления по планированию бурения). Дальнейшие работы по переподготовке ствола скважины производить по дополнительному плану.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В случае, если не удается получить свободное хождение, приступить к подъему обсадной колонны. Решение по подъему обсадной колонны принимает начальник управления ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 30 инжиниринга ООО «Газпромнефть – Ямал» (согласовывает супервайзер Заказчика через руководителя направления по планированию бурения). Дальнейшие работы по переподготовке ствола скважины производить по дополнительному плану.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='По достижению проектной глубины произвести промывку ствола скважины в объеме трех объемов затрубного пространства. Циркуляцию восстанавливать с минимальной производительностью буровых насосов (10 л/сек) и плавным (5 л/сек) по мере стабилизации давления и увеличением до 32 л/сек. В случае, если отсутствует возможность увеличения производительности буровых насосов до 32 л/сек по причине повышения давления, зафиксировать максимально достигнутую производительность буровых насосов, супервайзеру Заказчика совместно с подрядчиком по цементированию произвести пересчет времени цементирования обсадной колонны и определить возможность проведения работ с пониженной производительностью.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='По достижению проектной глубины произвести промывку ствола скважины в объеме трех объемов затрубного пространства. Циркуляцию восстанавливать с минимальной производительностью буровых насосов (10 л/сек) и плавным (5 л/сек) по мере стабилизации давления и увеличением до 32 л/сек. В случае, если отсутствует возможность увеличения производительности буровых насосов до 32 л/сек по причине повышения давления, зафиксировать максимально достигнутую производительность буровых насосов, супервайзеру Заказчика совместно с подрядчиком по цементированию произвести пересчет времени цементирования обсадной колонны и определить возможность проведения работ с пониженной производительностью.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -8964,8 +8964,8 @@ export const programmBlocks = [
           </thead>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             <tr>
               <td colSpan='2'><Button size='s' view='clear' width='full' label='Новая строка' /></td>
@@ -9003,16 +9003,16 @@ export const programmBlocks = [
           </thead>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Сальникообразования' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Соблюдение режимов промывки, использование противосальниковой добавоки MEX-CLEAN. Расхаживание КНБК на всю длину свечи. До начала бурения секции под кондуктор иметь в наличии на буровой объем бурового раствора с низкими реологическими параметрами для оперативного разбавления после интервала ММП. При бурении секции 393,7 мм начать снижение условной вязкости бурового раствора с глубины 190* метров. При бурении секции 393,7 мм ограничить мех. скорость в интервале 170-280 м* до 90 м/час, (* глубина условная, до полного перехода из песка в глину). С глубины 190 метров производить одно расхаживание КНБК с вращением инструмента, не допускать превышения мгновенной мех. скорости свыше 140 м/час. При бурении интервала 0-190 м поддерживать производительность буровых насосов 50-55 м/ч, 190-460 м не менее 65 л/сек.' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Сальникообразования' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Соблюдение режимов промывки, использование противосальниковой добавоки MEX-CLEAN. Расхаживание КНБК на всю длину свечи. До начала бурения секции под кондуктор иметь в наличии на буровой объем бурового раствора с низкими реологическими параметрами для оперативного разбавления после интервала ММП. При бурении секции 393,7 мм начать снижение условной вязкости бурового раствора с глубины 190* метров. При бурении секции 393,7 мм ограничить мех. скорость в интервале 170-280 м* до 90 м/час, (* глубина условная, до полного перехода из песка в глину). С глубины 190 метров производить одно расхаживание КНБК с вращением инструмента, не допускать превышения мгновенной мех. скорости свыше 140 м/час. При бурении интервала 0-190 м поддерживать производительность буровых насосов 50-55 м/ч, 190-460 м не менее 65 л/сек.' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Отсутствие центра скважины относительно центра ротора. Отклонение от вертикали' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Забуривание под направление после центрирования вышки БУ, ротора с использованием прямолинейного бурильного инструмента.' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Отсутствие центра скважины относительно центра ротора. Отклонение от вертикали' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Забуривание под направление после центрирования вышки БУ, ротора с использованием прямолинейного бурильного инструмента.' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Проседание грунта и образование воронок в процессе бурения скважин' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Оборудование устья скважины металлическим коробом. Сокращение сроков бурения. Поддержание минимальной температуры бурового раствора в емкостях (10-15°С), посредством отключения во время бурения подогрева емкостей.' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Проседание грунта и образование воронок в процессе бурения скважин' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Оборудование устья скважины металлическим коробом. Сокращение сроков бурения. Поддержание минимальной температуры бурового раствора в емкостях (10-15°С), посредством отключения во время бурения подогрева емкостей.' /></td>
             </tr>
             <tr>
               <td colSpan='2'><Button size='s' view='clear' width='full' label='Новая строка' /></td>
@@ -9057,8 +9057,8 @@ export const programmBlocks = [
         <table className='table'>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             
             <tr>
@@ -9085,38 +9085,38 @@ export const programmBlocks = [
         <table className='table'>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Забой скважины' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='460м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Забой скважины' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='460м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Глубина спуска обсадной колонны' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='457м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Глубина спуска обсадной колонны' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='457м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Интервал цементирования цементным раствором' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='от 460м до 280м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Интервал цементирования цементным раствором' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='от 460м до 280м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Интервал цементирования гельцементным раствором' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='от 280м до 0м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Интервал цементирования гельцементным раствором' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='от 280м до 0м' /></td>
             </tr>
 
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Статическая температура на забое' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='+8,0°С' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Статическая температура на забое' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='+8,0°С' /></td>
             </tr>
 
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Градиент пластового давления' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='0,0098 МПа/м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Градиент пластового давления' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='0,0098 МПа/м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Градиент давления гидроразрыва' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='0,0206 МПа/м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Градиент давления гидроразрыва' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='0,0206 МПа/м' /></td>
             </tr>
             
             <tr>
@@ -9185,7 +9185,7 @@ export const programmBlocks = [
     member: 'Куратор',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -9195,68 +9195,68 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='До начала бурения обеспечить наличие на кустовой площадке следующих материалов и оборудования:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='До начала бурения обеспечить наличие на кустовой площадке следующих материалов и оборудования:' />
       </ContentBlock>
       <ol>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обсадная труба 324*9,5 (марка стали «Д», резьбовое соединение ОТТГ) – 455 м (с учетом запаса 5%);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обсадная труба 324*9,5 (марка стали «Д», резьбовое соединение ОТТГ) – 455 м (с учетом запаса 5%);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обсадная труба 530/324*9,5 (марка стали «Д», резьбовое соединение ОТТГ*) – 55 м (с учетом запаса 5%);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обсадная труба 530/324*9,5 (марка стали «Д», резьбовое соединение ОТТГ*) – 55 м (с учетом запаса 5%);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Нулевой патрубок ОТТГ / ОТТГ* 324 мм – 1 шт.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Нулевой патрубок ОТТГ / ОТТГ* 324 мм – 1 шт.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Башмак направляющий 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Башмак направляющий 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦКОД 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦКОД 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Пробка цементировочная – 1 ед. (продавочная, с паспортом) **.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Пробка цементировочная – 1 ед. (продавочная, с паспортом) **.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Центратор ЦЦ-324 – 19 ед.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Центратор ЦЦ-324 – 19 ед.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Резьбовой клей герметик (холодная сварка) – 1 ед**.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Резьбовой клей герметик (холодная сварка) – 1 ед**.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Шаблон для обсадных труб 324*9,5 мм (D = 301 мм, L = 300 мм).' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Шаблон для обсадных труб 324*9,5 мм (D = 301 мм, L = 300 мм).' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Смазка резьбоуплотняющая РУСМА или аналог – 10 кг.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Смазка резьбоуплотняющая РУСМА или аналог – 10 кг.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Промывочный переводник под обсадную трубу диаметром 324 мм – 2ед.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Промывочный переводник под обсадную трубу диаметром 324 мм – 2ед.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Специальное устройство для наворота колонных головок – 1 ед.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Специальное устройство для наворота колонных головок – 1 ед.' />
         </ContentBlock>
       </ol>
 
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Распределение ответственности: пункты № 1 – 3, 7 ООО «Газпромнефть-Ямал», пункты № 9 - 12 буровой подрядчик, пункты № 4-6, 8 подрядчик по цементированию.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Распределение ответственности: пункты № 1 – 3, 7 ООО «Газпромнефть-Ямал», пункты № 9 - 12 буровой подрядчик, пункты № 4-6, 8 подрядчик по цементированию.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='** - в случае наличия остатков использовать МТР ООО «Газпромнефть-Ямал».' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='** - в случае наличия остатков использовать МТР ООО «Газпромнефть-Ямал».' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='* - в случае использования обсадной трубы 530/324*9,5 с резьбовым соединением ОТТМ необходимо предусмотреть использование нулевого патрубка ОТТМ / ОТТГ, допускной трубы с резьбовым соединением ОТТМ.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='* - в случае использования обсадной трубы 530/324*9,5 с резьбовым соединением ОТТМ необходимо предусмотреть использование нулевого патрубка ОТТМ / ОТТГ, допускной трубы с резьбовым соединением ОТТМ.' />
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент, оборудование, необходимые для строительства секции находятся на буровой, проверены и работоспособны, имеют соответствующие документы (сертификаты, паспорта).' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент, оборудование, необходимые для строительства секции находятся на буровой, проверены и работоспособны, имеют соответствующие документы (сертификаты, паспорта).' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Иметь в наличии три насоса типа «ВШН-150». Один из них резервный для быстрой установки его в шахту, в случае выхода из строя одного из двух «ВШН-150», установленных в шахте. Забурочную шахту оборудовать коробом с размерами 2х2х2 м.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Иметь в наличии три насоса типа «ВШН-150». Один из них резервный для быстрой установки его в шахту, в случае выхода из строя одного из двух «ВШН-150», установленных в шахте. Забурочную шахту оборудовать коробом с размерами 2х2х2 м.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обсадные трубы укладывать муфтовой частью в направлении буровой установки с учетом очередности спуска их в скважину. Снять защитные колпаки с ниппелей и муфт, очистить резьбовые соединения. Очистку от смазки проводить ветошью при помощи растворителя, не содержащего хлор, либо пароочистителем (ППУ). Не допускается использовать для удаления смазки дизельное топливо, соленую воду, барит и металлические щетки. После удаления смазки, резьбовые соединения следует тщательно протереть сухой и чистой ветошью или просушить продувкой сжатым воздухом. Осмотреть резьбовые соединения ниппеля и муфт. Трубы с поврежденными резьбами к спуску не допускаются. Измерить длину каждой трубы. Измерения производят от свободного торца муфты до того места трубы с наружной резьбой, которое соответствует положению торца муфты при закреплении гидравлическим ключом, для ОТТГ - последняя риска резьбы. Промаркировать (номер трубы в порядке спуска, длина) светлой краской или мелом, сформировать реестр спуска обсадной колонны. Произвести шаблонирование обсадных труб на стеллажах. Шаблонирование произвести внутренним шаблоном по всей длине труб. В случае если внутренний шаблон не проходит через обсадную трубу – отбраковать. Установить защитные колпаки. Перед наворотом убедиться в чистоте защитных колпаков и отсутствии на них посторонних предметов. Не допускается использование защитных колпаков со значительными повреждениями резьбы и формы. [Трубы обсадные. Руководство по эксплуатации. 2015г. ООО «Научно-исследовательский институт разработки и эксплуатации нефтепромысловых труб»].' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обсадные трубы укладывать муфтовой частью в направлении буровой установки с учетом очередности спуска их в скважину. Снять защитные колпаки с ниппелей и муфт, очистить резьбовые соединения. Очистку от смазки проводить ветошью при помощи растворителя, не содержащего хлор, либо пароочистителем (ППУ). Не допускается использовать для удаления смазки дизельное топливо, соленую воду, барит и металлические щетки. После удаления смазки, резьбовые соединения следует тщательно протереть сухой и чистой ветошью или просушить продувкой сжатым воздухом. Осмотреть резьбовые соединения ниппеля и муфт. Трубы с поврежденными резьбами к спуску не допускаются. Измерить длину каждой трубы. Измерения производят от свободного торца муфты до того места трубы с наружной резьбой, которое соответствует положению торца муфты при закреплении гидравлическим ключом, для ОТТГ - последняя риска резьбы. Промаркировать (номер трубы в порядке спуска, длина) светлой краской или мелом, сформировать реестр спуска обсадной колонны. Произвести шаблонирование обсадных труб на стеллажах. Шаблонирование произвести внутренним шаблоном по всей длине труб. В случае если внутренний шаблон не проходит через обсадную трубу – отбраковать. Установить защитные колпаки. Перед наворотом убедиться в чистоте защитных колпаков и отсутствии на них посторонних предметов. Не допускается использование защитных колпаков со значительными повреждениями резьбы и формы. [Трубы обсадные. Руководство по эксплуатации. 2015г. ООО «Научно-исследовательский институт разработки и эксплуатации нефтепромысловых труб»].' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='После замера обсадных труб скорректировать конечный забой интервала под кондуктор исходя из того, что он должен составлять не более 460 метров по вертикали. Обеспечить на буровой запас обработанного до проектных параметров бурового раствора в объеме не менее одного объема скважины, запас технической воды в объеме не менее 100 м3 для приготовления бурового и цементного растворов, а так же буферных жидкостей. При температуре окружающей среды ниже +100С обеспечить температуру воды затворения +250С, проверить на наличие механических примесей, содержание хлоридов (<500 мг/л), рН 6 – 8.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='После замера обсадных труб скорректировать конечный забой интервала под кондуктор исходя из того, что он должен составлять не более 460 метров по вертикали. Обеспечить на буровой запас обработанного до проектных параметров бурового раствора в объеме не менее одного объема скважины, запас технической воды в объеме не менее 100 м3 для приготовления бурового и цементного растворов, а так же буферных жидкостей. При температуре окружающей среды ниже +100С обеспечить температуру воды затворения +250С, проверить на наличие механических примесей, содержание хлоридов (<500 мг/л), рН 6 – 8.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -9537,7 +9537,7 @@ export const programmBlocks = [
     member: 'Буровые растворы',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -9547,7 +9547,7 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='С целью предотвращения размыва слабосцементированного песчаника в интервале залегания зоны ММП и предотвращения интенсивной гидратации глин для бурения данной секции применяется глинистый буровой раствор на основе бентонита. Данная система за счет высокой вязкости позволяет предотвратить осыпи и обвалообразования, а также обеспечить удовлетворительное качество очистки ствола скважины большого диаметра.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='С целью предотвращения размыва слабосцементированного песчаника в интервале залегания зоны ММП и предотвращения интенсивной гидратации глин для бурения данной секции применяется глинистый буровой раствор на основе бентонита. Данная система за счет высокой вязкости позволяет предотвратить осыпи и обвалообразования, а также обеспечить удовлетворительное качество очистки ствола скважины большого диаметра.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -9728,18 +9728,18 @@ export const programmBlocks = [
         </table>
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='*При прохождении песков до глубины 190 м в процессе бурения поддерживать условную вязкость более 90 сек/кварта и производительность насосов 50 л/сек. С глубины 190-200 м необходимо ступенчато увеличить производительность насосов до 65 л/сек и постепенно снизить условную вязкость до 50-65 сек/кварта путём разбавления свежеприготовленным буровым раствором со скоростью не более 40 м3/час.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='*При прохождении песков до глубины 190 м в процессе бурения поддерживать условную вязкость более 90 сек/кварта и производительность насосов 50 л/сек. С глубины 190-200 м необходимо ступенчато увеличить производительность насосов до 65 л/сек и постепенно снизить условную вязкость до 50-65 сек/кварта путём разбавления свежеприготовленным буровым раствором со скоростью не более 40 м3/час.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='**При отсутствии признаков перехода песок-глина необходимо поддерживать при бурении интервала (с глубины 190 м до окончательного забоя) условную вязкость бурового раствора в пределах 70-100 сек/кварта. Необходимо вести постоянный контроль за уровнем бурового раствора в рабочих емкостях. В случае сверхнормативного ухода бурового раствора, не объясняемого потерями на системе очистки (размыв ствола скважины), необходимо по согласованию со службой инжиниринга снизить производительность буровых насосов. В случае снижения производительности буровых насосов необходимо осуществлять последующий контроль очистки ствола от выбуренной породы.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='**При отсутствии признаков перехода песок-глина необходимо поддерживать при бурении интервала (с глубины 190 м до окончательного забоя) условную вязкость бурового раствора в пределах 70-100 сек/кварта. Необходимо вести постоянный контроль за уровнем бурового раствора в рабочих емкостях. В случае сверхнормативного ухода бурового раствора, не объясняемого потерями на системе очистки (размыв ствола скважины), необходимо по согласованию со службой инжиниринга снизить производительность буровых насосов. В случае снижения производительности буровых насосов необходимо осуществлять последующий контроль очистки ствола от выбуренной породы.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='*** В процессе подготовки ствола для последующего спуска кондуктора.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='*** В процессе подготовки ствола для последующего спуска кондуктора.' />
       </ContentBlock>
       <ContentBlock type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='При бурении в интервале 190-460 м при отсутствии активной глины в выбуренной породе продолжить бурение скважины с производительностью буровых насосов 50-55 л/с. Условную вязкость бурового раствора поддерживать не менее 80 сек/кварта. При возникновении признаков некачественной очистки (скачки давления, рост момента) произвести дополнительную промывку и прокачку ВУС.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='При бурении в интервале 190-460 м при отсутствии активной глины в выбуренной породе продолжить бурение скважины с производительностью буровых насосов 50-55 л/с. Условную вязкость бурового раствора поддерживать не менее 80 сек/кварта. При возникновении признаков некачественной очистки (скачки давления, рост момента) произвести дополнительную промывку и прокачку ВУС.' />
         </Informer>
       </ContentBlock>
     </React.Fragment>),
@@ -9821,7 +9821,7 @@ export const programmBlocks = [
     member: 'Буровые растворы',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -9834,88 +9834,88 @@ export const programmBlocks = [
         <table className='table'>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Интервал' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Кондуктор' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Интервал' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Кондуктор' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Тип раствора' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Глинистый' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Тип раствора' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Глинистый' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Интервал по инструменту' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0–460' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Интервал по инструменту' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0–460' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Диаметр долота' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='393.7' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Диаметр долота' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='393.7' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Диаметр колонны' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Диаметр колонны' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Внутренний диаметр предыдущей колонны' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Внутренний диаметр предыдущей колонны' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Длина участка по инструменту' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='460' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Длина участка по инструменту' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='460' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Ожидаемый коэффициент кавернозности' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='1.4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Ожидаемый коэффициент кавернозности' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='1.4' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Переведено с предыдущего интервала/скважины' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Переведено с предыдущего интервала/скважины' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора на поверхности' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='50' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора на поверхности' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='50' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора в колонне' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора в колонне' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора в открытом стволе' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='78.4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора в открытом стволе' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='78.4' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Коэффициент эффективности оборудования очистки' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='75' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Коэффициент эффективности оборудования очистки' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='75' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем выбуренной породы с учетом коэф.разуплотнения' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='94' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем выбуренной породы с учетом коэф.разуплотнения' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='94' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Максимальное содержание выбуренной породы' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='25' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Максимальное содержание выбуренной породы' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='25' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Влажность шлама' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0.9' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Влажность шлама' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0.9' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Потери раствора со шламом' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='56' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Потери раствора со шламом' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='56' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Потери в скважине' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='5.6' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Потери в скважине' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='5.6' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора на поверхности по окончанию бурения интервала' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='50' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора на поверхности по окончанию бурения интервала' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='50' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Расчетный объем свежеприготовленного раствора к обработке на бурение интервала' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='190' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Расчетный объем свежеприготовленного раствора к обработке на бурение интервала' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='190' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Переведено на следующий интервал/скважину' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='80' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Переведено на следующий интервал/скважину' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='80' /></td>
             </tr>
           </tbody>
         </table>
@@ -10942,8 +10942,8 @@ export const programmBlocks = [
       <ContentBlock isEditable={true} type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Плановые значения параметров режима бурения, весов на крюке, крутящего момента на ВСП и эквивалентной циркуляционной плотности рассчитываются подрядчиком по ННБ и растворным подрядчиком при проектировании скважины в специализированном программном обеспечении и заносятся в режимную карту бурения. Фактические значения данных параметров заносятся в режимную карту бурильщиком в процессе бурения секции. Фактические значения эквивалентной циркуляционной плотности заносятся инженером по ННБ при условии наличия в КНБК датчика затрубного давления.' />
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Супервайзеру Заказчика отправить заполненную режимную карту по электронной почте инженеру – куратору кустовой площадки в течении суток после окончания бурения секции.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Плановые значения параметров режима бурения, весов на крюке, крутящего момента на ВСП и эквивалентной циркуляционной плотности рассчитываются подрядчиком по ННБ и растворным подрядчиком при проектировании скважины в специализированном программном обеспечении и заносятся в режимную карту бурения. Фактические значения данных параметров заносятся в режимную карту бурильщиком в процессе бурения секции. Фактические значения эквивалентной циркуляционной плотности заносятся инженером по ННБ при условии наличия в КНБК датчика затрубного давления.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Супервайзеру Заказчика отправить заполненную режимную карту по электронной почте инженеру – куратору кустовой площадки в течении суток после окончания бурения секции.' />
         </Informer>
       </ContentBlock>
     </React.Fragment>),
@@ -11238,7 +11238,7 @@ export const programmBlocks = [
     member: 'Куратор',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -11248,16 +11248,16 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Собрать роторную КНБК для бурения тех. кармана L – 30 м: Долото 393,7 мм + УБТ 203 – 9 м + СБТ 127 – остальной. Пробурить тех. карман для сборки КНБК для бурения при бурении секции 393,7 мм необходимо соблюдать следующие режимы бурения: 0-25 м расход – 15 л/с, обороты ВСП 80 – 100 об/мин.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Собрать роторную КНБК для бурения тех. кармана L – 30 м: Долото 393,7 мм + УБТ 203 – 9 м + СБТ 127 – остальной. Пробурить тех. карман для сборки КНБК для бурения при бурении секции 393,7 мм необходимо соблюдать следующие режимы бурения: 0-25 м расход – 15 л/с, обороты ВСП 80 – 100 об/мин.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент и оборудование, необходимые для строительства секции, находятся на буровой, проверены и работоспособны, имеют соответствующие документы (паспорта). Перед началом бурения обеспечить наличие бурового раствора на поверхности в объеме 105 м3. Собрать КНБК для бурения секции 393,7 мм согласно настоящей программы, тестирование оборудования для ННБ не производить (протокол ПТ-10-01/011 от 22.11.17). Поддерживать температуру бурового раствора на минимальном уровне, отключив подогрев всех емкостей. Бурение секции в интервале 0 - 460 м производить без проработки перед наращиванием. «Снятие пружины» перед снятием замеров в статике производить на длину одной трубы (12 метров). В случае наличия признаков зашламованности ствола скважины (скачки давления и крутящего момента на ВСП, несоответствие весов на крюке с расчетными на величину более 10%), произвести промывку ствола скважины и продолжить бурение с проработкой ствола скважины перед наращиванием. Расхаживание производить с вращением бурильного инструмента с частотой при движении «вверх» 40 об/мин, при движении «вниз» 60 об/мин. Фактический забой секции выбрать исходя из фактической длины обсадной колонны (с учетом технологической оснастки) – ЗУМПФ не должен превышать 3 м. После окончания бурения секции произвести прокачку очищающей пачки ВУС по рецептуре подрядчика по буровым растворам в объёме не менее 8 м3 с промывкой ствола скважины с расхаживанием и вращением бурильного инструмента до момента выхода пачки на устье скважины. Режим промывки: расход промывочной жидкости 65 л/сек, частота вращения ВСП 60 об/мин. Произвести подъём КНБК до глубины 50 м со сплошной проработкой. Режим проработки: в интервале 460-170 м расход промывочной жидкости 65 л/сек, частота вращения ВСП 40 об/мин; в интервале 170 – 50 м расход промывочной жидкости 50 л/сек, частота вращения ВСП 40 об/мин, скорость проработки ствола скважины не более 500 м/час. В интервале перехода «пески – глина» (подъем произвести на 50 метров выше зоны перехода), произвести спуск на 50 метров ниже интервала перехода без циркуляции и вращения. В случае получения посадки проработать до свободного хождения «на сухую».' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент и оборудование, необходимые для строительства секции, находятся на буровой, проверены и работоспособны, имеют соответствующие документы (паспорта). Перед началом бурения обеспечить наличие бурового раствора на поверхности в объеме 105 м3. Собрать КНБК для бурения секции 393,7 мм согласно настоящей программы, тестирование оборудования для ННБ не производить (протокол ПТ-10-01/011 от 22.11.17). Поддерживать температуру бурового раствора на минимальном уровне, отключив подогрев всех емкостей. Бурение секции в интервале 0 - 460 м производить без проработки перед наращиванием. «Снятие пружины» перед снятием замеров в статике производить на длину одной трубы (12 метров). В случае наличия признаков зашламованности ствола скважины (скачки давления и крутящего момента на ВСП, несоответствие весов на крюке с расчетными на величину более 10%), произвести промывку ствола скважины и продолжить бурение с проработкой ствола скважины перед наращиванием. Расхаживание производить с вращением бурильного инструмента с частотой при движении «вверх» 40 об/мин, при движении «вниз» 60 об/мин. Фактический забой секции выбрать исходя из фактической длины обсадной колонны (с учетом технологической оснастки) – ЗУМПФ не должен превышать 3 м. После окончания бурения секции произвести прокачку очищающей пачки ВУС по рецептуре подрядчика по буровым растворам в объёме не менее 8 м3 с промывкой ствола скважины с расхаживанием и вращением бурильного инструмента до момента выхода пачки на устье скважины. Режим промывки: расход промывочной жидкости 65 л/сек, частота вращения ВСП 60 об/мин. Произвести подъём КНБК до глубины 50 м со сплошной проработкой. Режим проработки: в интервале 460-170 м расход промывочной жидкости 65 л/сек, частота вращения ВСП 40 об/мин; в интервале 170 – 50 м расход промывочной жидкости 50 л/сек, частота вращения ВСП 40 об/мин, скорость проработки ствола скважины не более 500 м/час. В интервале перехода «пески – глина» (подъем произвести на 50 метров выше зоны перехода), произвести спуск на 50 метров ниже интервала перехода без циркуляции и вращения. В случае получения посадки проработать до свободного хождения «на сухую».' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В случае свободного хождения продолжить подъем сплошной проработкой до устья. После подъема произвести сборку роторную КНБК 660,4 мм, для шаблонировки ствола в интервале 0-50 м. Спустить КНБК до глубины исходя из следующего расчета: 1 м + 4 трубы термокейс 530 х 324*9,5 + высота стола ротора. В случае свободного прохождения КНБК в интервале 0-50 м произвести подъем и разборку КНБК. При отрицательном результате (спуск с посадками свыше 5 тн) проработать интервал до свободного хождения «на сухую». Режим проработки: расход промывочной жидкости 20 л/сек, частота вращения ВСП 40 об/мин.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В случае свободного хождения продолжить подъем сплошной проработкой до устья. После подъема произвести сборку роторную КНБК 660,4 мм, для шаблонировки ствола в интервале 0-50 м. Спустить КНБК до глубины исходя из следующего расчета: 1 м + 4 трубы термокейс 530 х 324*9,5 + высота стола ротора. В случае свободного прохождения КНБК в интервале 0-50 м произвести подъем и разборку КНБК. При отрицательном результате (спуск с посадками свыше 5 тн) проработать интервал до свободного хождения «на сухую». Режим проработки: расход промывочной жидкости 20 л/сек, частота вращения ВСП 40 об/мин.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В случае осложнения при подготовке ствола оповестить РН по планированию бурения. Произвести подъем и разборку КНБК, места затяжек проработать до свободного хождения КНБК без циркуляции. С целью недопущения зарезки нового ствола, механическая скорость проработки 75 - 100 м/час.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В случае осложнения при подготовке ствола оповестить РН по планированию бурения. Произвести подъем и разборку КНБК, места затяжек проработать до свободного хождения КНБК без циркуляции. С целью недопущения зарезки нового ствола, механическая скорость проработки 75 - 100 м/час.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -11281,7 +11281,7 @@ export const programmBlocks = [
     member: 'Куратор',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -11291,16 +11291,16 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Составить график дежурства ИТР (бурового подрядчика) на буровой во время проведения работ по подготовке и спуску обсадных труб. График дежурства ИТР должен включать в себя ответственность и обязанности ответственного лица.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Составить график дежурства ИТР (бурового подрядчика) на буровой во время проведения работ по подготовке и спуску обсадных труб. График дежурства ИТР должен включать в себя ответственность и обязанности ответственного лица.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Проверить техническое состояние буровой установки: вышки, подвышечного основания, подроторных балок, талевой системы, буровой лебедки и тормозной системы, силового и энергетического оборудования, буровых насосов и циркуляционной системы, оборудования и инструмента для СПО, КИП и освещения, центровку вышки, запас диз. топлива, работоспособность аварийной ДЭС. При необходимости на приёмных мостках установить дополнительное освещение. Проверить работоспособность станции ГТИ. Составить акт готовности к спуску и цементированию обсадной колонны.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Проверить техническое состояние буровой установки: вышки, подвышечного основания, подроторных балок, талевой системы, буровой лебедки и тормозной системы, силового и энергетического оборудования, буровых насосов и циркуляционной системы, оборудования и инструмента для СПО, КИП и освещения, центровку вышки, запас диз. топлива, работоспособность аварийной ДЭС. При необходимости на приёмных мостках установить дополнительное освещение. Проверить работоспособность станции ГТИ. Составить акт готовности к спуску и цементированию обсадной колонны.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Провести внеплановый инструктаж работникам буровой бригады по правилам безопасного производства работ при спуске и цементировании обсадных колонн с записью в журнале проведения инструктажей. Из состава работников буровой бригады назначить ответственных работников за очистку и смазку резьбовых соединений, за долив обсадной колонны, за контроль вытеснения промывочной жидкости с записью в буровом журнале. Ответственность за порядок спуска и длину обсадных труб возлагается на ответственного ИТР подрядчика по бурению скважин.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Провести внеплановый инструктаж работникам буровой бригады по правилам безопасного производства работ при спуске и цементировании обсадных колонн с записью в журнале проведения инструктажей. Из состава работников буровой бригады назначить ответственных работников за очистку и смазку резьбовых соединений, за долив обсадной колонны, за контроль вытеснения промывочной жидкости с записью в буровом журнале. Ответственность за порядок спуска и длину обсадных труб возлагается на ответственного ИТР подрядчика по бурению скважин.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Произвести спуск обсадной колонны в следующем порядке: Башмак направляющий 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 10 м, ЦКОД 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 400 м; Обсадная труба 530/324х9,5 ОТТМ - остальное. На соединения «башмак - обсадная труба» и «ЦКОД – обсадная труба» нанести резьбовую герметизирующую смазку. Технологическую оснастку установить согласно приведенной ниже таблице. Сборку и монтаж технологической оснастки осуществлять согласно руководства завода – изготовителя. Свинчивание и докрепление ротором запрещено.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Произвести спуск обсадной колонны в следующем порядке: Башмак направляющий 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 10 м, ЦКОД 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 400 м; Обсадная труба 530/324х9,5 ОТТМ - остальное. На соединения «башмак - обсадная труба» и «ЦКОД – обсадная труба» нанести резьбовую герметизирующую смазку. Технологическую оснастку установить согласно приведенной ниже таблице. Сборку и монтаж технологической оснастки осуществлять согласно руководства завода – изготовителя. Свинчивание и докрепление ротором запрещено.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -11324,7 +11324,7 @@ export const programmBlocks = [
     member: 'Долота',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -11345,124 +11345,124 @@ export const programmBlocks = [
           </thead>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='1' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='60 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='95 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='1' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='60 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='95 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='2' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='155 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='118 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='2' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='155 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='118 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='3' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='273 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='3' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='273 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='4' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='284 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='284 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='5' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='295 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='5' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='295 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='6' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='306 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='6' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='306 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='7' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='317 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='7' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='317 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='8' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='328 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='8' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='328 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='9' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='328 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='9' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='328 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='10' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='339 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='10' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='339 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='350 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='350 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='12' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='361 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='12' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='361 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='13' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='372 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='13' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='372 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='14' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='383 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='14' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='383 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='15' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='394 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='15' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='394 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='16' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='405 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='16' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='405 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='17' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='416 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='17' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='416 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='18' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='427 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='18' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='427 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='19' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='438 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='19' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='438 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='20' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='449 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='11 м' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='20' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='449 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='11 м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦЦ – 324' /></td>
             </tr>
 
             <tr><td colSpan='4'><Button size='s' view='clear' width='full' label='Новая строка' /></td></tr>
@@ -11473,61 +11473,61 @@ export const programmBlocks = [
       <ContentBlock isEditable={true} type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='На трубу с башмаком установку центратора не производить.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='На трубу с башмаком установку центратора не производить.' />
         </Informer>
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Спуск первых 10 (десяти) обсадных труб производить на двух элеваторах. Без присутствия супервайзера Заказчика сборка компоновки низа обсадной колонны запрещена. В случае наличия каких-либо затруднений (невозможность наворота, повреждение резьбовых соединений, выявление дефектов, несовпадение меток после полного свинчивания и др.) при сборке низа обсадной колонны, связанных с формированием промысловых соединений, ответственный ИТР Подрядчика по бурению совместно с супервайзером Заказчика принимает решение об отбраковке элементов технологической оснастки и обсадных труб.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Спуск первых 10 (десяти) обсадных труб производить на двух элеваторах. Без присутствия супервайзера Заказчика сборка компоновки низа обсадной колонны запрещена. В случае наличия каких-либо затруднений (невозможность наворота, повреждение резьбовых соединений, выявление дефектов, несовпадение меток после полного свинчивания и др.) при сборке низа обсадной колонны, связанных с формированием промысловых соединений, ответственный ИТР Подрядчика по бурению совместно с супервайзером Заказчика принимает решение об отбраковке элементов технологической оснастки и обсадных труб.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='При подъеме обсадных труб на буровую площадку необходимо соблюдать осторожность, не допускать изгиба труб и ударов муфт о любую поверхность буровой установки или другого оборудования. Установить на буровой вышке удерживающий канат. Подъем труб на буровую площадку должен проводиться только с установленными защитными колпаками.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='При подъеме обсадных труб на буровую площадку необходимо соблюдать осторожность, не допускать изгиба труб и ударов муфт о любую поверхность буровой установки или другого оборудования. Установить на буровой вышке удерживающий канат. Подъем труб на буровую площадку должен проводиться только с установленными защитными колпаками.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Во время сборки колонны каждая труба должна быть отцентрирована относительно муфты и оси скважины. Перед началом свинчивания необходимо проверить на ощупь отсутствие механических повреждений уплотнительных и упорных поверхностей на свободном конце трубы. Защитные колпаки с ниппельной части удаляются непосредственно перед посадкой в муфту, в это же время на ниппельную часть наносится смазка. При свинчивании соединений необходимо применять резьбовую смазку. Расход смазки на одно соединение согласно рекомендациям компании-изготовителя резьбовой смазки. Резьбовая смазка должна распределяться между муфтой и ниппелем: 2/3 количества - на муфту, 1/3 – на ниппель. Смазку необходимо наносить на поверхности равномерно. Смазку наносить на высушенную поверхность резьбового соединения кистью, либо нейлоновой щеткой. Смазку перед применением тщательно перемещать, смазка должна быть однородно, иметь консистенцию мази, не содержать твердых включений. Запрещается свинчивание резьб без смазки, а также применение машинного, дизельного масла в качестве заменителей.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Во время сборки колонны каждая труба должна быть отцентрирована относительно муфты и оси скважины. Перед началом свинчивания необходимо проверить на ощупь отсутствие механических повреждений уплотнительных и упорных поверхностей на свободном конце трубы. Защитные колпаки с ниппельной части удаляются непосредственно перед посадкой в муфту, в это же время на ниппельную часть наносится смазка. При свинчивании соединений необходимо применять резьбовую смазку. Расход смазки на одно соединение согласно рекомендациям компании-изготовителя резьбовой смазки. Резьбовая смазка должна распределяться между муфтой и ниппелем: 2/3 количества - на муфту, 1/3 – на ниппель. Смазку необходимо наносить на поверхности равномерно. Смазку наносить на высушенную поверхность резьбового соединения кистью, либо нейлоновой щеткой. Смазку перед применением тщательно перемещать, смазка должна быть однородно, иметь консистенцию мази, не содержать твердых включений. Запрещается свинчивание резьб без смазки, а также применение машинного, дизельного масла в качестве заменителей.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Свинчивание и докрепление производить гидравлическим ключом с моментомером. При свинчивании обсадных труб на буровой муфта может слегка провернуться в соединении, закрепленном на заводе. Это не означает, что муфта на заводе была закреплена ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 29 слишком слабо, а доказывает, что усилие докрепления достигает той же величины, что и при свинчивании соединения на заводе.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Свинчивание и докрепление производить гидравлическим ключом с моментомером. При свинчивании обсадных труб на буровой муфта может слегка провернуться в соединении, закрепленном на заводе. Это не означает, что муфта на заводе была закреплена ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 29 слишком слабо, а доказывает, что усилие докрепления достигает той же величины, что и при свинчивании соединения на заводе.' />
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Свинчивание обсадных труб с резьбовым соединением ОТТГ (ОТТМ) рекомендуется проводить в следующем порядке:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Свинчивание обсадных труб с резьбовым соединением ОТТГ (ОТТМ) рекомендуется проводить в следующем порядке:' />
       </ContentBlock>
       <ul>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Подготовленную и поднятую очередную трубу над устьем скважины необходимо направлять в муфту спущенной трубы вертикально. Чтобы не повредить резьбу посадки труб следует производить плавно, без ударов.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Подготовленную и поднятую очередную трубу над устьем скважины необходимо направлять в муфту спущенной трубы вертикально. Чтобы не повредить резьбу посадки труб следует производить плавно, без ударов.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Произвести измерение расстояния от внутреннего упорного торца до наружного торца муфты с помощью штангенциркуля. Затем на ответной ниппельной части трубы нанести риску на расстоянии от торца трубы, равном измеренному расстоянию от упорного торца до наружного торца муфты.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Произвести измерение расстояния от внутреннего упорного торца до наружного торца муфты с помощью штангенциркуля. Затем на ответной ниппельной части трубы нанести риску на расстоянии от торца трубы, равном измеренному расстоянию от упорного торца до наружного торца муфты.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Свинчивание производить без перекосов, убедившись, что резьбы ниппеля и муфты вошли в зацепление.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Свинчивание производить без перекосов, убедившись, что резьбы ниппеля и муфты вошли в зацепление.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Для предотвращения заедания резьбы при свинчивании следует свинчивать соединение со скоростью не более 25 об/мин. При возрастании момента скорость свинчивания должна быть снижена до скорости не более 5 об/мин, при этом происходит докрепление соединения.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Для предотвращения заедания резьбы при свинчивании следует свинчивать соединение со скоростью не более 25 об/мин. При возрастании момента скорость свинчивания должна быть снижена до скорости не более 5 об/мин, при этом происходит докрепление соединения.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='После силового свинчивания торец муфты должен совпадать с риской, нанесенной на ниппельную часть трубы. По достижению торцом трубы упорного уступа муфты при силовом свинчивании происходит резкое увеличение крутящего момента. Зафиксированный при этом крутящий момент будет являться оптимальным для данных условий.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='После силового свинчивания торец муфты должен совпадать с риской, нанесенной на ниппельную часть трубы. По достижению торцом трубы упорного уступа муфты при силовом свинчивании происходит резкое увеличение крутящего момента. Зафиксированный при этом крутящий момент будет являться оптимальным для данных условий.' />
         </ContentBlock>
       </ul>
       
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Дальнейшее свинчивание труб производится по установленному среднеарифметическому значению крутящего момента, полученного при проведении свинчивания десяти труб, следующих друг за другом. Полученные среднеарифметические значения крутящего момента являются оптимальными для данной сборки колонны. Минимальный крутящий момент, при этом, должен быть не менее 75% от принятого, а максимальный, не более 125%. Если при свинчивании происходит биение верхнего конца обсадной трубы, то следует снизить скорость вращения, чтобы не допустить пластической деформации резьбы.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Дальнейшее свинчивание труб производится по установленному среднеарифметическому значению крутящего момента, полученного при проведении свинчивания десяти труб, следующих друг за другом. Полученные среднеарифметические значения крутящего момента являются оптимальными для данной сборки колонны. Минимальный крутящий момент, при этом, должен быть не менее 75% от принятого, а максимальный, не более 125%. Если при свинчивании происходит биение верхнего конца обсадной трубы, то следует снизить скорость вращения, чтобы не допустить пластической деформации резьбы.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Свинчивание обсадных труб производить гидравлическим ключом, оборудованным моментомером с регистрацией момента свинчивания на электронном носителе. Без регистрации момента свинчивания спуск обсадной колонны запрещается. Установить контроль станцией ГТИ за моментом свинчивания обсадных труб, при отклонении от установленных значений незамедлительно оповестить бурильщика, супервайзера Заказчика, ИТР Подрядчика по бурению.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Свинчивание обсадных труб производить гидравлическим ключом, оборудованным моментомером с регистрацией момента свинчивания на электронном носителе. Без регистрации момента свинчивания спуск обсадной колонны запрещается. Установить контроль станцией ГТИ за моментом свинчивания обсадных труб, при отклонении от установленных значений незамедлительно оповестить бурильщика, супервайзера Заказчика, ИТР Подрядчика по бурению.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Скорость спуска обсадной колонны не более 0,5 м/сек. При спуске обсадной колонны не допускать посадок более 50% от собственного веса при движении «вниз» обсадной колонны. В случае получения посадки, прекратить спуск обсадной колонны, поднять обсадную колонну на 5 – 10 метров выше интервала посадки, восстановить циркуляцию промывочной жидкости с минимальной производительностью буровых насосов (10 л/сек) и плавным (5 л/сек) увеличением, по мере стабилизации давления, до 32 л/сек, расходить обсадную колонну до свободного хождения, остановить промывку и продолжить спуск.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Скорость спуска обсадной колонны не более 0,5 м/сек. При спуске обсадной колонны не допускать посадок более 50% от собственного веса при движении «вниз» обсадной колонны. В случае получения посадки, прекратить спуск обсадной колонны, поднять обсадную колонну на 5 – 10 метров выше интервала посадки, восстановить циркуляцию промывочной жидкости с минимальной производительностью буровых насосов (10 л/сек) и плавным (5 л/сек) увеличением, по мере стабилизации давления, до 32 л/сек, расходить обсадную колонну до свободного хождения, остановить промывку и продолжить спуск.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Установить контроль станцией ГТИ за спуском обсадной колонны (веса на крюке, моментом свинчивания, вытеснение промывочной жидкости), при отклонении от установленных значений незамедлительно оповестить бурильщика, супервайзера Заказчика, ИТР Подрядчика по бурению.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Установить контроль станцией ГТИ за спуском обсадной колонны (веса на крюке, моментом свинчивания, вытеснение промывочной жидкости), при отклонении от установленных значений незамедлительно оповестить бурильщика, супервайзера Заказчика, ИТР Подрядчика по бурению.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В случае, если не удается получить свободное хождение, приступить к подъему обсадной колонны. Решение по подъему обсадной колонны принимает начальник управления ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 30 инжиниринга ООО «Газпромнефть – Ямал» (согласовывает супервайзер Заказчика через руководителя направления по планированию бурения). Дальнейшие работы по переподготовке ствола скважины производить по дополнительному плану.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В случае, если не удается получить свободное хождение, приступить к подъему обсадной колонны. Решение по подъему обсадной колонны принимает начальник управления ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 30 инжиниринга ООО «Газпромнефть – Ямал» (согласовывает супервайзер Заказчика через руководителя направления по планированию бурения). Дальнейшие работы по переподготовке ствола скважины производить по дополнительному плану.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='По достижению проектной глубины произвести промывку ствола скважины в объеме трех объемов затрубного пространства. Циркуляцию восстанавливать с минимальной производительностью буровых насосов (10 л/сек) и плавным (5 л/сек) по мере стабилизации давления и увеличением до 32 л/сек. В случае, если отсутствует возможность увеличения производительности буровых насосов до 32 л/сек по причине повышения давления, зафиксировать максимально достигнутую производительность буровых насосов, супервайзеру Заказчика совместно с подрядчиком по цементированию произвести пересчет времени цементирования обсадной колонны и определить возможность проведения работ с пониженной производительностью.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='По достижению проектной глубины произвести промывку ствола скважины в объеме трех объемов затрубного пространства. Циркуляцию восстанавливать с минимальной производительностью буровых насосов (10 л/сек) и плавным (5 л/сек) по мере стабилизации давления и увеличением до 32 л/сек. В случае, если отсутствует возможность увеличения производительности буровых насосов до 32 л/сек по причине повышения давления, зафиксировать максимально достигнутую производительность буровых насосов, супервайзеру Заказчика совместно с подрядчиком по цементированию произвести пересчет времени цементирования обсадной колонны и определить возможность проведения работ с пониженной производительностью.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -11734,7 +11734,7 @@ export const programmBlocks = [
     member: 'Цементирование',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -11744,87 +11744,87 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='После прибытия цементировочного флота на кустовую площадку супервайзеру Заказчика организовать проведение короткой встречи с ИТР сервисных подрядчиков, задействованных в данной операции, для обсуждения предстоящей работы, способов коммуникации и сигналов, рисков в области ОТ, ПБ и ООС, последовательности всех операций.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='После прибытия цементировочного флота на кустовую площадку супервайзеру Заказчика организовать проведение короткой встречи с ИТР сервисных подрядчиков, задействованных в данной операции, для обсуждения предстоящей работы, способов коммуникации и сигналов, рисков в области ОТ, ПБ и ООС, последовательности всех операций.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Произвести расстановку и монтаж цементировочного флота согласно требований нормативных документов. Cоставить трехсторонний АКТ о готовности буровой установки к цементированию, акты о передаче скважины для цементирования (Приложение № 11 Договора) и акта контрольного замера параметров бурового раствора с участием представителя Заказчика, бурового мастера/технолога бурового подрядчика, инженера по цементированию, инженера по буровым растворам.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Произвести расстановку и монтаж цементировочного флота согласно требований нормативных документов. Cоставить трехсторонний АКТ о готовности буровой установки к цементированию, акты о передаче скважины для цементирования (Приложение № 11 Договора) и акта контрольного замера параметров бурового раствора с участием представителя Заказчика, бурового мастера/технолога бурового подрядчика, инженера по цементированию, инженера по буровым растворам.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Предоставить супервайзеру ООО «ГПН-Ямал» оригиналы контрольных лабораторных тестов на время загустевания облегченного цементного раствора и цементного раствора нормальной плотности по замешанным (затаренным) на цем. заводе цементным смесям. Без предоставления оригиналов лабораторных тестов цементирование запрещено.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Предоставить супервайзеру ООО «ГПН-Ямал» оригиналы контрольных лабораторных тестов на время загустевания облегченного цементного раствора и цементного раствора нормальной плотности по замешанным (затаренным) на цем. заводе цементным смесям. Без предоставления оригиналов лабораторных тестов цементирование запрещено.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Подготовить жидкость затворения тех. вода для замешивания буферов цементных растворов в объеме указанном ниже в таблице (провести анализ на наличие посторонних примесей, проверить на Рh, хлориды, проверить объем, в зимнее время прогреть до температуры указанной в таблице, инженеру по цементированию совместно с мастером буровой бригады обговорить очередность подачи жидкостей). Буровой подрядчик предоставляет чистую воду для замеса, качество которой проверяется представителем подрядчика по цементированию до начала работ по цементированию. Без проверки качества жидкости затворения, цементирование не начинать. Отобрать две пробы жидкости затворения (минимум по 5 л.).' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Подготовить жидкость затворения тех. вода для замешивания буферов цементных растворов в объеме указанном ниже в таблице (провести анализ на наличие посторонних примесей, проверить на Рh, хлориды, проверить объем, в зимнее время прогреть до температуры указанной в таблице, инженеру по цементированию совместно с мастером буровой бригады обговорить очередность подачи жидкостей). Буровой подрядчик предоставляет чистую воду для замеса, качество которой проверяется представителем подрядчика по цементированию до начала работ по цементированию. Без проверки качества жидкости затворения, цементирование не начинать. Отобрать две пробы жидкости затворения (минимум по 5 л.).' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обеспечить регистрацию основных параметров процесса цементирования (плотность, расход, давление, объемы закачанных растворов).' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обеспечить регистрацию основных параметров процесса цементирования (плотность, расход, давление, объемы закачанных растворов).' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Установить продавочную пробку в цементировочную головку в присутствии представителя Заказчика. Заполнить цементировочную линию тех.водой. Произвести опрессовку линии ВД в 2 этапа, сначала создать давление 34 атм., осмотреть линию ВД на предмет пропусков и утечек (при выявлении устранить), затем поднять давление до 225 атм. с выдержкой не менее 5 мин. Во время производства работ по цементированию запрещается превышать давление 115 атм. Закачку любых жидкостей начинать плавно с минимальной производительностью 10 л/с, плавно увеличивая расход до программных значений, следить за давлением. Закачать буферные жидкости и цементный раствор ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 31 согласно таблицы объемов и режимов закачки. Перед закачкой произвести замер плотности цементного раствора по рычажным весам. Отобрать пробы сухих цементных смесей и затворенного раствора, один комплект передать в лабораторию подрядчика по цементированию для проведения анализа, второй комплект передать супервайзеру Заказчика для хранения. Не промывая цементировочную линию, сбросить продавочную пробку в присутствии супервайзера Заказчика. Закачать продавочную жидкость (буровой раствор) согласно таблицы объемов и режимов закачки. На время работы обеспечить контроль за наличием и характером циркуляции растворов из скважины, производить постоянный замер плотности и рН, при выходе буферной жидкости отсечь циркуляционную систему буровой установки и направить в шламовый амбар. В случае несоответствия расходов на входе и выходе из скважины или полной потери циркуляции снизить скорость закачки до минимально возможного значения, произведя перерасчет времени продавки на новой скорости закачки и сопоставив полученное значение со временем загустевания тампонажных растворов. Прокачав продавочную пробку до посадочного узла ЦКОДа, поднять давление на 3 МПа выше рабочего, выдержать в течение 5 минут.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Установить продавочную пробку в цементировочную головку в присутствии представителя Заказчика. Заполнить цементировочную линию тех.водой. Произвести опрессовку линии ВД в 2 этапа, сначала создать давление 34 атм., осмотреть линию ВД на предмет пропусков и утечек (при выявлении устранить), затем поднять давление до 225 атм. с выдержкой не менее 5 мин. Во время производства работ по цементированию запрещается превышать давление 115 атм. Закачку любых жидкостей начинать плавно с минимальной производительностью 10 л/с, плавно увеличивая расход до программных значений, следить за давлением. Закачать буферные жидкости и цементный раствор ПРОГРАММА БУРЕНИЯ ЭКСПЛУАТАЦИОННОЙ СКВАЖИНЫ № 5238 КУСТОВОЙ ПЛОЩАДКИ № 14 НОВОПОРТОВСКОГО НГКМ 31 согласно таблицы объемов и режимов закачки. Перед закачкой произвести замер плотности цементного раствора по рычажным весам. Отобрать пробы сухих цементных смесей и затворенного раствора, один комплект передать в лабораторию подрядчика по цементированию для проведения анализа, второй комплект передать супервайзеру Заказчика для хранения. Не промывая цементировочную линию, сбросить продавочную пробку в присутствии супервайзера Заказчика. Закачать продавочную жидкость (буровой раствор) согласно таблицы объемов и режимов закачки. На время работы обеспечить контроль за наличием и характером циркуляции растворов из скважины, производить постоянный замер плотности и рН, при выходе буферной жидкости отсечь циркуляционную систему буровой установки и направить в шламовый амбар. В случае несоответствия расходов на входе и выходе из скважины или полной потери циркуляции снизить скорость закачки до минимально возможного значения, произведя перерасчет времени продавки на новой скорости закачки и сопоставив полученное значение со временем загустевания тампонажных растворов. Прокачав продавочную пробку до посадочного узла ЦКОДа, поднять давление на 3 МПа выше рабочего, выдержать в течение 5 минут.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Проверить ЦКОД на герметичность. При стравливании давления замерить количество жидкости возвратившейся в емкость агрегата. В случае перелива из колонны, если ЦКОД не держит, закачать вернувшуюся жидкость и поднять до рабочего давления. Затем стравить давление до нуля и проверить возврат (при необходимости повторить процедуру еще 1 раз). Если ЦКОД не герметичен, стравить 400 литров продавочной жидкости в мерник цем. агрегата, закрыть КВД на цементировочной головке и оставить скважину на ОЗЦ под давлением, не превышающим рабочего давления посадки пробки на срок загустевания утяжеленного цемента плюс 1 час. Установить манометр за контролем давления на устье. Представитель подрядчика по цементированию осуществляет контроль устьевого давления. При необходимости с периодичностью 1 раз в 30 мин. производить стравливание давления до рабочего.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Проверить ЦКОД на герметичность. При стравливании давления замерить количество жидкости возвратившейся в емкость агрегата. В случае перелива из колонны, если ЦКОД не держит, закачать вернувшуюся жидкость и поднять до рабочего давления. Затем стравить давление до нуля и проверить возврат (при необходимости повторить процедуру еще 1 раз). Если ЦКОД не герметичен, стравить 400 литров продавочной жидкости в мерник цем. агрегата, закрыть КВД на цементировочной головке и оставить скважину на ОЗЦ под давлением, не превышающим рабочего давления посадки пробки на срок загустевания утяжеленного цемента плюс 1 час. Установить манометр за контролем давления на устье. Представитель подрядчика по цементированию осуществляет контроль устьевого давления. При необходимости с периодичностью 1 раз в 30 мин. производить стравливание давления до рабочего.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Промыть цементировочное оборудование и произвести его демонтаж (не допускать розлива технологических жидкостей), цементировочную головку демонтировать в последнюю очередь.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Промыть цементировочное оборудование и произвести его демонтаж (не допускать розлива технологических жидкостей), цементировочную головку демонтировать в последнюю очередь.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Выдержать время ОЗЦ до набора прочности тяжёлого цемента 500 psi. Во время ОЗЦ произвести ГИС на кабеле (ЦМ кондуктора). Произвести оборудование устья скважины согласно утвержденной схемы. В процессе оборудования устья докрепление ОКК и «нулевого» патрубка с ОКК-324мм необходимо произвести с контролем крутящего момента свинчивания, момент свинчивания – 9 кН*м (момент свинчивания должен быть скорректирован по фактическому моменту свинчивания обсадных труб при спуске ОК- 324мм), для чего:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Выдержать время ОЗЦ до набора прочности тяжёлого цемента 500 psi. Во время ОЗЦ произвести ГИС на кабеле (ЦМ кондуктора). Произвести оборудование устья скважины согласно утвержденной схемы. В процессе оборудования устья докрепление ОКК и «нулевого» патрубка с ОКК-324мм необходимо произвести с контролем крутящего момента свинчивания, момент свинчивания – 9 кН*м (момент свинчивания должен быть скорректирован по фактическому моменту свинчивания обсадных труб при спуске ОК- 324мм), для чего:' />
       </ContentBlock>
       <ul>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='отвернуть допускную трубу ОК-324мм;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='отвернуть допускную трубу ОК-324мм;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='проверить на целостность, наличие посторонних материалов на муфте ОК-324 (на устье);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='проверить на целостность, наличие посторонних материалов на муфте ОК-324 (на устье);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='подготовить соединение к навороту нулевого патрубка: очистить, нанести резьбоуплотняющую смазку;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='подготовить соединение к навороту нулевого патрубка: очистить, нанести резьбоуплотняющую смазку;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='подготовить резьбовые соединения «нулевого» патрубка к навороту (проверить целостность, очистить, нанести резьбоуплотняющую смазку);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='подготовить резьбовые соединения «нулевого» патрубка к навороту (проверить целостность, очистить, нанести резьбоуплотняющую смазку);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='подготовить резьбовое соединение на ОКК (проверить целостность, очистить, нанести резьбоуплотняющую смазку);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='подготовить резьбовое соединение на ОКК (проверить целостность, очистить, нанести резьбоуплотняющую смазку);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='произвести ручное свинчивание ОКК с «нулевым» патрубком на устье скважины;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='произвести ручное свинчивание ОКК с «нулевым» патрубком на устье скважины;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='данную сборку путем ручного наворота закрепить на муфту ОК-324 мм;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='данную сборку путем ручного наворота закрепить на муфту ОК-324 мм;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='подготовить переходной (совместимый) адаптер «ОКК (ответный фланец) – ТБПК 127 мм (З-133)» (проверить целостность резьбовых соединений, очистить, нанести резьбоуплотняющую смазку);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='подготовить переходной (совместимый) адаптер «ОКК (ответный фланец) – ТБПК 127 мм (З-133)» (проверить целостность резьбовых соединений, очистить, нанести резьбоуплотняющую смазку);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='навернуть адаптер на ТБПК-127 мм;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='навернуть адаптер на ТБПК-127 мм;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='закрепить ТБПК-127 мм с ВСП, спустить переходной адаптер на СБТ-127мм муфты;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='закрепить ТБПК-127 мм с ВСП, спустить переходной адаптер на СБТ-127мм муфты;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='закрепить ОКК и переходной адаптер 4-мя шпильками;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='закрепить ОКК и переходной адаптер 4-мя шпильками;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='установить ограничитель момента на ВСП на 9 кН*м;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='установить ограничитель момента на ВСП на 9 кН*м;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='установить на задержку колонну, во избежание её проворота во время докрепления ОКК и «нулевого патрубка»' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='установить на задержку колонну, во избежание её проворота во время докрепления ОКК и «нулевого патрубка»' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='произвести докрепление ОКК и «нулевого» патрубка с моментом 9 кН*м (момент свинчивания должен быть скорректирован по фактическому моменту свинчивания обсадных труб при спуске ОК-324мм), создание крутящего момента производить путем вращения ВСП, докрепление производить плавно без рывков с шагом по 0,5 кН*м, обеспечить фиксацию момента на диаграммах (диаграмму момента свинчивания предоставить в отдел инжиниринга бурения);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='произвести докрепление ОКК и «нулевого» патрубка с моментом 9 кН*м (момент свинчивания должен быть скорректирован по фактическому моменту свинчивания обсадных труб при спуске ОК-324мм), создание крутящего момента производить путем вращения ВСП, докрепление производить плавно без рывков с шагом по 0,5 кН*м, обеспечить фиксацию момента на диаграммах (диаграмму момента свинчивания предоставить в отдел инжиниринга бурения);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='демонтировать переходной адаптер;' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='демонтировать переходной адаптер;' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='составить акт новорота ОКК и «нулевого» патрубка на ОК-324мм (в акте отразить момент свинчивания, приложить диаграмму).' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='составить акт новорота ОКК и «нулевого» патрубка на ОК-324мм (в акте отразить момент свинчивания, приложить диаграмму).' />
         </ContentBlock>
       </ul>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='После окончания проведения работ по бурению секции 393,7 мм супервайзеру Заказчика организовать собрание всех участников производственного процесса, обсудить результаты проведенных работ, выявить положительные и отрицательные моменты, разработать мероприятия по оптимизации.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='После окончания проведения работ по бурению секции 393,7 мм супервайзеру Заказчика организовать собрание всех участников производственного процесса, обсудить результаты проведенных работ, выявить положительные и отрицательные моменты, разработать мероприятия по оптимизации.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Мероприятия в течение 1-х суток после завершения работ по настоящему плану, направить руководителю направления по планированию бурения ООО «ГПН-Ямал» и руководителю направления по супервайзингу бурения ООО «ГПН- Ямал».' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Мероприятия в течение 1-х суток после завершения работ по настоящему плану, направить руководителю направления по планированию бурения ООО «ГПН-Ямал» и руководителю направления по супервайзингу бурения ООО «ГПН- Ямал».' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -11933,8 +11933,8 @@ export const programmBlocks = [
           </thead>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             <tr>
               <td colSpan='2'><Button size='s' view='clear' width='full' label='Новая строка' /></td>
@@ -11972,16 +11972,16 @@ export const programmBlocks = [
           </thead>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Сальникообразования' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Соблюдение режимов промывки, использование противосальниковой добавоки MEX-CLEAN. Расхаживание КНБК на всю длину свечи. До начала бурения секции под кондуктор иметь в наличии на буровой объем бурового раствора с низкими реологическими параметрами для оперативного разбавления после интервала ММП. При бурении секции 393,7 мм начать снижение условной вязкости бурового раствора с глубины 190* метров. При бурении секции 393,7 мм ограничить мех. скорость в интервале 170-280 м* до 90 м/час, (* глубина условная, до полного перехода из песка в глину). С глубины 190 метров производить одно расхаживание КНБК с вращением инструмента, не допускать превышения мгновенной мех. скорости свыше 140 м/час. При бурении интервала 0-190 м поддерживать производительность буровых насосов 50-55 м/ч, 190-460 м не менее 65 л/сек.' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Сальникообразования' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Соблюдение режимов промывки, использование противосальниковой добавоки MEX-CLEAN. Расхаживание КНБК на всю длину свечи. До начала бурения секции под кондуктор иметь в наличии на буровой объем бурового раствора с низкими реологическими параметрами для оперативного разбавления после интервала ММП. При бурении секции 393,7 мм начать снижение условной вязкости бурового раствора с глубины 190* метров. При бурении секции 393,7 мм ограничить мех. скорость в интервале 170-280 м* до 90 м/час, (* глубина условная, до полного перехода из песка в глину). С глубины 190 метров производить одно расхаживание КНБК с вращением инструмента, не допускать превышения мгновенной мех. скорости свыше 140 м/час. При бурении интервала 0-190 м поддерживать производительность буровых насосов 50-55 м/ч, 190-460 м не менее 65 л/сек.' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Отсутствие центра скважины относительно центра ротора. Отклонение от вертикали' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Забуривание под направление после центрирования вышки БУ, ротора с использованием прямолинейного бурильного инструмента.' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Отсутствие центра скважины относительно центра ротора. Отклонение от вертикали' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Забуривание под направление после центрирования вышки БУ, ротора с использованием прямолинейного бурильного инструмента.' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Проседание грунта и образование воронок в процессе бурения скважин' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Оборудование устья скважины металлическим коробом. Сокращение сроков бурения. Поддержание минимальной температуры бурового раствора в емкостях (10-15°С), посредством отключения во время бурения подогрева емкостей.' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Проседание грунта и образование воронок в процессе бурения скважин' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Оборудование устья скважины металлическим коробом. Сокращение сроков бурения. Поддержание минимальной температуры бурового раствора в емкостях (10-15°С), посредством отключения во время бурения подогрева емкостей.' /></td>
             </tr>
             <tr>
               <td colSpan='2'><Button size='s' view='clear' width='full' label='Новая строка' /></td>
@@ -12026,8 +12026,8 @@ export const programmBlocks = [
         <table className='table'>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             
             <tr>
@@ -12054,38 +12054,38 @@ export const programmBlocks = [
         <table className='table'>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Забой скважины' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='460м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Забой скважины' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='460м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Глубина спуска обсадной колонны' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='457м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Глубина спуска обсадной колонны' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='457м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Интервал цементирования цементным раствором' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='от 460м до 280м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Интервал цементирования цементным раствором' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='от 460м до 280м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Интервал цементирования гельцементным раствором' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='от 280м до 0м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Интервал цементирования гельцементным раствором' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='от 280м до 0м' /></td>
             </tr>
 
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Статическая температура на забое' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='+8,0°С' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Статическая температура на забое' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='+8,0°С' /></td>
             </tr>
 
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Градиент пластового давления' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='0,0098 МПа/м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Градиент пластового давления' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='0,0098 МПа/м' /></td>
             </tr>
             
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='Градиент давления гидроразрыва' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' dValue='0,0206 МПа/м' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='Градиент давления гидроразрыва' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} dValue='0,0206 МПа/м' /></td>
             </tr>
             
             <tr>
@@ -12154,7 +12154,7 @@ export const programmBlocks = [
     member: 'Куратор',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -12164,68 +12164,68 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='До начала бурения обеспечить наличие на кустовой площадке следующих материалов и оборудования:' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='До начала бурения обеспечить наличие на кустовой площадке следующих материалов и оборудования:' />
       </ContentBlock>
       <ol>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обсадная труба 324*9,5 (марка стали «Д», резьбовое соединение ОТТГ) – 455 м (с учетом запаса 5%);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обсадная труба 324*9,5 (марка стали «Д», резьбовое соединение ОТТГ) – 455 м (с учетом запаса 5%);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обсадная труба 530/324*9,5 (марка стали «Д», резьбовое соединение ОТТГ*) – 55 м (с учетом запаса 5%);' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обсадная труба 530/324*9,5 (марка стали «Д», резьбовое соединение ОТТГ*) – 55 м (с учетом запаса 5%);' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Нулевой патрубок ОТТГ / ОТТГ* 324 мм – 1 шт.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Нулевой патрубок ОТТГ / ОТТГ* 324 мм – 1 шт.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Башмак направляющий 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Башмак направляющий 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='ЦКОД 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='ЦКОД 324 мм с резьбовым соединением ОТТГ – 1 ед**.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Пробка цементировочная – 1 ед. (продавочная, с паспортом) **.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Пробка цементировочная – 1 ед. (продавочная, с паспортом) **.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Центратор ЦЦ-324 – 19 ед.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Центратор ЦЦ-324 – 19 ед.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Резьбовой клей герметик (холодная сварка) – 1 ед**.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Резьбовой клей герметик (холодная сварка) – 1 ед**.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Шаблон для обсадных труб 324*9,5 мм (D = 301 мм, L = 300 мм).' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Шаблон для обсадных труб 324*9,5 мм (D = 301 мм, L = 300 мм).' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Смазка резьбоуплотняющая РУСМА или аналог – 10 кг.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Смазка резьбоуплотняющая РУСМА или аналог – 10 кг.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Промывочный переводник под обсадную трубу диаметром 324 мм – 2ед.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Промывочный переводник под обсадную трубу диаметром 324 мм – 2ед.' />
         </ContentBlock>
         <ContentBlock isEditable={true} type='listitem'>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Специальное устройство для наворота колонных головок – 1 ед.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Специальное устройство для наворота колонных головок – 1 ед.' />
         </ContentBlock>
       </ol>
 
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Распределение ответственности: пункты № 1 – 3, 7 ООО «Газпромнефть-Ямал», пункты № 9 - 12 буровой подрядчик, пункты № 4-6, 8 подрядчик по цементированию.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Распределение ответственности: пункты № 1 – 3, 7 ООО «Газпромнефть-Ямал», пункты № 9 - 12 буровой подрядчик, пункты № 4-6, 8 подрядчик по цементированию.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='** - в случае наличия остатков использовать МТР ООО «Газпромнефть-Ямал».' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='** - в случае наличия остатков использовать МТР ООО «Газпромнефть-Ямал».' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='* - в случае использования обсадной трубы 530/324*9,5 с резьбовым соединением ОТТМ необходимо предусмотреть использование нулевого патрубка ОТТМ / ОТТГ, допускной трубы с резьбовым соединением ОТТМ.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='* - в случае использования обсадной трубы 530/324*9,5 с резьбовым соединением ОТТМ необходимо предусмотреть использование нулевого патрубка ОТТМ / ОТТГ, допускной трубы с резьбовым соединением ОТТМ.' />
       </ContentBlock>
       
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент, оборудование, необходимые для строительства секции находятся на буровой, проверены и работоспособны, имеют соответствующие документы (сертификаты, паспорта).' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент, оборудование, необходимые для строительства секции находятся на буровой, проверены и работоспособны, имеют соответствующие документы (сертификаты, паспорта).' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Иметь в наличии три насоса типа «ВШН-150». Один из них резервный для быстрой установки его в шахту, в случае выхода из строя одного из двух «ВШН-150», установленных в шахте. Забурочную шахту оборудовать коробом с размерами 2х2х2 м.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Иметь в наличии три насоса типа «ВШН-150». Один из них резервный для быстрой установки его в шахту, в случае выхода из строя одного из двух «ВШН-150», установленных в шахте. Забурочную шахту оборудовать коробом с размерами 2х2х2 м.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Обсадные трубы укладывать муфтовой частью в направлении буровой установки с учетом очередности спуска их в скважину. Снять защитные колпаки с ниппелей и муфт, очистить резьбовые соединения. Очистку от смазки проводить ветошью при помощи растворителя, не содержащего хлор, либо пароочистителем (ППУ). Не допускается использовать для удаления смазки дизельное топливо, соленую воду, барит и металлические щетки. После удаления смазки, резьбовые соединения следует тщательно протереть сухой и чистой ветошью или просушить продувкой сжатым воздухом. Осмотреть резьбовые соединения ниппеля и муфт. Трубы с поврежденными резьбами к спуску не допускаются. Измерить длину каждой трубы. Измерения производят от свободного торца муфты до того места трубы с наружной резьбой, которое соответствует положению торца муфты при закреплении гидравлическим ключом, для ОТТГ - последняя риска резьбы. Промаркировать (номер трубы в порядке спуска, длина) светлой краской или мелом, сформировать реестр спуска обсадной колонны. Произвести шаблонирование обсадных труб на стеллажах. Шаблонирование произвести внутренним шаблоном по всей длине труб. В случае если внутренний шаблон не проходит через обсадную трубу – отбраковать. Установить защитные колпаки. Перед наворотом убедиться в чистоте защитных колпаков и отсутствии на них посторонних предметов. Не допускается использование защитных колпаков со значительными повреждениями резьбы и формы. [Трубы обсадные. Руководство по эксплуатации. 2015г. ООО «Научно-исследовательский институт разработки и эксплуатации нефтепромысловых труб»].' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Обсадные трубы укладывать муфтовой частью в направлении буровой установки с учетом очередности спуска их в скважину. Снять защитные колпаки с ниппелей и муфт, очистить резьбовые соединения. Очистку от смазки проводить ветошью при помощи растворителя, не содержащего хлор, либо пароочистителем (ППУ). Не допускается использовать для удаления смазки дизельное топливо, соленую воду, барит и металлические щетки. После удаления смазки, резьбовые соединения следует тщательно протереть сухой и чистой ветошью или просушить продувкой сжатым воздухом. Осмотреть резьбовые соединения ниппеля и муфт. Трубы с поврежденными резьбами к спуску не допускаются. Измерить длину каждой трубы. Измерения производят от свободного торца муфты до того места трубы с наружной резьбой, которое соответствует положению торца муфты при закреплении гидравлическим ключом, для ОТТГ - последняя риска резьбы. Промаркировать (номер трубы в порядке спуска, длина) светлой краской или мелом, сформировать реестр спуска обсадной колонны. Произвести шаблонирование обсадных труб на стеллажах. Шаблонирование произвести внутренним шаблоном по всей длине труб. В случае если внутренний шаблон не проходит через обсадную трубу – отбраковать. Установить защитные колпаки. Перед наворотом убедиться в чистоте защитных колпаков и отсутствии на них посторонних предметов. Не допускается использование защитных колпаков со значительными повреждениями резьбы и формы. [Трубы обсадные. Руководство по эксплуатации. 2015г. ООО «Научно-исследовательский институт разработки и эксплуатации нефтепромысловых труб»].' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='listname'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='После замера обсадных труб скорректировать конечный забой интервала под кондуктор исходя из того, что он должен составлять не более 460 метров по вертикали. Обеспечить на буровой запас обработанного до проектных параметров бурового раствора в объеме не менее одного объема скважины, запас технической воды в объеме не менее 100 м3 для приготовления бурового и цементного растворов, а так же буферных жидкостей. При температуре окружающей среды ниже +100С обеспечить температуру воды затворения +250С, проверить на наличие механических примесей, содержание хлоридов (<500 мг/л), рН 6 – 8.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='После замера обсадных труб скорректировать конечный забой интервала под кондуктор исходя из того, что он должен составлять не более 460 метров по вертикали. Обеспечить на буровой запас обработанного до проектных параметров бурового раствора в объеме не менее одного объема скважины, запас технической воды в объеме не менее 100 м3 для приготовления бурового и цементного растворов, а так же буферных жидкостей. При температуре окружающей среды ниже +100С обеспечить температуру воды затворения +250С, проверить на наличие механических примесей, содержание хлоридов (<500 мг/л), рН 6 – 8.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -12506,7 +12506,7 @@ export const programmBlocks = [
     member: 'Буровые растворы',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -12516,7 +12516,7 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='С целью предотвращения размыва слабосцементированного песчаника в интервале залегания зоны ММП и предотвращения интенсивной гидратации глин для бурения данной секции применяется глинистый буровой раствор на основе бентонита. Данная система за счет высокой вязкости позволяет предотвратить осыпи и обвалообразования, а также обеспечить удовлетворительное качество очистки ствола скважины большого диаметра.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='С целью предотвращения размыва слабосцементированного песчаника в интервале залегания зоны ММП и предотвращения интенсивной гидратации глин для бурения данной секции применяется глинистый буровой раствор на основе бентонита. Данная система за счет высокой вязкости позволяет предотвратить осыпи и обвалообразования, а также обеспечить удовлетворительное качество очистки ствола скважины большого диаметра.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -12697,18 +12697,18 @@ export const programmBlocks = [
         </table>
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='*При прохождении песков до глубины 190 м в процессе бурения поддерживать условную вязкость более 90 сек/кварта и производительность насосов 50 л/сек. С глубины 190-200 м необходимо ступенчато увеличить производительность насосов до 65 л/сек и постепенно снизить условную вязкость до 50-65 сек/кварта путём разбавления свежеприготовленным буровым раствором со скоростью не более 40 м3/час.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='*При прохождении песков до глубины 190 м в процессе бурения поддерживать условную вязкость более 90 сек/кварта и производительность насосов 50 л/сек. С глубины 190-200 м необходимо ступенчато увеличить производительность насосов до 65 л/сек и постепенно снизить условную вязкость до 50-65 сек/кварта путём разбавления свежеприготовленным буровым раствором со скоростью не более 40 м3/час.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='**При отсутствии признаков перехода песок-глина необходимо поддерживать при бурении интервала (с глубины 190 м до окончательного забоя) условную вязкость бурового раствора в пределах 70-100 сек/кварта. Необходимо вести постоянный контроль за уровнем бурового раствора в рабочих емкостях. В случае сверхнормативного ухода бурового раствора, не объясняемого потерями на системе очистки (размыв ствола скважины), необходимо по согласованию со службой инжиниринга снизить производительность буровых насосов. В случае снижения производительности буровых насосов необходимо осуществлять последующий контроль очистки ствола от выбуренной породы.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='**При отсутствии признаков перехода песок-глина необходимо поддерживать при бурении интервала (с глубины 190 м до окончательного забоя) условную вязкость бурового раствора в пределах 70-100 сек/кварта. Необходимо вести постоянный контроль за уровнем бурового раствора в рабочих емкостях. В случае сверхнормативного ухода бурового раствора, не объясняемого потерями на системе очистки (размыв ствола скважины), необходимо по согласованию со службой инжиниринга снизить производительность буровых насосов. В случае снижения производительности буровых насосов необходимо осуществлять последующий контроль очистки ствола от выбуренной породы.' />
       </ContentBlock>
       <ContentBlock type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='*** В процессе подготовки ствола для последующего спуска кондуктора.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='*** В процессе подготовки ствола для последующего спуска кондуктора.' />
       </ContentBlock>
       <ContentBlock type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='При бурении в интервале 190-460 м при отсутствии активной глины в выбуренной породе продолжить бурение скважины с производительностью буровых насосов 50-55 л/с. Условную вязкость бурового раствора поддерживать не менее 80 сек/кварта. При возникновении признаков некачественной очистки (скачки давления, рост момента) произвести дополнительную промывку и прокачку ВУС.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='При бурении в интервале 190-460 м при отсутствии активной глины в выбуренной породе продолжить бурение скважины с производительностью буровых насосов 50-55 л/с. Условную вязкость бурового раствора поддерживать не менее 80 сек/кварта. При возникновении признаков некачественной очистки (скачки давления, рост момента) произвести дополнительную промывку и прокачку ВУС.' />
         </Informer>
       </ContentBlock>
     </React.Fragment>),
@@ -12790,7 +12790,7 @@ export const programmBlocks = [
     member: 'Буровые растворы',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -12803,88 +12803,88 @@ export const programmBlocks = [
         <table className='table'>
           <tbody>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Интервал' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Кондуктор' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Интервал' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Кондуктор' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Тип раствора' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Глинистый' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Тип раствора' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Глинистый' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Интервал по инструменту' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0–460' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Интервал по инструменту' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0–460' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Диаметр долота' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='393.7' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Диаметр долота' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='393.7' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Диаметр колонны' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='324' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Диаметр колонны' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='324' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Внутренний диаметр предыдущей колонны' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Внутренний диаметр предыдущей колонны' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Длина участка по инструменту' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='460' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Длина участка по инструменту' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='460' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Ожидаемый коэффициент кавернозности' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='1.4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Ожидаемый коэффициент кавернозности' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='1.4' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Переведено с предыдущего интервала/скважины' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Переведено с предыдущего интервала/скважины' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора на поверхности' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='50' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора на поверхности' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='50' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора в колонне' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора в колонне' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора в открытом стволе' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='78.4' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора в открытом стволе' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='78.4' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Коэффициент эффективности оборудования очистки' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='75' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Коэффициент эффективности оборудования очистки' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='75' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем выбуренной породы с учетом коэф.разуплотнения' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='94' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем выбуренной породы с учетом коэф.разуплотнения' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='94' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Максимальное содержание выбуренной породы' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='25' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Максимальное содержание выбуренной породы' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='25' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Влажность шлама' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='0.9' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Влажность шлама' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='0.9' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Потери раствора со шламом' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='56' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Потери раствора со шламом' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='56' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Потери в скважине' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='5.6' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Потери в скважине' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='5.6' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Объем раствора на поверхности по окончанию бурения интервала' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='50' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Объем раствора на поверхности по окончанию бурения интервала' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='50' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Расчетный объем свежеприготовленного раствора к обработке на бурение интервала' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='190' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Расчетный объем свежеприготовленного раствора к обработке на бурение интервала' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='190' /></td>
             </tr>
             <tr>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Переведено на следующий интервал/скважину' /></td>
-              <td><Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='80' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Переведено на следующий интервал/скважину' /></td>
+              <td><Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='80' /></td>
             </tr>
           </tbody>
         </table>
@@ -13911,8 +13911,8 @@ export const programmBlocks = [
       <ContentBlock isEditable={true} type='informer'>
         <Informer status='system' view='filled'>
           <Text size='m' view='primary' weight='bold'>Примечание</Text>
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Плановые значения параметров режима бурения, весов на крюке, крутящего момента на ВСП и эквивалентной циркуляционной плотности рассчитываются подрядчиком по ННБ и растворным подрядчиком при проектировании скважины в специализированном программном обеспечении и заносятся в режимную карту бурения. Фактические значения данных параметров заносятся в режимную карту бурильщиком в процессе бурения секции. Фактические значения эквивалентной циркуляционной плотности заносятся инженером по ННБ при условии наличия в КНБК датчика затрубного давления.' />
-          <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Супервайзеру Заказчика отправить заполненную режимную карту по электронной почте инженеру – куратору кустовой площадки в течении суток после окончания бурения секции.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Плановые значения параметров режима бурения, весов на крюке, крутящего момента на ВСП и эквивалентной циркуляционной плотности рассчитываются подрядчиком по ННБ и растворным подрядчиком при проектировании скважины в специализированном программном обеспечении и заносятся в режимную карту бурения. Фактические значения данных параметров заносятся в режимную карту бурильщиком в процессе бурения секции. Фактические значения эквивалентной циркуляционной плотности заносятся инженером по ННБ при условии наличия в КНБК датчика затрубного давления.' />
+          <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Супервайзеру Заказчика отправить заполненную режимную карту по электронной почте инженеру – куратору кустовой площадки в течении суток после окончания бурения секции.' />
         </Informer>
       </ContentBlock>
     </React.Fragment>),
@@ -14207,7 +14207,7 @@ export const programmBlocks = [
     member: 'Куратор',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -14217,16 +14217,16 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Собрать роторную КНБК для бурения тех. кармана L – 30 м: Долото 393,7 мм + УБТ 203 – 9 м + СБТ 127 – остальной. Пробурить тех. карман для сборки КНБК для бурения при бурении секции 393,7 мм необходимо соблюдать следующие режимы бурения: 0-25 м расход – 15 л/с, обороты ВСП 80 – 100 об/мин.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Собрать роторную КНБК для бурения тех. кармана L – 30 м: Долото 393,7 мм + УБТ 203 – 9 м + СБТ 127 – остальной. Пробурить тех. карман для сборки КНБК для бурения при бурении секции 393,7 мм необходимо соблюдать следующие режимы бурения: 0-25 м расход – 15 л/с, обороты ВСП 80 – 100 об/мин.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент и оборудование, необходимые для строительства секции, находятся на буровой, проверены и работоспособны, имеют соответствующие документы (паспорта). Перед началом бурения обеспечить наличие бурового раствора на поверхности в объеме 105 м3. Собрать КНБК для бурения секции 393,7 мм согласно настоящей программы, тестирование оборудования для ННБ не производить (протокол ПТ-10-01/011 от 22.11.17). Поддерживать температуру бурового раствора на минимальном уровне, отключив подогрев всех емкостей. Бурение секции в интервале 0 - 460 м производить без проработки перед наращиванием. «Снятие пружины» перед снятием замеров в статике производить на длину одной трубы (12 метров). В случае наличия признаков зашламованности ствола скважины (скачки давления и крутящего момента на ВСП, несоответствие весов на крюке с расчетными на величину более 10%), произвести промывку ствола скважины и продолжить бурение с проработкой ствола скважины перед наращиванием. Расхаживание производить с вращением бурильного инструмента с частотой при движении «вверх» 40 об/мин, при движении «вниз» 60 об/мин. Фактический забой секции выбрать исходя из фактической длины обсадной колонны (с учетом технологической оснастки) – ЗУМПФ не должен превышать 3 м. После окончания бурения секции произвести прокачку очищающей пачки ВУС по рецептуре подрядчика по буровым растворам в объёме не менее 8 м3 с промывкой ствола скважины с расхаживанием и вращением бурильного инструмента до момента выхода пачки на устье скважины. Режим промывки: расход промывочной жидкости 65 л/сек, частота вращения ВСП 60 об/мин. Произвести подъём КНБК до глубины 50 м со сплошной проработкой. Режим проработки: в интервале 460-170 м расход промывочной жидкости 65 л/сек, частота вращения ВСП 40 об/мин; в интервале 170 – 50 м расход промывочной жидкости 50 л/сек, частота вращения ВСП 40 об/мин, скорость проработки ствола скважины не более 500 м/час. В интервале перехода «пески – глина» (подъем произвести на 50 метров выше зоны перехода), произвести спуск на 50 метров ниже интервала перехода без циркуляции и вращения. В случае получения посадки проработать до свободного хождения «на сухую».' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Убедиться, что весь необходимый инструмент и оборудование, необходимые для строительства секции, находятся на буровой, проверены и работоспособны, имеют соответствующие документы (паспорта). Перед началом бурения обеспечить наличие бурового раствора на поверхности в объеме 105 м3. Собрать КНБК для бурения секции 393,7 мм согласно настоящей программы, тестирование оборудования для ННБ не производить (протокол ПТ-10-01/011 от 22.11.17). Поддерживать температуру бурового раствора на минимальном уровне, отключив подогрев всех емкостей. Бурение секции в интервале 0 - 460 м производить без проработки перед наращиванием. «Снятие пружины» перед снятием замеров в статике производить на длину одной трубы (12 метров). В случае наличия признаков зашламованности ствола скважины (скачки давления и крутящего момента на ВСП, несоответствие весов на крюке с расчетными на величину более 10%), произвести промывку ствола скважины и продолжить бурение с проработкой ствола скважины перед наращиванием. Расхаживание производить с вращением бурильного инструмента с частотой при движении «вверх» 40 об/мин, при движении «вниз» 60 об/мин. Фактический забой секции выбрать исходя из фактической длины обсадной колонны (с учетом технологической оснастки) – ЗУМПФ не должен превышать 3 м. После окончания бурения секции произвести прокачку очищающей пачки ВУС по рецептуре подрядчика по буровым растворам в объёме не менее 8 м3 с промывкой ствола скважины с расхаживанием и вращением бурильного инструмента до момента выхода пачки на устье скважины. Режим промывки: расход промывочной жидкости 65 л/сек, частота вращения ВСП 60 об/мин. Произвести подъём КНБК до глубины 50 м со сплошной проработкой. Режим проработки: в интервале 460-170 м расход промывочной жидкости 65 л/сек, частота вращения ВСП 40 об/мин; в интервале 170 – 50 м расход промывочной жидкости 50 л/сек, частота вращения ВСП 40 об/мин, скорость проработки ствола скважины не более 500 м/час. В интервале перехода «пески – глина» (подъем произвести на 50 метров выше зоны перехода), произвести спуск на 50 метров ниже интервала перехода без циркуляции и вращения. В случае получения посадки проработать до свободного хождения «на сухую».' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В случае свободного хождения продолжить подъем сплошной проработкой до устья. После подъема произвести сборку роторную КНБК 660,4 мм, для шаблонировки ствола в интервале 0-50 м. Спустить КНБК до глубины исходя из следующего расчета: 1 м + 4 трубы термокейс 530 х 324*9,5 + высота стола ротора. В случае свободного прохождения КНБК в интервале 0-50 м произвести подъем и разборку КНБК. При отрицательном результате (спуск с посадками свыше 5 тн) проработать интервал до свободного хождения «на сухую». Режим проработки: расход промывочной жидкости 20 л/сек, частота вращения ВСП 40 об/мин.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В случае свободного хождения продолжить подъем сплошной проработкой до устья. После подъема произвести сборку роторную КНБК 660,4 мм, для шаблонировки ствола в интервале 0-50 м. Спустить КНБК до глубины исходя из следующего расчета: 1 м + 4 трубы термокейс 530 х 324*9,5 + высота стола ротора. В случае свободного прохождения КНБК в интервале 0-50 м произвести подъем и разборку КНБК. При отрицательном результате (спуск с посадками свыше 5 тн) проработать интервал до свободного хождения «на сухую». Режим проработки: расход промывочной жидкости 20 л/сек, частота вращения ВСП 40 об/мин.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='В случае осложнения при подготовке ствола оповестить РН по планированию бурения. Произвести подъем и разборку КНБК, места затяжек проработать до свободного хождения КНБК без циркуляции. С целью недопущения зарезки нового ствола, механическая скорость проработки 75 - 100 м/час.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='В случае осложнения при подготовке ствола оповестить РН по планированию бурения. Произвести подъем и разборку КНБК, места затяжек проработать до свободного хождения КНБК без циркуляции. С целью недопущения зарезки нового ствола, механическая скорость проработки 75 - 100 м/час.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>
@@ -14250,7 +14250,7 @@ export const programmBlocks = [
     member: 'Куратор',
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='' />
       </ContentBlock>
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
@@ -14260,16 +14260,16 @@ export const programmBlocks = [
     </React.Fragment>),
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Составить график дежурства ИТР (бурового подрядчика) на буровой во время проведения работ по подготовке и спуску обсадных труб. График дежурства ИТР должен включать в себя ответственность и обязанности ответственного лица.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Составить график дежурства ИТР (бурового подрядчика) на буровой во время проведения работ по подготовке и спуску обсадных труб. График дежурства ИТР должен включать в себя ответственность и обязанности ответственного лица.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Проверить техническое состояние буровой установки: вышки, подвышечного основания, подроторных балок, талевой системы, буровой лебедки и тормозной системы, силового и энергетического оборудования, буровых насосов и циркуляционной системы, оборудования и инструмента для СПО, КИП и освещения, центровку вышки, запас диз. топлива, работоспособность аварийной ДЭС. При необходимости на приёмных мостках установить дополнительное освещение. Проверить работоспособность станции ГТИ. Составить акт готовности к спуску и цементированию обсадной колонны.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Проверить техническое состояние буровой установки: вышки, подвышечного основания, подроторных балок, талевой системы, буровой лебедки и тормозной системы, силового и энергетического оборудования, буровых насосов и циркуляционной системы, оборудования и инструмента для СПО, КИП и освещения, центровку вышки, запас диз. топлива, работоспособность аварийной ДЭС. При необходимости на приёмных мостках установить дополнительное освещение. Проверить работоспособность станции ГТИ. Составить акт готовности к спуску и цементированию обсадной колонны.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Провести внеплановый инструктаж работникам буровой бригады по правилам безопасного производства работ при спуске и цементировании обсадных колонн с записью в журнале проведения инструктажей. Из состава работников буровой бригады назначить ответственных работников за очистку и смазку резьбовых соединений, за долив обсадной колонны, за контроль вытеснения промывочной жидкости с записью в буровом журнале. Ответственность за порядок спуска и длину обсадных труб возлагается на ответственного ИТР подрядчика по бурению скважин.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Провести внеплановый инструктаж работникам буровой бригады по правилам безопасного производства работ при спуске и цементировании обсадных колонн с записью в журнале проведения инструктажей. Из состава работников буровой бригады назначить ответственных работников за очистку и смазку резьбовых соединений, за долив обсадной колонны, за контроль вытеснения промывочной жидкости с записью в буровом журнале. Ответственность за порядок спуска и длину обсадных труб возлагается на ответственного ИТР подрядчика по бурению скважин.' />
       </ContentBlock>
       <ContentBlock isEditable={true} type='text'>
-        <Field width='full' size='m' view='clear' type='textarea' maxRows='10000' placeholder='Начните писать' dValue='Произвести спуск обсадной колонны в следующем порядке: Башмак направляющий 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 10 м, ЦКОД 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 400 м; Обсадная труба 530/324х9,5 ОТТМ - остальное. На соединения «башмак - обсадная труба» и «ЦКОД – обсадная труба» нанести резьбовую герметизирующую смазку. Технологическую оснастку установить согласно приведенной ниже таблице. Сборку и монтаж технологической оснастки осуществлять согласно руководства завода – изготовителя. Свинчивание и докрепление ротором запрещено.' />
+        <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue='Произвести спуск обсадной колонны в следующем порядке: Башмак направляющий 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 10 м, ЦКОД 324 мм ОТТГ, Обсадная труба 324х9,5 ОТТГ – 400 м; Обсадная труба 530/324х9,5 ОТТМ - остальное. На соединения «башмак - обсадная труба» и «ЦКОД – обсадная труба» нанести резьбовую герметизирующую смазку. Технологическую оснастку установить согласно приведенной ниже таблице. Сборку и монтаж технологической оснастки осуществлять согласно руководства завода – изготовителя. Свинчивание и докрепление ротором запрещено.' />
       </ContentBlock>
     </React.Fragment>),
     contentReadable: (<React.Fragment>

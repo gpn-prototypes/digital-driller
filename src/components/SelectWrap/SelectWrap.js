@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './SelectWrap.css';
 
 function SelectWrap(props) {
-  const { size, form, items, view, className='', ...rest } = props;
-  const styles = `select ${size ? `select_size_${size}` : ''} ${form ? `select_form_${form}` : ''} ${className}`;
-  let options = items.map(item => {
-    return <option value={item}>{item}</option> 
+  const { size = 'm', form = 'default', items, view, placeholder, className='', ...rest } = props;
+  const [ filled, setFilled ] = useState(placeholder ? true : false);
+
+  const styles = `select select_size_${size} select_form_${form} ${filled ? 'select_filled' : '' } ${className}`;
+  let options = items.map((item, index) => {
+    return <option value={item} key={index}>{item}</option> 
   });
 
   return (
-    <div className={`selectWrap ${view ? `selectWrap_view_${view}`: ''}`}>
-      <select class={styles} {...rest}>
+    <div className={`selectWrap${view ? ` selectWrap_view_${view}`: ''}`}>
+      <select className={styles} {...rest} onChange={ () => setFilled(false) }>
+        {placeholder ? <option value={placeholder} disabled selected>{placeholder}</option> : ''}
         {options}
       </select>
     </div>
