@@ -65,7 +65,7 @@ function ProgrammPage() {
       <Snackbar message='Раздел опубликован' />
       <Snackbar message='Программа сохранена' />
 
-      { modal === 'team' ? <Modal content='team' programmInfo={programmInfo} onClose={ () => setModal('') } /> : '' }
+      { modal === 'team' ? <Modal content='team' programmInfo={programmInfo} onClose={ () => setModal('') } onParanjaAction={ (e) => { if(e.target.classList.contains('Paranja') || e.key == 'Escape') setModal('') } } /> : '' }
       {/* { modal === 'comment' ? <Modal content='comment' programmInfo={programmInfo} onClose={ () => setModal('') } /> : '' } */}
       {/* { modal === 'lesson' ? <Modal content='lesson' programmInfo={programmInfo} onClose={ () => setModal('') } /> : '' } */}
       {/* { modal === 'approve' ? <Modal content='approve' programmInfo={programmInfo} onClose={ () => setModal('') } /> : '' } */}
