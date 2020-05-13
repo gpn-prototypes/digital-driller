@@ -119,6 +119,22 @@ function DraftPage1() {
 							</div>
 						</div>
 					</div>
+					<div className='FpbForm__row'>
+						<div className='FpbForm__item FpbForm__item_width_third'>
+							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Магнитное склонение</Text>
+							<Field size='m' type='number' placeholder='0' rightSide='°' width='full' />
+						</div>
+
+						<div className='FpbForm__item FpbForm__item_width_third'>
+							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Схождение меридианов</Text>
+							<Field size='m' type='number' placeholder='0' rightSide='°' width='full' />
+						</div>
+
+						<div className='FpbForm__item FpbForm__item_width_third'>
+							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Магнитная поправка</Text>
+							<Field size='m' type='number' placeholder='0' rightSide='°' width='full' />
+						</div>
+					</div>
 					
 					<Text as='h3' size='xl' view='primary' weight='regular' className='decorator decorator_indent-t_2xl decorator_indent-b_l'>Характеристики пласта</Text>
 
@@ -136,22 +152,6 @@ function DraftPage1() {
 						<div className='FpbForm__item FpbForm__item_width_third'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Температура</Text>
 							<Field size='m' type='number' placeholder='0' rightSide='°С' width='full' />
-						</div>
-					</div>
-					<div className='FpbForm__row'>
-						<div className='FpbForm__item FpbForm__item_width_third'>
-							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Магнитное склонение</Text>
-							<Field size='m' type='number' placeholder='0' rightSide='°' width='full' />
-						</div>
-
-						<div className='FpbForm__item FpbForm__item_width_third'>
-							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Схождение меридианов</Text>
-							<Field size='m' type='number' placeholder='0' rightSide='°' width='full' />
-						</div>
-
-						<div className='FpbForm__item FpbForm__item_width_third'>
-							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Магнитная поправка</Text>
-							<Field size='m' type='number' placeholder='0' rightSide='°' width='full' />
 						</div>
 					</div>
 					
