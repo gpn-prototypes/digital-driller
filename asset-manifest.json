@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4fbdc5e.chunk.css",
-    "main.js": "/static/js/main.5a76eac5.chunk.js",
-    "main.js.map": "/static/js/main.5a76eac5.chunk.js.map",
+    "main.css": "/static/css/main.d8210d52.chunk.css",
+    "main.js": "/static/js/main.b609c874.chunk.js",
+    "main.js.map": "/static/js/main.b609c874.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.671e91de.js",
     "runtime-main.js.map": "/static/js/runtime-main.671e91de.js.map",
     "static/css/2.37e42d12.chunk.css": "/static/css/2.37e42d12.chunk.css",
     "static/js/2.08adc29c.chunk.js": "/static/js/2.08adc29c.chunk.js",
     "static/js/2.08adc29c.chunk.js.map": "/static/js/2.08adc29c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6a2e7b10b22a8b24443f45851d7dc9ac.js": "/precache-manifest.6a2e7b10b22a8b24443f45851d7dc9ac.js",
+    "precache-manifest.eb1c4de5780be67ac36f6aba10607db8.js": "/precache-manifest.eb1c4de5780be67ac36f6aba10607db8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.37e42d12.chunk.css.map": "/static/css/2.37e42d12.chunk.css.map",
-    "static/css/main.a4fbdc5e.chunk.css.map": "/static/css/main.a4fbdc5e.chunk.css.map",
+    "static/css/main.d8210d52.chunk.css.map": "/static/css/main.d8210d52.chunk.css.map",
     "static/js/2.08adc29c.chunk.js.LICENSE.txt": "/static/js/2.08adc29c.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/gpn-logo.9edac36e.svg",
     "static/media/Отчет_о_рисках_пересечения_стволов_скважин.jpg": "/static/media/Отчет_о_рисках_пересечения_стволов_скважин.c76e4b22.jpg",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.671e91de.js",
     "static/css/2.37e42d12.chunk.css",
     "static/js/2.08adc29c.chunk.js",
-    "static/css/main.a4fbdc5e.chunk.css",
-    "static/js/main.5a76eac5.chunk.js"
+    "static/css/main.d8210d52.chunk.css",
+    "static/js/main.b609c874.chunk.js"
   ]
 }
