@@ -27,7 +27,7 @@ function CommentPopup(props) {
   let id = 2; // todo
 
   return (
-    <div className={`commentpopup ${isVisible ? 'commentpopup_visible' : ''}`}>
+    <div className={`commentpopup${isVisible ? ' commentpopup_visible' : ''}`}>
       {/* {commentList.length > 0 ? 
         <div className='commentpopup__header'>
           <div className='decorator decorator_distribute_left decorator_vertical-align_center'>

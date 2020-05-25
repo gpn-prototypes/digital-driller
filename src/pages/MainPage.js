@@ -112,7 +112,7 @@ function MainPage() {
 			<TheFooter />
 			
 			{ newprogramm === ':true' ?
-				<Snackbar message='Программа бурения создана. Уведомления ответственным уже отправлены' visible={true} />
+				<Snackbar message='Программа бурения создана. Уведомления ответственным отправлены' visible={true} />
 			: ''}
 		</React.Fragment>
 	);

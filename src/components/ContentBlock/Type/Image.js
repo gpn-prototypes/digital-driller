@@ -1,18 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function Image(props) {
-  const { leftButton, rightButton, leftPopup, rightPopup, className = '', children } = props;
+function ContentBlockImage(props) {
+  const { isCommentable, isEditable, addButton, commentButton, deleteButton, commentPopup, newBlockPopup, children } = props;
 
   return (
-    <div className={`Article__section block block_editable decorator decorator_indent-v_3xl ${className}`}>
-      <div className='block__left-button'>{leftButton}</div>
-      <div className='block__right-button'>{rightButton}</div>
-      {leftPopup}
-      {rightPopup}
-      
-      {children}
+    <div className={`Article__section Block decorator decorator_indent-b_l decorator_indent-t_l`}>
+      { isEditable ?
+        <React.Fragment>
+          {newBlockPopup}
+          <div className='Block__leftButtons'>
+            {deleteButton}
+            {addButton}
+          </div>
+        </React.Fragment> : ''
+      }
+      { isCommentable || isEditable ? 
+        <React.Fragment>
+          { commentPopup }
+          <div className='Block__rightButtons'>
+            {commentButton}
+          </div>
+        </React.Fragment> : ''
+      }
+      { children }
     </div>
   );
 }
 
-export default Image;
+export default ContentBlockImage;

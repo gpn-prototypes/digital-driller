@@ -1,10 +1,52 @@
-.block {
+.Block {
   position: relative;
-  padding-left: var(--space-4xl);
-  padding-right: var(--space-4xl);
-  margin-left: calc(-1 * var(--space-4xl));
-  margin-right: calc(-1 * var(--space-4xl));
+  --sideButtonsWidth: calc(var(--control-height-s) * 2 + var(--space-2xs));
+  padding-left: calc(var(--sideButtonsWidth) + var(--space-s));
+  padding-right: calc(var(--sideButtonsWidth) + var(--space-s));
+  margin-left: calc(-1 * (var(--sideButtonsWidth) + var(--space-s)));
+  margin-right: calc(-1 * (var(--sideButtonsWidth) + var(--space-s)));
 }
+  .Block__leftButtons {
+    position: absolute;
+    left: 0;
+    top: calc(-1 * var(--space-xs));
+    display: flex;
+    width: var(--sideButtonsWidth);
+    padding-top: var(--space-2xs);
+    justify-content: flex-end;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  .Block__rightButtons {
+    position: absolute;
+    right: 0;
+    top: calc(-1 * var(--space-xs));
+    display: flex;
+    width: var(--sideButtonsWidth);
+    padding-top: var(--space-2xs);
+    justify-content: flex-start;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  .Block:hover .Block__leftButtons,
+  .Block:hover .Block__rightButtons {
+    opacity: 1;
+  }
+
+  .Block__listItem {
+    position: relative;
+    padding-left: var(--space-xl);
+  }
+    .Block__listItem::before {
+      position: absolute;
+      content: '—';
+      left: 0;
+    }
+
+
+
+
+
   .block .block__avicebutton svg {
     fill: var(--color-typo-warning);
   }
@@ -51,8 +93,8 @@
 .newblockpopup {
   position: absolute;
   padding: var(--space-s) 0;
-  left: 38px;
-  top: -14px;
+  left: 80px;
+  top: -20px;
   width: 260px;
 
   background: var(--color-bg-default);

@@ -50,7 +50,7 @@ function ProgrammList(props) {
     <table className='programm-list pt-table pt-table_stripe_even'>
       <thead>
         <tr>
-          <Text as='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Месторождение</Text>
+          <Text as='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Тип скважины</Text>
           <Text as='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Куст и скважина</Text>
           <Text as='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Этап процесса</Text>
           <Text as='th' view='secondary' size='2xs' weight='bold' transform='uppercase' spacing='xs'>Куратор</Text>

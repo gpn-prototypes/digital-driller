@@ -132,7 +132,7 @@ function DraftPage1() {
 
 						<div className='FpbForm__item FpbForm__item_width_third'>
 							<Text tag='label' size='m' view='secondary' display='block' className='FpbForm__label'>Магнитная поправка</Text>
-							<Field size='m' type='number' placeholder='0' rightSide='°' width='full' />
+							<Field size='m' type='number' placeholder='0' rightSide='°' width='full' disabled={true} />
 						</div>
 					</div>
 					

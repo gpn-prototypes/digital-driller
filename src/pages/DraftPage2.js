@@ -51,23 +51,23 @@ function DraftPage2() {
                 <SelectWrap size='m' view='clear' placeholder='Выберите значение' items={['Комбинированный кондуктор', 'Направляющая колонна', 'Кондукторная колонна', 'Профильный перекрыватель', 'Техническая колонна', 'Эксплуатационная колонна', 'Хвостовик']} />
                 </td>
                 <td>
-                  <Field width='full' size='m' view='clear' type='text' placeholder='Начните писать' />
+                  <SelectWrap size='m' view='clear' placeholder='Выберите значение' items={['ОТТМ 530/324*9,5 «Д»', 'ОТТГ-324*9,5 мм «Д»', 'ОТТГ -244,5*8,9 мм «Д»', 'ОТТГ-178*10,4 «Е»', 'ОТТГ-178*9,2 «Д»', 'ОТТМ-114,3х7,4 / ФС-П 114 ОТТМ']} />
                 </td>
                 <td>
                   <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='от' rightSide='м' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='от' rightSide='м' className='decorator decorator_indent-r_s' />
                     <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='до' rightSide='м' />
                   </div>
                 </td>
                 <td>
                   <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='от' rightSide='м' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='от' rightSide='м' className='decorator decorator_indent-r_s' />
                     <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='до' rightSide='м' />
                   </div>
                 </td>
                 <td>
                   <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='от' rightSide='м' />
+                    <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='от' rightSide='м' className='decorator decorator_indent-r_s' />
                     <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='до' rightSide='м' />
                   </div>
                 </td>

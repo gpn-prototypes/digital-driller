@@ -27,6 +27,9 @@ h1, h2, h3, h4, h5, h6, p {
 input {
   color: currentColor;
 }
+img {
+  max-width: 100%;
+}
 
 .LoginPage {
   display: grid;
@@ -60,6 +63,23 @@ input {
 .TextField_width_date input {
   width: 78px;
 }
+.TextField_size_xl {
+  font-size: var(--size-text-xl);
+  line-height: var(--line-height-text-xs);
+  font-weight: 500;
+  --input-height: 40px;
+}
+.TextField_view_clear textarea {
+  padding: 0 !important;
+}
+.TextField_th textarea,
+.TextField_th input {
+  line-height: var(--line-height-text-xs);
+  color: var(--color-typo-secondary);
+  font-size: var(--size-text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {
@@ -85,11 +105,68 @@ input[type=number]::-webkit-outer-spin-button {
 .table td:not(:last-child), .table th:not(:last-child) {
   border-right: 1px solid var(--color-bg-border);
 }
-.table tr {
+.table td, .table th {
+  border-top: 1px solid var(--color-bg-border);
+}
+.table tr:last-child td {
   border-bottom: 1px solid var(--color-bg-border);
 }
-.table tr:first-child {
+.table th {
   border-top: 1px solid var(--color-bg-border);
+}
+.table_commentable {
+  min-width: calc(700px + 32px);
+  margin-right: -32px;
+}
+  .table_commentable thead th:last-child, .table_commentable tbody td:last-child {
+    width: 32px;
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  .table_commentable thead th:nth-last-child(2), .table_commentable tbody td:nth-last-child(2) {
+    border-right: 0;
+  }
+  .table_commentable tr:hover > td:last-child {
+    opacity: 1;
+  }
+.table_editable {
+  min-width: calc(700px + 64px + 32px);
+  margin-left: -64px;
+  margin-right: -32px;
+}
+  .table_editable thead th:first-child, 
+  .table_editable tbody td:first-child,
+  .table_editable tfoot td:first-child {
+    width: 64px;
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+    text-align: right;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  .table_editable thead th:last-child,
+  .table_editable tbody td:last-child,
+  .table_editable tfoot td:last-child {
+    width: 32px;
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+    opacity: 0;
+  }
+  .table_editable thead th:nth-last-child(2),
+  .table_editable tbody td:nth-last-child(2),
+  .table_editable tfoot td:nth-last-child(2) {
+    border-right: 0;
+  }
+  .table_editable tr:hover td:first-child, .table_editable tr:hover td:last-child {
+    opacity: 1;
+  }
+.table_editable tfoot td {
+  border-bottom: 1px solid var(--color-bg-border);
 }
 
 
@@ -155,3 +232,4 @@ input[type=number]::-webkit-outer-spin-button {
   overflow-x: auto;
   box-sizing: border-box;
 }
+
