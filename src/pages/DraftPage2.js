@@ -34,52 +34,57 @@ function DraftPage2() {
 
       <Content size='full' centered={true}>
 				<div className='content__main content__main_size_full'>
-          <table className='table table_editable' style={{ width: '1000px' }}>
-            <thead>
-              <tr>
-                <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs'>Название</Text>
-                <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs'>Обсадная колонна</Text>
-                <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs' style={{ width: '150px' }}>Глубина спуска по стволу</Text>
-                <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs' style={{ width: '150px' }}>глубина спуска по вертикали</Text>
-                <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs' style={{ width: '150px' }}>Интервал цементирования</Text>
-              </tr>
-            </thead>
+          <div className='decorator decorator_indent-h_auto' style={{ width: '1000px' }}>
+            <table className='table table_editable'>
+              <thead>
+                <tr>
+                  <th></th>
+                  <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs'>Название</Text>
+                  <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs'>Обсадная колонна</Text>
+                  <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs' style={{ width: '150px' }}>Глубина спуска по стволу</Text>
+                  <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs' style={{ width: '150px' }}>глубина спуска по вертикали</Text>
+                  <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='xs' transform='uppercase' spacing='xs' style={{ width: '150px' }}>Интервал цементирования</Text>
+                  <th></th>
+                </tr>
+              </thead>
 
-            <tbody>
-              <tr>
-                <td rowspan='2'>
-                <SelectWrap size='m' view='clear' placeholder='Выберите значение' items={['Комбинированный кондуктор', 'Направляющая колонна', 'Кондукторная колонна', 'Профильный перекрыватель', 'Техническая колонна', 'Эксплуатационная колонна', 'Хвостовик']} />
-                </td>
-                <td>
-                  <SelectWrap size='m' view='clear' placeholder='Выберите значение' items={['ОТТМ 530/324*9,5 «Д»', 'ОТТГ-324*9,5 мм «Д»', 'ОТТГ -244,5*8,9 мм «Д»', 'ОТТГ-178*10,4 «Е»', 'ОТТГ-178*9,2 «Д»', 'ОТТМ-114,3х7,4 / ФС-П 114 ОТТМ']} />
-                </td>
-                <td>
-                  <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='от' rightSide='м' className='decorator decorator_indent-r_s' />
-                    <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='до' rightSide='м' />
-                  </div>
-                </td>
-                <td>
-                  <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='от' rightSide='м' className='decorator decorator_indent-r_s' />
-                    <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='до' rightSide='м' />
-                  </div>
-                </td>
-                <td>
-                  <div className='decorator decorator_distribute_left'>
-                    <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='от' rightSide='м' className='decorator decorator_indent-r_s' />
-                    <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='до' rightSide='м' />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan='4'><Button view='clear' size='s' withIcon='left' width='full' label='Добавить колонну' /></td>
-              </tr>
-              <tr>
-                <td colspan='5'><Button view='clear' size='m' withIcon='left' width='full' label='Добавить секцию' /></td>
-              </tr>
-            </tbody>
-          </table>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td>
+                    <SelectWrap size='m' view='clear' placeholder='Выберите значение' items={['Комбинированный кондуктор', 'Направляющая колонна', 'Кондукторная колонна', 'Профильный перекрыватель', 'Техническая колонна', 'Эксплуатационная колонна', 'Хвостовик']} />
+                  </td>
+                  <td>
+                    <SelectWrap size='m' view='clear' placeholder='Выберите значение' items={['ОТТМ 530/324*9,5 «Д»', 'ОТТГ-324*9,5 мм «Д»', 'ОТТГ -244,5*8,9 мм «Д»', 'ОТТГ-178*10,4 «Е»', 'ОТТГ-178*9,2 «Д»', 'ОТТМ-114,3х7,4 / ФС-П 114 ОТТМ']} />
+                  </td>
+                  <td>
+                    <div className='decorator decorator_distribute_left'>
+                      <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='от' rightSide='м' className='decorator decorator_indent-r_s' />
+                      <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='до' rightSide='м' />
+                    </div>
+                  </td>
+                  <td>
+                    <div className='decorator decorator_distribute_left'>
+                      <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='от' rightSide='м' className='decorator decorator_indent-r_s' />
+                      <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='до' rightSide='м' />
+                    </div>
+                  </td>
+                  <td>
+                    <div className='decorator decorator_distribute_left'>
+                      <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='от' rightSide='м' className='decorator decorator_indent-r_s' />
+                      <Field width='full' size='m' view='clear' type='number' placeholder='0' leftSide='до' rightSide='м' />
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td colspan='5'><Button view='clear' size='m' withIcon='left' width='full' label='Добавить секцию' /></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </Content>
 

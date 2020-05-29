@@ -4,7 +4,7 @@ import { Button } from '@gpn-design/uikit/Button';
 import { IconAdd } from '@gpn-design/uikit/IconAdd';
 import { IconTrash } from '@gpn-design/uikit/IconTrash';
 
-function TableRow(props) {
+function ContentBlockTableRow(props) {
   const { comment, edit, commentButton, commentPopup, children } = props;
 
   return (
@@ -23,4 +23,4 @@ function TableRow(props) {
   );
 }
 
-export default TableRow;
+export default ContentBlockTableRow;

@@ -7,7 +7,6 @@ import AdvicePopup from '../components/AdvicePopup/AdvicePopup';
 import ContentBlock from '../components/ContentBlock/ContentBlock';
 import SelectWrap from '../components/SelectWrap/SelectWrap';
 import Field from '../components/Field/Field';
-import TableRow from '../components/ContentBlock/TableRow/ContentBlockTableRow';
 
 import IMGProfileOfTheWellbore from '../images/Профиль_ствола_скважины.jpg';
 import IMGRiskReportTheIntersectionOfTheWellbore from '../images/Отчет_о_рисках_пересечения_стволов_скважин.jpg';
@@ -55,18 +54,18 @@ export const programmBlocks = [
     emptyContentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='table' tableName='Буровое оборудование'
         tableBody={[
-          (<React.Fragment>
+          <React.Fragment>
             <td><Text size='m' view='primary' lineHeight='s'>Буровая установка</Text></td>
             <td><SelectWrap size='m' view='clear' items={['Выберите значение', 'БУ 5000-320 ЭК-БМЧ', 'БУ 5000-321 ЭК-БМЧ', 'БУ 3000-320 ЭК-БМЧ']} /></td>
-          </React.Fragment>),
-          (<React.Fragment>
+          </React.Fragment>,
+          <React.Fragment>
             <td><Text size='m' view='primary' lineHeight='s'>Верхний силовой привод</Text></td>
             <td><SelectWrap size='m' view='clear' items={['Выберите значение', 'VARCO TDC11SB02V12', 'VARCO TDC11SB02V11', 'VARCO TDC11SB02V01']} /></td>
-          </React.Fragment>),
-          (<React.Fragment>
+          </React.Fragment>,
+          <React.Fragment>
             <td><Text size='m' view='primary' lineHeight='s'>Буровые насосы</Text></td>
             <td><SelectWrap size='m' view='clear' items={['Выберите значение', 'УНБТ-1180', 'УНБТ-950', 'УНБТ-600Л']} /></td>
-          </React.Fragment>)
+          </React.Fragment>
         ]}>
       </ContentBlock>
       
@@ -201,18 +200,18 @@ export const programmBlocks = [
     contentEditable: (<React.Fragment>
       <ContentBlock isEditable={true} type='table' tableName='Буровое оборудование'
         tableBody={[
-          (<React.Fragment>
+          <React.Fragment>
             <td><Text size='m' view='primary' lineHeight='s'>Буровая установка</Text></td>
             <td><SelectWrap size='m' view='clear' items={['БУ 5000-320 ЭК-БМЧ', 'БУ 5000-321 ЭК-БМЧ', 'БУ 3000-320 ЭК-БМЧ']} /></td>
-          </React.Fragment>),
-          (<React.Fragment>
+          </React.Fragment>,
+          <React.Fragment>
             <td><Text size='m' view='primary' lineHeight='s'>Верхний силовой привод</Text></td>
             <td><SelectWrap size='m' view='clear' items={['VARCO TDC11SB02V12', 'VARCO TDC11SB02V11', 'VARCO TDC11SB02V01']} /></td>
-          </React.Fragment>),
-          (<React.Fragment>
+          </React.Fragment>,
+          <React.Fragment>
             <td><Text size='m' view='primary' lineHeight='s'>Буровые насосы</Text></td>
             <td><SelectWrap size='m' view='clear' items={['УНБТ-1180', 'УНБТ-950', 'УНБТ-600Л']} /></td>
-          </React.Fragment>)
+          </React.Fragment>
         ]} />
       
       <ContentBlock isEditable={true} type='table' tableName='Противовыбросовое оборудование'
@@ -305,18 +304,18 @@ export const programmBlocks = [
     contentReadable: (<React.Fragment>
       <ContentBlock isCommentable={true} type='table' tableName='Буровое оборудование'
         tableBody={[
-          (<React.Fragment>
+          <React.Fragment>
             <td><Text size='m' view='primary' lineHeight='s'>Буровая установка</Text></td>
             <td><Text size='m' view='primary' lineHeight='s'>БУ 5000-320 ЭК-БМЧ</Text></td>
-          </React.Fragment>),
-          (<React.Fragment>
+          </React.Fragment>,
+          <React.Fragment>
             <td><Text size='m' view='primary' lineHeight='s'>Верхний силовой привод</Text></td>
             <td><Text size='m' view='primary' lineHeight='s'>VARCO TDC11SB02V12</Text></td>
-          </React.Fragment>),
-          (<React.Fragment>
+          </React.Fragment>,
+          <React.Fragment>
             <td><Text size='m' view='primary' lineHeight='s'>Буровые насосы</Text></td>
             <td><Text size='m' view='primary' lineHeight='s'>УНБТ-1180</Text></td>
-          </React.Fragment>)
+          </React.Fragment>
         ]} />
       
       <ContentBlock isCommentable={true} type='table' tableName='Противовыбросовое оборудование'
@@ -11486,8 +11485,7 @@ export const programmBlocks = [
         ]} />
     </React.Fragment>),
     emptyContentReadable: (<React.Fragment>
-      <ContentBlock isCommentable={true} type='table' size='full'
-        tableHeader={[
+      <ContentBlock isCommentable={true} type='table' size='full' tableHeader={[
           <React.Fragment>
             <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='2xs' transform='uppercase' spacing='xs'>Глубина</Text>
             <Text as='th' colSpan='2' weight='regular' lineHeight='xs' view='secondary' size='2xs' transform='uppercase' spacing='xs'>Давление на стояке над забоем</Text>
@@ -11524,8 +11522,7 @@ export const programmBlocks = [
             <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='2xs' transform='uppercase' spacing='xs'>план</Text>
             <Text as='th' weight='regular' lineHeight='xs' view='secondary' size='2xs' transform='uppercase' spacing='xs'>факт</Text>
           </React.Fragment>
-        ]}
-        tableBody={[
+        ]} tableBody={[
           <React.Fragment>
             <td><Text size='s' view='ghost' lineHeight='s'>Не заполнено</Text></td>
             <td><Text size='s' view='ghost' lineHeight='s'>Не заполнено</Text></td>

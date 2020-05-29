@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 
-import { Text } from '@gpn-design/uikit/Text';
-import Field from '../../Field/Field';
-import TableRow from '../TableRow/ContentBlockTableRow';
+
 import ContentBlockHeader from '../Type/Header';
+import ContentBlockTableRow from './TableRow';
 
 function ContentBlockTable(props) {
   const { size, isCommentable, isEditable, addButton, commentButton, deleteButton, commentPopup, newBlockPopup, tableHeader, tableBody, tableFooter, tableName } = props;
   const [rowList, setRowList] = useState([...tableBody]);
 
   const getNewRow = (value, index) => {
-    return <TableRow comment={isCommentable} edit={isEditable} commentButton={commentButton} commentPopup={commentPopup} key={index}>{value}</TableRow>
+    return <ContentBlockTableRow comment={isCommentable} edit={isEditable} commentButton={commentButton} commentPopup={commentPopup} key={index}>{value}</ContentBlockTableRow>
   }
 
   return (
