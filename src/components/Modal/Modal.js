@@ -11,7 +11,7 @@ function Modal(props) {
 
   return (
     <div className='Paranja' onClick={ onParanjaAction } onKeyDown={ onParanjaAction } tabIndex={0}>
-      { content === 'team' ? <ModalTeam deadline={programmInfo.deadline} programmTeam={programmInfo.team} onClose={ onClose } /> : '' }
+      { content === 'team' ? <ModalTeam onClose={ onClose } /> : '' }
     </div>
   );
 }

@@ -1,4 +1,5 @@
 .Sidebar {
+  position: relative;
   box-sizing: border-box;
   height: calc(100vh - 60px);
   padding: var(--space-m) var(--space-s);
@@ -17,4 +18,14 @@
 .Sidebar__menu-item:hover {
   cursor: pointer;
   background-color: var(--color-control-bg-clear-hover);
+}
+.Sidebar__close {
+  position: absolute;
+  right: var(--space-s);
+  top: var(--space-m);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.Sidebar:hover .Sidebar__close {
+  opacity: 1;
 }

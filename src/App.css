@@ -123,7 +123,6 @@ input[type=number]::-webkit-outer-spin-button {
     padding-left: 0;
     padding-right: 0;
     border: 0;
-    opacity: 0;
     transition: opacity 0.25s ease;
   }
   .table_commentable thead th:nth-last-child(2), .table_commentable tbody td:nth-last-child(2) {
@@ -155,19 +154,30 @@ input[type=number]::-webkit-outer-spin-button {
     padding-left: 0;
     padding-right: 0;
     border: 0;
-    opacity: 0;
   }
   .table_editable thead th:nth-last-child(2),
   .table_editable tbody td:nth-last-child(2),
   .table_editable tfoot td:nth-last-child(2) {
     border-right: 0;
   }
-  .table_editable tr:hover td:first-child, .table_editable tr:hover td:last-child {
-    opacity: 1;
+  .table_editable tfoot td {
+    border-bottom: 1px solid var(--color-bg-border);
   }
-.table_editable tfoot td {
-  border-bottom: 1px solid var(--color-bg-border);
-}
+  .table .Block__rightButtons {
+    position: relative;
+  }
+    .Block .table_editable tr td:first-child {
+      opacity: 0;
+    }
+    .Block .table tr td:last-child {
+      opacity: 1;
+    }
+    .table tr:hover td:first-child, .table tr:hover td:last-child {
+      opacity: 1;
+    }
+    .Block:hover .table tr:not(:hover) .CommentWrap:not(.CommentWrap_visible) {
+      opacity: 0;
+    }
 
 
 .FpbForm {
@@ -216,20 +226,3 @@ input[type=number]::-webkit-outer-spin-button {
 .FpbForm__buttons > *:not(:last-child) {
   margin-right: var(--space-2xs) !important;
 }
-
-.Article {
-  padding: var(--space-5xl) 0;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-}
-.Article__section {
-  width: 700px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.Article__section_size_full {
-  width: calc(100% - var(--space-2xl) * 2);
-  overflow-x: auto;
-  box-sizing: border-box;
-}
-

@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+
+import { ProgrammInfoContext } from '../../context/ProgrammInfoContext';
 
 import { Button } from '@gpn-design/uikit/Button';
 import { IconAdd } from '@gpn-design/uikit/IconAdd';
 import { IconAlignLeft } from '@gpn-design/uikit/IconAlignLeft';
 import { IconAlert } from '@gpn-design/uikit/IconAlert';
-import { IconComment } from '@gpn-design/uikit/IconComment';
 import { IconTrash } from '@gpn-design/uikit/IconTrash';
 import { IconTable } from '@gpn-design/uikit/IconTable';
 import { IconLink } from '@gpn-design/uikit/IconLink';
@@ -17,22 +18,20 @@ import ContentBlockInformer from './Type/Informer';
 import ContentBlockTable from './Type/Table';
 import ContentBlockList from './Type/List';
 import ContentBlockImage from './Type/Image';
-import CommentPopup from '../CommentPopup/CommentPopup';
 
 function ContentBlockItem(props) {
   const { isCommentable, isEditable,
           size, type,
           tableHeader, tableBody, tableFooter, tableName,
           listItems,
-          adviceID, comments = 0, children,
+          adviceID, commentID, children,
           newParagraphHandler, newHeaderHandler, newListHandler, newInformerHandler, newImageHandler,
           deleteButtonHandler } = props;
-  
-  const [isCommentVisible, setCommentVisibility] = useState(false);
+          
+  const { showRightBlind, hideAllBlinds, setCommentBlind } = useContext(ProgrammInfoContext);
   const [isNewBlockPopupVisible, setNewBlockPopupVisibility] = useState(false);
   const [blockList, setBlockList] = useState([{ type, children }]);
   
-  let commentPopup = <CommentPopup isEditable={isEditable} isVisible={isCommentVisible} count={0} />;
   let newBlockPopup = <div className={`newblockpopup${isNewBlockPopupVisible ? ' newblockpopup_visible': ''}`}>
         <div className='newblockpopup-item pt-icon-plus pt-icon-plus_vertical-align_center' onClick={() => { newParagraphHandler(); hideNewBlockPopup(); }}>
           <IconAlignLeft size='s' view='ghost' className='pt-icon-plus__icon pt-icon-plus__icon_indent-r_xs' />
@@ -63,35 +62,9 @@ function ContentBlockItem(props) {
           <Text size='s' view='primary'>Изображения</Text>
         </div>
       </div>;
-
   let addButton = <Button view='clear' size='s' iconSize='s' onlyIcon={true} iconLeft={IconAdd} form='round' tabIndex={-1} className='' onClick={(e) => showNewBlockPopup(e)} />;
   let deleteButton = <Button view='clear' size='s' iconSize='s' onlyIcon={true} iconLeft={IconTrash} form='round' tabIndex={-1} className='' onClick={ () => deleteButtonHandler() } />;
-  let commentButton = <Button view='clear' size='s' iconSize='s' onlyIcon={true} iconLeft={IconComment} form='round' tabIndex={-1} className='' onClick={(e) => showCommentPopup(e)} />;
 
-  const showCommentPopup = (e) => {
-    const handleDocumentClick = (e) => {  
-      if(!isCommentVisible) {
-        let popup = document.querySelector(`.commentpopup_visible`);
-        if(popup)
-          if(!popup.contains(e.target)) closePopup();
-      }
-    }
-    const closePopup = () => {
-      setCommentVisibility(false);
-      document.removeEventListener('click', handleDocumentClick, false);
-    }
-    
-    if(isCommentVisible) {
-      closePopup();
-    } else {
-      setCommentVisibility(true);
-      document.addEventListener('click', handleDocumentClick);
-      setTimeout(() => {
-        let input = document.querySelector(`.commentpopup_visible input`);
-        if(input) input.focus();
-      }, 100);
-    }
-  };
 
   const handleDocumentClick = (e) => {  
     if(!isNewBlockPopupVisible) {
@@ -114,12 +87,12 @@ function ContentBlockItem(props) {
     }
   };
 
-  if(type === 'paragraph') return <ContentBlockParagraph isCommentable={isCommentable} isEditable={isEditable} addButton={addButton} commentButton={commentButton} deleteButton={deleteButton} commentPopup={commentPopup} newBlockPopup={newBlockPopup} children={children} />;
-  else if(type === 'informer') return <ContentBlockInformer isCommentable={isCommentable} isEditable={isEditable} addButton={addButton} commentButton={commentButton} deleteButton={deleteButton} commentPopup={commentPopup} newBlockPopup={newBlockPopup} children={children} />;
-  else if(type === 'header') return <ContentBlockHeader isCommentable={isCommentable} isEditable={isEditable} addButton={addButton} commentButton={commentButton} deleteButton={deleteButton} commentPopup={commentPopup} newBlockPopup={newBlockPopup} children={children} />;
-  else if(type === 'table') return <ContentBlockTable size={size} tableName={tableName} tableHeader={tableHeader} tableBody={tableBody} tableFooter={tableFooter} isCommentable={isCommentable} isEditable={isEditable} addButton={addButton} commentButton={commentButton} deleteButton={deleteButton} commentPopup={commentPopup} newBlockPopup={newBlockPopup} children={children} />;
-  else if(type === 'list') return <ContentBlockList listItems={listItems} isCommentable={isCommentable} isEditable={isEditable} addButton={addButton} commentButton={commentButton} deleteButton={deleteButton} commentPopup={commentPopup} newBlockPopup={newBlockPopup} children={children} />;
-  else if(type === 'image') return <ContentBlockImage isCommentable={isCommentable} isEditable={isEditable} addButton={addButton} commentButton={commentButton} deleteButton={deleteButton} commentPopup={commentPopup} newBlockPopup={newBlockPopup} children={children} />;
+  if(type === 'paragraph') return <ContentBlockParagraph commentID={commentID} isEditable={isEditable} addButton={addButton} deleteButton={deleteButton} newBlockPopup={newBlockPopup} children={children} />;
+  else if(type === 'informer') return <ContentBlockInformer commentID={commentID} isEditable={isEditable} addButton={addButton} deleteButton={deleteButton} newBlockPopup={newBlockPopup} children={children} />;
+  else if(type === 'header') return <ContentBlockHeader commentID={commentID} isEditable={isEditable} addButton={addButton} deleteButton={deleteButton} newBlockPopup={newBlockPopup} children={children} />;
+  else if(type === 'table') return <ContentBlockTable size={size} tableName={tableName} tableHeader={tableHeader} tableBody={tableBody} tableFooter={tableFooter} isCommentable={isCommentable} isEditable={isEditable} addButton={addButton} deleteButton={deleteButton} newBlockPopup={newBlockPopup} children={children} />;
+  else if(type === 'list') return <ContentBlockList listItems={listItems} commentID={commentID} isEditable={isEditable} addButton={addButton} deleteButton={deleteButton} newBlockPopup={newBlockPopup} children={children} />;
+  else if(type === 'image') return <ContentBlockImage commentID={commentID} isEditable={isEditable} addButton={addButton} deleteButton={deleteButton} newBlockPopup={newBlockPopup} children={children} />;
 }
 
 export default ContentBlockItem;

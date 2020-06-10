@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import CommentBlind from '../../CommentBlind/CommentBlind';
 
 function ContentBlockImage(props) {
-  const { isCommentable, isEditable, addButton, commentButton, deleteButton, commentPopup, newBlockPopup, children } = props;
+  const { commentID, isEditable, addButton, deleteButton, newBlockPopup, children } = props;
 
   return (
     <div className={`Article__section Block decorator decorator_indent-b_l decorator_indent-t_l`}>
@@ -14,14 +15,9 @@ function ContentBlockImage(props) {
           </div>
         </React.Fragment> : ''
       }
-      { isCommentable || isEditable ? 
-        <React.Fragment>
-          { commentPopup }
-          <div className='Block__rightButtons'>
-            {commentButton}
-          </div>
-        </React.Fragment> : ''
-      }
+      
+      <CommentBlind id={commentID} />
+
       { children }
     </div>
   );

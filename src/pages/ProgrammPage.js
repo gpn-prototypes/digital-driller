@@ -1,7 +1,10 @@
 import React, { useContext, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { UserContext } from '../context/ProjectContext';
+import { ProgrammInfoContext } from '../context/ProgrammInfoContext';
 
+import { Button } from '@gpn-design/uikit/Button';
+import { IconForward } from '@gpn-design/uikit/IconForward';
 import { Text } from '@gpn-design/uikit/Text';
 
 import TheHeader from '../components/TheHeader/TheHeader';
@@ -9,6 +12,7 @@ import ArticleSection from '../components/ArticleSection/ArticleSection';
 import Snackbar from '../components/Snackbar/Snackbar';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Modal from '../components/Modal/Modal';
+import CommentBlind from '../components/CommentBlind/CommentBlind';
 
 import programmList from '../mocks/programmList';
 import programmBlocks from '../mocks/programmBlocks';
@@ -18,8 +22,12 @@ import Content from '../components/Content/Content';
 function ProgrammPage() {
   const { id } = useParams();
   const { user } = useContext(UserContext);
+  const { setProgrammDeadline, setProgrammTeam, programmSplit, showLeftBlind } = useContext(ProgrammInfoContext);
   const [ modal, setModal ] = useState('');
   const programmInfo = programmList.filter(item => item.id == id)[0];
+
+  setProgrammTeam(programmInfo.team);
+  setProgrammDeadline(programmInfo.deadline);
   
   let blockList = programmBlocks.map((template, index) => {
     if (template.isSection) {
@@ -49,10 +57,17 @@ function ProgrammPage() {
     <React.Fragment>
       <TheHeader isMinified={true} programmName={programmInfo.field + ' > ' + programmInfo.bush + ' > ' + programmInfo.well} role='Геолог' />
       
-      <Content split={true}>
-        <Sidebar programmInfo={ programmInfo } teamOnClick={ () => setModal('team') } commentOnClick={ () => setModal('comment') } lessonOnClick={ () => setModal('lesson') } approveOnClick={ () => setModal('approve') } />
+      <Content blind={programmSplit} padding={false}>
+        { programmSplit === 'left' ?
+            <Sidebar programmInfo={ programmInfo }
+                    teamOnClick={ () => setModal('team') }
+                    commentOnClick={ () => setModal('comment') }
+                    lessonOnClick={ () => setModal('lesson') }
+                    approveOnClick={ () => setModal('approve') } />
+          : '' }
 
         <div className='Article'>
+          <Button size='m' view='clear' iconLeft={IconForward} onlyIcon={true} className='content__left-blind-control' onClick={ showLeftBlind } />
           <div className='Article__section'>
             <Text tag='h1' size='3xl' weight='bold' view='primary' lineHeight='xs' className='decorator decorator_indent-b_xs'>{ programmInfo.name }</Text>
             {programmInfo.field} > {programmInfo.bush} > {programmInfo.well}
@@ -65,7 +80,7 @@ function ProgrammPage() {
       <Snackbar message='Раздел опубликован' />
       <Snackbar message='Программа сохранена' />
 
-      { modal === 'team' ? <Modal content='team' programmInfo={programmInfo} onClose={ () => setModal('') } onParanjaAction={ (e) => { if(e.target.classList.contains('Paranja') || e.key == 'Escape') setModal('') } } /> : '' }
+      { modal === 'team' ? <Modal content='team' onClose={ () => setModal('') } onParanjaAction={ (e) => { if(e.target.classList.contains('Paranja') || e.key == 'Escape') setModal('') } } /> : '' }
       {/* { modal === 'comment' ? <Modal content='comment' programmInfo={programmInfo} onClose={ () => setModal('') } /> : '' } */}
       {/* { modal === 'lesson' ? <Modal content='lesson' programmInfo={programmInfo} onClose={ () => setModal('') } /> : '' } */}
       {/* { modal === 'approve' ? <Modal content='approve' programmInfo={programmInfo} onClose={ () => setModal('') } /> : '' } */}

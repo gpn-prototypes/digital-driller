@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 
 import { Text } from '@gpn-design/uikit/Text';
 import Field from '../../Field/Field';
+import CommentBlind from '../../CommentBlind/CommentBlind';
 
 function ContentBlockList(props) {
-  const { isCommentable, isEditable, addButton, commentButton, deleteButton, commentPopup, newBlockPopup, listItems } = props;
+  const { commentID, isEditable, addButton, deleteButton, newBlockPopup, listItems } = props;
   const [itemsList, setItemsList] = useState([...listItems]);
 
   return (
@@ -21,14 +22,9 @@ function ContentBlockList(props) {
               </div>
             </React.Fragment> : ''
           }
-          { isCommentable || isEditable ? 
-            <React.Fragment>
-              { commentPopup }
-              <div className='Block__rightButtons'>
-                {commentButton}
-              </div>
-            </React.Fragment> : ''
-          }
+          
+          <CommentBlind id={commentID} />
+
           <div className='Block__listItem'>
             { isEditable ? <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue={item} /> : '' }
             { !isEditable && item !== '' ? <Text size='m' view='primary' lineHeight='s'>{ item }</Text> : '' }

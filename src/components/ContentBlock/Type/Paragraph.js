@@ -2,9 +2,10 @@ import React from 'react';
 
 import { Text } from '@gpn-design/uikit/Text';
 import Field from '../../Field/Field';
+import CommentBlind from '../../CommentBlind/CommentBlind';
 
 function ContentBlockParagraph(props) {
-  const { isCommentable, isEditable, addButton = '', commentButton = '', deleteButton = '', commentPopup, newBlockPopup, children } = props;
+  const { commentID, isEditable, addButton = '', deleteButton = '', newBlockPopup, children } = props;
 
   return (
     <div className='Article__section Block decorator decorator_indent-b_l'>
@@ -17,14 +18,8 @@ function ContentBlockParagraph(props) {
           </div>
         </React.Fragment> : ''
       }
-      { isCommentable || isEditable ? 
-        <React.Fragment>
-          { commentPopup }
-          <div className='Block__rightButtons'>
-            {commentButton}
-          </div>
-        </React.Fragment>: ''
-      }
+      
+      <CommentBlind id={commentID} />
 
       { isEditable ? <Field width='full' size='m' view='clear' type='textarea' maxRows={10000} placeholder='Начните писать' dValue={children} /> : '' }
       { !isEditable && children ? <Text size='m' view='primary' lineHeight='s'>{ children }</Text> : '' }

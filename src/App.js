@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import UserProvider from './context/ProjectContext';
+import ProgrammInfoProvider from './context/ProgrammInfoContext';
 
 import { cnTheme } from '@gpn-design/uikit/Theme';
 import '@gpn-design/uikit/__internal__/src/components/Theme/_color/Theme_color_gpnDefault.css';
@@ -61,7 +62,9 @@ function App() {
 					</Route>
 					
 					<Route exact path="/digital-driller/programm/:id">
-						<ProgrammPage />
+						<ProgrammInfoProvider>
+							<ProgrammPage />
+						</ProgrammInfoProvider>
 					</Route>
 					{/* <Route exact path="/digital-driller/geologist/profile">
 						<GeologistProfilePage />

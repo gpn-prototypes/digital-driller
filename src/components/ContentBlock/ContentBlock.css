@@ -3,8 +3,8 @@
   --sideButtonsWidth: calc(var(--control-height-s) * 2 + var(--space-2xs));
   padding-left: calc(var(--sideButtonsWidth) + var(--space-s));
   padding-right: calc(var(--sideButtonsWidth) + var(--space-s));
-  margin-left: calc(-1 * (var(--sideButtonsWidth) + var(--space-s)));
-  margin-right: calc(-1 * (var(--sideButtonsWidth) + var(--space-s)));
+  /*margin-left: calc(-1 * (var(--sideButtonsWidth) + var(--space-s)));
+  margin-right: calc(-1 * (var(--sideButtonsWidth) + var(--space-s)));*/
 }
   .Block__leftButtons {
     position: absolute;
@@ -22,7 +22,7 @@
     right: 0;
     top: calc(-1 * var(--space-xs));
     display: flex;
-    width: var(--sideButtonsWidth);
+    width: auto;
     padding-top: var(--space-2xs);
     justify-content: flex-start;
     opacity: 0;
@@ -57,25 +57,7 @@
     opacity: 0;
     transition: opacity 0.25s ease;
   }
-  .block:hover .block__commentbutton, .block:hover .block__addnewblockbutton {
-    opacity: 1;
-  }
-  .block__commentbutton_visible {
-    opacity: 1!important;
-  }
-  .block__right-button, .block__left-button {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .block__right-button {
-    right: 0;
-  }
-  .block__left-button {
-    left: 0;
-  }
-
+  
 .block_show-popup .newblockpopup {
   display: block;
 }

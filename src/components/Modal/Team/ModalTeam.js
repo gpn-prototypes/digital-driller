@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
+import { ProgrammInfoContext } from '../../../context/ProgrammInfoContext';
 
 import { Badge } from '@gpn-design/uikit/Badge';
 import { Button } from '@gpn-design/uikit/Button';
@@ -10,8 +11,10 @@ import { User } from '@gpn-design/uikit/User';
 import { team } from '../../../mocks/team';
 
 function ModalTeam(props) {
-  const { programmTeam, deadline, onClose } = props;
+  const { onClose } = props;
   const history = useHistory();
+  const { programmDeadline, programmTeam } = useContext(ProgrammInfoContext);
+
   const teamList = programmTeam.map((member, index) => {
     let thisUser = team.filter(x => x.role === member.role && x.name === member.name)[0];
     let badge, text = '';
@@ -30,7 +33,7 @@ function ModalTeam(props) {
       badge = <Badge status='success' view='stroked' size='s' label='Согласовано' />
     
     if(member.status === 'Заполняется' || member.status === 'Непримененный совет' || member.status === 'Согласуется')
-      text = <Text size='xs' view='ghost' transform='uppercase' className='decorator decorator_indent-r_s'>{deadline}</Text>;
+      text = <Text size='xs' view='ghost' transform='uppercase' className='decorator decorator_indent-r_s'>{programmDeadline}</Text>;
 
     return <div className='pt-list__item' key={index}>
               <User avatarUrl={thisUser.avatar} name={thisUser.name} size='m' info={thisUser.role} />

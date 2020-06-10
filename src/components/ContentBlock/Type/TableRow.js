@@ -3,9 +3,10 @@ import React from 'react';
 import { Button } from '@gpn-design/uikit/Button';
 import { IconAdd } from '@gpn-design/uikit/IconAdd';
 import { IconTrash } from '@gpn-design/uikit/IconTrash';
+import CommentBlind from '../../CommentBlind/CommentBlind';
 
 function ContentBlockTableRow(props) {
-  const { comment, edit, commentButton, commentPopup, children } = props;
+  const { edit, children } = props;
 
   return (
     <tr>
@@ -16,9 +17,7 @@ function ContentBlockTableRow(props) {
         </td> : ''
       }
       {children}
-      { comment || edit ?
-        <td>{commentButton} {commentPopup}</td> : ''
-      }
+      <td><CommentBlind /></td>
     </tr>
   );
 }
